@@ -223,9 +223,10 @@ select::-ms-expand {
 ========================================================= */
 header {
   display: table;
-  width: 95%;
+  width: 100%;
   height: 49px;
   padding: 0 2.5%;
+  box-sizing: border-box;
   border-bottom: solid 1px #CCC;
   position: fixed;
   top: 0;
@@ -374,7 +375,8 @@ header .menu.right img {
   margin-bottom: 0;
   padding: 15px 2.5%;
   color: #dc1e3c;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  letter-spacing: -0.1em;
 }
 #contents .information a {
   color: #dc1e3c;
@@ -389,13 +391,13 @@ footer {
 footer .timeLeft {
   position: fixed;
   left: 0;
-  bottom: 30px;
+  bottom: 10px;
   min-width: 98px;
   height: 46px;
   padding: 10px 15px 10px 10px;
   border-radius: 0 40px 40px 0;
   background-color: #fff;
-  box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.25);
   font-weight: bold;
   font-size: 1.2rem;
   z-index: 100;
@@ -430,17 +432,17 @@ footer p.stamp, footer p.viewAll {
   z-index: 100;
 }
 footer p.stamp {
-  bottom: 110px;
+  bottom: 80px;
 }
 footer p.viewAll {
-  bottom: 40px;
+  bottom: 5px;
 }
 footer .copyright {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   width: 100%;
   text-align: center;
-  padding: 0;
+  padding: 5px 0px 14%;
 }
 
 /* =========================================================
@@ -647,7 +649,7 @@ footer .copyright {
 }
 #contents nav.list ul li:after, #contents nav.settingList ul li:after {
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 15px;
   content: '\f105';
   font-family: FontAwesome;
@@ -714,6 +716,7 @@ footer .copyright {
 }
 #contents nav.settingList ul li.half:nth-of-type(even) {
   border-left: solid 1px #fff;
+  border-right: solid 1px #c4c5c5;
 }
 
 .btn {
@@ -830,8 +833,8 @@ footer .copyright {
 .app ul {
   width: 93.4%;
   margin: 0 auto;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -866,7 +869,7 @@ footer .copyright {
 .app ul li.new:before {
   display: block;
   position: absolute;
-  top: -10px;
+  top: -18px;
   left: 50%;
   margin-left: -35px;
   width: 70px;
@@ -882,7 +885,7 @@ footer .copyright {
 .app ul li.new2:before {
   display: block;
   position: absolute;
-  top: -10px;
+  top: -18px;
   left: 50%;
   margin-left: -35px;
   width: 70px;
