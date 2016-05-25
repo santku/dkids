@@ -1,0 +1,1143 @@
+@charset "UTF-8";
+@import "_vars.scss";
+
+/* =========================================================
+ LAUNCHER
+========================================================= */
+.launcher{
+
+  // HOME
+  //--------------------------------------------------------
+  &.home{
+    #mainVisual{
+      img{
+        vertical-align: top;
+      }
+      >li{
+        &:nth-child(n+2){
+          display: none;
+        }
+      }
+    }
+	.logout{
+		padding-top: 10px;
+    }
+	.logout .loginArea {
+		background: #fbeec2;
+		width: 93.4%;
+		margin: 0 auto 20px;
+		color: #f48a00;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+	}
+	.logout .btn {
+		float:right;
+		margin: 10px 8px;
+	}
+	.loginArea .txt {
+		padding: 10px;
+		min-height: 2em;
+	}
+    .app{
+      padding-bottom: .5em;
+      background-size: cover;
+	  position: relative;
+      &.new{
+        background-image: url(/common/images/launcher/home/new_bg.png);
+        h2{
+          @include title(rgba(#c70221, .2));
+        }
+      }
+      &.history{
+        background-image: url(/common/images/launcher/home/history_bg.png);
+        h2{
+          @include title(rgba(#0064b8, .2));
+        }
+      }
+      &.select, &.recommend{
+        background-image: url(/common/images/launcher/home/select_bg.png);
+        h2{
+          @include title(rgba(#0097b8, .2));
+        }
+      }
+      &.try, &.ranking, &.logout{
+        background-image: url(/common/images/launcher/home/try_bg.png);
+        h2{
+          @include title(rgba(#eca100, .2));
+        }
+	
+      }
+      &.pickup{
+        background-image: url(/common/images/launcher/home/pickup_bg.png);
+        h2{
+          @include title(rgba(#fa6008, .2));
+        }
+        .tag{
+          position: relative;
+          width: 288px;
+          margin: 0;
+          padding-left: 1em;
+          &:before{
+            position: absolute;
+            top: 8px;
+            width: 50px;
+            height: 26px;
+            padding-left: 15px;
+            background: url(/common/images/launcher/home/pickup_tag.png) no-repeat;
+            background-size: cover;
+            content: '';
+          }
+          p{
+            display: inline-block;
+            position: relative;
+            margin: 4px 0 0 10px;
+            padding: .5em;
+            letter-spacing: .05em;
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #FFF;
+            z-index: 10;
+            &:before{
+              position: absolute;
+              top: 0;
+              left: 5px;
+              width: 60px;
+              height: 10px;
+              background: url(/common/images/launcher/home/pickup_tag_keyword.png) no-repeat;
+              background-size: contain;
+              content: '';
+            }
+            &:after{
+              display: block;
+              position: absolute;
+              width: 80%;
+              height: 26px;
+              top: 4px;
+              right: 0;
+              background-color: #F77524;
+              content: '';
+              z-index: -1;
+            }
+          }
+        }
+      }
+      &.try, &.recommend{
+        ul{
+          display: block;
+          width: 298px;
+          @media screen and (min-width: 655px) {
+            width: 614px;
+            li:nth-child(2n+1){
+              margin-right: 9px;
+            }
+          }
+          li{
+            width: 290px;
+            margin-right: 0;
+            text-align: left;
+            @extend %cf;
+            &.new:before{
+              left: 30px;
+            }
+          }
+        }
+      }
+      &.try{
+        ul{
+          li{
+            p{
+              margin-bottom: 0;
+              padding-left: .5em;
+            }
+            img{
+              width: 292px;
+            }
+          }
+        }
+      }
+      &.recommend{
+        ul{
+          li{
+            margin-left: 0;
+            padding-bottom: 6px;
+            figure{
+              float: left;
+            }
+			a {
+			 padding-bottom:0;
+			}
+            div{
+              float: right;
+              width: 185px;
+              font-size: 1.2rem;
+              .heading{
+                margin-bottom: 0;
+                font-size: 1.6rem;
+				padding: 10px 10px 5px 0;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+              }
+              .txt{
+                margin-bottom: 0;
+                font-size: 1.1rem;
+                line-height: 1.4;
+
+              }
+            }
+          }
+          @media screen and (min-width: 426px) and (max-device-width: 654px) {
+            width: 93.4%;
+            margin: 0 auto;
+            li{
+              display: inline-table;
+              width: 45.5%;
+              margin: 1.3%;
+              &:nth-child(2n+2){
+                margin: 4.5px;
+              }
+              figure, div{
+                display: table-cell;
+                float: none;
+                vertical-align: top;
+              }
+              figure{
+                width: 82px;
+                padding-right: 9px;
+              }
+              div{
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+      &.ranking{
+        background-color: #FAE5C1;
+      }
+    }
+  }
+
+  // high
+  //--------------------------------------------------------- */
+
+  &.home.high{
+    .app{
+      &:after{
+        display: block;
+        width: 100%;
+        height: 18px;
+        background-position: 97.5% center;
+        background-size: 56px 18px;
+        background-repeat: no-repeat;
+        content: '';
+		position: absolute;
+		top: 18px;
+		right: 0;
+      }
+      &.new{
+        &:after{
+          background-image: url(/common/images/launcher/home/new_more.png);
+        }
+      }
+      &.history{
+        &:after{
+          background-image: url(/common/images/launcher/home/history_more.png);
+        }
+      }
+      &.pickup{
+        &:after{
+          background-image: url(/common/images/launcher/home/pickup_more.png);
+	      top: 65px;
+        }
+      }
+      &.ranking{
+        &:after{
+          background-image: url(/common/images/launcher/home/ranking_more.png);
+          background-size: 79px 18px;
+	   }
+      }
+    }
+  }
+
+  // SEARCH
+  //--------------------------------------------------------
+  &.search{
+    .app{
+      background-color: #f0f0f0;
+      h2{
+        @include title(rgba(#dc1e3c, .2));
+      }
+    }
+  }
+
+  // 特集
+  //--------------------------------------------------------- */
+  &.feature{
+
+    section.inner{
+
+      article{
+        &.paragraph{
+          border-bottom: solid 1px #E1DFD1;
+          padding-bottom: 1em;
+        }
+        .play{
+          margin-bottom: 2em;
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+}
+
+/* MODULE
+--------------------------------------------------------- */
+.launcher{
+  section.inner{
+    background-color: #FBFAE9;
+    .emphasis{
+      background-color: #faf2d5;
+    }
+  }
+  .accordion{
+    margin-bottom: 2em;
+    dl{
+      &.active{
+        background-color: #faf2d5;
+      }
+    }
+  }
+}
+
+/*パスワード変更入力*/
+.pass {
+  width: auto;
+  margin: 15px 2.5%;
+  @extend %cf;
+}
+.pass dl dt {
+  width: 45%;
+  float: left;
+  clear: both;
+  margin: 1% 5px 1% 0;
+}
+.pass dl dd {
+  width: 50%;
+  float: right;
+  margin: 1% 5px 1% 0;
+}
+.pass dl dd input {
+  width: 110px;
+}
+
+/*戻る確認ボタン*/
+
+.confirm_area {
+  width: 178px;
+  margin: 15px auto;
+  @extend %cf;
+  clear: both;
+}
+.confirm_area a:first-child {
+  float: left;
+}
+.confirm_area a:nth-child(2) {
+  float: right;
+}
+//パスワード変更
+//--------------------------------------------------------- */
+//子ども情報の登録 確認画面
+//--------------------------------------------------------- */
+.registration_area {
+  width: auto;
+  margin: 0 2.5% 15px;
+  @extend %cf;
+}
+.registration_area p {
+  clear: both;
+  margin: 10px 0;
+  font-size: 0.8em;
+}
+.registration_area dl dt {
+  width: 90px;
+  float: left;
+  clear: both;
+  margin: 15px 5px 15px 0;
+}
+.registration_area dl dd {
+  width: 162px;
+  float: left;
+  margin: 15px 5px 15px 0;
+}
+
+.launcher{
+
+  //初回子ども情報変更
+  //--------------------------------------------------------- */
+  .first_change_area li {
+    width: 90%;
+    margin: 15px auto;
+  }
+  .first_change_area input {
+    width: 33%;
+    padding: 8px;
+    vertical-align: middle;
+  }
+  .selectBox.gender {
+    width: 28%;
+  }
+  .selectBox.age_change {
+    width: 98%;
+    margin: 5px 3px;
+  }
+  .first_change_area .btn{
+    padding: .5em 10px;
+  }
+
+  //お知らせ通知設定
+  //--------------------------------------------------------- */
+
+  //*お知らせ通知のオンオフ切り替え*/
+
+  .notice_area {
+    width: auto;
+    margin: 0 2.5% 0;
+    @extend %cf;
+    border-bottom: 1px solid #535353;
+  }
+  .notice_area dl dt {
+    float: left;
+    clear: both;
+    margin: 0 5px 15px 0;
+    padding: 5px 0 0 0;
+  }
+  .notice_area dl dd {
+    float: right;
+    margin: 0 5px 15px 0;
+  }
+
+  //*すべてオンオフ切り替えボタン*/
+
+  .confirm_area.on_off {
+    width: 220px;
+  }
+
+  //*アプリ名学習名*/
+
+  ul.notice_app img {
+    width: 82px;
+    float: left;
+  }
+  ul.notice_app {
+    margin: 25px auto;
+  }
+  ul.notice_app li {
+    clear: both;
+    @extend %cf;
+    margin: 25px auto;
+  }
+  .app_name {
+    width: 43%;
+    float: left;
+    margin: 25px 0 0 1%;
+  }
+  .on_bt {
+    float: right;
+    margin: 25px 0 0 1%;
+  }
+  // 縦/横画面促進画面
+  //--------------------------------------------------------- */
+  @media screen and (max-width: 566px) {
+    .end_long {
+      display: none;
+    }
+    .logout .btn {
+      margin: 5px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 566px) and (max-width: 767px) {
+  .end_side {
+    display: none;
+  }
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .end_long {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .end_side {
+    display: none;
+  }
+}
+
+
+
+// ロックが解除されました
+//--------------------------------------------------------- */
+
+
+
+
+
+// 縦/横画面促進画面 横画面で遊んでね
+//--------------------------------------------------------- */
+/*@media only screen and (max-device-width:480px) and (orientation:portrait) {
+  .side_play {
+    display: none;
+  }
+}*/
+
+@media (orientation: landscape){
+  .side_play {
+    display: none;
+  }
+}
+
+
+// 終了ダイアログ
+//--------------------------------------------------------- */
+.remodal .txt {
+  text-align: center;
+}
+// スタンプ帳ダイアログ
+//--------------------------------------------------------- */
+.remodal .buttons li input.detail {
+  width: auto;
+}
+// スタンプ帳ダイアログ(ログインボーナス) モーダル
+//--------------------------------------------------------- */
+.login_bonus {
+  margin-top: 0;
+}
+h3.login img {
+  width: 85%;
+  height: auto;
+  margin: 15px 0 10px 18%;
+}
+ul.bonus_area {
+  margin: 0 auto;
+  @extend %cf;
+}
+ul.bonus_area li:after {
+  content: '';
+}
+ul.bonus_area li:nth-child(1) {
+  background: url("/common/images/launcher/home/stamp_1.gif") no-repeat left center;
+  background-size: 100%;
+  padding: 10px 0;
+}
+ul.bonus_area li:nth-child(2) {
+  background: url("/common/images/launcher/home/stamp_2.gif") no-repeat left center;
+  background-size: 100%;
+  margin: 10% 0 0;
+  padding: 10px 0;
+}
+ul.bonus_area li:nth-child(3) {
+  background: url("/common/images/launcher/home/stamp_3.gif") no-repeat left center;
+  background-size: 100%;
+  margin-top: 0;
+  padding: 10px 0;
+}
+ul.bonus_area li:nth-child(4) {
+  background: url("/common/images/launcher/home/stamp_4.gif") no-repeat left center;
+  background-size: 100%;
+  margin: 10% 0 0;
+  padding: 10px 0;
+}
+ul.bonus_area li:nth-child(5) {
+  background: url("/common/images/launcher/home/stamp_5.gif") no-repeat left center;
+  background-size: 100%;
+  margin-top: 0;
+  padding: 10px 0;
+}
+ul.bonus_area li {
+  color: #FFFDFD;
+  float: left;
+  width: 20%;
+}
+/*応募ボタンの大きさ調整*/
+.stamp .oubo {
+  width: 80%;
+  margin: 0 auto;
+}
+.aligneleft {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+// スタンプ帳ダイアログ(ログインボーナス) モーダルではないpsd
+//--------------------------------------------------------- */
+
+.remodel_2 {
+  background-color: #fff;
+  position: relative;
+  padding: 2px;
+  border: solid 5px #f7bc28;
+  box-shadow: inset 0 0 0 1px #ee993b;
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+  @extend %cf;
+}
+.remodel_2 section{
+  margin: 0 auto;
+padding: 7% 5% 0;
+overflow: auto;
+box-sizing: border-box;
+-webkit-overflow-scrolling: touch;
+
+}
+.remodel_2 h3.login {}
+.remodel_2 h3.login img {
+  width: 90%;
+  height: auto;
+  margin: -20px 0 0 16%;
+}
+.remodel_2 ul.bonus_area {
+  margin: 0 auto 2%;
+  @extend %cf;
+}
+.remodel_2 ul.bonus_area li:after {
+  content: '';
+}
+.remodel_2 ul.bonus_area li:nth-child(1) {
+  background: url("/common/images/launcher/home/stamp_1.gif") no-repeat left center;
+  background-size: 100%;
+  padding: 10px 0;
+}
+.remodel_2 ul.bonus_area li:nth-child(2) {
+  background: url("/common/images/launcher/home/stamp_2.gif") no-repeat left center;
+  background-size: 100%;
+  margin: 10% 0 0;
+  padding: 10px 0;
+}
+.remodel_2 ul.bonus_area li:nth-child(3) {
+  background: url("/common/images/launcher/home/stamp_3.gif") no-repeat left center;
+  background-size: 100%;
+  margin-top: 0;
+  padding: 10px 0;
+}
+.remodel_2 ul.bonus_area li:nth-child(4) {
+  background: url("/common/images/launcher/home/stamp_4.gif") no-repeat left center;
+  background-size: 100%;
+  margin: 10% 0 0;
+  padding: 10px 0;
+}
+.remodel_2 ul.bonus_area li:nth-child(5) {
+  background: url("/common/images/launcher/home/stamp_5.gif") no-repeat left center;
+  background-size: 100%;
+  margin-top: 0;
+  padding: 10px 0;
+}
+.remodel_2 ul.bonus_area li {
+  color: #FFFDFD;
+  float: left;
+  width: 20%;
+}
+.loginb_area .aligneleft {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin: 0 10px;
+}
+.loginb_text {
+  width: 50%;
+  float: right;
+}
+.loginb_area {
+  margin: 15% auto 10%;
+  @extend %cf;
+  display: none;
+}
+.loginb_area h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+/*スペシャルプレゼント*/
+.remodel_2.red_border {
+  border: solid 5px #d91e3b;
+  box-shadow: inset 0 0 0 1px #8e0000;
+  position: relative;
+}
+h3.special {
+  margin-top: -7%;
+}
+.month img {
+  display: block;
+  margin: 0 auto;
+}
+
+figure.month{
+  position: relative;
+}
+figure.month .month_app {
+  position: relative;
+  top: 30px;
+  //margin-top: -10%;
+}
+figure.month img.month_app {
+  width: 70%;
+  height: auto;
+}
+img.back {
+margin-bottom: 0;
+position: fixed;
+bottom: 5px;
+right: 10px;
+z-index: 100;
+width:25%;
+height:auto;
+}
+
+.month_emphasis{
+  /*background:url(/common/images/launcher/home/month_btn.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;*/
+  /*position: absolute;
+  top: 40%;
+  left: 3%;*/
+margin:3em auto 2em;
+  padding: $atmg;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  //background-color: #fff;
+  dl{
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    display: table;
+    &:after {
+      display: block;
+      position: absolute;
+      top: -22%;
+      left: 0;
+      width: 100%;
+      padding-top: 7.5%;
+      background: url('/common/images/launcher/home/month.png') no-repeat center top;
+      background-size: 30%;
+      content: '';
+      @media screen and (min-width: 768px) {
+        background-size: 200px;
+      }
+    }
+    dt, dd{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    dt{
+      width: 18.5%;
+      padding-right: 3.3%;
+    }
+    dd{
+      width: 71.6%;
+      font-weight: bold;
+    }
+  }
+}
+
+// スタンプ帳ダイアログ(ログインボーナス) 2
+//--------------------------------------------------------- */
+#contents section.inner {
+	padding-bottom: 20px;
+}
+.stamp_2 .bonus_area img {
+//  visibility: hidden;
+}
+.stamp_2 .remodel_2.red_border {
+  margin-bottom: 15px;
+}
+
+
+
+.stamp_2 section.inner {
+  position: relative;
+}
+section.inner.stamp_detail {
+  margin-bottom: 0;
+}
+.stamp_2 .remodel_2 ul.bonus_area {
+  margin: 0 auto;
+}
+.stamp_2 .login_bonus {
+  margin-top: 0;
+}
+section.inner.sp_bonus {
+
+}
+
+
+
+
+
+// L-3-4 : 情報の登録
+//--------------------------------------------------------- */
+
+
+
+
+.confirm_config{
+	.kids_confirm{
+		clear:both;
+		@extend %cf;
+
+		}
+
+
+	.kids_confirm dl{
+		width:45%;
+		display:table;
+		background-color:#f36e12;
+		border-radius:5px;
+		padding:2px 0 2px 8px;
+		margin:10px 0;
+		border:1px solid #f36e12;
+		float:left;
+
+				}
+	.kids_confirm dl.right{
+		float:right;
+
+		}
+
+
+@media screen and (max-width: 567px) {
+
+	.kids_confirm dl{
+		width: 100%;
+	}
+	.kids_confirm dl.right{
+	    float:none;
+	}
+
+	.kids_confirm{
+		width:auto;
+		margin:0 2.5%;
+	}
+}
+
+
+
+
+	.kids_confirm dt{
+		display:table-cell;
+		color:#fff;
+			}
+
+
+	.kids_confirm dd{
+		display:table-cell;
+		background-color:#fff;
+		border-radius:5px;
+		padding:4px 0 4px 7px;
+		}
+	.config_btn{
+		clear:both;
+		display:table;
+		margin:5px auto;
+
+		p{
+		  	display:table-cell;
+			padding:5px 10px 5px;
+			}
+
+			}
+
+	}
+
+
+
+
+
+
+// L-3-4-2 : 子ども情報の登録 1
+//--------------------------------------------------------- */
+.register_area {
+  margin: 0 auto;
+  .selectBox.gender {
+    width: 30%;
+  }
+}
+
+.register_area dl {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.register_area dt {
+  width: 32%;
+  float: left;
+  padding-top: 0.5em;
+}
+.register_area dd {
+  width: 65%;
+  float: right;
+}
+.age_txt {
+	font-size: 0.8em;
+}
+.register_area .selectBox{
+  width: 100%;
+}
+
+
+.register_area input {
+  width: 55%;
+}
+
+
+
+// スタンプ帳ダイアログ(ログインボーナス) テスト
+//--------------------------------------------------------- */
+.remodel_3 {
+  position: relative;
+  padding: 2px;
+  border: solid 5px #f7bc28;
+  box-shadow: inset 0 0 0 1px #ee993b;
+  border-radius: 15px;
+  width: 90%;
+  margin: 10% auto;
+  @extend %cf;
+}
+.remodel_3 h3.login {
+  position: absolute;
+  top: -2%;
+  z-index: 5;
+}
+.remodel_3 h3.login img {
+  width: 90%;
+  height: auto;
+  margin: 15px 0 10px 18%;
+}
+.remodel_3 ul.bonus_area {
+  margin: 0% auto 2%;
+  @extend %cf;
+  background: url("/common/images/launcher/home/bonus_bg.png") no-repeat;
+  background-size: 100%;
+}
+.remodel_3 ul.bonus_area li:after {
+  content: '';
+}
+.remodel_3 ul.bonus_area li:nth-child(1) {
+  background: none;
+  padding: 10px 0;
+}
+.remodel_3 ul.bonus_area li:nth-child(2) {
+  background: none;
+  margin: 10% 0 0;
+  padding: 10px 0;
+}
+.remodel_3 ul.bonus_area li:nth-child(3) {
+  background: none;
+  margin-top: 0;
+  padding: 10px 0;
+}
+.remodel_3 ul.bonus_area li:nth-child(4) {
+  background: none;
+  margin: 10% 0 0;
+  padding: 10px 0;
+}
+.remodel_3 ul.bonus_area li:nth-child(5) {
+  background: none;
+  margin-top: 0;
+  padding: 10px 0;
+}
+.remodel_3 ul.bonus_area li {
+  background: none;
+  color: #FFFDFD;
+  float: left;
+  width: 20%;
+}
+.loginb_area .aligneleft {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin: 0 10px;
+}
+.loginb_text {
+  width: 50%;
+  float: right;
+}
+.loginb_area {
+  margin: 15% auto 10%;
+  @extend %cf;
+}
+.loginb_area h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+
+//  L-0 : 利用許諾
+//--------------------------------------------------------- */
+
+
+// L-0-1 : アプリケーションプライバシーポリシー詳細版
+//--------------------------------------------------------- */
+
+
+
+
+//L-3-1 : アプリダウンロードポップアップ
+//--------------------------------------------------------- */
+
+
+.app_ttl{
+	width:88px;
+	float:left;
+	padding: 0 15px 15px 0;
+		}
+
+.app_ttl_area{
+	width:90%;
+	margin:10px auto;
+
+	}
+
+.remodal .txt.app_detail h3 {
+	font-size: 1.4rem;
+}
+.remodal .txt.app_detail p{
+	margin-bottom: 5px;
+}
+.remodal .txt.app_detail h3,
+.remodal .txt.app_detail p{
+	text-align:left;
+}
+
+
+.button_area{
+	clear:both;
+	}
+
+
+.remodal .button_area .buttons li input {
+    width: auto;
+}
+.remodal .button_area .buttons .back{
+  width: auto;
+}
+
+
+//c-2規約
+//--------------------------------------------------------- */
+
+.rule ol li{
+	list-style-type: none;
+	}
+
+
+
+
+//c-3　提供事業者等に関する表示（dキッズ）
+//--------------------------------------------------------- */
+
+.provide{
+	 dt{
+		 margin-top:10px;
+		}
+	 dd{
+	 	padding-left:7px;
+		margin-bottom:10px;
+	 	}
+	 p{margin-bottom:2px;
+
+		}
+	.tel{
+		margin-left: -5px;
+		}
+	.ajust{
+		padding-left:10px;
+		}
+	.credit dt{
+		font-weight:bold;
+
+
+		}
+
+}
+
+
+//
+//--------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+ TABLET
+========================================================= */
+@media screen and (min-width: $tablet) {
+
+  .launcher{
+    &.home{
+      .app{
+        &.try, &.recommend{
+          ul{
+            width: 637px;
+            li{
+              display: inline-block;
+              &:nth-child(2n+2){
+                margin-right: 0 !important
+              }
+            }
+          }
+        }
+        &.pickup{
+          .tag{
+            width: 662px;
+          }
+        }
+        ul{
+          width:96%;
+          li{
+            margin-right: 10px !important;
+            &:nth-child(6n+6){
+              margin-right: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // high
+  //--------------------------------------------------------- */
+  .launcher.high{
+    &.home{
+      .app{
+        ul{
+          li{
+            &:nth-child(6n+6){
+              margin-right: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

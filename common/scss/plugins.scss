@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import "_vars.scss";
+
+/* =========================================================
+  Owl carousel
+========================================================= */
+@import "_slick.scss";
+
+.slider{
+  position: relative;
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 35px;
+    margin-top: -20px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include textHidden;
+    z-index: 10;
+    outline: none;
+  }
+  .slick-prev{
+    left: 0;
+    background-image: url(/common/images/common/arrow_prev_01.png);
+  }
+  .slick-next{
+    right: 0;
+    background-image: url(/common/images/common/arrow_next_01.png);
+  }
+}
+.slick-dots{
+  text-align: center;
+  li{
+    display: inline-block;
+    button{
+      width: 5px;
+      height: 5px;
+      margin: 0 2.5px;
+      border: none;
+      background-color: #999;
+      border-radius: 50%;
+      @include textHidden;
+    }
+    &.slick-active button{
+      background-color: $red;
+    }
+  }
+}
+/* =========================================================
+  Remodal
+========================================================= */
+@import "_remodal.scss";
+@import "_remodal-default-theme.scss";

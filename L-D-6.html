@@ -1,0 +1,57 @@
+<!--#set var="page_title" value="launcher" -->
+<!--#set var="category" value="launcher" -->
+<!--#include virtual="/common/include/common/header.html" -->
+
+    <!--contents-->
+    <div id="contents" class="launcher dialog">
+
+      <!--#include virtual="/common/include/common/account.html" -->
+
+      <h1>終了ダイアログ</h1>
+
+
+      <a data-remodal-target="modal" href="#modal">DIALOG</a>
+      <div id="dialog" class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+        <p class="close" data-remodal-action="close"><img src="/common/images/common/dialog_close.png" alt="" width="48" height="46"></p>
+        <section>
+          <div class="inner">
+            <form action="">
+              <h2>おうちのひとにわたしてね</h2>
+              <div class="txt">
+                <p>dキッズアプリを終了しますか？<br>パスワードを入力してください
+                </p>
+              </div>
+              <div class="input pwdWrap" data-length="null">
+                <input class="password" type="password" name="password" maxlength="4">
+                <p class="error hidden">パスワードが違います</p>
+              </div>
+              <ul class="numeric">
+                <li><span class="btn">1</span></li>
+                <li><span class="btn">2</span></li>
+                <li><span class="btn">3</span></li>
+                <li><span class="btn">4</span></li>
+                <li><span class="btn">5</span></li>
+                <li><span class="btn">6</span></li>
+                <li><span class="btn">7</span></li>
+                <li><span class="btn">8</span></li>
+                <li><span class="btn">9</span></li>
+                <li><span class="btn">0</span></li>
+              </ul>
+              <ul class="buttons">
+                <li>
+                  <input class="btn" type="button" value="終了しない">
+                </li>
+                <li>
+                  <input class="btn red" type="submit" value="終了する">
+                </li>
+              </ul>
+            </form>
+          </div>
+        </section>
+      </div>
+
+
+    </div>
+    <!--/contents-->
+
+<!--#include virtual="/common/include/common/footer.html" -->

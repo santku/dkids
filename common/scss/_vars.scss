@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+$tablet: 768px;
+
+$sansSerif: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS Pゴシック", "MS PGothic", sans-serif;
+$serif: 'ヒラギノ明朝 Pro W6', 'Hiragino Mincho Pro', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+$icon: FontAwesome;
+
+$fontColor: #333;
+$linkColor: #333;
+$link: #dc1e3c;
+
+$siteWidth: 92.5%;
+$atmg: 0 3.3%;
+$red: #cc0033;
+$border-color : #CCC;
+
+//clearfix
+@mixin cf {
+  %cf:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+//link_color
+@mixin linkColor($color) {
+  a{
+    color: $color;
+    text-decoration: none;
+    img{
+      border: none;
+    }
+  }
+}
+//opacity
+@mixin opacity($alphavalue) {
+  opacity: $alphavalue;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{ $alphavalue * 100 })"; // for IE 8
+  filter: alpha(opacity=#{ $alphavalue * 100 }); // for IE 5-7
+}
+//fontSize
+@mixin fontSize($sizeValue: 1.3){
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+@mixin textHidden{
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+//RGBa color
+@mixin rgbaBackground($color, $opacity) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  $rgba: rgba($red, $green, $blue, $opacity);
+  $ie-color: ie-hex-str($rgba);
+  background-color: rgb($red, $green, $blue);
+  background-color: transparent\9;
+  background-color: $rgba;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#{$ie-color}', endColorstr='#{$ie-color}');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#{$ie-color}', endColorstr='#{$ie-color}')";
+  zoom: 1;
+}
+//flex
+@mixin flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+//bgHeight
+@mixin bgHeight($width, $height) {
+  padding-top: ( $height / $width * 100%);
+}
+//title
+@mixin title($start-color) {
+  background: -webkit-linear-gradient(top, $start-color 90%, transparent 100%);
+  background: linear-gradient(to bottom, $start-color 90%, transparent 100%);
+}
+//gradation
+@mixin gradient($start-color, $end-color, $orientation)
+ {
+ background: $start-color;
+ @if $orientation == vertical
+ {
+ // vertical
+ background: -moz-linear-gradient(top,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: -o-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: -ms-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: linear-gradient(to bottom,  $start-color 0%,$end-color 100%);
+ -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start-color}', endColorstr='#{$end-color}', GradientType=0)");
+ }
+ @else if $orientation == horizontal
+ {
+ // horizontal
+ background: -moz-linear-gradient(left,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: -o-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: -ms-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: linear-gradient(to right,  $start-color 0%,$end-color 100%);
+ -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start-color}', endColorstr='#{$end-color}',GradientType=1)");
+ }
+ @else
+ {
+ // radial
+ background: -moz-radial-gradient(center, ellipse cover,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: -o-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: -ms-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: radial-gradient(ellipse at center,  $start-color 0%,$end-color 100%);
+ -ms-filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start-color}', endColorstr='#{$end-color}', GradientType=1)");
+ }
+ }
