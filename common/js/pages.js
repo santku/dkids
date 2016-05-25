@@ -26,6 +26,14 @@ pages scripts
                breakpoint: g.point,
                settings: {
                  slidesToShow: 1,
+                 slidesToScroll: 1
+               }
+             },
+             {
+               breakpoint: 426,
+               settings: {
+                 centerMode: false,
+                 slidesToShow: 1,
                  slidesToScroll: 1,
                }
              }
@@ -53,29 +61,50 @@ pages scripts
        }
 
        //carousel
-       $('.carousel').each(function(){
-        if ( $(this).find('li').size() >= 4 ) {
-          $(this).slick({
-            slidesToShow: 6,
-            slidesToScroll: 6,
-            infinite: false,
-            arrows: false,
-            variableWidth: true,
-            responsive: [
-              {
-                breakpoint: g.point,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3
+       var $carousel = $('.carousel');
+       var length = $carousel.find('li').size();
+       function carousel() {
+         $carousel.each(function(){
+          if ( $(this).find('li').size() >= 4 ) {
+            $(this).slick({
+              slidesToShow: 6,
+              slidesToScroll: 6,
+              infinite: false,
+              arrows: false,
+              variableWidth: true,
+              responsive: [
+                {
+                  breakpoint: g.point,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                  }
                 }
-              }
-            ]
-          })
-          .on('setPosition', function(){
-            $(this).find('.slick-slide').matchHeight();
-          });
-        }
+              ]
+            });
+          }
+         });
+       }
+
+       $(window).on('load', carousel);
+
+       $carousel.on('setPosition', function(){
+         $(this).find('.slick-slide').matchHeight();
        });
+
+       if ( _ua.Tablet ) {
+
+         $(window).on("load orientationchange resize",function(){
+           if (Math.abs(window.orientation) === 90 && _ua.Tablet ) {
+             $carousel.slick('unslick');
+           } else{
+             $(window).trigger('slickOn');
+             $(window).on('slickOn', carousel);
+           }
+
+         });
+
+       }
 
        $('.movieTmb').slick({
          slidesToShow: 1,
@@ -107,6 +136,18 @@ pages scripts
         $(this).toggleClass('active').find('.hidden').slideToggle();
       });
 
+    },
+
+    alignCenter : function(){
+
+      var $elem = $('.app.select, .app.logout');
+      var parent = $('.app.select, .app.logout').width();
+      var width = $elem.find('li').outerWidth(true);
+      var length = Math.floor( parent / width );
+      var container = width * length;
+
+      $('.app').find('ul').width( container + 2 );
+
     }
 
   }
@@ -119,6 +160,7 @@ pages scripts
     $(window).on('load resize', function(){
 
       Pages.matchHeight();
+      Pages.alignCenter();
 
     });
 
