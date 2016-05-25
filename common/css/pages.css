@@ -19,13 +19,20 @@
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  position: relative;
+  font-size: 1.2rem;
 }
 .launcher.home .logout .btn {
-  float: right;
-  margin: 10px 8px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1em;
+  height: 22px;
+  font-size: 1rem;
 }
 .launcher.home .loginArea .txt {
-  padding: 10px;
+  padding: 1em 10em 1em 1em;
   min-height: 2em;
 }
 .launcher.home .app {
@@ -117,7 +124,7 @@
   z-index: -1;
 }
 .launcher.home .app.try ul, .launcher.home .app.recommend ul {
-  display: block;
+  display: flex;
   width: 298px;
 }
 @media screen and (min-width: 655px) {
@@ -129,12 +136,12 @@
   }
 }
 .launcher.home .app.try ul li, .launcher.home .app.recommend ul li {
-  width: 290px;
+  width: 97%;
   margin-right: 0;
   text-align: left;
 }
 .launcher.home .app.try ul li.new:before, .launcher.home .app.recommend ul li.new:before {
-  left: 30px;
+  left: 45px;
 }
 .launcher.home .app.try ul li p {
   margin-bottom: 0;
@@ -163,11 +170,10 @@
   font-size: 1.6rem;
   padding: 10px 10px 5px 0;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .launcher.home .app.recommend ul li div .txt {
-  margin-bottom: 0;
+  margin-bottom: 1em;
   font-size: 1.1rem;
   line-height: 1.4;
 }
@@ -177,12 +183,8 @@
     margin: 0 auto;
   }
   .launcher.home .app.recommend ul li {
-    display: inline-table;
     width: 45.5%;
     margin: 1.3%;
-  }
-  .launcher.home .app.recommend ul li:nth-child(2n+2) {
-    margin: 4.5px;
   }
   .launcher.home .app.recommend ul li figure, .launcher.home .app.recommend ul li div {
     display: table-cell;
@@ -422,9 +424,9 @@
 }
 
 h3.login img {
-  width: 85%;
+  width: 60%;
   height: auto;
-  margin: 15px 0 10px 18%;
+  margin: 1em auto 0;
 }
 
 ul.bonus_area {
@@ -589,8 +591,7 @@ ul.bonus_area li {
   box-shadow: inset 0 0 0 1px #8e0000;
   position: relative;
 }
-
-h3.special {
+.remodel_2.red_border h3.special {
   margin-top: -7%;
 }
 
@@ -693,6 +694,62 @@ section.inner.stamp_detail {
 
 .stamp_2 .login_bonus {
   margin-top: 0;
+}
+
+.stampbook {
+  padding: 0 5% !important;
+  margin-bottom: 2em;
+}
+.stampbook ul {
+  overflow: hidden;
+  width: 100%;
+}
+.stampbook ul li {
+  float: left;
+  width: 20%;
+  padding: .4em 0 2em;
+}
+.stampbook ul li img {
+  width: 85%;
+  margin-top: 1em;
+}
+.stampbook ul li:nth-child(1) {
+  background: url("/common/images/launcher/home/stamp_02_1.png") no-repeat left center;
+  background-size: 100%;
+}
+.stampbook ul li:nth-child(2) {
+  background: url("/common/images/launcher/home/stamp_02_2.png") no-repeat left center;
+  background-size: 100%;
+}
+.stampbook ul li:nth-child(3) {
+  background: url("/common/images/launcher/home/stamp_02_3.png") no-repeat left center;
+  background-size: 100%;
+}
+.stampbook ul li:nth-child(4) {
+  background: url("/common/images/launcher/home/stamp_02_4.png") no-repeat left center;
+  background-size: 100%;
+}
+.stampbook ul li:nth-child(5) {
+  background: url("/common/images/launcher/home/stamp_02_5.png") no-repeat left center;
+  background-size: 100%;
+}
+.stampbook ul .hidden {
+  visibility: hidden;
+}
+.stampbook h3.special {
+  margin-top: 1em;
+}
+.stampbook .month_emphasis {
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+.guide .txt {
+  margin-bottom: 2em;
+}
+.guide .red {
+  width: 60%;
+  font-size: 1.4em;
 }
 
 .confirm_config .kids_confirm {
@@ -927,15 +984,113 @@ section.inner.stamp_detail {
   font-weight: bold;
 }
 
+.initial .inner {
+  width: 100%;
+  background: #faf9e8;
+}
+.initial .inner section#initialtab {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+.initial .inner section#initialtab .tabNav {
+  background-color: #faf9e8;
+  overflow: hidden;
+  font-size: 0;
+}
+.initial .inner section#initialtab .tabNav li {
+  display: inline-block;
+  border-radius: 10px 10px 0 0;
+  background-color: #ccc;
+  font-size: 1.2rem;
+}
+.initial .inner section#initialtab .tabNav li:nth-child(1) {
+  z-index: 3;
+}
+.initial .inner section#initialtab .tabNav li:nth-child(2) {
+  z-index: 2;
+}
+.initial .inner section#initialtab .tabNav li:nth-child(3) {
+  z-index: 1;
+}
+.initial .inner section#initialtab .tabNav li:nth-child(4) {
+  z-index: 1;
+}
+.initial .inner section#initialtab .tabNav li.active {
+  background-color: #fff;
+  z-index: 3;
+}
+.initial .inner section#initialtab .tabNav li a {
+  display: block;
+  padding: 0.6em;
+  color: #333 !important;
+  text-decoration: none;
+}
+.initial .inner section#initialtab .tabBody {
+  margin: 0 auto;
+  background: #fff;
+  width: 100%;
+}
+.initial .inner section#initialtab .tabBody .register_area {
+  padding: 1em 0.5em 0 0.5em;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 {
+  padding: 0 0 0 0.5em;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dl {
+  overflow: hidden;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dt {
+  float: left;
+  width: 20%;
+  padding: .5em 0;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd {
+  margin-top: -2.5em;
+  width: 85%;
+  float: right;
+  overflow: hidden;
+  padding: .5em 0;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd .btn, .initial .inner section#initialtab .tabBody .register_area_02 dd .activebtn {
+  width: 46%;
+  float: left;
+  padding: 0.5em 0.1em;
+  margin: 0 .5em .5em 0;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd :nth-child(even) {
+  margin: 0 0 .5em 0;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd .ml {
+  margin-left: 47% !important;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd span {
+  font-size: 0.7em;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd .hidden {
+  visibility: hidden;
+}
+.initial .inner section#initialtab .tabBody .btn_area {
+  margin: 1em 0.5em 0;
+  border-top: 1px solid #ddd;
+  padding: 1em 0;
+}
+.initial .inner section#initialtab .tabBody .btn_area .confirm_area {
+  margin-top: 2em;
+  width: 250px;
+  margin: 2em auto;
+}
+.initial .inner section#initialtab .tabBody .btn_area .confirm_area .btn {
+  width: 30%;
+}
+
 /* =========================================================
  TABLET
 ========================================================= */
 @media screen and (min-width: 768px) {
-  .launcher.home .app.try ul, .launcher.home .app.recommend ul {
-    width: 637px;
-  }
   .launcher.home .app.try ul li, .launcher.home .app.recommend ul li {
     display: inline-block;
+    width: 46%;
   }
   .launcher.home .app.try ul li:nth-child(2n+2), .launcher.home .app.recommend ul li:nth-child(2n+2) {
     margin-right: 0 !important;
@@ -953,8 +1108,17 @@ section.inner.stamp_detail {
     margin-right: 10px !important;
   }
 
+  .stampbook ul li {
+    padding: 1em 0 3em;
+  }
+
   .launcher.high.home .app ul li:nth-child(6n+6) {
     margin-right: 10px !important;
+  }
+}
+@media (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {
+  .launcher.home.high .app:after {
+    display: none;
   }
 }
 /* =========================================================
@@ -1259,6 +1423,9 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#movie .movieTmb .slick-slide {
   margin-right: 10px;
+}
+#contents.parents.home > section#pr {
+  margin-bottom: 0;
 }
 #contents.parents.home > section#pr .slick-list {
   overflow: visible;
@@ -1724,7 +1891,7 @@ section.inner.stamp_detail {
 /* メニューオープン
 --------------------------------------------------------- */
 .menu_open dl dt {
-  padding: 0 10% 0 3.3%;
+  padding: 0 10% 0 1em;
   padding-top: 1em;
 }
 
@@ -1877,33 +2044,9 @@ ul.other figure img {
 
 /*子供情報の変更削除 P-3-4-3
 --------------------------------------------------------- */
-#contents.parents.home > section#mamatenna.child {
-  background-color: #FFF;
-}
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child li.active {
-  background-color: #fff;
-}
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child li {
-  margin: 0 1px 0 1px;
-}
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child li a {
+#contents.child_ch section.inner .index_top a {
+  text-decoration: none;
   color: #333333;
-}
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child {
-  background-color: #fdfbea;
-}
-
-#contents.parents.home > section#mamatenna .inner .tabBody.childtab {
-  border-top: none;
-  background: none;
-}
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child li {
-  box-shadow: none;
 }
 
 #contents.child_ch section.inner {
@@ -1940,13 +2083,15 @@ ul.other figure img {
 .child_ch .register_ch dd.sex_ttl {
   width: 75%;
 }
+.child_ch .sex_input {
+  display: table;
+}
 .child_ch .sex_input li {
-  display: inline-block;
-  float: right;
-  margin-right: 5px;
+  display: table-cell;
+  padding-right: 5px;
 }
 .child_ch .sex_ttl .btn.iblock {
-  width: 29%;
+  width: 70px;
 }
 .child_ch .age_under {
   clear: both;
@@ -1962,11 +2107,8 @@ ul.other figure img {
   margin-top: -50px;
   width: 90%;
 }
-.child_ch .age_input.first {
-  margin-right: 5px;
-}
-.child_ch .age_input.first li.btn.iblock {
-  width: 47%;
+.child_ch ul.age_input.first li {
+  float: right;
 }
 .child_ch .register_ch input.nick {
   width: 60%;
@@ -1979,17 +2121,17 @@ ul.other figure img {
   display: none;
 }
 .child_ch dd.age_1 .btn.iblock {
-  width: 46%;
+  width: 120px;
   padding: 0.5em 2px;
 }
 .child_ch .age_input {
   font-weight: bold;
   clear: both;
-  text-align: right;
 }
 .child_ch .age_input li {
   display: inline-block;
-  margin: 5px 5px 5px 0;
+  float: left;
+  margin: 5px 2px 5px 0;
 }
 .child_ch .age_input span {
   display: inline-block;
@@ -2040,10 +2182,6 @@ ul.other figure img {
 .child_ch .index_top li a {
   font-size: 0.7rem;
 }
-.child_ch .register_area .selectBox {
-  width: auto;
-  vertical-align: top;
-}
 
 /* 特集
 --------------------------------------------------------- */
@@ -2066,7 +2204,7 @@ p.date {
 }
 
 .info_detail .inner {
-  padding: 0 0 3em !important;
+  padding: 1em 0 3em !important;
 }
 .info_detail .list {
   margin-bottom: 2em;
@@ -2677,7 +2815,22 @@ ul.point li {
   padding-top: 1.4em;
 }
 .free_regist .pass {
-  width: 250px;
+  width: 90%;
+  margin: 0 auto 1em;
+}
+.free_regist .pass dt {
+  width: 45%;
+  float: left;
+  clear: both;
+  margin: 1% 5px 1% 0;
+}
+.free_regist .pass dd {
+  width: 50%;
+  margin-left: 50%;
+  margin: 1% 5px 1% 0;
+}
+.free_regist .pass dd input {
+  width: 100%;
 }
 
 .rule .inner, .provide .inner {

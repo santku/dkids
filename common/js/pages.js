@@ -53,44 +53,28 @@ pages scripts
        }
 
        //carousel
-       var $carousel = $('.carousel');
-       function carousel() {
-         $carousel.each(function(){
-          if ( $(this).find('li').size() >= 4 ) {
-            $(this).slick({
-              slidesToShow: 6,
-              slidesToScroll: 6,
-              infinite: false,
-              arrows: false,
-              variableWidth: true,
-              responsive: [
-                {
-                  breakpoint: g.point,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                  }
+       $('.carousel').each(function(){
+        if ( $(this).find('li').size() >= 4 ) {
+          $(this).slick({
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            infinite: false,
+            arrows: false,
+            variableWidth: true,
+            responsive: [
+              {
+                breakpoint: g.point,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
                 }
-              ]
-            });
-          }
-         });
-       }
-
-       $(window).on('load', carousel);
-
-       $carousel.on('setPosition', function(){
-         $(this).find('.slick-slide').matchHeight();
-       });
-
-       $(window).on("load orientationchange resize",function(){
-         if (Math.abs(window.orientation) === 90 && _ua.Tablet ) {
-           $carousel.slick('unslick');
-         } else{
-           $(window).trigger('slickOn');
-           $(window).on('slickOn', carousel);
-         }
-
+              }
+            ]
+          })
+          .on('setPosition', function(){
+            $(this).find('.slick-slide').matchHeight();
+          });
+        }
        });
 
        $('.movieTmb').slick({

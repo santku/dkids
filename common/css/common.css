@@ -227,6 +227,11 @@ header {
   height: 49px;
   padding: 0 2.5%;
   border-bottom: solid 1px #CCC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 2;
 }
 header .logo, header .inner {
   display: table-cell;
@@ -338,6 +343,7 @@ header .menu.right img {
 #contents {
   max-width: 100%;
   overflow: hidden;
+  margin-top: 49px;
 }
 #contents .account {
   display: table;
@@ -727,6 +733,17 @@ footer .copyright {
 .btn.iblock {
   display: inline-block;
   padding: .5em 20px;
+}
+
+.activebtn {
+  display: block;
+  padding: .5em;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #df344f;
+  text-align: center;
+  text-decoration: none !important;
+  color: #fff !important;
 }
 
 .cell dt, .cell dd {

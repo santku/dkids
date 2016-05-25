@@ -321,6 +321,7 @@
         }
       }
       &#pr {
+        margin-bottom: 0;
         .slick-list {
           overflow: visible;
         }
@@ -858,7 +859,7 @@
 /* メニューオープン
 --------------------------------------------------------- */
 .menu_open dl dt{
-  padding: 0 10% 0 3.3%;
+  padding: 0 10% 0 1em;
       padding-top: 1em;
 }
 
@@ -1005,265 +1006,208 @@ ul.other figure img {
 
 /*子供情報の変更削除 P-3-4-3
 --------------------------------------------------------- */
+#contents.child_ch section.inner .index_top a{
+	text-decoration:none;
+	color:#333333;
 
-
-//タブ系
-
-
-#contents.parents.home > section#mamatenna.child {
-	background-color: #FFF;
-}
-
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child li.active{
-	background-color: #fff;
-	
 	}
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child li {
-	margin: 0 1px 0 1px;
-}
-
-
-
-
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child li a {
-	color: #333333;
-}
-
-
-
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child {
-	
-	background-color: #fdfbea;
-	
-}
-
-#contents.parents.home > section#mamatenna .inner .tabBody.childtab {
-	border-top: none;
-	background: none;
-	
-	
-}
-
-
-#contents.parents.home > section#mamatenna .inner .tabNav.child  li {
-	
-	box-shadow:none;
-
-}
-
-
-
-
-
-
 
 #contents.child_ch section.inner{
 	padding: 1.4em 3.3% 3em;
-	
+
 	}
 
 
 .child_ch{
 	background-color:#fdfbea;
-	
-	
+
+
 	.register_ch{
 		margin:auto;
 		width:100%;
-				
-		}
-	
-	
-	
 
-	
+		}
+
+
+
+
+
 	.register_ch dl{
 		clear:both;
 		@extend %cf;
-		
-		
+
+
 		}
-	
-	
-	
+
+
+
 	.register_ch dt{
 		width: 32%;
 		float:left;
 		clear:both;
 		margin: 15px 0px 5px 5px;
-		padding:14px 0 0 0;  
-				
+		padding:14px 0 0 0;
+
 		}
 	.register_ch dd{
-		display:inline-block;	
+		display:inline-block;
 		margin: 15px 10px 5px 0px;
-		padding:0; 
+		padding:0;
 		width: 60%;
         float: right;
 		}
 	.register_ch dt.sex_ttl{
 		width:15%;
-		
+
 		}
 	.register_ch dd.sex_ttl{
 		width:75%;
-		
+
 		}
 	.sex_input{
-		
+		display:table;
 		}
 	.sex_input li{
-		display:inline-block;
-		        float: right;
-           margin-right: 5px;
-				}
-	.sex_ttl .btn.iblock{
-		width: 29%;
-		
+		display:table-cell;
+		padding-right: 5px;
+
 		}
-	
-	
-	
-	
-	
-	
+	.sex_ttl .btn.iblock{
+		width:70px;
+
+		}
+
+
+
+
+
+
 	//対象年令の設定
-	
-	
+
+
 	.age_under{
 		clear:both;
 		margin:10px 0;
 		}
-		
-	
+
+
 	.age_txt{
 		clear:both;
 				}
-	
+
 	.age_input li:nth-child(odd){
 		margin-right:0;
 				}
-	
-	
-	
+
+
+
 	//対象年令の調整
 	.register_ch dd.age_1{
 		margin-top:-50px;
 		width:90%;
-		
-		
+
+
 		}
-     //最初の赤ボタンの調整
-	.age_input.first{
-		margin-right:5px;
-		
+	ul.age_input.first li{
+		float:right;
+
 		}
-		//最初の赤ボタンのサイズ調整
-	.age_input.first li.btn.iblock{
-		width:47%;
-		
-		}
-	
+
+
 	.register_ch input.nick{
 		width:60%;
 		padding:4.5% 3%;
-		
+
 		}
 	.selectBox.gender{
 		width:50px;
-		
-		}	
 
-	
+		}
+
+
 	input[type=checkbox] {
 		display:none;
-		
+
 		}
-	
+
  //ボタンのサイズ
   dd.age_1 .btn.iblock{
-	 width: 46%;
-	 padding:0.5em 2px;	 
+	 width:120px;
+	 padding:0.5em 2px;
 	 	}
-	
-	
+
+
 	//年齢別インプット
-	
+
 	.age_input{
 		font-weight:bold;
 		clear:both;
-		text-align: right;
-		
 		}
-	
+
 	.age_input li{
 		display:inline-block;
-		
-		margin:5px 5px 5px 0;
+		float: left;
+		margin:5px 2px 5px 0;
 		}
-	
+
 	.age_input span{
 		display:inline-block;
 		font-weight:normal;
 		font-size:0.4em;
 			}
-	
-	
+
+
 	input[type="radio"] + label:after{
 		display:none;
-		
+
 		}
 	input[type="radio"] + label:before{
 		display:none;
 		}
-	
+
 	.inline input[type="radio"] + label:before{
 		display:none;
 		}
-	
-	
-	
-	
+
+
+
+
 	//登録したのを削除するエリア
 	.del_area{
 		border-top:solid #AAA9A9 1px;
 		padding:10px 0 0 0;
-				
+
 		}
-	
+
 	.del_area .confirm_area{
 		display:table;
 		width: auto;
-		
+
 		}
 	.del_area .confirm_area .btn.iblock{
 		width:80px;
 		padding:5px;
 		margin-right:10px;
-		}	
-	
+		}
+
 	.del_area .confirm_area .btn.iblock.red{
 		margin-right:0px;
-		
+
 	    }
 	//インデックス全体
-	
+
 	.index_top{
 		@extend %cf;
-			
+
 		}
 	.index_under{
 		background-color:#fff;
-			
+
 		}
-	
-	
-	
-	
+
+
+
+
 	.index_top li{
 		width:60px;
 		text-align:center;
@@ -1272,28 +1216,21 @@ ul.other figure img {
 		float:left;
 		margin:5px 1px 0px 0px;
 		padding:5px ;
-			
+
 		}
 	.index_top li:first-child{
 		width:65px;
 		background-color:#fff;
-		
+
 		}
 	.index_top li a{
 		font-size:0.7rem;
-		
+
 		}
-		
-	.register_area .selectBox{
-		width:auto;
-		vertical-align: top;
-		
-		}	
-		
-		
-		
-		
-		
+
+
+
+
 }
 
 
@@ -1319,7 +1256,7 @@ p.date {
 }
 .info_detail {
   .inner{
-    padding: 0 0 3em!important;
+    padding: 1em 0 3em!important;
   }
   .list{
     margin-bottom: 2em;
@@ -2124,7 +2061,22 @@ margin-top:15px;
    }
 
 	 .pass{
-		 width:250px;
+		 width:90%;
+     margin: 0 auto 1em;
+     dt{
+       width: 45%;
+       float: left;
+       clear: both;
+       margin: 1% 5px 1% 0;
+     }
+     dd{
+       width: 50%;
+       margin-left: 50%;
+       margin: 1% 5px 1% 0;
+       input{
+         width: 100%;
+       }
+     }
 
 	  }
 
