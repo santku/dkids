@@ -60,6 +60,7 @@
 .launcher.home .app.select h2, .launcher.home .app.recommend h2 {
   background: -webkit-linear-gradient(top, rgba(0, 151, 184, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(0, 151, 184, 0.2) 90%, transparent 100%);
+  margin-bottom: 1em;
 }
 .launcher.home .app.try, .launcher.home .app.ranking, .launcher.home .app.logout {
   background-image: url(/common/images/launcher/home/try_bg.png);
@@ -78,7 +79,7 @@
 .launcher.home .app.pickup .tag {
   position: relative;
   width: 288px;
-  margin: 0;
+  margin: 0 0 1em;
   padding-left: 1em;
 }
 .launcher.home .app.pickup .tag:before {
@@ -242,6 +243,13 @@
 .launcher.feature section.inner article .play {
   margin-bottom: 2em;
 }
+.launcher.feature section.inner article.item .button .btn {
+  background-color: #f0f0f0;
+  vertical-align: top;
+}
+.launcher.feature section.inner article.item .button .btn img {
+  width: 13%;
+}
 
 /* MODULE
 --------------------------------------------------------- */
@@ -278,7 +286,8 @@
 }
 
 .pass dl dd input {
-  width: 110px;
+  width: 80%;
+  padding: 3% !important;
 }
 
 /*戻る確認ボタン*/
@@ -294,6 +303,43 @@
 
 .confirm_area a:nth-child(2) {
   float: right;
+}
+
+.child_register .register_area_02 {
+  padding: 0 0 0 0.5em;
+}
+.child_register .register_area_02 dl {
+  overflow: hidden;
+}
+.child_register .register_area_02 dt {
+  float: left;
+  width: 20%;
+  padding: .5em 0;
+}
+.child_register .register_area_02 dd {
+  margin-top: -2.5em;
+  width: 85%;
+  float: right;
+  overflow: hidden;
+  padding: .5em 0;
+}
+.child_register .register_area_02 dd .btn, .child_register .register_area_02 dd .activebtn {
+  width: 46%;
+  float: left;
+  padding: 0.5em 0.1em;
+  margin: 0 .5em .5em 0;
+}
+.child_register .register_area_02 dd :nth-child(even) {
+  margin: 0 0 .5em 0;
+}
+.child_register .register_area_02 dd .ml {
+  margin-left: 47% !important;
+}
+.child_register .register_area_02 dd span {
+  font-size: 0.7em;
+}
+.child_register .register_area_02 dd .hidden {
+  visibility: hidden;
 }
 
 .registration_area {
@@ -326,7 +372,7 @@
 }
 .launcher .first_change_area input {
   width: 33%;
-  padding: 8px;
+  padding: 3% !important;
   vertical-align: middle;
 }
 .launcher .selectBox.gender {
@@ -337,7 +383,7 @@
   margin: 5px 3px;
 }
 .launcher .first_change_area .btn {
-  padding: .5em 10px;
+  padding: .5em;
 }
 .launcher .notice_area {
   width: auto;
@@ -774,6 +820,7 @@ section.inner.stamp_detail {
   }
   .confirm_config .kids_confirm dl.right {
     float: none;
+    margin-bottom: 0;
   }
   .confirm_config .kids_confirm {
     width: auto;
@@ -783,12 +830,14 @@ section.inner.stamp_detail {
 .confirm_config .kids_confirm dt {
   display: table-cell;
   color: #fff;
+  width: 40%;
 }
 .confirm_config .kids_confirm dd {
   display: table-cell;
   background-color: #fff;
   border-radius: 5px;
   padding: 4px 0 4px 7px;
+  width: 50%;
 }
 .confirm_config .config_btn {
   clear: both;
@@ -832,7 +881,8 @@ section.inner.stamp_detail {
 }
 
 .register_area input {
-  width: 55%;
+  width: 63%;
+  padding: 3% 1.5% !important;
 }
 
 .remodel_3 {
@@ -1169,7 +1219,8 @@ section.inner.stamp_detail {
   font-family: FontAwesome;
 }
 #contents.parents.home .h1pa {
-  padding: .1em 10.2em .1em 1.5%;
+  padding: .1em 7em .1em 1.5%;
+  letter-spacing: -0.1em;
 }
 #contents.parents.home section {
   margin-bottom: 2em;
