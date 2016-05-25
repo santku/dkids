@@ -375,7 +375,8 @@ header{
     margin-bottom: 0;
     padding: 15px 2.5%;
     color: #dc1e3c;
-	  font-size: 0.8rem;
+	  font-size: 0.6rem;
+    letter-spacing: -0.1em;
   }
   .information a{
     color: #dc1e3c;
@@ -389,13 +390,13 @@ footer{
   .timeLeft{
     position: fixed;
     left: 0;
-    bottom: 30px;
+    bottom: 10px;
     min-width: 98px;
     height: 46px;
     padding: 10px 15px 10px 10px;
     border-radius: 0 40px 40px 0;
     background-color: #fff;
-    box-shadow: 0 2px 3px 2px rgba(#000, .08);
+    box-shadow: 0 2px 3px 2px rgba(#000, .25);
     font-weight: bold;
     font-size: 1.2rem;
     z-index: 100;
@@ -433,18 +434,18 @@ footer{
       z-index: 100;
     }
     &.stamp{
-      bottom: 110px;
+      bottom: 80px;
     }
     &.viewAll{
-      bottom: 40px;
+      bottom: 5px;
     }
   }
   .copyright{
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     width: 100%;
     text-align: center;
-    padding: 0;
+    padding: 5px 0px 14%;
   }
 }
 
@@ -667,7 +668,7 @@ footer{
         }
         &:after{
           position: absolute;
-          top: 25%;
+          top: 20%;
           right: 15px;
           content: '\f105';
           font-family: $icon;
@@ -740,6 +741,7 @@ footer{
           }
           &:nth-of-type(even){
             border-left: solid 1px #fff;
+            border-right:  solid 1px $borderColor;
           }
         }
       }
@@ -890,7 +892,7 @@ footer{
         &:before{
 			display: block;
 			position: absolute;
-			top: -10px;
+			top: -18px;
 			left: 50%;
 			margin-left: -35px;
 			width: 70px;
@@ -906,7 +908,7 @@ footer{
         &:before{
 			display: block;
 			position: absolute;
-			top: -10px;
+			top: -18px;
 			left: 50%;
 			margin-left: -35px;
 			width: 70px;
