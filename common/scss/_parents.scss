@@ -801,6 +801,9 @@
 /* logout
 --------------------------------------------------------- */
 .logout {
+  .balloon{
+    margin-bottom: 1em;
+  }
     .logoutpoint {
         li {
             border-top: solid 2px #f0f0f0;
@@ -825,6 +828,10 @@
 .faq {
     article.paragraph {
         padding-top: 1.4em;
+    }
+    .a_inner{
+      border-left: solid 1px #CCC;
+      border-right: solid 1px #CCC;
     }
 }
 //parentsabout
@@ -1275,9 +1282,7 @@ p.date {
 /* ｄｋｉｄｓ解約
 --------------------------------------------------------- */
 .cansellation {
-    h1 {
-        margin-bottom: 1.4em !important;
-    }
+
     #ranking {
         margin: 2em 0;
         .heading {

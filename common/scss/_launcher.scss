@@ -340,16 +340,33 @@
           margin-bottom: 2em;
         }
 &.item{
+  ul{
+    width: 80%;
+    margin: 0 auto;
+  }
   .button{
+    display: table;
+
+    li{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left;
+    }
+    li:first-child {
+      width: 17%;
+    }
+    li:last-child {
+      padding-left: 1em;
+    }
+    img{
+    width: 100%;
+
+    }
 
   .btn{
     background-color: #f0f0f0;
-    vertical-align: top;
 
-    img{
-    width: 13%;
 
-    }
 
 
   }

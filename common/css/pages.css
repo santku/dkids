@@ -267,12 +267,29 @@
 .launcher.feature section.inner article .play {
   margin-bottom: 2em;
 }
+.launcher.feature section.inner article.item ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.launcher.feature section.inner article.item .button {
+  display: table;
+}
+.launcher.feature section.inner article.item .button li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+.launcher.feature section.inner article.item .button li:first-child {
+  width: 17%;
+}
+.launcher.feature section.inner article.item .button li:last-child {
+  padding-left: 1em;
+}
+.launcher.feature section.inner article.item .button img {
+  width: 100%;
+}
 .launcher.feature section.inner article.item .button .btn {
   background-color: #f0f0f0;
-  vertical-align: top;
-}
-.launcher.feature section.inner article.item .button .btn img {
-  width: 13%;
 }
 
 /* MODULE
@@ -2037,6 +2054,9 @@ section.inner.stamp_detail {
 
 /* logout
 --------------------------------------------------------- */
+.logout .balloon {
+  margin-bottom: 1em;
+}
 .logout .logoutpoint li {
   border-top: solid 2px #f0f0f0;
 }
@@ -2054,6 +2074,10 @@ section.inner.stamp_detail {
 
 .faq article.paragraph {
   padding-top: 1.4em;
+}
+.faq .a_inner {
+  border-left: solid 1px #CCC;
+  border-right: solid 1px #CCC;
 }
 
 .parentsabout .visual img {
@@ -2486,9 +2510,6 @@ p.date {
 
 /* ｄｋｉｄｓ解約
 --------------------------------------------------------- */
-.cansellation h1 {
-  margin-bottom: 1.4em !important;
-}
 .cansellation #ranking {
   margin: 2em 0;
 }
