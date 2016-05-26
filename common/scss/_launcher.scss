@@ -403,7 +403,7 @@
 /*戻る確認ボタン*/
 
 .confirm_area {
-  width: 178px;
+  width: 70%;
   margin: 15px auto;
   @extend %cf;
   clear: both;
@@ -435,17 +435,49 @@
           width: 85%;
           float: right;
           overflow: hidden;
-          padding: .5em 0;
-        .btn,.activebtn{
-          width: 46%;
-          float: left;
-          padding: 0.5em 0.1em;
-          margin:0 .5em .5em 0;
+          padding: .5em 0 0 .5em;
+          input {
+            display: none;
+              &[type=radio]{
+                display: none;
+                + label{
+                   &:before, &:after{
+                     display: none;
+                   }
+                 }
 
+          }
         }
-        :nth-child(even){
-          margin: 0 0 .5em 0;
+            label{
+              display: block;
+              width: 41%;
+              float: left;
+              padding: .5em;
+              margin:0 .5em .5em 0;
+              border-radius: 5px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+    background-color: #f9f9f9;
+    text-align: center;
+    text-decoration: none !important;
+    color: #333 !important;
+            }
+
+            input[type="radio"]:checked + label  {
+              box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
+              background-color: #df344f;
+              text-decoration: none !important;
+              color: #fff !important;
+
+            }
+            input[type=radio] + label:before {
+              background-image: none;
+              display: none;
+            }
+        input[type=radio]:checked + label:before{
+          background-image: none;
+          display: none;
         }
+
         .ml{
           margin-left: 47%!important;
         }
@@ -1169,11 +1201,38 @@ h3.special{
 
 //  L-0 : 利用許諾
 //--------------------------------------------------------- */
-
+.license{
+  .consent{
+    padding: 0 1em;
+  }
+  .btn{
+    width: 40%;
+    background-color: #fff;
+  }
+  #submit{
+    //border: none;
+    padding: .8em 0;
+    float: right;
+  }
+#submit[disabled] {
+  background-color: #fff;
+ color: #DBDBDB!important;
+}
+}
 
 // L-0-1 : アプリケーションプライバシーポリシー詳細版
 //--------------------------------------------------------- */
-
+.privacy{
+  .pageclose{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    .btn{
+      padding: 1em 0;
+    }
+  }
+}
 
 
 
@@ -1283,6 +1342,12 @@ h3.special{
         border-radius: 10px 10px 0 0;
         background-color: #ccc;
         font-size: 1.2rem;
+        width: 18%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: .6em .3em;
+
         &:nth-child(1) {
           z-index: 3;
         }
@@ -1298,10 +1363,13 @@ h3.special{
         &.active {
           background-color: #fff;
           z-index: 3;
+          white-space: inherit;
+          text-overflow:inherit;
+          width: auto;
         }
         a {
-          display: block;
-          padding: 0.6em;
+          //display: block;
+          //padding: 0.6em;
           color: #333!important;
           text-decoration: none;
         }
@@ -1329,17 +1397,49 @@ h3.special{
           width: 85%;
           float: right;
           overflow: hidden;
-          padding: .5em 0;
-        .btn,.activebtn{
-          width: 46%;
-          float: left;
-          padding: 0.5em 0.1em;
-          margin:0 .5em .5em 0;
+          padding: .5em 0 0 .5em;
+          input {
+            display: none;
+              &[type=radio]{
+                display: none;
+                + label{
+                   &:before, &:after{
+                     display: none;
+                   }
+                 }
 
+          }
         }
-        :nth-child(even){
-          margin: 0 0 .5em 0;
+            label{
+              display: block;
+              width: 41%;
+              float: left;
+              padding: .5em;
+              margin:0 .5em .5em 0;
+              border-radius: 5px;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+        background-color: #f9f9f9;
+        text-align: center;
+        text-decoration: none !important;
+        color: #333 !important;
+            }
+
+            input[type="radio"]:checked + label  {
+              box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
+              background-color: #df344f;
+              text-decoration: none !important;
+              color: #fff !important;
+
+            }
+            input[type=radio] + label:before {
+              background-image: none;
+              display: none;
+            }
+        input[type=radio]:checked + label:before{
+          background-image: none;
+          display: none;
         }
+
         .ml{
           margin-left: 47%!important;
         }
@@ -1349,7 +1449,7 @@ h3.special{
         .hidden{
           visibility:hidden;
         }
-      }
+        }
     }
     .btn_area{
       margin: 1em 0.5em 0;
@@ -1369,6 +1469,7 @@ h3.special{
     }
   }
 }
+
 }
 
 

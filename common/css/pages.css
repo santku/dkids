@@ -310,7 +310,7 @@
 
 /*戻る確認ボタン*/
 .confirm_area {
-  width: 178px;
+  width: 70%;
   margin: 15px auto;
   clear: both;
 }
@@ -339,16 +339,43 @@
   width: 85%;
   float: right;
   overflow: hidden;
-  padding: .5em 0;
+  padding: .5em 0 0 .5em;
 }
-.child_register .register_area_02 dd .btn, .child_register .register_area_02 dd .activebtn {
-  width: 46%;
+.child_register .register_area_02 dd input {
+  display: none;
+}
+.child_register .register_area_02 dd input[type=radio] {
+  display: none;
+}
+.child_register .register_area_02 dd input[type=radio] + label:before, .child_register .register_area_02 dd input[type=radio] + label:after {
+  display: none;
+}
+.child_register .register_area_02 dd label {
+  display: block;
+  width: 41%;
   float: left;
-  padding: 0.5em 0.1em;
+  padding: .5em;
   margin: 0 .5em .5em 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #f9f9f9;
+  text-align: center;
+  text-decoration: none !important;
+  color: #333 !important;
 }
-.child_register .register_area_02 dd :nth-child(even) {
-  margin: 0 0 .5em 0;
+.child_register .register_area_02 dd input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #df344f;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.child_register .register_area_02 dd input[type=radio] + label:before {
+  background-image: none;
+  display: none;
+}
+.child_register .register_area_02 dd input[type=radio]:checked + label:before {
+  background-image: none;
+  display: none;
 }
 .child_register .register_area_02 dd .ml {
   margin-left: 47% !important;
@@ -999,6 +1026,32 @@ section.inner.stamp_detail {
   font-weight: bold;
 }
 
+.license .consent {
+  padding: 0 1em;
+}
+.license .btn {
+  width: 40%;
+  background-color: #fff;
+}
+.license #submit {
+  padding: .8em 0;
+  float: right;
+}
+.license #submit[disabled] {
+  background-color: #fff;
+  color: #DBDBDB !important;
+}
+
+.privacy .pageclose {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+.privacy .pageclose .btn {
+  padding: 1em 0;
+}
+
 .app_ttl {
   width: 88px;
   float: left;
@@ -1081,6 +1134,11 @@ section.inner.stamp_detail {
   border-radius: 10px 10px 0 0;
   background-color: #ccc;
   font-size: 1.2rem;
+  width: 18%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: .6em .3em;
 }
 .initial .inner section#initialtab .tabNav li:nth-child(1) {
   z-index: 3;
@@ -1097,10 +1155,11 @@ section.inner.stamp_detail {
 .initial .inner section#initialtab .tabNav li.active {
   background-color: #fff;
   z-index: 3;
+  white-space: inherit;
+  text-overflow: inherit;
+  width: auto;
 }
 .initial .inner section#initialtab .tabNav li a {
-  display: block;
-  padding: 0.6em;
   color: #333 !important;
   text-decoration: none;
 }
@@ -1128,16 +1187,43 @@ section.inner.stamp_detail {
   width: 85%;
   float: right;
   overflow: hidden;
-  padding: .5em 0;
+  padding: .5em 0 0 .5em;
 }
-.initial .inner section#initialtab .tabBody .register_area_02 dd .btn, .initial .inner section#initialtab .tabBody .register_area_02 dd .activebtn {
-  width: 46%;
+.initial .inner section#initialtab .tabBody .register_area_02 dd input {
+  display: none;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] {
+  display: none;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:before, .initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:after {
+  display: none;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd label {
+  display: block;
+  width: 41%;
   float: left;
-  padding: 0.5em 0.1em;
+  padding: .5em;
   margin: 0 .5em .5em 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #f9f9f9;
+  text-align: center;
+  text-decoration: none !important;
+  color: #333 !important;
 }
-.initial .inner section#initialtab .tabBody .register_area_02 dd :nth-child(even) {
-  margin: 0 0 .5em 0;
+.initial .inner section#initialtab .tabBody .register_area_02 dd input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #df344f;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:before {
+  background-image: none;
+  display: none;
+}
+.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio]:checked + label:before {
+  background-image: none;
+  display: none;
 }
 .initial .inner section#initialtab .tabBody .register_area_02 dd .ml {
   margin-left: 47% !important;
@@ -1240,7 +1326,7 @@ section.inner.stamp_detail {
 }
 
 #contents.parents {
-  /* MODULE
+    /* MODULE
 --------------------------------------------------------- */
 }
 #contents.parents.home #mainVisual .slick-dots {
@@ -1267,7 +1353,7 @@ section.inner.stamp_detail {
   font-family: FontAwesome;
 }
 #contents.parents.home .h1pa {
-  padding: .1em 7em .1em 1.5%;
+  padding: 0.1em 7em 0.1em 1.5%;
   letter-spacing: -0.1em;
 }
 #contents.parents.home section {
@@ -1803,6 +1889,32 @@ section.inner.stamp_detail {
   background-size: contain;
   content: '';
 }
+#contents.parents.login .accordion {
+  margin-bottom: 0 !important;
+}
+#contents.parents.login .accordion dl.active {
+  background-color: #fff !important;
+}
+#contents.parents.login .accordion dl:first-child {
+  border: none;
+}
+#contents.parents.login .accordion dt {
+  padding: 0 2em;
+}
+#contents.parents.login .accordion dt:before {
+  position: inherit;
+  content: none;
+}
+#contents.parents.login .accordion dd {
+  border-top: none;
+  margin: 0 auto;
+}
+#contents.parents.login .accordion dd .rankingList li:nth-child(1) figure:before {
+  background-image: url("/common/images/launcher/home/ranking_4th.png") !important;
+}
+#contents.parents.login .accordion dd .rankingList li:nth-child(2) figure:before {
+  background-image: url("/common/images/launcher/home/ranking_5th.png") !important;
+}
 #contents.parents.press .visual img {
   vertical-align: top;
 }
@@ -1818,7 +1930,7 @@ section.inner.stamp_detail {
   font-size: 1rem;
 }
 #contents.parents.press .listItem li {
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 #contents.parents.pink h1 {
   background: url("/common/images/parents/press/mamatenna_logo.png") no-repeat 95% center #e35c75;
@@ -1862,7 +1974,7 @@ section.inner.stamp_detail {
   text-align: right;
 }
 #contents.parents.yellow .PR p {
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 #contents.parents.orange h1 {
   background-color: #F28923;
@@ -1983,8 +2095,7 @@ section.inner.stamp_detail {
 /* メニューオープン
 --------------------------------------------------------- */
 .menu_open dl dt {
-  padding: 0 10% 0 1em;
-  padding-top: 1em;
+  padding: 1em 10% 0 1em;
 }
 
 .menu_open dl dd {
@@ -2013,7 +2124,7 @@ section.inner.stamp_detail {
 --------------------------------------------------------- */
 .detail_app dl.app_in {
   width: 100%;
-  margin: 10px auto 30px;
+  margin: 10px auto 0;
   border-bottom: solid 1px #ccc;
   padding-bottom: 2em;
 }
@@ -2079,7 +2190,7 @@ section.inner.stamp_detail {
   color: #F48A00;
   text-align: center;
   margin: 0 auto;
-  padding: .6em 0;
+  padding: 0.6em 0;
 }
 
 /*その他のアプリを見る*/
@@ -2159,12 +2270,12 @@ ul.other figure img {
   width: 32%;
   float: left;
   clear: both;
-  margin: 15px 0px 5px 5px;
-  padding: 14px 0 0 0;
+  margin: 15px 0 5px 5px;
+  padding: 14px 0 0;
 }
 .child_ch .register_ch dd {
   display: inline-block;
-  margin: 15px 10px 5px 0px;
+  margin: 15px 10px 5px 0;
   padding: 0;
   width: 60%;
   float: right;
@@ -2241,7 +2352,7 @@ ul.other figure img {
 }
 .child_ch .del_area {
   border-top: solid #AAA9A9 1px;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
 }
 .child_ch .del_area .confirm_area {
   display: table;
@@ -2253,7 +2364,7 @@ ul.other figure img {
   margin-right: 10px;
 }
 .child_ch .del_area .confirm_area .btn.iblock.red {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .child_ch .index_under {
   background-color: #fff;
@@ -2264,7 +2375,7 @@ ul.other figure img {
   border-radius: 5px 5px 0 0;
   background-color: #928F8F;
   float: left;
-  margin: 5px 1px 0px 0px;
+  margin: 5px 1px 0 0;
   padding: 5px;
 }
 .child_ch .index_top li:first-child {
@@ -2275,10 +2386,34 @@ ul.other figure img {
   font-size: 0.7rem;
 }
 
-/* 特集
+/* P-10 dキッズの魅力
 --------------------------------------------------------- */
-.w100 {
+.miryoku > section .inner {
+  width: 93.4%;
+  margin: 0 auto;
+}
+.miryoku > section#trial {
+  margin-bottom: 0;
+  padding-bottom: 2em;
+  background-color: #fffde7;
+  margin-bottom: 2em;
+}
+.miryoku > section#trial figure {
+  margin-top: -30px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.miryoku > section#trial .button {
+  margin-bottom: 0;
+}
+
+/* 特集 P-4
+--------------------------------------------------------- */
+.special .w100 {
   width: 100%;
+}
+.special .inner {
+  padding-top: 0.4em !important;
 }
 
 /* おしらせ詳細
@@ -2612,7 +2747,7 @@ ul.pageing {
 }
 
 .inquiry .btn {
-  padding: .5em 35px;
+  padding: 0.5em 35px;
 }
 
 /* 年齢ごとに必要な知育は?
@@ -2661,7 +2796,7 @@ ul.old_select {
 }
 
 .app_area figure {
-  background: url(/common/images/parents/inte/next_red.gif) no-repeat right center;
+  background: url("/common/images/parents/inte/next_red.gif") no-repeat right center;
   background-size: 2.5%;
   overflow: hidden;
 }
@@ -2674,7 +2809,7 @@ ul.old_select {
 
 .app_area figcaption {
   width: 65%;
-  padding: 30px 0% 0px 30%;
+  padding: 30px 0 0 30%;
   font-size: 16px;
   font-weight: bold;
 }
@@ -2691,7 +2826,7 @@ ul.old_select {
   font-weight: bold;
   padding: 6px;
   text-align: center;
-  background: url(/common/images/parents/inte/border_blue.png) no-repeat left center;
+  background: url("/common/images/parents/inte/border_blue.png") no-repeat left center;
   background-size: 100%;
 }
 
@@ -2706,7 +2841,7 @@ ul.old_select {
 }
 .app_dw .dw_app figcaption {
   display: inline-block;
-  margin: 10px 0px 0px 20px;
+  margin: 10px 0 0 20px;
   vertical-align: top;
 }
 .app_dw .over {
@@ -2720,7 +2855,7 @@ ul.old_select {
   padding-top: 1.4em;
 }
 .dl_select .dl_area li {
-  background: url(/common/images/parents/app_dl/web_btn_0018.png) no-repeat right center;
+  background: url("/common/images/parents/app_dl/web_btn_0018.png") no-repeat right center;
   padding: 15px 16px;
   border-bottom: 1px solid #a3a3a3;
 }
@@ -2735,7 +2870,7 @@ ul.old_select {
 }
 .dl_select .dl_area figure figcaption {
   font-weight: bold;
-  padding: 15px 0% 0px 10px;
+  padding: 15px 0 0 10px;
   width: 201px;
   display: inline-block;
 }
@@ -2853,7 +2988,7 @@ ul.point li {
 @media screen and (max-width: 566px) {
   .cheer .right {
     float: none;
-    margin-left: 0px;
+    margin-left: 0;
   }
   .cheer .left {
     float: none;
@@ -2918,14 +3053,14 @@ ul.point li {
 }
 .free_regist .pass dd {
   width: 50%;
-  margin-left: 50%;
   margin: 1% 5px 1% 0;
 }
 .free_regist .pass dd input {
   width: 100%;
 }
 
-.rule .inner, .provide .inner {
+.provide .inner,
+.rule .inner {
   padding-top: 1.4em;
 }
 

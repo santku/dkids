@@ -345,13 +345,9 @@ header{
 #contents{
   max-width: 100%;
   overflow: hidden;
-  margin-top: 49px;
-  /*.h_fix{
-    margin-top: 49px!important;
+  .headerPadding &{
+    padding-top: 49px;
   }
-  .h_fix_01{
-    margin-top: 10px!important;
-  }*/
   .account{
     display: table;
     width: 100%;
@@ -382,7 +378,7 @@ header{
     padding: 15px 2.5%;
     color: #dc1e3c;
 	  font-size: 0.6rem;
-    letter-spacing: -0.1em;
+    letter-spacing: -0.16em;
   }
   .information a{
     color: #dc1e3c;
