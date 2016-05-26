@@ -387,19 +387,19 @@
 /*パスワード変更入力*/
 .pass {
   width: auto;
-  margin: 15px 2.5%;
+  margin: 0 2.5% 1.4em;
   @extend %cf;
 }
 .pass dl dt {
   width: 45%;
   float: left;
   clear: both;
-  margin: 1% 5px 1% 0;
+  margin: 0 5px 1% 0;
 }
 .pass dl dd {
   width: 50%;
   float: right;
-  margin: 1% 5px 1% 0;
+  margin: 0 5px 1em 0;
 }
 .pass dl dd input {
   width: 80%;
@@ -409,7 +409,7 @@
 /*戻る確認ボタン*/
 
 .confirm_area {
-  width: 178px;
+  width: 70%;
   margin: 15px auto;
   @extend %cf;
   clear: both;
@@ -441,17 +441,49 @@
           width: 85%;
           float: right;
           overflow: hidden;
-          padding: .5em 0;
-        .btn,.activebtn{
-          width: 46%;
-          float: left;
-          padding: 0.5em 0.1em;
-          margin:0 .5em .5em 0;
+          padding: .5em 0 0 .5em;
+          input {
+            display: none;
+              &[type=radio]{
+                display: none;
+                + label{
+                   &:before, &:after{
+                     display: none;
+                   }
+                 }
 
+          }
         }
-        :nth-child(even){
-          margin: 0 0 .5em 0;
+            label{
+              display: block;
+              width: 41%;
+              float: left;
+              padding: .5em;
+              margin:0 .5em .5em 0;
+              border-radius: 5px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+    background-color: #f9f9f9;
+    text-align: center;
+    text-decoration: none !important;
+    color: #333 !important;
+            }
+
+            input[type="radio"]:checked + label  {
+              box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
+              background-color: #df344f;
+              text-decoration: none !important;
+              color: #fff !important;
+
+            }
+            input[type=radio] + label:before {
+              background-image: none;
+              display: none;
+            }
+        input[type=radio]:checked + label:before{
+          background-image: none;
+          display: none;
         }
+
         .ml{
           margin-left: 47%!important;
         }
@@ -482,12 +514,12 @@
   width: 90px;
   float: left;
   clear: both;
-  margin: 15px 5px 15px 0;
+  margin: 0 5px 1.5em 0;
 }
 .registration_area dl dd {
   width: 162px;
   float: left;
-  margin: 15px 5px 15px 0;
+  margin: 0 5px 1.5em 0;
 }
 
 .launcher{
@@ -496,19 +528,18 @@
   //--------------------------------------------------------- */
   .first_change_area li {
     width: 90%;
-    margin: 15px auto;
+    margin: 0 auto 1em;
   }
   .first_change_area input {
     width: 33%;
-    padding: 3%!important;
+    padding: .6em .5em!important;
     vertical-align: middle;
   }
   .selectBox.gender {
     width: 28%;
   }
   .selectBox.age_change {
-    width: 98%;
-    margin: 5px 3px;
+    width: 100%;
   }
   .first_change_area .btn{
     padding: .5em;
@@ -976,7 +1007,7 @@ h3.special{
 		background-color:#f36e12;
 		border-radius:5px;
 		padding:2px 0 2px 8px;
-		margin:10px 0;
+		margin:0 0 1em;
 		border:1px solid #f36e12;
 		float:left;
 
@@ -994,7 +1025,7 @@ h3.special{
 	}
 	.kids_confirm dl.right{
 	    float:none;
-      margin-bottom: 0;
+      //margin-bottom: 0;
 	}
 
 	.kids_confirm{
@@ -1071,10 +1102,25 @@ h3.special{
 
 .register_area input {
   width: 63%;
-  padding: 3% 1.5%!important;
+  padding: .5em .2em!important;
 }
 
+// L-3-4_setting : 子ども情報の変更
+//--------------------------------------------------------- */
+.setting{
+  p{
+    margin-bottom: 0;
+    padding: 1em 0;
+  }
+}
 
+// L-3-7 : ヘルプ
+//--------------------------------------------------------- */
+.help{
+  .inner{
+    padding-top: 0!important;
+  }
+}
 
 // スタンプ帳ダイアログ(ログインボーナス) テスト
 //--------------------------------------------------------- */
@@ -1161,11 +1207,38 @@ h3.special{
 
 //  L-0 : 利用許諾
 //--------------------------------------------------------- */
-
+.license{
+  .consent{
+    padding: 0 1em;
+  }
+  .btn{
+    width: 40%;
+    background-color: #fff;
+  }
+  #submit{
+    //border: none;
+    padding: .8em 0;
+    float: right;
+  }
+#submit[disabled] {
+  background-color: #fff;
+ color: #DBDBDB!important;
+}
+}
 
 // L-0-1 : アプリケーションプライバシーポリシー詳細版
 //--------------------------------------------------------- */
-
+.privacy{
+  .pageclose{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    .btn{
+      padding: 1em 0;
+    }
+  }
+}
 
 
 
@@ -1256,13 +1329,16 @@ h3.special{
 //L-1　子ども情報の変更/削除
 //--------------------------------------------------------- */
 .initial{
+  form.module{
+    padding: 0!important;
+  }
   .inner {
     width: 100%;
     background: #faf9e8;
     section#initialtab{
       width: 95%;
       margin: 0 auto;
-      padding-top: 1em;
+      padding-top: 1.4em;
     .tabNav {
       background-color: #faf9e8;
       overflow: hidden;
@@ -1272,6 +1348,12 @@ h3.special{
         border-radius: 10px 10px 0 0;
         background-color: #ccc;
         font-size: 1.2rem;
+        width: 18%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: .6em .3em;
+
         &:nth-child(1) {
           z-index: 3;
         }
@@ -1287,10 +1369,13 @@ h3.special{
         &.active {
           background-color: #fff;
           z-index: 3;
+          white-space: inherit;
+          text-overflow:inherit;
+          width: auto;
         }
         a {
-          display: block;
-          padding: 0.6em;
+          //display: block;
+          //padding: 0.6em;
           color: #333!important;
           text-decoration: none;
         }
@@ -1318,17 +1403,49 @@ h3.special{
           width: 85%;
           float: right;
           overflow: hidden;
-          padding: .5em 0;
-        .btn,.activebtn{
-          width: 46%;
-          float: left;
-          padding: 0.5em 0.1em;
-          margin:0 .5em .5em 0;
+          padding: .5em 0 0 .5em;
+          input {
+            display: none;
+              &[type=radio]{
+                display: none;
+                + label{
+                   &:before, &:after{
+                     display: none;
+                   }
+                 }
 
+          }
         }
-        :nth-child(even){
-          margin: 0 0 .5em 0;
+            label{
+              display: block;
+              width: 41%;
+              float: left;
+              padding: .5em;
+              margin:0 .5em .5em 0;
+              border-radius: 5px;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+        background-color: #f9f9f9;
+        text-align: center;
+        text-decoration: none !important;
+        color: #333 !important;
+            }
+
+            input[type="radio"]:checked + label  {
+              box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
+              background-color: #df344f;
+              text-decoration: none !important;
+              color: #fff !important;
+
+            }
+            input[type=radio] + label:before {
+              background-image: none;
+              display: none;
+            }
+        input[type=radio]:checked + label:before{
+          background-image: none;
+          display: none;
         }
+
         .ml{
           margin-left: 47%!important;
         }
@@ -1338,7 +1455,7 @@ h3.special{
         .hidden{
           visibility:hidden;
         }
-      }
+        }
     }
     .btn_area{
       margin: 1em 0.5em 0;
@@ -1358,6 +1475,7 @@ h3.special{
     }
   }
 }
+
 }
 
 

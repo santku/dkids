@@ -345,7 +345,9 @@ header{
 #contents{
   max-width: 100%;
   overflow: hidden;
-  margin-top: 49px;
+  .headerPadding &{
+    padding-top: 49px;
+  }
   .account{
     display: table;
     width: 100%;
@@ -376,7 +378,7 @@ header{
     padding: 15px 2.5%;
     color: #dc1e3c;
 	  font-size: 0.6rem;
-    letter-spacing: -0.1em;
+    letter-spacing: -0.16em;
   }
   .information a{
     color: #dc1e3c;
@@ -454,6 +456,7 @@ footer{
 ========================================================= */
 #contents{
   #mainVisual{
+    text-align: center;
     img{
       vertical-align: top;
     }
@@ -489,7 +492,7 @@ footer{
       padding-left: .5em;
       margin-bottom: .8em;
       line-height: 1.4;
-      background: url(/common/images/common/h2_bg.png) no-repeat left .2em;
+      background: url(/common/images/common/h2_bg.png) no-repeat left .3em;
       background-size: 3px 15px;
       font-size: 1.6rem;
       font-weight: normal;
