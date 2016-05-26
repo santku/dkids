@@ -128,14 +128,6 @@
   display: flex;
   width: 298px;
 }
-@media screen and (min-width: 655px) {
-  .launcher.home .app.try ul, .launcher.home .app.recommend ul {
-    width: 614px;
-  }
-  .launcher.home .app.try ul li:nth-child(2n+1), .launcher.home .app.recommend ul li:nth-child(2n+1) {
-    margin-right: 9px;
-  }
-}
 .launcher.home .app.try ul li, .launcher.home .app.recommend ul li {
   width: 100%;
   margin-right: 0;
@@ -155,7 +147,7 @@
 .launcher.home .app.recommend ul {
   max-width: 336px;
   width: auto;
-  padding: 0 9px;
+  padding: 0 3.3%;
 }
 .launcher.home .app.recommend ul li {
   margin-left: 0;
@@ -168,6 +160,9 @@
 }
 .launcher.home .app.recommend ul li figure {
   width: 82px;
+}
+.launcher.home .app.recommend ul li figure img {
+  margin-bottom: 0;
 }
 .launcher.home .app.recommend ul li a {
   padding-bottom: 0;
@@ -188,26 +183,43 @@
   font-size: 1.1rem;
   line-height: 1.4;
 }
-@media screen and (min-width: 426px) and (max-device-width: 654px) {
-  .launcher.home .app.recommend ul li {
-    width: 45.5%;
-    margin: 1.3%;
+.launcher.home .app.ranking {
+  background-color: #FAE5C1;
+}
+@media screen and (min-width: 426px) {
+  .launcher.home .app.recommend ul, .launcher.home .app.try ul {
+    max-width: none;
+    -webkit-justify-content: center;
+    justify-content: center;
   }
-  .launcher.home .app.recommend ul li figure, .launcher.home .app.recommend ul li div {
+  .launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
+    display: inline-block;
+    width: 48.3%;
+    max-width: 408px;
+    margin: 1.3% 0 0 0 !important;
+  }
+  .launcher.home .app.recommend ul li:nth-child(2n+2), .launcher.home .app.try ul li:nth-child(2n+2) {
+    margin-left: 3.3% !important;
+  }
+  .launcher.home .app.recommend ul li figure,
+  .launcher.home .app.recommend ul li div, .launcher.home .app.try ul li figure,
+  .launcher.home .app.try ul li div {
     display: table-cell;
     float: none;
     vertical-align: top;
   }
-  .launcher.home .app.recommend ul li figure {
+  .launcher.home .app.recommend ul li figure, .launcher.home .app.try ul li figure {
     width: 82px;
     padding-right: 9px;
   }
-  .launcher.home .app.recommend ul li div {
+  .launcher.home .app.recommend ul li div, .launcher.home .app.try ul li div {
     width: auto;
   }
 }
-.launcher.home .app.ranking {
-  background-color: #FAE5C1;
+@media screen and (min-width: 1240px) {
+  .launcher.home .app.recommend ul li:nth-child(2n+2), .launcher.home .app.try ul li:nth-child(2n+2) {
+    margin-left: 2% !important;
+  }
 }
 .launcher.home.high .app:after {
   display: block;
@@ -1154,15 +1166,14 @@ section.inner.stamp_detail {
  TABLET
 ========================================================= */
 @media screen and (min-width: 768px) {
-  .launcher.home .app.try ul, .launcher.home .app.recommend ul {
-    width: 614px;
+  .launcher.home .app.recommend ul, .launcher.home .app.try ul {
     max-width: none;
   }
-  .launcher.home .app.try ul li, .launcher.home .app.recommend ul li {
+  .launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
     display: inline-block;
-    width: 49.1%;
+    width: 45.5%;
   }
-  .launcher.home .app.try ul li:nth-child(2n+2), .launcher.home .app.recommend ul li:nth-child(2n+2) {
+  .launcher.home .app.recommend ul li:nth-child(2n+2), .launcher.home .app.try ul li:nth-child(2n+2) {
     margin-right: 0 !important;
   }
   .launcher.home .app.pickup .tag {
@@ -1186,9 +1197,26 @@ section.inner.stamp_detail {
     margin-right: 10px !important;
   }
 }
+@media (min-width: 1280px) {
+  .launcher.home .app ul.horizon-swiper {
+    width: 1045px;
+  }
+  .launcher.home .app ul.horizon-swiper .horizon-inner {
+    padding-left: 0;
+  }
+}
 @media (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {
   .launcher.home.high .app:after {
     display: none;
+  }
+
+  .app ul.horizon-swiper .horizon-outer {
+    max-height: none !important;
+  }
+  .app ul.horizon-swiper .horizon-inner {
+    white-space: normal;
+    overflow: auto;
+    text-align: left;
   }
 }
 /* =========================================================

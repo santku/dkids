@@ -279,7 +279,13 @@ common scripts
       //   //スマホ OR タブレットの場合
       // }
 
-    }
+    },
+
+    headerPd : function(){
+
+      $('header').parents('body').addClass('headerPadding');
+
+    },
 
   }
 
@@ -294,6 +300,7 @@ common scripts
     Common.modal();
     Common.share();
     Common.uaFnc();
+    Common.headerPd();
 
     $(window).on('load resize', function(){
 
