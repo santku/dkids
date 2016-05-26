@@ -310,10 +310,10 @@ $(function(){
         $('.place').each(function(){
             var thisTitle = $(this).attr('title');
             if(!(thisTitle === '')){
-                $(this).wrapAll('<span style="text-align:left;display:inline-block;position:relative;"></span>');
+                $(this).wrapAll('<span style="text-align:left;position:relative;"></span>');
                 $(this).parent('span').append('<span class="placeholder">' + thisTitle + '</span>');
                 $('.placeholder').css({
-                    top:'4px',
+                    top:'5%',
                     left:'5px',
                     fontSize:'100%',
                     lineHeight:'120%',

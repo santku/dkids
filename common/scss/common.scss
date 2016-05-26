@@ -346,6 +346,12 @@ header{
   max-width: 100%;
   overflow: hidden;
   margin-top: 49px;
+  /*.h_fix{
+    margin-top: 49px!important;
+  }
+  .h_fix_01{
+    margin-top: 10px!important;
+  }*/
   .account{
     display: table;
     width: 100%;
@@ -454,6 +460,7 @@ footer{
 ========================================================= */
 #contents{
   #mainVisual{
+    text-align: center;
     img{
       vertical-align: top;
     }
@@ -489,7 +496,7 @@ footer{
       padding-left: .5em;
       margin-bottom: .8em;
       line-height: 1.4;
-      background: url(/common/images/common/h2_bg.png) no-repeat left .2em;
+      background: url(/common/images/common/h2_bg.png) no-repeat left .3em;
       background-size: 3px 15px;
       font-size: 1.6rem;
       font-weight: normal;

@@ -619,9 +619,6 @@
   // PRESS
   //--------------------------------------------------------
   &.press {
-    .inner{
-      padding-top: 1em;
-    }
     .visual {
       img {
         vertical-align: top;
@@ -709,7 +706,7 @@
   //--------------------------------------------------------
   &.search {
     h1 {
-      margin-bottom: 1em;
+      margin-bottom: 1.4em;
     }
     .app {
       ul {
@@ -793,11 +790,7 @@
 }
 //複数端末をご利用の方へ
 //--------------------------------------------------------
-.device{
-  .inner{
-    padding-top: 1.4em;
-  }
-}
+
 
 // よくある質問
 //---------------------------------------------------------
@@ -843,7 +836,7 @@
 .coupon {
   .paragraph {
     border-bottom: solid 1px #ccc;
-    padding: 2em 0;
+    padding: 0 0 1.5em;
     .visual {
       width: 70%;
       margin: 0 auto;
@@ -875,12 +868,12 @@
     padding-top: 1.4em;
   }
 }
-.download a.btn {
+.download a.red {
   width: 235px;
   margin-bottom: 2.5em;
 }
 .download .DLbtn {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 /* P-0-1 : 重要なお知らせ 詳細
 --------------------------------------------------------- */
@@ -1256,9 +1249,7 @@ p.date {
   }
 }
 .info_detail {
-  .inner{
-    padding: 1em 0 3em!important;
-  }
+
   .list{
     margin-bottom: 2em;
         ul {
@@ -1329,6 +1320,9 @@ border-bottom: none;
 --------------------------------------------------------- */
 
 .cansellation{
+  h1{
+    margin-bottom: 1.4em!important;
+  }
   #ranking {
         margin: 2em 0;
         .heading {
