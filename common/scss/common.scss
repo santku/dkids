@@ -865,26 +865,35 @@ footer{
     justify-content: flex-start;
     @include flex;
     font-size: 0;
-    &.slick-slider{
-      justify-content: flex-start;
-      .slick-track{
-        padding-top: 10px;
+    // &.slick-slider{
+    //   justify-content: flex-start;
+    //   .slick-track{
+    //     padding-top: 10px;
+    //   }
+    //   .slick-list{
+    //     overflow: visible;
+    //   }
+    //   li{
+    //     width: 82px;
+    //
+    //   }
+    // }
+    &.horizon-swiper{
+      width: 100%;
+      .horizon-inner{
+        padding-left: 3.3%;
       }
-      .slick-list{
-        overflow: visible;
-      }
-      li{
-        width: 82px;
-
-      }
+      .horizon-item {}
     }
     li{
       display: inline-block;
-      margin: 0 4.5px 10px 4.5px;
+      width: 90px;
+      margin: 15px 4.5px 10px 4.5px;
       border-radius: 12px;
       box-shadow: 0 0 0 3px rgba(0, 0, 0, .05), inset 0px -9px 2px -5px rgba(0, 0, 0, .5);
       padding: 3px 4px 3px;
       background-color: #FFF;
+      vertical-align: top;
       text-align: center;
       font-size: 1.4rem;
       &.new{

@@ -841,25 +841,21 @@ footer .copyright {
   flex-wrap: wrap;
   font-size: 0;
 }
-.app ul.slick-slider {
-  justify-content: flex-start;
+.app ul.horizon-swiper {
+  width: 100%;
 }
-.app ul.slick-slider .slick-track {
-  padding-top: 10px;
-}
-.app ul.slick-slider .slick-list {
-  overflow: visible;
-}
-.app ul.slick-slider li {
-  width: 82px;
+.app ul.horizon-swiper .horizon-inner {
+  padding-left: 3.3%;
 }
 .app ul li {
   display: inline-block;
-  margin: 0 4.5px 10px 4.5px;
+  width: 90px;
+  margin: 15px 4.5px 10px 4.5px;
   border-radius: 12px;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05), inset 0px -9px 2px -5px rgba(0, 0, 0, 0.5);
   padding: 3px 4px 3px;
   background-color: #FFF;
+  vertical-align: top;
   text-align: center;
   font-size: 1.4rem;
 }

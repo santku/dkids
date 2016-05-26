@@ -60,51 +60,57 @@ pages scripts
 
        }
 
-       //carousel
-       var $carousel = $('.carousel');
-       var length = $carousel.find('li').size();
-       function carousel() {
-         $carousel.each(function(){
-          if ( $(this).find('li').size() >= 4 ) {
-            $(this).slick({
-              slidesToShow: 6,
-              slidesToScroll: 6,
-              infinite: false,
-              arrows: false,
-              variableWidth: true,
-              responsive: [
-                {
-                  breakpoint: g.point,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                  }
-                }
-              ]
-            });
-          }
-         });
-       }
 
-       $(window).on('load', carousel);
-
-       $carousel.on('setPosition', function(){
-         $(this).find('.slick-slide').matchHeight();
-       });
-
-       if ( _ua.Tablet ) {
-
-         $(window).on("load orientationchange resize",function(){
-           if (Math.abs(window.orientation) === 90 && _ua.Tablet ) {
-             $carousel.slick('unslick');
-           } else{
-             $(window).trigger('slickOn');
-             $(window).on('slickOn', carousel);
-           }
-
+         $('.horizon-swiper').horizonSwiper({
+           arrows: false
          });
 
-       }
+
+      //  //carousel
+      //  var $carousel = $('.carousel');
+      //  var length = $carousel.find('li').size();
+      //  function carousel() {
+      //    $carousel.each(function(){
+      //     if ( $(this).find('li').size() >= 4 ) {
+      //       $(this).slick({
+      //         slidesToShow: 6,
+      //         slidesToScroll: 6,
+      //         infinite: false,
+      //         arrows: false,
+      //         variableWidth: true,
+      //         responsive: [
+      //           {
+      //             breakpoint: g.point,
+      //             settings: {
+      //               slidesToShow: 3,
+      //               slidesToScroll: 3
+      //             }
+      //           }
+      //         ]
+      //       });
+      //     }
+      //    });
+      //  }
+       //
+      //  $(window).on('load', carousel);
+       //
+      //  $carousel.on('setPosition', function(){
+      //    $(this).find('.slick-slide').matchHeight();
+      //  });
+       //
+      //  if ( _ua.Tablet ) {
+       //
+      //    $(window).on("load orientationchange resize",function(){
+      //      if (Math.abs(window.orientation) === 90 && _ua.Tablet ) {
+      //        $carousel.slick('unslick');
+      //      } else{
+      //        $(window).trigger('slickOn');
+      //        $(window).on('slickOn', carousel);
+      //      }
+       //
+      //    });
+       //
+      //  }
 
        $('.movieTmb').slick({
          slidesToShow: 1,
@@ -128,6 +134,7 @@ pages scripts
 
     matchHeight : function(){
       $('nav.list').find('li').matchHeight();
+      $('.horizon-item').matchHeight();
     },
 
     voice : function(){
