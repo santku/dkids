@@ -285,7 +285,7 @@ common scripts
 
       $('header').parents('body').addClass('headerPadding');
 
-    },
+    }
 
   }
 

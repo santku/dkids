@@ -142,7 +142,7 @@
   padding-left: .5em;
 }
 .launcher.home .app.try ul li img {
-  width: 292px;
+  width: 100%;
 }
 .launcher.home .app.recommend ul {
   max-width: 336px;
@@ -214,6 +214,12 @@
   }
   .launcher.home .app.recommend ul li div, .launcher.home .app.try ul li div {
     width: auto;
+  }
+  .launcher.home .app.try ul {
+    max-width: 660px !important;
+  }
+  .launcher.home .app.try ul li {
+    max-width: 300px;
   }
 }
 @media screen and (min-width: 1240px) {

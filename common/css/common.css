@@ -847,9 +847,12 @@ footer .copyright {
 .app ul.horizon-swiper .horizon-inner {
   padding-left: 3.3%;
 }
+.app ul.horizon-swiper .horizon-item {
+  white-space: normal;
+}
 .app ul li {
   display: inline-block;
-  width: 90px;
+  width: 82px;
   margin: 15px 4.5px 10px 4.5px;
   border-radius: 12px;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05), inset 0px -9px 2px -5px rgba(0, 0, 0, 0.5);

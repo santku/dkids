@@ -154,7 +154,7 @@
               padding-left: .5em;
             }
             img{
-              width: 292px;
+              width: 100%;
             }
           }
         }
@@ -242,6 +242,12 @@
                 width: auto;
               }
             }
+          }
+        }
+        &.try ul{
+          max-width: 660px !important;
+          li{
+            max-width: 300px;
           }
         }
       }
