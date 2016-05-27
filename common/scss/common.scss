@@ -669,7 +669,9 @@ footer{
       top: .6em;
       right: 1.5%;
       width: 80px;
-      background-image: none;
+      background-image: url(/common/images/common/select_arrow_bk.png);
+      background-position:  91% center;
+      background-size: 7px;
       .android &{
         width: 7em;
       }
