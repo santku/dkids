@@ -589,10 +589,63 @@
   }
 
   //*すべてオンオフ切り替えボタン*/
+  &.notice{
+    .inner{
+    .allselect{
+      margin: 0 auto;
+      padding: 1em 0;
+      display: table;
+      li{
+        display: table-cell;
+      }
+          input {
+            display: none;
+              &[type=radio]{
+                display: none;
+                + label{
+                   &:before, &:after{
+                     display: none;
+                   }
+                 }
+          }
+        }
+            label{
+              display: block;
+              padding: .5em;
+              margin:0 .5em .5em 0;
+              border-radius: 5px;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+        background-color: #f9f9f9;
+        text-align: center;
+        text-decoration: none !important;
+        color: #333 !important;
+        .right{
+          float: right;
+        }
+            }
 
-  .confirm_area.on_off {
+            input[type="radio"]:checked + label  {
+              box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
+              background-color: #df344f;
+              text-decoration: none !important;
+              color: #fff !important;
+
+            }
+            input[type=radio] + label:before {
+              background-image: none;
+              display: none;
+            }
+        input[type=radio]:checked + label:before{
+          background-image: none;
+          display: none;
+        }
+      }
+}
+}
+
+  /*.confirm_area.on_off {
     width: 220px;
-  }
+  }*/
 
   //*アプリ名学習名*/
 
@@ -750,7 +803,6 @@ ul.bonus_area li {
 .remodel_2 {
   background-color: #fff;
   position: relative;
-  padding: 2px;
   border: solid 5px #f7bc28;
   box-shadow: inset 0 0 0 1px #ee993b;
   border-radius: 15px;
@@ -866,6 +918,9 @@ right: 10px;
 z-index: 100;
 width:25%;
 height:auto;
+@media screen and (min-width: 567px) {
+  width: 15%;
+}
 }
 
 .month_emphasis{
@@ -919,6 +974,10 @@ margin:3em auto 2em;
 //--------------------------------------------------------- */
 #contents section.inner {
 	padding-bottom: 20px;
+  min-height: 14.5em;
+  @media screen and (min-width: $tablet) {
+  min-height: 27em;
+}
 }
 .stamp_2 .bonus_area img {
 //  visibility: hidden;
@@ -1096,7 +1155,7 @@ h3.special{
 .register_area {
   margin: 0 auto;
   .selectBox.gender {
-    width: 30%;
+    width: 42%;
   }
 }
 
@@ -1122,16 +1181,29 @@ h3.special{
 
 
 .register_area input {
-  width: 63%;
+  width: 50%;
   padding: .5em .2em!important;
 }
 
 // L-3-4_setting : 子ども情報の変更
 //--------------------------------------------------------- */
 .setting{
+  h1{
+    padding: .1em 1em;
+  }
   p{
     margin-bottom: 0;
     padding: 1em 0;
+  }
+  li{
+    border-top: solid 1px #fff;
+    font-size: 1.2rem;
+    &.half{
+      &:nth-of-type(odd){
+        border-right:  none!important;
+      }
+
+    }
   }
 }
 

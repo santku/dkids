@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.449em;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS Pゴシック", "MS PGothic", sans-serif;
   -webkit-text-size-adjust: 100%;
   line-height: 1.6;
@@ -162,23 +162,24 @@ select::-ms-expand {
   position: relative;
   width: 139px;
   border-radius: 5px;
-  background-color: #FFF;
-}
-.selectBox:after {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20%;
-  height: 100%;
-  line-height: 35px;
-  border-radius: 0 5px 5px 0;
-  background-color: #df344f;
-  color: #FFF;
-  content: '\f0d7';
-  text-align: center;
-  font-family: FontAwesome;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  background: #FFF url(/common/images/common/select_arrow.png) top right no-repeat;
+  background-size: contain;
+  /*&:after{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    line-height: 35px;
+    border-radius: 0 5px 5px 0;
+    background-color: #df344f;
+    color: #FFF;
+    content: '\f0d7';
+    text-align: center;
+    font-family: $icon;
+    box-shadow: 0 0 0 1px rgba(#000, .08), inset 0px -9px 2px -7px rgba(0, 0, 0, .5);
+  }*/
 }
 .selectBox.glay:after {
   border: none;
@@ -393,7 +394,7 @@ header .menu.right img {
   overflow: hidden;
 }
 .headerPadding #contents {
-  padding-top: 49px;
+  padding-top: 48px;
 }
 #contents .account {
   display: table;
@@ -956,7 +957,7 @@ footer .copyright {
   color: inherit !important;
   text-decoration: none !important;
   line-height: 1.2;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-bottom: 8px;
 }
 .app > ul > li img, .app > ul li.horizon-item img {
