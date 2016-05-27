@@ -581,6 +581,7 @@ html.remodal-is-locked {
   -ms-transition: left 0.4s ease;
   -o-transition: left 0.4s ease;
   transition: left 0.4s ease;
+  border-left: #ccc solid 1px;
 }
 
 .mm-menu .mm-hidden {
