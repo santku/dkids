@@ -1417,7 +1417,7 @@ section.inner.stamp_detail {
 }
 
 #contents.parents {
-    /* MODULE
+  /* MODULE
 --------------------------------------------------------- */
 }
 #contents.parents.home #mainVisual .slick-dots {
@@ -1615,12 +1615,12 @@ section.inner.stamp_detail {
   position: relative;
 }
 #contents.parents.home > section#news h2 {
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 #contents.parents.home > section#news dl dt {
   font-weight: normal;
   font-size: 1.3rem;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 #contents.parents.home > section#news .ehon {
   position: relative;
@@ -1986,7 +1986,7 @@ section.inner.stamp_detail {
   content: '';
 }
 #contents.parents.login h3 {
-  margin-left: .8em;
+  margin-left: 0.8em;
 }
 #contents.parents.login .accordion {
   margin-bottom: 0 !important;
@@ -1997,21 +1997,21 @@ section.inner.stamp_detail {
 #contents.parents.login .accordion dl:first-child {
   border: none;
 }
-#contents.parents.login .accordion dt {
+#contents.parents.login .accordion dl dt {
   padding: 0 2em;
 }
-#contents.parents.login .accordion dt:before {
+#contents.parents.login .accordion dl dt:before {
   position: inherit;
   content: none;
 }
-#contents.parents.login .accordion dd {
+#contents.parents.login .accordion dl dd {
   border-top: none;
   margin: 0 auto;
 }
-#contents.parents.login .accordion dd .rankingList li:nth-child(1) figure:before {
+#contents.parents.login .accordion dl dd .rankingList li:nth-child(1) figure:before {
   background-image: url("/common/images/launcher/home/ranking_4th.png") !important;
 }
-#contents.parents.login .accordion dd .rankingList li:nth-child(2) figure:before {
+#contents.parents.login .accordion dl dd .rankingList li:nth-child(2) figure:before {
   background-image: url("/common/images/launcher/home/ranking_5th.png") !important;
 }
 #contents.parents.press .visual img {
@@ -2118,22 +2118,20 @@ section.inner.stamp_detail {
 #contents.parents .fixedBtn img {
   vertical-align: top;
 }
-#contents.parents.parents section.inner .emphasis {
+#contents.parents section.inner .emphasis {
   background-color: #fff8e3;
 }
-#contents.parents.parents .accordion {
+#contents.parents .accordion {
   margin-bottom: 2em;
 }
-#contents.parents.parents .accordion dl.active {
+#contents.parents .accordion dl.active {
   background-color: #fafafa;
 }
-#contents.parents.parents .accordion dl dt {
+#contents.parents .accordion dl dt {
   position: relative;
-  padding: 0 10% 0 3.3%;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 10% 1em 3.3%;
 }
-#contents.parents.parents .accordion dl dt:before {
+#contents.parents .accordion dl dt:before {
   position: absolute;
   top: 20%;
   right: 6.6%;
@@ -2236,7 +2234,7 @@ section.inner.stamp_detail {
   margin-bottom: 2em;
 }
 .parentsabout > section#trial .inner {
-  padding: 1.4em .5em 0;
+  padding: 1.4em 0.5em 0;
 }
 .parentsabout > section#trial figure {
   margin-top: -30px;
@@ -2601,7 +2599,7 @@ p.date {
   margin: 0 auto;
 }
 .info_detail .listItem li {
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 .info_detail .listItem li span {
   font-size: 1.1rem;
@@ -2619,7 +2617,7 @@ p.date {
   color: #cc0033;
 }
 .info_detail article.paragraph p {
-  padding: 0 0.5 0 0em;
+  padding: 0 0.5 0 0;
   line-height: 20px;
   color: #010000;
 }
@@ -2875,7 +2873,7 @@ ul.pageing {
   width: 100%;
 }
 .inquiry .selectBox select {
-  padding: .5em .3em;
+  padding: 0.5em 0.3em;
 }
 
 .inquiry_area {
@@ -3145,15 +3143,15 @@ ul.point li {
 .mail_service .allselect input[type=radio] {
   display: none;
 }
-.mail_service .allselect input[type=radio] + label:before, .mail_service .allselect input[type=radio] + label:after {
+.mail_service .allselect input[type=radio] + label:after, .mail_service .allselect input[type=radio] + label:before {
   display: none;
 }
 .mail_service .allselect label {
   display: block;
-  padding: .5em;
-  margin: 0 .5em .5em 0;
+  padding: 0.5em;
+  margin: 0 0.5em 0.5em 0;
   border-radius: 5px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 -9px 2px -7px rgba(0, 0, 0, 0.5);
   background-color: #f9f9f9;
   text-align: center;
   text-decoration: none !important;
