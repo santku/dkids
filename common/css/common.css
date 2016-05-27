@@ -254,6 +254,20 @@ select::-ms-expand {
 /* =========================================================
  LAYOUT
 ========================================================= */
+#my-menu .mm-list li a {
+  padding: 1em 3em 1em 1em;
+  border-bottom: #ccc solid 1px;
+}
+#my-menu .mm-list li:after {
+  position: absolute;
+  top: 20%;
+  right: 15px;
+  content: '\f105';
+  font-family: FontAwesome;
+  font-size: 1.6rem;
+  color: #000;
+}
+
 header {
   display: table;
   width: 100%;

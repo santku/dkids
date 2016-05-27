@@ -93,7 +93,7 @@ common scripts
 
     smoothScroll : function(){
 
-      $('a[href^="#"]').not('a[href^="#tab"], a[href^="#modal"]').click(function() {
+      $('a[href^="#"]').not('a[href^="#tab"], a[href^="#modal"], a[href^="#menu"]').click(function() {
         $('html,body').animate({ scrollTop:
           $($(this).attr('href')).offset().top }, 'slow','swing');
           return false;
@@ -359,7 +359,17 @@ common scripts
     		}
     	});
 
-    }
+    },
+
+    mmenu : function(){
+      $("#my-menu").mmenu({
+				offCanvas: {
+            position: "right",
+            zposition: "front"
+          }
+			});
+		}
+
 
   }
 
@@ -376,6 +386,7 @@ common scripts
     Common.uaFnc();
     Common.headerPd();
     Common.form();
+    Common.mmenu();
 
     // $(window).on('load resize', function(){
     //
