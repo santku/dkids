@@ -646,6 +646,7 @@ footer .copyright {
   top: .6em;
   right: 1.5%;
   width: 80px;
+  background-image: none;
 }
 .android #contents .heading.account .selectBox {
   width: 7em;
