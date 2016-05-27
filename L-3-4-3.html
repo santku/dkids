@@ -1,22 +1,31 @@
 <!--#set var="page_title" value="launcher" -->
-<!--#set var="category" value="launcher" -->
+<!--#set var="category" value="menu" -->
 <!--#include virtual="/common/include/common/header.html" -->
 
     <!--contents-->
-    <div id="contents" class="launcher child_register">
+    <div id="contents" class="launcher initial">
 
       <!--#include virtual="/common/include/common/account.html" -->
 
-      <h1>子ども情報の変更 / 削除</h1>
+      <h1>子ども情報の変更/削除</h1>
+      <div class="inner">
 
-      <section class="inner">
+      <section id="initialtab">
+        <div class="inner">
 
-        <form action="" method="" class="module">
+        <ul class="tabNav">
+          <li><a href="#tab01">たろうあああくん</a></li>
+          <li><a href="#tab02">じろうあああくん</a></li>
+          <li><a href="#tab03">さぶろうああくん</a></li>
+          <li><a href="#tab04">しろうあああくん</a></li>
+        </ul>
+<form class="module" action="">
+        <div id="tab01" class="tabBody">
 
           <div class="register_area">
           <dl>
             <dt> ニックネーム</dt>
-            <dd>  <input type="text" value="たろうくん">
+            <dd>  <input type="text" class="place" title="たろうくん">
               <div class="selectBox gender">
                 <select class="age gender" name="">
                   <option value="" disabled selected>くん</option>
@@ -24,60 +33,406 @@
                 </select>
               </div></dd>
             </dl>
+          </div>
+          <div class="register_area_02">
             <dl>
 
-           <dt>対象年令※</dt>
+           <dt>性別</dt>
 
-           <dd> <div class="selectBox age_change">
-                <select class="age" name="age">
-                  <option value="" disabled selected>ねんれい</option>
-                  <option value="0歳">0歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="1歳">1歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="2歳">2歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="3歳">3歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="4歳">4歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="5歳">5歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="6歳">6歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="7歳">7歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="8歳">8歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="9歳">9歳（YYYY.MM~YYYY.MM生まれ)</option>
-                  <option value="10歳以上">10歳以上（YYYY.MM~YYYY.MM生まれ)</option>
-                </select>
-              </div>
+           <dd>
+             <input id="gender01" class="ageRadio" type="radio" name="gender" value="">
+<label class="btn" for="gender01" class="age_txt">女の子</label>
+<input id="gender02" class="ageRadio" type="radio" name="gender" value="">
+<label class="btn" for="gender02" class="age_txt">男の子</label>
               </dd>
             </dl>
+            <dl>
+           <dt>対象年齢</dt>
+
+           <dd>
+             <label class="btn hidden" for="age01" class="age_txt"></span></label>
+
+                          <input id="age01" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age01" class="age_txt">0歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age02" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age02">1歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age03" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age03">2歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age04" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age04">3歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age05" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age05">4歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age06" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age06">5歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age07" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age07">6歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age08" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age08">7歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age09" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age09">8歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age10" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age10">9歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age11" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age11">10歳以上<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+              </dd>
+            </dl>
+            <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
           </div>
-          <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
-<div class="register_area">
-  <dl>
-           <dt>タイマー設定</dt>
+
+          <div class="register_area">
+            <dl>
+                     <dt>タイマー設定</dt>
+                       <dd>
+                         <div>
+                           <input id="radio02" class="switch" type="checkbox" name="radio04" value="">
+                           <label for="radio02"></label>
+                          </div>
+                         <div class="selectBox age_change">
+                          <select class="age" name="age">
+                            <option value="" disabled selected>選択</option>
+                            <option value="1時間30分">1時間30分</option>
+                            <option value="2時間">2時間</option>
+                            <option value="2時間30分">2時間30分</option>
+                          </select>
+                        </div>
+               </dd>
+
+                    </dl>
+                    <p class="age_txt">時間を気にせず楽しませたい場合は、タイマーをOFFにしてください。</p>
+          </div>
+          <div class="btn_area">
+            <p class="age_txt">登録した情報を削除する場合はこちらから。</p>
+            <p class="center"><a class="btn iblock" href="javascript:history.back();">削除</a></p>
+
+            <div class="confirm_area">
+          <a class="btn iblock" href="javascript:history.back();">キャンセル</a>
+          <a class="btn red iblock" href="#">変更</a>
+        </div>
+
+          </div>
+
+        </div>
+        <div id="tab02" class="tabBody">
+          <div class="register_area">
+            <dl>
+              <dt> ニックネーム</dt>
+              <dd>  <input type="text" class="place" title="じろうくん">
+                <div class="selectBox gender">
+                  <select class="age gender" name="">
+                    <option value="" disabled selected>くん</option>
+                    <option value="ちゃん">ちゃん</option>
+                  </select>
+                </div></dd>
+              </dl>
+            </div>
+            <div class="register_area_02">
+              <dl>
+
+             <dt>性別</dt>
+
              <dd>
-               <div>
-                 <input id="radio02" class="switch" type="checkbox" name="radio04" value="">
-                 <label for="radio02"></label>
-                </div>
-               <div class="selectBox age_change">
-                <select class="age" name="age">
-                  <option value="" disabled selected>選択</option>
-                  <option value="1時間30分">1時間30分</option>
-                  <option value="2時間">2時間</option>
-                  <option value="2時間30分">2時間30分</option>
-                </select>
-              </div>
-     </dd>
+               <input id="gender01" class="ageRadio" type="radio" name="gender" value="">
+  <label class="btn" for="gender01" class="age_txt">女の子</label>
+  <input id="gender02" class="ageRadio" type="radio" name="gender" value="">
+  <label class="btn" for="gender02" class="age_txt">男の子</label>
+                </dd>
+              </dl>
+              <dl>
+             <dt>対象年齢</dt>
 
-          </dl>
+             <dd>
+               <label class="btn hidden" for="age01" class="age_txt"></span></label>
 
-</div>
-<p class="age_txt">時間を気にせずタイマー設定なく楽しみたい場合は、タイマーをOFFにしてください</p>
+                            <input id="age01" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age01" class="age_txt">0歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age02" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age02">1歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age03" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age03">2歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age04" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age04">3歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age05" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age05">4歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age06" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age06">5歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age07" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age07">6歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age08" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age08">7歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age09" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age09">8歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age10" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age10">9歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+               <input id="age11" class="ageRadio" type="radio" name="age" value="">
+               <label class="btn" for="age11">10歳以上<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+                </dd>
+              </dl>
+              <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
+            </div>
+
+            <div class="register_area">
+              <dl>
+                       <dt>タイマー設定</dt>
+                         <dd>
+                           <div>
+                             <input id="radio02" class="switch" type="checkbox" name="radio04" value="">
+                             <label for="radio02"></label>
+                            </div>
+                           <div class="selectBox age_change">
+                            <select class="age" name="age">
+                              <option value="" disabled selected>選択</option>
+                              <option value="1時間30分">1時間30分</option>
+                              <option value="2時間">2時間</option>
+                              <option value="2時間30分">2時間30分</option>
+                            </select>
+                          </div>
+                 </dd>
+
+                      </dl>
+                      <p class="age_txt">時間を気にせず楽しませたい場合は、タイマーをOFFにしてください。</p>
+            </div>
+            <div class="btn_area">
+              <p class="age_txt">登録した情報を削除する場合はこちらから。</p>
+              <p class="center"><a class="btn iblock" href="javascript:history.back();">削除</a></p>
+
               <div class="confirm_area">
-            <a class="btn iblock" href="javascript:history.back();">戻る</a>
+            <a class="btn iblock" href="javascript:history.back();">キャンセル</a>
             <a class="btn red iblock" href="#">変更</a>
           </div>
 
-        </form>
+            </div>
+        </div>
 
-      </section>
+        <div id="tab03" class="tabBody">
+          <div class="register_area">
+          <dl>
+            <dt> ニックネーム</dt>
+            <dd>  <input type="text" class="place" title="さぶろうくん">
+              <div class="selectBox gender">
+                <select class="age gender" name="">
+                  <option value="" disabled selected>くん</option>
+                  <option value="ちゃん">ちゃん</option>
+                </select>
+              </div></dd>
+            </dl>
+          </div>
+          <div class="register_area_02">
+            <dl>
+
+           <dt>性別</dt>
+
+           <dd>
+             <input id="gender01" class="ageRadio" type="radio" name="gender" value="">
+<label class="btn" for="gender01" class="age_txt">女の子</label>
+<input id="gender02" class="ageRadio" type="radio" name="gender" value="">
+<label class="btn" for="gender02" class="age_txt">男の子</label>
+              </dd>
+            </dl>
+            <dl>
+           <dt>対象年齢</dt>
+
+           <dd>
+             <label class="btn hidden" for="age01" class="age_txt"></span></label>
+
+                          <input id="age01" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age01" class="age_txt">0歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age02" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age02">1歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age03" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age03">2歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age04" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age04">3歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age05" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age05">4歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age06" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age06">5歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age07" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age07">6歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age08" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age08">7歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age09" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age09">8歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age10" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age10">9歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age11" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age11">10歳以上<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+              </dd>
+            </dl>
+            <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
+          </div>
+
+          <div class="register_area">
+            <dl>
+                     <dt>タイマー設定</dt>
+                       <dd>
+                         <div>
+                           <input id="radio02" class="switch" type="checkbox" name="radio04" value="">
+                           <label for="radio02"></label>
+                          </div>
+                         <div class="selectBox age_change">
+                          <select class="age" name="age">
+                            <option value="" disabled selected>選択</option>
+                            <option value="1時間30分">1時間30分</option>
+                            <option value="2時間">2時間</option>
+                            <option value="2時間30分">2時間30分</option>
+                          </select>
+                        </div>
+               </dd>
+
+                    </dl>
+                    <p class="age_txt">時間を気にせず楽しませたい場合は、タイマーをOFFにしてください。</p>
+          </div>
+          <div class="btn_area">
+            <p class="age_txt">登録した情報を削除する場合はこちらから。</p>
+            <p class="center"><a class="btn iblock" href="javascript:history.back();">削除</a></p>
+
+            <div class="confirm_area">
+          <a class="btn iblock" href="javascript:history.back();">キャンセル</a>
+          <a class="btn red iblock" href="#">変更</a>
+        </div>
+
+          </div>
+        </div>
+        <div id="tab04" class="tabBody">
+          <div class="register_area">
+          <dl>
+            <dt> ニックネーム</dt>
+            <dd>  <input type="text" class="place" title="しろうくん">
+              <div class="selectBox gender">
+                <select class="age gender" name="">
+                  <option value="" disabled selected>くん</option>
+                  <option value="ちゃん">ちゃん</option>
+                </select>
+              </div></dd>
+            </dl>
+          </div>
+          <div class="register_area_02">
+            <dl>
+
+           <dt>性別</dt>
+
+           <dd>
+             <input id="gender01" class="ageRadio" type="radio" name="gender" value="">
+<label class="btn" for="gender01" class="age_txt">女の子</label>
+<input id="gender02" class="ageRadio" type="radio" name="gender" value="">
+<label class="btn" for="gender02" class="age_txt">男の子</label>
+              </dd>
+            </dl>
+            <dl>
+           <dt>対象年齢</dt>
+
+           <dd>
+             <label class="btn hidden" for="age01" class="age_txt"></span></label>
+
+                          <input id="age01" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age01" class="age_txt">0歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age02" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age02">1歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age03" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age03">2歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age04" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age04">3歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age05" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age05">4歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age06" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age06">5歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age07" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age07">6歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age08" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age08">7歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age09" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age09">8歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age10" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age10">9歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+
+             <input id="age11" class="ageRadio" type="radio" name="age" value="">
+             <label class="btn" for="age11">10歳以上<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+              </dd>
+            </dl>
+            <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
+          </div>
+
+          <div class="register_area">
+            <dl>
+                     <dt>タイマー設定</dt>
+                       <dd>
+                         <div>
+                           <input id="radio02" class="switch" type="checkbox" name="radio04" value="">
+                           <label for="radio02"></label>
+                          </div>
+                         <div class="selectBox age_change">
+                          <select class="age" name="age">
+                            <option value="" disabled selected>選択</option>
+                            <option value="1時間30分">1時間30分</option>
+                            <option value="2時間">2時間</option>
+                            <option value="2時間30分">2時間30分</option>
+                          </select>
+                        </div>
+               </dd>
+
+                    </dl>
+                    <p class="age_txt">時間を気にせず楽しませたい場合は、タイマーをOFFにしてください。</p>
+          </div>
+          <div class="btn_area">
+            <p class="age_txt">登録した情報を削除する場合はこちらから。</p>
+            <p class="center"><a class="btn iblock" href="javascript:history.back();">削除</a></p>
+
+            <div class="confirm_area">
+          <a class="btn iblock" href="javascript:history.back();">キャンセル</a>
+          <a class="btn red iblock" href="#">変更</a>
+        </div>
+
+          </div>
+        </div>
+      </form>
+      </div>
+    </section>
+
+
+
+
+
+
+
 
     </div>
     <!--/contents-->
