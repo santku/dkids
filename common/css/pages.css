@@ -2163,6 +2163,53 @@ section.inner.stamp_detail {
   vertical-align: top;
 }
 
+.campaign .inner {
+  padding-top: 0.4em !important;
+}
+.campaign .inner .balloon {
+  width: 88.4%;
+  padding: 2.5%;
+  background-color: #FFF8E4;
+  margin: 0 auto 1em;
+  text-align: center;
+  position: relative;
+}
+.campaign .inner .balloon span {
+  font-weight: bold;
+}
+.campaign .inner .balloon .red {
+  color: #d0121b;
+}
+.campaign .inner .balloon:after {
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  width: 20px;
+  height: 12px;
+  background: url("/common/images/parents/common/balloon_03.png") no-repeat;
+  background-size: contain;
+  content: '';
+}
+.campaign .inner #trial {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  background-color: #fffde7;
+}
+.campaign .inner #trial .inner {
+  width: 93.4%;
+  margin: 0 auto;
+}
+.campaign .inner #trial figure {
+  margin-top: -30px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.campaign .inner #trial .button {
+  margin-bottom: 0;
+}
+
 .faq article.paragraph {
   padding-top: 1.4em;
 }
