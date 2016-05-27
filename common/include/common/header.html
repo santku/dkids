@@ -25,9 +25,7 @@
 
     <!--#if expr='"$header_hidden" != "1"' -->
 
-
-
-          <!--#if expr='"$category"= "menu"' -->
+    <!--#if expr='"$category"= "menu"' -->
     <!-- header -->
     <header>
       <p class="logo"><a href="#"><img src="/common/images/common/logo.png" alt="dキッズ" width="64" height="20"></a></p>
@@ -68,6 +66,7 @@
     <header>
       <p class="logo"><a href="#"><img src="/common/images/common/logo.png" alt="dキッズ" width="64" height="20"></a></p>
       <div class="inner">
+            
         <ul class="menu right">
 
           <!--launcher-->
@@ -99,6 +98,18 @@
     <header>
       <p class="logo"><a href="#"><img src="/common/images/common/logo.png" alt="dキッズ" width="64" height="20"></a></p>
       <div class="inner">
+      
+       <nav id="my-menu" class="list">
+         <ul>
+            <li><a href="#">会員登録</a></li>
+            <li><a href="#">ログイン</a></li>
+            <li><a href="#">dキッズの魅力</a></li>
+            <li><a href="#">アプリ一覧</a></li>
+            <li><a href="#">知育について</a></li>
+             <li><a href="#">ご利用者の声</a></li>
+          </ul>
+       </nav>
+      
         <ul class="menu right">
 
           <li><a href="#"><img src="/common/images/common/header_logout.gif" alt="ログアウト" width="33" height="36"></a></li>
@@ -122,24 +133,36 @@
 	          </a>
 	        </div>
           </li>
-          <li><a href="#"><img src="/common/images/common/header_menu.gif" alt="メニュー" width="33" height="36"></a></li>
+          <li><a href="#my-menu"><img src="/common/images/common/header_menu.gif" alt="メニュー" width="33" height="36"></a></li>
         </ul>
       </div>
     </header>
 
-          <!--#else -->
+    <!--#else -->
 
 
     <!-- header -->
     <header>
       <p class="logo"><a href="#"><img src="/common/images/common/logo.png" alt="dキッズ" width="64" height="20"></a></p>
       <div class="inner">
+      
+       <nav id="my-menu" class="list">
+         <ul>
+            <li><a href="#">会員登録</a></li>
+            <li><a href="#">ログイン</a></li>
+            <li><a href="#">dキッズの魅力</a></li>
+            <li><a href="#">アプリ一覧</a></li>
+            <li><a href="#">知育について</a></li>
+             <li><a href="#">ご利用者の声</a></li>
+          </ul>
+       </nav>
+      
         <ul class="menu right">
 
           <!--parents-->
           <li><a href="#"><img src="/common/images/common/header_logout.gif" alt="ログアウト" width="33" height="36"></a></li>
 
-          <li><a href="#"><img src="/common/images/common/header_menu.gif" alt="メニュー" width="33" height="36"></a></li>
+          <li><a href="#my-menu"><img src="/common/images/common/header_menu.gif" alt="メニュー" width="33" height="36"></a></li>
         </ul>
       </div>
     </header>
