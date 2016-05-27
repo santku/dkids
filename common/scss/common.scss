@@ -13,7 +13,7 @@ html{
   font-size: 62.5%;
 }
 body {
-  font-size: 1.4rem;
+  font-size: 1.449em;
   font-family: $sansSerif;
   -webkit-text-size-adjust: 100%;
   line-height: 1.6;
@@ -159,8 +159,9 @@ select {
   position: relative;
   width: 139px;
   border-radius: 5px;
-  background-color: #FFF;
-  &:after{
+  background: #FFF url(/common/images/common/select_arrow.png) top right no-repeat;
+  background-size: contain;
+  /*&:after{
     display: inline-block;
     position: absolute;
     top: 0;
@@ -175,7 +176,7 @@ select {
     text-align: center;
     font-family: $icon;
     box-shadow: 0 0 0 1px rgba(#000, .08), inset 0px -9px 2px -7px rgba(0, 0, 0, .5);
-  }
+  }*/
   &.glay{
     &:after{
       border: none;
@@ -372,7 +373,7 @@ header{
   max-width: 100%;
   overflow: hidden;
   .headerPadding &{
-    padding-top: 49px;
+    padding-top: 48px;
   }
   .account{
     display: table;
@@ -482,6 +483,7 @@ footer{
  MODULE
 ========================================================= */
 #contents{
+
   #mainVisual{
     text-align: center;
     img{
@@ -928,6 +930,7 @@ footer{
       vertical-align: top;
       text-align: center;
       font-size: 1.4rem;
+
       &.new{
         position: relative;
         &:before{
@@ -968,7 +971,7 @@ footer{
         color: inherit !important;
         text-decoration: none !important;
         line-height: 1.2;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		padding-bottom: 8px;
       }
       img{
