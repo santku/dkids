@@ -285,6 +285,80 @@ common scripts
 
       $('header').parents('body').addClass('headerPadding');
 
+    },
+
+    form : function(){
+
+      $('input[value="すべて選択"], input[value="すべてON"]').click(function(){
+        $(this).parents('form').find('input').prop('checked', true);
+        return false;
+      });
+
+      //placeholder
+      $(window).load(function() {
+        $('.place').each(function() {
+          var thisTitle = $(this).attr('title');
+          if (!(thisTitle === '')) {
+            $(this).wrapAll('<span style="text-align:left;position:relative;"></span>');
+            $(this).parent('span').append('<span class="placeholder">' + thisTitle + '</span>');
+            $('.placeholder').css({
+              top: '5%',
+              left: '5px',
+              fontSize: '100%',
+              lineHeight: '120%',
+              textAlign: 'left',
+              color: '#A9A9A9',
+              overflow: 'hidden',
+              position: 'absolute',
+              zIndex: '99'
+            }).click(function() {
+              $(this).prev().focus();
+            });
+
+            $(this).focus(function() {
+              $(this).next('span').css({
+                display: 'none'
+              });
+            });
+
+            $(this).blur(function() {
+              var thisVal = $(this).val();
+              if (thisVal === '') {
+                $(this).next('span').css({
+                  display: 'inline-block'
+                });
+              } else {
+                $(this).next('span').css({
+                  display: 'none'
+                });
+              }
+            });
+
+            var thisVal = $(this).val();
+            if (thisVal === '') {
+              $(this).next('span').css({
+                display: 'inline-block'
+              });
+            } else {
+              $(this).next('span').css({
+                display: 'none'
+              });
+            }
+          }
+        });
+      });
+
+      // disabled btn
+    	$('#submit').attr('disabled', 'disabled');
+
+    	$('#check').click(function() {
+    		if ($(this).prop('checked') == false) {
+    			$('#submit').attr('disabled', 'disabled');
+    		} else {
+    			$('#submit').removeAttr('disabled');
+    		}
+    	});
+
     }
 
   }
@@ -301,71 +375,12 @@ common scripts
     Common.share();
     Common.uaFnc();
     Common.headerPd();
+    Common.form();
 
-    $(window).on('load resize', function(){
+    // $(window).on('load resize', function(){
+    //
+    //   Common.resizeFnc();
+    //
+    // });
 
-      //Common.resizeFnc();
-
-    });
-
-});
-
-
-// placeholder
-$(function(){
-    $(window).load(function(){
-        $('.place').each(function(){
-            var thisTitle = $(this).attr('title');
-            if(!(thisTitle === '')){
-                $(this).wrapAll('<span style="text-align:left;position:relative;"></span>');
-                $(this).parent('span').append('<span class="placeholder">' + thisTitle + '</span>');
-                $('.placeholder').css({
-                    top:'5%',
-                    left:'5px',
-                    fontSize:'100%',
-                    lineHeight:'120%',
-                    textAlign:'left',
-                    color:'#A9A9A9',
-                    overflow:'hidden',
-                    position:'absolute',
-                    zIndex:'99'
-                }).click(function(){
-                    $(this).prev().focus();
-                });
-
-                $(this).focus(function(){
-                    $(this).next('span').css({display:'none'});
-                });
-
-                $(this).blur(function(){
-                    var thisVal = $(this).val();
-                    if(thisVal === ''){
-                        $(this).next('span').css({display:'inline-block'});
-                    } else {
-                        $(this).next('span').css({display:'none'});
-                    }
-                });
-
-                var thisVal = $(this).val();
-                if(thisVal === ''){
-                    $(this).next('span').css({display:'inline-block'});
-                } else {
-                    $(this).next('span').css({display:'none'});
-                }
-            }
-        });
-    });
-});
-
-// disabled btn
-$(function() {
-	$('#submit').attr('disabled', 'disabled');
-
-	$('#check').click(function() {
-		if ($(this).prop('checked') == false) {
-			$('#submit').attr('disabled', 'disabled');
-		} else {
-			$('#submit').removeAttr('disabled');
-		}
-	});
 });

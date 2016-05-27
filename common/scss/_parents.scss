@@ -839,6 +839,7 @@
 .parentsabout {
     .visual img {
         width: 100%;
+        max-width: none;
     }
     .aboutmovie {
         background-color: #fffde7;
@@ -914,7 +915,7 @@
 .detail_app dl.app_in {
     @extend %cf;
     width: 100%;
-    margin: 10px auto 0;
+    margin: 10px auto 1em;
     border-bottom: solid 1px #ccc;
     padding-bottom: 2em;
 }

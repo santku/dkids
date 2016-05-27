@@ -337,12 +337,14 @@
   margin: 15px auto;
   clear: both;
 }
-
-.confirm_area a:first-child {
+.confirm_area a, .confirm_area input {
+  background-color: #fff;
+  font-size: 1.4rem;
+}
+.confirm_area a:first-child, .confirm_area input:first-child {
   float: left;
 }
-
-.confirm_area a:nth-child(2) {
+.confirm_area a:nth-child(2), .confirm_area input:nth-child(2) {
   float: right;
 }
 
@@ -1289,9 +1291,6 @@ section.inner.stamp_detail {
   .launcher.home .app.pickup .tag {
     width: 662px;
   }
-  .launcher.home .app ul {
-    width: 96%;
-  }
   .launcher.home .app ul li {
     margin-right: 10px !important;
   }
@@ -1319,14 +1318,22 @@ section.inner.stamp_detail {
   .launcher.home.high .app:after {
     display: none;
   }
-
-  .app ul.horizon-swiper .horizon-outer {
-    max-height: none !important;
+}
+@media (min-width: 737px) and (orientation: landscape) {
+  .app ul {
+    max-width: 1045px;
+  }
+  .app ul.horizon-swiper {
+    padding-left: 0;
   }
   .app ul.horizon-swiper .horizon-inner {
+    padding-left: 0;
     white-space: normal;
     overflow: auto;
     text-align: left;
+  }
+  .app ul .horizon-outer {
+    max-height: none !important;
   }
 }
 /* =========================================================
@@ -2083,6 +2090,7 @@ section.inner.stamp_detail {
 
 .parentsabout .visual img {
   width: 100%;
+  max-width: none;
 }
 .parentsabout .aboutmovie {
   background-color: #fffde7;
@@ -2155,7 +2163,7 @@ section.inner.stamp_detail {
 --------------------------------------------------------- */
 .detail_app dl.app_in {
   width: 100%;
-  margin: 10px auto 0;
+  margin: 10px auto 1em;
   border-bottom: solid 1px #ccc;
   padding-bottom: 2em;
 }

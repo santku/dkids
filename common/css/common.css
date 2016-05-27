@@ -127,7 +127,7 @@ input.switch + label:before {
 input.switch:checked + label {
   background-image: url(/common/images/common/form_switch_on.png);
 }
-input[type="submit"], input[type="button"] {
+input[type="submit"], input[type="button"], input[type="reset"] {
   -webkit-box-sizing: content-box;
   -webkit-appearance: button;
   appearance: button;
@@ -135,10 +135,10 @@ input[type="submit"], input[type="button"] {
   box-sizing: border-box;
   background-color: transparent;
 }
-input[type="submit"]:-webkit-search-decoration, input[type="button"]:-webkit-search-decoration {
+input[type="submit"]:-webkit-search-decoration, input[type="button"]:-webkit-search-decoration, input[type="reset"]:-webkit-search-decoration {
   display: none;
 }
-input[type="submit"]:focus, input[type="button"]:focus {
+input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus {
   outline-offset: -2px;
 }
 
@@ -891,9 +891,10 @@ footer .copyright {
 }
 .app > ul > li, .app > ul li.horizon-item {
   display: inline-block;
-  width: 82px;
+  width: 90px;
   margin: 15px 4.5px 10px 4.5px;
   border-radius: 12px;
+  box-sizing: border-box;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05), inset 0px -9px 2px -5px rgba(0, 0, 0, 0.5);
   padding: 3px 4px 3px;
   background-color: #FFF;
