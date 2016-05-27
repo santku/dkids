@@ -210,6 +210,39 @@ select::-ms-expand {
   color: inherit;
 }
 
+.youtube {
+  position: relative;
+  padding: 30px 0 52.15%;
+  max-width: 480px;
+  height: 0;
+  margin: 0 auto 1em;
+  overflow: hidden;
+}
+@media screen and (max-width: 760px) {
+  .youtube {
+    padding-bottom: 51.95%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .youtube {
+    padding-bottom: 50.55%;
+  }
+}
+@media screen and (min-width: 514px) {
+  .youtube {
+    padding: 0;
+    width: 480px;
+    height: 270px;
+  }
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .sp {
   display: block;
 }
@@ -366,6 +399,7 @@ header .menu.right img {
   display: table;
   width: 100%;
   border-bottom: solid 1px #CCC;
+  background-color: #FFF;
 }
 #contents .account dt, #contents .account dd {
   display: table-cell;
@@ -849,7 +883,7 @@ footer .copyright {
   padding: 1% 0 .5%;
   text-align: center;
 }
-.app ul {
+.app > ul {
   width: 93.4%;
   margin: 0 auto;
   -webkit-justify-content: flex-start;
@@ -860,16 +894,16 @@ footer .copyright {
   flex-wrap: wrap;
   font-size: 0;
 }
-.app ul.horizon-swiper {
+.app > ul.horizon-swiper {
   width: 100%;
 }
-.app ul.horizon-swiper .horizon-inner {
+.app > ul.horizon-swiper .horizon-inner {
   padding-left: 3.3%;
 }
-.app ul.horizon-swiper .horizon-item {
+.app > ul.horizon-swiper .horizon-item {
   white-space: normal;
 }
-.app ul li {
+.app > ul > li, .app > ul li.horizon-item {
   display: inline-block;
   width: 82px;
   margin: 15px 4.5px 10px 4.5px;
@@ -881,10 +915,10 @@ footer .copyright {
   text-align: center;
   font-size: 1.4rem;
 }
-.app ul li.new {
+.app > ul > li.new, .app > ul li.horizon-item.new {
   position: relative;
 }
-.app ul li.new:before {
+.app > ul > li.new:before, .app > ul li.horizon-item.new:before {
   display: block;
   position: absolute;
   top: -18px;
@@ -897,10 +931,10 @@ footer .copyright {
   content: '';
   z-index: 1;
 }
-.app ul li.new2 {
+.app > ul > li.new2, .app > ul li.horizon-item.new2 {
   position: relative;
 }
-.app ul li.new2:before {
+.app > ul > li.new2:before, .app > ul li.horizon-item.new2:before {
   display: block;
   position: absolute;
   top: -18px;
@@ -913,7 +947,7 @@ footer .copyright {
   content: '';
   z-index: 1;
 }
-.app ul li a {
+.app > ul > li a, .app > ul li.horizon-item a {
   display: inline-block;
   position: relative;
   width: 100%;
@@ -924,7 +958,7 @@ footer .copyright {
   font-size: 1.1rem;
   padding-bottom: 8px;
 }
-.app ul li img {
+.app > ul > li img, .app > ul li.horizon-item img {
   display: block;
   width: 82px;
   margin: 0 auto 5px;
@@ -984,11 +1018,13 @@ footer .copyright {
   background-image: url(/common/images/launcher/home/ranking_10th.png);
 }
 .app.bgNone ul li {
+  margin: 15px 4.5px 10px 4.5px;
   padding: 0;
   background: none;
   box-shadow: none;
 }
 .app.bgNone ul li img {
+  width: 82px;
   border-radius: 15px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
 }
@@ -1180,6 +1216,68 @@ a.movie i {
   }
   header .inner .menu li img {
     vertical-align: top;
+  }
+}
+@media screen and (min-width: 960px) {
+  #contents {
+    background-color: #faf9e8;
+  }
+  #contents section.inner {
+    background-color: #FFF;
+  }
+  #contents.launcher.home {
+    background-color: #FFF;
+  }
+  #contents.launcher section.inner {
+    background-color: transparent;
+  }
+  #contents.parents.home {
+    background-color: #FFF;
+  }
+  #contents.parents.search {
+    background-color: #FFF;
+  }
+  #contents.parents.search h1 {
+    max-width: none;
+  }
+  #contents.parents.detail_app #mainVisual {
+    background-color: #FFF;
+  }
+  #contents.parents.detail_app > .paragraph {
+    margin-bottom: 0;
+    padding: 1em;
+    background-color: #FFF;
+  }
+  #contents.parents.special.page > .center {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    background-color: #FFF;
+  }
+  #contents.parents.press #mainVisual {
+    background-color: #FFF;
+  }
+  #contents.parents.parentsabout > .paragraph, #contents.parents.parentsabout #trial {
+    margin-bottom: 0;
+    padding-bottom: 2em;
+  }
+  #contents.parents.parentsabout > .paragraph + section.inner, #contents.parents.parentsabout #trial + section.inner {
+    background-color: #fffde7;
+  }
+  #contents.parents.faq > section {
+    background-color: #FFF;
+  }
+  #contents.parents.faq > section .center {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+  }
+  #contents.parents nav.list {
+    background-color: #FFF;
+  }
+  #contents h1, #contents section.inner, #contents.initial .inner, #contents.feature #mainVisual, #contents.parents.detail_app #mainVisual, #contents.parents.detail_app > .paragraph, #contents.parents.special.page > .center, #contents.parents.press #mainVisual, #contents.parents .visual, #contents.parents.parentsabout > .paragraph, #contents.parents.parentsabout #trial, #contents.parents.faq > section {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
   }
 }
 

@@ -153,7 +153,7 @@ pages scripts
       var length = Math.floor( parent / width );
       var container = width * length;
 
-      $('.app').find('ul').width( container + 2 );
+      $('.app').children('ul').width( container + 2 );
 
     }
 

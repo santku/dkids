@@ -1067,6 +1067,7 @@ section.inner.stamp_detail {
 
 .privacy .pageclose {
   width: 100%;
+  max-width: 960px;
   position: fixed;
   bottom: 0;
   z-index: 2;
