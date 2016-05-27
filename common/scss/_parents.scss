@@ -844,6 +844,60 @@
         }
     }
 }
+
+//キャンペーン
+//--------------------------------------------------------
+.campaign{
+  .inner{
+    padding-top: .4em!important;
+    .balloon {
+      width: 88.4%;
+padding: 2.5%;
+background-color: #FFF8E4;
+margin: 0 auto 1em;
+text-align: center;
+        position: relative;
+        span {
+            font-weight: bold;
+        }
+        .red{
+          color: #d0121b;
+        }
+        &:after {
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            margin-left: -5px;
+            width: 20px;
+            height: 12px;
+            background: url("/common/images/parents/common/balloon_03.png") no-repeat;
+            background-size: contain;
+            content: '';
+        }
+    }
+    #trial {
+        margin-bottom: 2em;
+        padding-bottom: 2em;
+        background-color: #fffde7;
+        .inner{
+        width: 93.4%;
+    margin: 0 auto;
+  }
+        figure {
+            margin-top: -30px;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .button {
+            margin-bottom: 0;
+        }
+    }
+  }
+
+
+}
+
 //複数端末をご利用の方へ
 //--------------------------------------------------------
 // よくある質問
