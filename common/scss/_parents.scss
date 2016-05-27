@@ -229,9 +229,14 @@
             }
             &#news {
                 position: relative;
+                h2{
+                  margin-bottom: .3em;
+                }
                 dl {
                     dt {
                         font-weight: normal;
+                        font-size: 1.3rem;
+                        padding-top: .5em;
                     }
                 }
                 .ehon {
@@ -588,7 +593,7 @@
                         color: #f48a00;
                     }
                     p {
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                     }
                 }
                 .balloon_03 {
@@ -617,6 +622,9 @@
     // login
     //--------------------------------------------------------
     &.login {
+      h3{
+        margin-left: .8em;
+      }
         .accordion {
           margin-bottom: 0!important;
             dl.active {
@@ -794,6 +802,21 @@
                 &.active {
                     background-color: #fafafa;
                 }
+                dt{
+                  position: relative;
+                  padding: 0 10% 0 3.3%;
+                  padding-top: 1em;
+                  padding-bottom: 1em;
+                  &:before{
+                    position: absolute;
+                    top: 20%;
+                    right: 6.6%;
+                    display: block;
+                    content: '\f107';
+                    font-family: $icon;
+                    font-size: 2rem;
+                  }
+                }
             }
         }
     }
@@ -845,15 +868,18 @@
         padding: 2em 3.3%;
     }
     > section {
-        .inner {
-            width: 93.4%;
+        &.inner {
             margin: 0 auto;
+            padding: 1.4em 0 0!important;
         }
         &#trial {
             margin-bottom: 0;
             padding-bottom: 2em;
             background-color: #fffde7;
             margin-bottom: 2em;
+            .inner {
+                padding: 1.4em .5em 0;
+            }
             figure {
                 margin-top: -30px;
                 margin-bottom: 1em;
@@ -953,7 +979,7 @@
 /*このアプリのお知らせ通知*/
 .detail_app dl.push {
     @extend %cf;
-    width: 260px;
+    width: 80%px;
     margin: 15px auto 0;
 }
 .detail_app .push dt {
@@ -963,10 +989,12 @@
     font-weight: bold;
     margin: 0 0 10px;
     padding: 10px 0 0;
+    width: 60%;
+    text-align: right;
 }
 .detail_app .push dd {
-    float: left;
-    padding: 5px 10px 0;
+    margin-left: 63%;
+    padding: 5px 0 0;
 }
 .detail_app .more {
     border: solid 2px #F48A00;
@@ -1209,12 +1237,16 @@ ul.other figure img {
 --------------------------------------------------------- */
 p.date {
     margin-bottom: 0;
+    font-size: 1.1rem;
 }
 .info_detail .listItem {
     width: 90%;
     margin: 0 auto;
     li {
-        margin-bottom: 1em;
+        margin-bottom: .8em;
+        span{
+          font-size: 1.1rem;
+        }
     }
 }
 .info_detail {
@@ -1235,11 +1267,11 @@ p.date {
     }
     article.paragraph {
         p {
-            padding: 0 0.5em;
+            padding: 0 0.5 0 0em;
             line-height: 20px;
             color: #010000;
-            //font-size: 1.05em;
         }
+
     }
 }
 .detail_important {
@@ -1494,6 +1526,9 @@ ul.pageing {
     }
     .selectBox {
         width: 100%;
+        select{
+          padding: .5em .3em;
+        }
     }
 }
 .inquiry_area {
@@ -1727,6 +1762,55 @@ ul.point li {
     .config_area a {
         width: 200px;
     }
+    .allselect{
+      margin: 0 auto;
+      padding: 1em 0 0;
+      display: table;
+      li{
+        display: table-cell;
+      }
+          input {
+            display: none;
+              &[type=radio]{
+                display: none;
+                + label{
+                   &:before, &:after{
+                     display: none;
+                   }
+                 }
+          }
+        }
+            label{
+              display: block;
+              padding: .5em;
+              margin:0 .5em .5em 0;
+              border-radius: 5px;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+        background-color: #f9f9f9;
+        text-align: center;
+        text-decoration: none !important;
+        color: #333 !important;
+        .right{
+          float: right;
+        }
+            }
+
+            input[type="radio"]:checked + label  {
+              box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
+              background-color: #df344f;
+              text-decoration: none !important;
+              color: #fff !important;
+
+            }
+            input[type=radio] + label:before {
+              background-image: none;
+              display: none;
+            }
+        input[type=radio]:checked + label:before{
+          background-image: none;
+          display: none;
+        }
+      }
 }
 /* キッズモード設定確認P-28
 --------------------------------------------------------- */

@@ -434,6 +434,11 @@
   margin: 0 5px 1.5em 0;
 }
 
+.launcher {
+  /*.confirm_area.on_off {
+    width: 220px;
+  }*/
+}
 .launcher .first_change_area li {
   width: 90%;
   margin: 0 auto 1em;
@@ -467,8 +472,50 @@
   float: right;
   margin: 0 5px 15px 0;
 }
-.launcher .confirm_area.on_off {
-  width: 220px;
+.launcher.notice .inner .allselect {
+  margin: 0 auto;
+  padding: 1em 0;
+  display: table;
+}
+.launcher.notice .inner .allselect li {
+  display: table-cell;
+}
+.launcher.notice .inner .allselect input {
+  display: none;
+}
+.launcher.notice .inner .allselect input[type=radio] {
+  display: none;
+}
+.launcher.notice .inner .allselect input[type=radio] + label:before, .launcher.notice .inner .allselect input[type=radio] + label:after {
+  display: none;
+}
+.launcher.notice .inner .allselect label {
+  display: block;
+  padding: .5em;
+  margin: 0 .5em .5em 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #f9f9f9;
+  text-align: center;
+  text-decoration: none !important;
+  color: #333 !important;
+}
+.launcher.notice .inner .allselect label .right {
+  float: right;
+}
+.launcher.notice .inner .allselect input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #df344f;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.launcher.notice .inner .allselect input[type=radio] + label:before {
+  background-image: none;
+  display: none;
+}
+.launcher.notice .inner .allselect input[type=radio]:checked + label:before {
+  background-image: none;
+  display: none;
 }
 .launcher ul.notice_app img {
   width: 82px;
@@ -606,7 +653,6 @@ ul.bonus_area li {
 .remodel_2 {
   background-color: #fff;
   position: relative;
-  padding: 2px;
   border: solid 5px #f7bc28;
   box-shadow: inset 0 0 0 1px #ee993b;
   border-radius: 15px;
@@ -736,6 +782,11 @@ img.back {
   width: 25%;
   height: auto;
 }
+@media screen and (min-width: 567px) {
+  img.back {
+    width: 15%;
+  }
+}
 
 .month_emphasis {
   /*background:url(/common/images/launcher/home/month_btn.png) no-repeat;
@@ -787,6 +838,12 @@ img.back {
 
 #contents section.inner {
   padding-bottom: 20px;
+  min-height: 14.5em;
+}
+@media screen and (min-width: 768px) {
+  #contents section.inner {
+    min-height: 27em;
+  }
 }
 
 .stamp_2 .remodel_2.red_border {
@@ -919,7 +976,7 @@ section.inner.stamp_detail {
   margin: 0 auto;
 }
 .register_area .selectBox.gender {
-  width: 30%;
+  width: 42%;
 }
 
 .register_area dl {
@@ -947,13 +1004,23 @@ section.inner.stamp_detail {
 }
 
 .register_area input {
-  width: 63%;
+  width: 50%;
   padding: 0.5em 0.2em !important;
 }
 
+.setting h1 {
+  padding: .1em 1em;
+}
 .setting p {
   margin-bottom: 0;
   padding: 1em 0;
+}
+.setting li {
+  border-top: solid 1px #fff;
+  font-size: 1.2rem;
+}
+.setting li.half:nth-of-type(odd) {
+  border-right: none !important;
 }
 
 .help .inner {
@@ -1547,8 +1614,13 @@ section.inner.stamp_detail {
 #contents.parents.home > section#news {
   position: relative;
 }
+#contents.parents.home > section#news h2 {
+  margin-bottom: .3em;
+}
 #contents.parents.home > section#news dl dt {
   font-weight: normal;
+  font-size: 1.3rem;
+  padding-top: .5em;
 }
 #contents.parents.home > section#news .ehon {
   position: relative;
@@ -1891,7 +1963,7 @@ section.inner.stamp_detail {
   color: #f48a00;
 }
 #contents.parents.home > section#thanks .inner p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 #contents.parents.home > section#thanks .balloon_03 {
   position: relative;
@@ -1912,6 +1984,9 @@ section.inner.stamp_detail {
   background: url("/common/images/parents/common/balloon_03.png") no-repeat;
   background-size: contain;
   content: '';
+}
+#contents.parents.login h3 {
+  margin-left: .8em;
 }
 #contents.parents.login .accordion {
   margin-bottom: 0 !important;
@@ -2052,6 +2127,21 @@ section.inner.stamp_detail {
 #contents.parents.parents .accordion dl.active {
   background-color: #fafafa;
 }
+#contents.parents.parents .accordion dl dt {
+  position: relative;
+  padding: 0 10% 0 3.3%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+#contents.parents.parents .accordion dl dt:before {
+  position: absolute;
+  top: 20%;
+  right: 6.6%;
+  display: block;
+  content: '\f107';
+  font-family: FontAwesome;
+  font-size: 2rem;
+}
 
 /* logout
 --------------------------------------------------------- */
@@ -2088,15 +2178,18 @@ section.inner.stamp_detail {
   background-color: #fffde7;
   padding: 2em 3.3%;
 }
-.parentsabout > section .inner {
-  width: 93.4%;
+.parentsabout > section.inner {
   margin: 0 auto;
+  padding: 1.4em 0 0 !important;
 }
 .parentsabout > section#trial {
   margin-bottom: 0;
   padding-bottom: 2em;
   background-color: #fffde7;
   margin-bottom: 2em;
+}
+.parentsabout > section#trial .inner {
+  padding: 1.4em .5em 0;
 }
 .parentsabout > section#trial figure {
   margin-top: -30px;
@@ -2197,7 +2290,7 @@ section.inner.stamp_detail {
 
 /*このアプリのお知らせ通知*/
 .detail_app dl.push {
-  width: 260px;
+  width: 80% px;
   margin: 15px auto 0;
 }
 
@@ -2208,11 +2301,13 @@ section.inner.stamp_detail {
   font-weight: bold;
   margin: 0 0 10px;
   padding: 10px 0 0;
+  width: 60%;
+  text-align: right;
 }
 
 .detail_app .push dd {
-  float: left;
-  padding: 5px 10px 0;
+  margin-left: 63%;
+  padding: 5px 0 0;
 }
 
 .detail_app .more {
@@ -2451,6 +2546,7 @@ ul.other figure img {
 --------------------------------------------------------- */
 p.date {
   margin-bottom: 0;
+  font-size: 1.1rem;
 }
 
 .info_detail .listItem {
@@ -2458,7 +2554,10 @@ p.date {
   margin: 0 auto;
 }
 .info_detail .listItem li {
-  margin-bottom: 1em;
+  margin-bottom: .8em;
+}
+.info_detail .listItem li span {
+  font-size: 1.1rem;
 }
 
 .info_detail .list {
@@ -2473,7 +2572,7 @@ p.date {
   color: #cc0033;
 }
 .info_detail article.paragraph p {
-  padding: 0 0.5em;
+  padding: 0 0.5 0 0em;
   line-height: 20px;
   color: #010000;
 }
@@ -2728,6 +2827,9 @@ ul.pageing {
 .inquiry .selectBox {
   width: 100%;
 }
+.inquiry .selectBox select {
+  padding: .5em .3em;
+}
 
 .inquiry_area {
   width: 100%;
@@ -2981,6 +3083,51 @@ ul.point li {
 }
 .mail_service .config_area a {
   width: 200px;
+}
+.mail_service .allselect {
+  margin: 0 auto;
+  padding: 1em 0 0;
+  display: table;
+}
+.mail_service .allselect li {
+  display: table-cell;
+}
+.mail_service .allselect input {
+  display: none;
+}
+.mail_service .allselect input[type=radio] {
+  display: none;
+}
+.mail_service .allselect input[type=radio] + label:before, .mail_service .allselect input[type=radio] + label:after {
+  display: none;
+}
+.mail_service .allselect label {
+  display: block;
+  padding: .5em;
+  margin: 0 .5em .5em 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #f9f9f9;
+  text-align: center;
+  text-decoration: none !important;
+  color: #333 !important;
+}
+.mail_service .allselect label .right {
+  float: right;
+}
+.mail_service .allselect input[type="radio"]:checked + label {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
+  background-color: #df344f;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.mail_service .allselect input[type=radio] + label:before {
+  background-image: none;
+  display: none;
+}
+.mail_service .allselect input[type=radio]:checked + label:before {
+  background-image: none;
+  display: none;
 }
 
 /* キッズモード設定確認P-28
