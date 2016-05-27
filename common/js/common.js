@@ -394,8 +394,7 @@ common scripts
     //
     // });
 
-
-});
+  });
 
 // footerfixed
 new function(){
