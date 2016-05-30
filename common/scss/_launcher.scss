@@ -1479,6 +1479,61 @@ section.inner.sp_bonus {}
     }
   }
 }
+
+
+//--------------------------------------------------------- */
+//L-2　チュートリアル
+//--------------------------------------------------------- */
+
+#contents.tutorial{
+	background:url(/common/images/launcher/tutorial/bg.jpg) no-repeat left top;
+	background-size:cover !important;
+	background-position:bottom;
+	
+	.inner{
+		max-width:100% !important;
+	}
+	
+	.gallery-cell {
+	  width: 300px;
+	  margin-bottom: 5%;
+	  background: #8C8;
+	  counter-increment: gallery-cell;
+		background:#fff;
+		border-radius: 5px;
+		box-shadow:0px 0px 5px 1px #a7a7a7;
+		-moz-box-shadow:0px 0px 5px 1px #a7a7a7;
+		-webkit-box-shadow:0px 0px 5px 1px #a7a7a7;
+		box-sizing:border-box;
+	}
+
+	.gallery-cell .title{
+		background:#f48a00;
+		color:#fff;
+		padding:5px;
+		text-align:center;
+		font-size:1.6rem;
+		font-weight:bold;
+		-webkit-border-top-left-radius: 5px;  
+	  -webkit-border-top-right-radius: 5px;
+		-moz-border-radius-topleft: 5px;  
+	   -moz-border-radius-topright:5px;
+	}
+	.gallery-cell .gallery-inner{
+		padding:0 10px 25px 10px;
+	}
+	.gallery-cell .heading {
+		margin-bottom: .5em;
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+
+	
+}
+
+
+
+
 /* =========================================================
  TABLET
 ========================================================= */
@@ -1539,6 +1594,7 @@ section.inner.sp_bonus {}
     }
   }
 }
+
 @media (min-width: 1024px) {
   .launcher.home .app ul.horizon-swiper {
     width: 941px;
