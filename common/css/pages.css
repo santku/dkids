@@ -1372,12 +1372,13 @@ section.inner.stamp_detail {
 }
 
 #contents.tutorial {
-  background: url(/common/images/launcher/tutorial/bg.jpg) no-repeat left top;
+  background: url(/common/images/launcher/tutorial/bg.jpg) no-repeat left bottom;
   background-size: cover !important;
   background-position: bottom;
 }
 #contents.tutorial .inner {
   max-width: 100% !important;
+  background-color: transparent;
 }
 #contents.tutorial .gallery-cell {
   width: 300px;
