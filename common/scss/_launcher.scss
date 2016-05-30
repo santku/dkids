@@ -1492,12 +1492,12 @@ section.inner.sp_bonus {}
 	background:url(/common/images/launcher/tutorial/bg.jpg) no-repeat left bottom;
 	background-size:cover !important;
 	background-position:bottom;
-	
+
 	.inner{
 		max-width:100% !important;
 		background-color:transparent;
 	}
-	
+
 	.gallery-cell {
 	  width: 300px;
 	  margin-bottom: 5%;
@@ -1518,9 +1518,9 @@ section.inner.sp_bonus {}
 		text-align:center;
 		font-size:1.6rem;
 		font-weight:bold;
-		-webkit-border-top-left-radius: 5px;  
+		-webkit-border-top-left-radius: 5px;
 	  -webkit-border-top-right-radius: 5px;
-		-moz-border-radius-topleft: 5px;  
+		-moz-border-radius-topleft: 5px;
 	   -moz-border-radius-topright:5px;
 	}
 	.gallery-cell .gallery-inner{
@@ -1532,7 +1532,7 @@ section.inner.sp_bonus {}
 		font-weight: bold;
 	}
 
-	
+
 }
 
 
@@ -1600,10 +1600,15 @@ section.inner.sp_bonus {}
 }
 
 @media (min-width: 1024px) {
-  .launcher.home .app ul.horizon-swiper.disabled  {
-    width: 941px;
-    .horizon-inner {
-      padding-left: 0 !important;
+  .launcher.home .app{
+    &.nomore:after {
+      display: none;
+    }
+    ul.horizon-swiper.disabled  {
+      width: 941px;
+      .horizon-inner {
+        padding-left: 0 !important;
+      }
     }
   }
 }
@@ -1615,15 +1620,15 @@ section.inner.sp_bonus {}
       width: 1045px !important;
   }
 }
-@media (min-width: 737px) and (max-width: 1024px) and (orientation:landscape) {
-  .launcher.home.high {
-    .app {
-      &:after {
-        display: none;
-      }
-    }
-  }
-}
+// @media (min-width: 737px) and (max-width: 1024px) and (orientation:landscape) {
+//   .launcher.home.high {
+//     .app {
+//       &:after {
+//         display: none;
+//       }
+//     }
+//   }
+// }
 // @media (min-width: 737px) and (orientation:landscape) {
 //   .app ul {
 //     max-width: 1045px;

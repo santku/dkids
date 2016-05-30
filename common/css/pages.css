@@ -1449,6 +1449,9 @@ section.inner.stamp_detail {
   }
 }
 @media (min-width: 1024px) {
+  .launcher.home .app.nomore:after {
+    display: none;
+  }
   .launcher.home .app ul.horizon-swiper.disabled {
     width: 941px;
   }
@@ -1463,11 +1466,6 @@ section.inner.stamp_detail {
 
   .launcher.home.low .app > ul:not(.horizon-swiper) {
     width: 1045px !important;
-  }
-}
-@media (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {
-  .launcher.home.high .app:after {
-    display: none;
   }
 }
 /* =========================================================
