@@ -379,6 +379,7 @@
         .rankingList {
           li {
             display: table;
+            width: 93.333%;
             padding: 0.5em 3.3%;
             border-bottom: solid 1px #f0f0f0;
             > div,
@@ -846,7 +847,7 @@
 //--------------------------------------------------------
 .campaign {
   .inner {
-    padding-top: 0.4em !important;
+    padding-top: 0 !important;
     .balloon {
       width: 88.4%;
       padding: 2.5%;
@@ -1375,6 +1376,7 @@ p.date {
       margin-bottom: 1em;
       li {
         display: table;
+        width: 93.333%;
         padding: 0.5em 3.3%;
         border-bottom: solid 1px #f0f0f0;
         > div,
@@ -1923,7 +1925,11 @@ ul.point li {
   }
   .inner {
     padding-top: 1.4em;
+    .bold{
+      font-weight: bold;
+    }
   }
+
 }
 /* おもしろくくだいさくせんP-34
 --------------------------------------------------------- */

@@ -29,48 +29,49 @@
   bottom: 0;
   right: 1em;
   height: 22px;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .launcher.home .loginArea .txt {
-  padding: 1em 10em 1em 1em;
+  padding: 1em 5em 1em 0.5em;
   min-height: 2em;
+  font-size: 1rem;
 }
 .launcher.home .app {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   background-size: cover;
   position: relative;
 }
 .launcher.home .app.new {
-  background-image: url(/common/images/launcher/home/new_bg.png);
+  background-image: url("/common/images/launcher/home/new_bg.png");
 }
 .launcher.home .app.new h2 {
   background: -webkit-linear-gradient(top, rgba(199, 2, 33, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(199, 2, 33, 0.2) 90%, transparent 100%);
 }
 .launcher.home .app.history {
-  background-image: url(/common/images/launcher/home/history_bg.png);
+  background-image: url("/common/images/launcher/home/history_bg.png");
 }
 .launcher.home .app.history h2 {
   background: -webkit-linear-gradient(top, rgba(0, 100, 184, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(0, 100, 184, 0.2) 90%, transparent 100%);
 }
-.launcher.home .app.select, .launcher.home .app.recommend {
-  background-image: url(/common/images/launcher/home/select_bg.png);
+.launcher.home .app.recommend, .launcher.home .app.select {
+  background-image: url("/common/images/launcher/home/select_bg.png");
 }
-.launcher.home .app.select h2, .launcher.home .app.recommend h2 {
+.launcher.home .app.recommend h2, .launcher.home .app.select h2 {
   background: -webkit-linear-gradient(top, rgba(0, 151, 184, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(0, 151, 184, 0.2) 90%, transparent 100%);
   margin-bottom: 1em;
 }
-.launcher.home .app.try, .launcher.home .app.ranking, .launcher.home .app.logout {
-  background-image: url(/common/images/launcher/home/try_bg.png);
+.launcher.home .app.logout, .launcher.home .app.ranking, .launcher.home .app.try {
+  background-image: url("/common/images/launcher/home/try_bg.png");
 }
-.launcher.home .app.try h2, .launcher.home .app.ranking h2, .launcher.home .app.logout h2 {
+.launcher.home .app.logout h2, .launcher.home .app.ranking h2, .launcher.home .app.try h2 {
   background: -webkit-linear-gradient(top, rgba(236, 161, 0, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(236, 161, 0, 0.2) 90%, transparent 100%);
 }
 .launcher.home .app.pickup {
-  background-image: url(/common/images/launcher/home/pickup_bg.png);
+  background-image: url("/common/images/launcher/home/pickup_bg.png");
 }
 .launcher.home .app.pickup h2 {
   background: -webkit-linear-gradient(top, rgba(250, 96, 8, 0.2) 90%, transparent 100%);
@@ -88,7 +89,7 @@
   width: 50px;
   height: 26px;
   padding-left: 15px;
-  background: url(/common/images/launcher/home/pickup_tag.png) no-repeat;
+  background: url("/common/images/launcher/home/pickup_tag.png") no-repeat;
   background-size: cover;
   content: '';
 }
@@ -96,12 +97,12 @@
   display: inline-block;
   position: relative;
   margin: 4px 0 0 10px;
-  padding: .5em;
-  letter-spacing: .05em;
+  padding: 0.5em;
+  letter-spacing: 0.05em;
   font-weight: bold;
   font-size: 1.3rem;
   color: #FFF;
-  z-index: 10;
+  z-index: 1;
 }
 .launcher.home .app.pickup .tag p:before {
   position: absolute;
@@ -109,7 +110,7 @@
   left: 5px;
   width: 60px;
   height: 10px;
-  background: url(/common/images/launcher/home/pickup_tag_keyword.png) no-repeat;
+  background: url("/common/images/launcher/home/pickup_tag_keyword.png") no-repeat;
   background-size: contain;
   content: '';
 }
@@ -124,22 +125,22 @@
   content: '';
   z-index: -1;
 }
-.launcher.home .app.try ul, .launcher.home .app.recommend ul {
+.launcher.home .app.recommend ul, .launcher.home .app.try ul {
   display: flex;
   width: 298px;
 }
-.launcher.home .app.try ul li, .launcher.home .app.recommend ul li {
+.launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
   width: 100%;
   margin-right: 0;
   box-sizing: border-box;
   text-align: left;
 }
-.launcher.home .app.try ul li.new:before, .launcher.home .app.recommend ul li.new:before {
+.launcher.home .app.recommend ul li.new:before, .launcher.home .app.try ul li.new:before {
   left: 45px;
 }
 .launcher.home .app.try ul li p {
   margin-bottom: 0;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 .launcher.home .app.try ul li img {
   width: 100%;
@@ -154,7 +155,8 @@
   padding-bottom: 6px;
   display: table;
 }
-.launcher.home .app.recommend ul li figure, .launcher.home .app.recommend ul li div {
+.launcher.home .app.recommend ul li div,
+.launcher.home .app.recommend ul li figure {
   display: table-cell;
   vertical-align: top;
 }
@@ -196,14 +198,14 @@
     display: inline-block;
     width: 48.3%;
     max-width: 408px;
-    margin: 1.3% 0 0 0 !important;
+    margin: 1.3% 0 0 !important;
   }
   .launcher.home .app.recommend ul li:nth-child(2n+2), .launcher.home .app.try ul li:nth-child(2n+2) {
     margin-left: 3.3% !important;
   }
-  .launcher.home .app.recommend ul li figure,
-  .launcher.home .app.recommend ul li div, .launcher.home .app.try ul li figure,
-  .launcher.home .app.try ul li div {
+  .launcher.home .app.recommend ul li div,
+  .launcher.home .app.recommend ul li figure, .launcher.home .app.try ul li div,
+  .launcher.home .app.try ul li figure {
     display: table-cell;
     float: none;
     vertical-align: top;
@@ -240,17 +242,17 @@
   right: 0;
 }
 .launcher.home.high .app.new:after {
-  background-image: url(/common/images/launcher/home/new_more.png);
+  background-image: url("/common/images/launcher/home/new_more.png");
 }
 .launcher.home.high .app.history:after {
-  background-image: url(/common/images/launcher/home/history_more.png);
+  background-image: url("/common/images/launcher/home/history_more.png");
 }
 .launcher.home.high .app.pickup:after {
-  background-image: url(/common/images/launcher/home/pickup_more.png);
+  background-image: url("/common/images/launcher/home/pickup_more.png");
   top: 65px;
 }
 .launcher.home.high .app.ranking:after {
-  background-image: url(/common/images/launcher/home/ranking_more.png);
+  background-image: url("/common/images/launcher/home/ranking_more.png");
   background-size: 79px 18px;
 }
 .launcher.search .app {
@@ -260,12 +262,45 @@
   background: -webkit-linear-gradient(top, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
 }
+.launcher.tutorial .inner {
+  background: rgba(200, 200, 200, 0.8);
+}
+.launcher.tutorial .inner .center-item .slick-arrow {
+  display: none !important;
+}
+.launcher.tutorial .inner .tutorial_box .inner {
+  width: 95%;
+  margin: 0.5em auto;
+  background: #fff;
+  box-shadow: 0 0 6px 1px #b4b4b4;
+  -moz-box-shadow: 0 0 6px 1px #b4b4b4;
+  -webkit-box-shadow: 0 0 6px 1px #b4b4b4;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding-bottom: 2em;
+}
+.launcher.tutorial .inner .tutorial_box h1 {
+  border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.launcher.tutorial .inner .tutorial_box h3 {
+  width: 95%;
+  margin: 0 auto;
+}
+.launcher.tutorial .inner .tutorial_box p {
+  width: 95%;
+  margin: 0 auto 1em;
+}
 .launcher.feature section.inner article.paragraph {
   border-bottom: solid 1px #E1DFD1;
   padding-bottom: 1em;
 }
 .launcher.feature section.inner article .play {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .launcher.feature section.inner article.item ul {
   width: 80%;
@@ -333,36 +368,42 @@
 
 /*戻る確認ボタン*/
 .confirm_area {
-  display: table;
   margin: 15px auto;
   clear: both;
+  text-align: center;
 }
-.confirm_area a, .confirm_area input {
+.confirm_area ul {
+  text-align: center;
+}
+.confirm_area li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.confirm_area a,
+.confirm_area input {
   background-color: #fff;
   font-size: 1.4rem;
   display: table-cell;
 }
-.confirm_area a:first-child, .confirm_area input:first-child {
-  margin-right: .5em;
+.confirm_area a:first-child,
+.confirm_area input:first-child {
+  margin-right: 0.5em;
 }
 
-.child_register .register_area_02 {
-  padding: 0 0 0 0.5em;
-}
 .child_register .register_area_02 dl {
   overflow: hidden;
 }
 .child_register .register_area_02 dt {
   float: left;
   width: 20%;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 .child_register .register_area_02 dd {
   margin-top: -2.5em;
   width: 85%;
   float: right;
   overflow: hidden;
-  padding: .5em 0 0 .5em;
+  padding: 0.5em 0 0 0.5em;
 }
 .child_register .register_area_02 dd input {
   display: none;
@@ -370,21 +411,22 @@
 .child_register .register_area_02 dd input[type=radio] {
   display: none;
 }
-.child_register .register_area_02 dd input[type=radio] + label:before, .child_register .register_area_02 dd input[type=radio] + label:after {
+.child_register .register_area_02 dd input[type=radio] + label:after, .child_register .register_area_02 dd input[type=radio] + label:before {
   display: none;
 }
 .child_register .register_area_02 dd label {
   display: block;
   width: 41%;
   float: left;
-  padding: .5em;
-  margin: 0 .5em .5em 0;
+  padding: 0.5em;
+  margin: 0 0.5em 0.5em 0;
   border-radius: 5px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 -9px 2px -7px rgba(0, 0, 0, 0.5);
   background-color: #f9f9f9;
   text-align: center;
   text-decoration: none !important;
   color: #333 !important;
+  line-height: 1em;
 }
 .child_register .register_area_02 dd input[type="radio"]:checked + label {
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
@@ -421,17 +463,24 @@
   font-size: 0.8em;
 }
 
+.registration_area dl {
+  overflow: hidden;
+}
+
 .registration_area dl dt {
-  width: 90px;
+  width: 30%;
   float: left;
   clear: both;
   margin: 0 5px 1.5em 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5em;
 }
 
 .registration_area dl dd {
-  width: 162px;
-  float: left;
-  margin: 0 5px 1.5em 0;
+  width: 70%;
+  padding-bottom: 0.5em;
+  margin: 0 5px 1.5em 30%;
+  border-bottom: 1px solid #ccc;
 }
 
 .launcher {
@@ -440,7 +489,7 @@
   }*/
 }
 .launcher .first_change_area li {
-  width: 90%;
+  width: 100%;
   margin: 0 auto 1em;
 }
 .launcher .first_change_area input {
@@ -455,18 +504,18 @@
   width: 100%;
 }
 .launcher .first_change_area .btn {
-  padding: .5em;
+  padding: 0.5em;
 }
 .launcher .notice_area {
   width: auto;
-  margin: 0 2.5% 0;
+  margin: 0 2.5%;
   border-bottom: 1px solid #535353;
 }
 .launcher .notice_area dl dt {
   float: left;
   clear: both;
   margin: 0 5px 15px 0;
-  padding: 5px 0 0 0;
+  padding: 5px 0 0;
 }
 .launcher .notice_area dl dd {
   float: right;
@@ -486,15 +535,15 @@
 .launcher.notice .inner .allselect input[type=radio] {
   display: none;
 }
-.launcher.notice .inner .allselect input[type=radio] + label:before, .launcher.notice .inner .allselect input[type=radio] + label:after {
+.launcher.notice .inner .allselect input[type=radio] + label:after, .launcher.notice .inner .allselect input[type=radio] + label:before {
   display: none;
 }
 .launcher.notice .inner .allselect label {
   display: block;
-  padding: .5em;
-  margin: 0 .5em .5em 0;
+  padding: 0.5em;
+  margin: 0 0.5em 0.5em 0;
   border-radius: 5px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 -9px 2px -7px rgba(0, 0, 0, 0.5);
   background-color: #f9f9f9;
   text-align: center;
   text-decoration: none !important;
@@ -571,10 +620,6 @@
     display: none;
   }
 }
-.remodal .txt {
-  text-align: center;
-}
-
 .remodal .buttons li input.detail {
   width: auto;
 }
@@ -650,6 +695,10 @@ ul.bonus_area li {
   margin-right: 10px;
 }
 
+.remodal_txt {
+  padding: 0 0.5em;
+}
+
 .remodel_2 {
   background-color: #fff;
   position: relative;
@@ -657,12 +706,12 @@ ul.bonus_area li {
   box-shadow: inset 0 0 0 1px #ee993b;
   border-radius: 15px;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 2em;
 }
 
 .remodel_2 section {
   margin: 0 auto;
-  padding: 7% 5% 0;
+  padding: 0 5%;
   overflow: auto;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
@@ -735,8 +784,7 @@ ul.bonus_area li {
 }
 
 .loginb_area {
-  margin: 15% auto 10%;
-  display: none;
+  margin: 0.5em auto 1em;
 }
 
 .loginb_area h3 {
@@ -751,7 +799,10 @@ ul.bonus_area li {
   position: relative;
 }
 .remodel_2.red_border h3.special {
-  margin-top: -7%;
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  width: 100%;
 }
 
 .month img {
@@ -789,17 +840,8 @@ img.back {
 }
 
 .month_emphasis {
-  /*background:url(/common/images/launcher/home/month_btn.png) no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 100%;*/
-  /*position: absolute;
-  top: 40%;
-  left: 3%;*/
-  margin: 3em auto 2em;
-  padding: 0 3.3%;
-  padding-top: 1em;
-  padding-bottom: 3em;
+  margin: 25% auto 1em;
+  padding: 1em 0;
 }
 .month_emphasis dl {
   position: relative;
@@ -823,7 +865,8 @@ img.back {
     background-size: 200px;
   }
 }
-.month_emphasis dl dt, .month_emphasis dl dd {
+.month_emphasis dl dd,
+.month_emphasis dl dt {
   display: table-cell;
   vertical-align: middle;
 }
@@ -837,7 +880,7 @@ img.back {
 }
 
 #contents section.inner {
-  padding-bottom: 20px;
+  padding-bottom: 1em;
   min-height: 14.5em;
 }
 @media screen and (min-width: 768px) {
@@ -877,7 +920,7 @@ section.inner.stamp_detail {
 .stampbook ul li {
   float: left;
   width: 20%;
-  padding: .4em 0 2em;
+  padding: 0.4em 0 2em;
 }
 .stampbook ul li img {
   width: 85%;
@@ -969,7 +1012,7 @@ section.inner.stamp_detail {
 }
 .confirm_config .config_btn p {
   display: table-cell;
-  padding: 5px 10px 5px;
+  padding: 5px 10px;
 }
 
 .register_area {
@@ -1009,7 +1052,7 @@ section.inner.stamp_detail {
 }
 
 .setting h1 {
-  padding: .1em 1em;
+  padding: 0.1em 1em;
 }
 .setting p {
   margin-bottom: 0;
@@ -1050,7 +1093,7 @@ section.inner.stamp_detail {
 }
 
 .remodel_3 ul.bonus_area {
-  margin: 0% auto 2%;
+  margin: 0 auto 2%;
   background: url("/common/images/launcher/home/bonus_bg.png") no-repeat;
   background-size: 100%;
 }
@@ -1107,25 +1150,13 @@ section.inner.stamp_detail {
   float: right;
 }
 
-.loginb_area {
-  margin: 15% auto 10%;
-}
-
 .loginb_area h3 {
   font-size: 40px;
   font-weight: bold;
 }
 
-.license .consent {
-  padding: 0 1em;
-}
 .license .btn {
-  width: 40%;
   background-color: #fff;
-}
-.license #submit {
-  padding: .8em 0;
-  float: right;
 }
 .license #submit[disabled] {
   background-color: #fff;
@@ -1134,13 +1165,14 @@ section.inner.stamp_detail {
 
 .privacy .pageclose {
   width: 100%;
-  max-width: 960px;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   z-index: 2;
+  /* padding: 10px 20px !important; */
+  text-align: center;
 }
 .privacy .pageclose .btn {
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
 .app_ttl {
@@ -1229,7 +1261,7 @@ section.inner.stamp_detail {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  padding: .6em .3em;
+  padding: 0.6em 0.3em;
 }
 .initial .inner section#initialtab .tabNav li:nth-child(1) {
   z-index: 3;
@@ -1260,7 +1292,7 @@ section.inner.stamp_detail {
   width: 100%;
 }
 .initial .inner section#initialtab .tabBody .register_area {
-  padding: 1em 0.5em 0 0.5em;
+  padding: 1em 0.5em 0;
 }
 .initial .inner section#initialtab .tabBody .register_area_02 {
   padding: 0 0 0 0.5em;
@@ -1271,14 +1303,14 @@ section.inner.stamp_detail {
 .initial .inner section#initialtab .tabBody .register_area_02 dt {
   float: left;
   width: 20%;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 .initial .inner section#initialtab .tabBody .register_area_02 dd {
   margin-top: -2.5em;
   width: 85%;
   float: right;
   overflow: hidden;
-  padding: .5em 0 0 .5em;
+  padding: 0.5em 0 0 0.5em;
 }
 .initial .inner section#initialtab .tabBody .register_area_02 dd input {
   display: none;
@@ -1286,17 +1318,17 @@ section.inner.stamp_detail {
 .initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] {
   display: none;
 }
-.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:before, .initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:after {
+.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:after, .initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:before {
   display: none;
 }
 .initial .inner section#initialtab .tabBody .register_area_02 dd label {
   display: block;
   width: 41%;
   float: left;
-  padding: .5em;
-  margin: 0 .5em .5em 0;
+  padding: 0.5em;
+  margin: 0 0.5em 0.5em 0;
   border-radius: 5px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 -9px 2px -7px rgba(0, 0, 0, 0.5);
   background-color: #f9f9f9;
   text-align: center;
   text-decoration: none !important;
@@ -1767,6 +1799,7 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#ranking .rankingList li {
   display: table;
+  width: 93.333%;
   padding: 0.5em 3.3%;
   border-bottom: solid 1px #f0f0f0;
   /**/
@@ -2172,7 +2205,7 @@ section.inner.stamp_detail {
 }
 
 .campaign .inner {
-  padding-top: 0.4em !important;
+  padding-top: 0 !important;
 }
 .campaign .inner .balloon {
   width: 88.4%;
@@ -2684,6 +2717,7 @@ p.date {
 }
 .cansellation #ranking .rankingList li {
   display: table;
+  width: 93.333%;
   padding: 0.5em 3.3%;
   border-bottom: solid 1px #f0f0f0;
   /**/
@@ -3253,6 +3287,9 @@ ul.point li {
 .DL .inner {
   padding-top: 1.4em;
 }
+.DL .inner .bold {
+  font-weight: bold;
+}
 
 /* おもしろくくだいさくせんP-34
 --------------------------------------------------------- */
@@ -3398,7 +3435,7 @@ ul.point li {
 /* =========================================================
  CLEARFIX
 ========================================================= */
-.launcher.home .app.try ul li:after, .launcher.home .app.recommend ul li:after, .pass:after, .confirm_area:after, .registration_area:after, .launcher .notice_area:after, .launcher ul.notice_app li:after, ul.bonus_area:after, .remodel_2:after, .remodel_2 ul.bonus_area:after, .loginb_area:after, .confirm_config .kids_confirm:after, .remodel_3:after, .remodel_3 ul.bonus_area:after, .detail_app dl.app_in:after, .detail_app .app_in dt:after, .detail_app dl.push:after, .child_ch .register_ch dl:after, .child_ch .index_top:after, .inquiry_area dl:after, .mail_service .commit_area:after, .cheer .cheer_area:after {
+.launcher.home .app.recommend ul li:after, .launcher.home .app.try ul li:after, .pass:after, .confirm_area:after, .registration_area:after, .launcher .notice_area:after, .launcher ul.notice_app li:after, ul.bonus_area:after, .remodel_2:after, .remodel_2 ul.bonus_area:after, .loginb_area:after, .confirm_config .kids_confirm:after, .remodel_3:after, .remodel_3 ul.bonus_area:after, .detail_app dl.app_in:after, .detail_app .app_in dt:after, .detail_app dl.push:after, .child_ch .register_ch dl:after, .child_ch .index_top:after, .inquiry_area dl:after, .mail_service .commit_area:after, .cheer .cheer_area:after {
   content: '';
   clear: both;
   display: block;
