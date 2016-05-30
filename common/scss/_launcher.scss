@@ -1489,12 +1489,13 @@ section.inner.sp_bonus {}
 //--------------------------------------------------------- */
 
 #contents.tutorial{
-	background:url(/common/images/launcher/tutorial/bg.jpg) no-repeat left top;
+	background:url(/common/images/launcher/tutorial/bg.jpg) no-repeat left bottom;
 	background-size:cover !important;
 	background-position:bottom;
 	
 	.inner{
 		max-width:100% !important;
+		background-color:transparent;
 	}
 	
 	.gallery-cell {
