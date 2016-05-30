@@ -719,6 +719,7 @@ footer {
   nav.settingList {
     background: none;
     letter-spacing: -1px;
+    @extend %tbWidth;
     ul {
       @include flex;
       align-items: center;
