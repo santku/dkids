@@ -646,6 +646,9 @@ footer .copyright {
   top: .6em;
   right: 1.5%;
   width: 80px;
+  background-image: url(/common/images/common/select_arrow_bk.png);
+  background-position: 91% center;
+  background-size: 7px;
 }
 .android #contents .heading.account .selectBox {
   width: 7em;

@@ -333,19 +333,17 @@
 
 /*戻る確認ボタン*/
 .confirm_area {
-  width: 70%;
+  display: table;
   margin: 15px auto;
   clear: both;
 }
 .confirm_area a, .confirm_area input {
   background-color: #fff;
   font-size: 1.4rem;
+  display: table-cell;
 }
 .confirm_area a:first-child, .confirm_area input:first-child {
-  float: left;
-}
-.confirm_area a:nth-child(2), .confirm_area input:nth-child(2) {
-  float: right;
+  margin-right: .5em;
 }
 
 .child_register .register_area_02 {
@@ -1373,12 +1371,17 @@ section.inner.stamp_detail {
     margin-right: 10px !important;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .launcher.home .app ul.horizon-swiper {
-    width: 1045px;
+    width: 941px;
   }
   .launcher.home .app ul.horizon-swiper .horizon-inner {
     padding-left: 0;
+  }
+}
+@media (min-width: 1050px) {
+  .launcher.home .app ul.horizon-swiper {
+    width: 1045px;
   }
 }
 @media (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {
@@ -1424,7 +1427,7 @@ section.inner.stamp_detail {
 }
 
 #contents.parents {
-    /* MODULE
+  /* MODULE
 --------------------------------------------------------- */
 }
 #contents.parents.home #mainVisual .slick-dots {
@@ -1622,12 +1625,12 @@ section.inner.stamp_detail {
   position: relative;
 }
 #contents.parents.home > section#news h2 {
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 #contents.parents.home > section#news dl dt {
   font-weight: normal;
   font-size: 1.3rem;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 #contents.parents.home > section#news .ehon {
   position: relative;
@@ -1993,7 +1996,7 @@ section.inner.stamp_detail {
   content: '';
 }
 #contents.parents.login h3 {
-  margin-left: .8em;
+  margin-left: 0.8em;
 }
 #contents.parents.login .accordion {
   margin-bottom: 0 !important;
@@ -2004,21 +2007,21 @@ section.inner.stamp_detail {
 #contents.parents.login .accordion dl:first-child {
   border: none;
 }
-#contents.parents.login .accordion dt {
+#contents.parents.login .accordion dl dt {
   padding: 0 2em;
 }
-#contents.parents.login .accordion dt:before {
+#contents.parents.login .accordion dl dt:before {
   position: inherit;
   content: none;
 }
-#contents.parents.login .accordion dd {
+#contents.parents.login .accordion dl dd {
   border-top: none;
   margin: 0 auto;
 }
-#contents.parents.login .accordion dd .rankingList li:nth-child(1) figure:before {
+#contents.parents.login .accordion dl dd .rankingList li:nth-child(1) figure:before {
   background-image: url("/common/images/launcher/home/ranking_4th.png") !important;
 }
-#contents.parents.login .accordion dd .rankingList li:nth-child(2) figure:before {
+#contents.parents.login .accordion dl dd .rankingList li:nth-child(2) figure:before {
   background-image: url("/common/images/launcher/home/ranking_5th.png") !important;
 }
 #contents.parents.press .visual img {
@@ -2125,22 +2128,20 @@ section.inner.stamp_detail {
 #contents.parents .fixedBtn img {
   vertical-align: top;
 }
-#contents.parents.parents section.inner .emphasis {
+#contents.parents section.inner .emphasis {
   background-color: #fff8e3;
 }
-#contents.parents.parents .accordion {
+#contents.parents .accordion {
   margin-bottom: 2em;
 }
-#contents.parents.parents .accordion dl.active {
+#contents.parents .accordion dl.active {
   background-color: #fafafa;
 }
-#contents.parents.parents .accordion dl dt {
+#contents.parents .accordion dl dt {
   position: relative;
-  padding: 0 10% 0 3.3%;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 10% 1em 3.3%;
 }
-#contents.parents.parents .accordion dl dt:before {
+#contents.parents .accordion dl dt:before {
   position: absolute;
   top: 20%;
   right: 6.6%;
@@ -2170,6 +2171,53 @@ section.inner.stamp_detail {
   vertical-align: top;
 }
 
+.campaign .inner {
+  padding-top: 0.4em !important;
+}
+.campaign .inner .balloon {
+  width: 88.4%;
+  padding: 2.5%;
+  background-color: #FFF8E4;
+  margin: 0 auto 1em;
+  text-align: center;
+  position: relative;
+}
+.campaign .inner .balloon span {
+  font-weight: bold;
+}
+.campaign .inner .balloon .red {
+  color: #d0121b;
+}
+.campaign .inner .balloon:after {
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  width: 20px;
+  height: 12px;
+  background: url("/common/images/parents/common/balloon_03.png") no-repeat;
+  background-size: contain;
+  content: '';
+}
+.campaign .inner #trial {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  background-color: #fffde7;
+}
+.campaign .inner #trial .inner {
+  width: 93.4%;
+  margin: 0 auto;
+}
+.campaign .inner #trial figure {
+  margin-top: -30px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.campaign .inner #trial .button {
+  margin-bottom: 0;
+}
+
 .faq article.paragraph {
   padding-top: 1.4em;
 }
@@ -2180,7 +2228,6 @@ section.inner.stamp_detail {
 
 .parentsabout .visual img {
   width: 100%;
-  max-width: none;
 }
 .parentsabout .aboutmovie {
   background-color: #fffde7;
@@ -2197,7 +2244,7 @@ section.inner.stamp_detail {
   margin-bottom: 2em;
 }
 .parentsabout > section#trial .inner {
-  padding: 1.4em .5em 0;
+  padding: 1.4em 0.5em 0;
 }
 .parentsabout > section#trial figure {
   margin-top: -30px;
@@ -2254,9 +2301,13 @@ section.inner.stamp_detail {
 --------------------------------------------------------- */
 /* P-3-1 : アプリ紹介詳細 1
 --------------------------------------------------------- */
+.detail_app #mainVisual {
+  margin-bottom: 1em;
+}
+
 .detail_app dl.app_in {
   width: 100%;
-  margin: 10px auto 1em;
+  margin: 10px auto 0;
   border-bottom: solid 1px #ccc;
   padding-bottom: 2em;
 }
@@ -2562,7 +2613,7 @@ p.date {
   margin: 0 auto;
 }
 .info_detail .listItem li {
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 .info_detail .listItem li span {
   font-size: 1.1rem;
@@ -2580,7 +2631,7 @@ p.date {
   color: #cc0033;
 }
 .info_detail article.paragraph p {
-  padding: 0 0.5 0 0em;
+  padding: 0 0.5 0 0;
   line-height: 20px;
   color: #010000;
 }
@@ -2836,7 +2887,7 @@ ul.pageing {
   width: 100%;
 }
 .inquiry .selectBox select {
-  padding: .5em .3em;
+  padding: 0.5em 0.3em;
 }
 
 .inquiry_area {
@@ -2876,6 +2927,10 @@ ul.pageing {
 
 .commit_area a {
   float: left;
+}
+
+.commit_area input {
+  font-size: 1.4rem;
 }
 
 .inquiry .commit_area input {
@@ -3106,15 +3161,15 @@ ul.point li {
 .mail_service .allselect input[type=radio] {
   display: none;
 }
-.mail_service .allselect input[type=radio] + label:before, .mail_service .allselect input[type=radio] + label:after {
+.mail_service .allselect input[type=radio] + label:after, .mail_service .allselect input[type=radio] + label:before {
   display: none;
 }
 .mail_service .allselect label {
   display: block;
-  padding: .5em;
-  margin: 0 .5em .5em 0;
+  padding: 0.5em;
+  margin: 0 0.5em 0.5em 0;
   border-radius: 5px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0px -9px 2px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 -9px 2px -7px rgba(0, 0, 0, 0.5);
   background-color: #f9f9f9;
   text-align: center;
   text-decoration: none !important;
@@ -3317,6 +3372,29 @@ ul.point li {
   vertical-align: text-top;
 }
 
+@media (min-width: 1024px) {
+  .parents.home .app ul.horizon-swiper {
+    width: 990px;
+  }
+  .parents.home .app ul.horizon-swiper .horizon-inner {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1050px) {
+  .parents.home .app ul.horizon-swiper {
+    max-width: 1089px;
+  }
+}
+@media (min-width: 737px) and (orientation: landscape) {
+  .parents.detail_app .app ul.horizon-swiper {
+    max-width: 891px;
+  }
+}
+@media (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {
+  .parents.home.high .app:after {
+    display: none;
+  }
+}
 /* =========================================================
  CLEARFIX
 ========================================================= */

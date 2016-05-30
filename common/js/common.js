@@ -393,7 +393,8 @@ common scripts
     //   Common.resizeFnc();
     //
     // });
- });
+
+  });
 
 // footerfixed
 new function(){

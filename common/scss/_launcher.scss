@@ -426,18 +426,16 @@
 /*戻る確認ボタン*/
 
 .confirm_area {
-  width: 70%;
+  display: table;
   margin: 15px auto;
   clear: both;
   @extend %cf;
   a, input {
     background-color: #fff;
     font-size: 1.4rem;
-    &:first-child {
-      float: left;
-    }
-    &:nth-child(2) {
-      float: right;
+    display: table-cell;
+    &:first-child{
+      margin-right: .5em;
     }
   }
 }
@@ -1640,12 +1638,18 @@ h3.special{
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .launcher.home .app ul.horizon-swiper{
-    width: 1045px;
+    width: 941px;
     .horizon-inner{
       padding-left: 0;
     }
+  }
+}
+
+@media (min-width: 1050px) {
+  .launcher.home .app ul.horizon-swiper{
+    width: 1045px;
   }
 }
 

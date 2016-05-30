@@ -265,7 +265,7 @@ select {
 			color:#000;
 		}
 	}
-	
+
 
 }
 
@@ -669,6 +669,9 @@ footer{
       top: .6em;
       right: 1.5%;
       width: 80px;
+      background-image: url(/common/images/common/select_arrow_bk.png);
+      background-position:  91% center;
+      background-size: 7px;
       .android &{
         width: 7em;
       }
@@ -1313,7 +1316,6 @@ a{
         }
       }
       &.detail_app{
-
         #mainVisual{
           @extend %tbWidth;
           background-color: #FFF;
