@@ -16,7 +16,7 @@
           <div class="register_area">
           <dl>
             <dt> ニックネーム</dt>
-            <dd>  <input type="text" value="たろうくん">
+            <dd>  <input type="text" class="place" title="たろうくん">
               <div class="selectBox gender">
                 <select class="age gender" name="">
                   <option value="" selected>くん</option>
@@ -25,62 +25,63 @@
               </div></dd>
             </dl>
           </div>
+          <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
           <div class="register_area_02">
             <dl>
            <dt>対象年齢</dt>
 
            <dd>
 
-<label class="btn hidden" for="age01" class="age_txt"></span></label>
+<label class="btn hidden" class="age_txt"></span></label>
 
-             <input id="age01" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age01" class="age_txt">0歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+             <input id="age00" class="ageRadio" type="radio" name="age" value="">
+<label class="btn" for="age00" class="age_txt">0歳<span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+
+<input id="age01" class="ageRadio" type="radio" name="age" value="">
+<label class="btn" for="age01">1歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age02" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age02">1歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age02">2歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age03" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age03">2歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age03">3歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age04" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age04">3歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age04">4歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age05" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age05">4歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age05">5歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age06" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age06">5歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age06">6歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age07" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age07">6歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age07">7歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age08" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age08">7歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age08">8歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age09" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age09">8歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age09">9歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
 <input id="age10" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age10">9歳<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
-
-<input id="age11" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age11">10歳以上<br><span>(YYYY.MM～YYYY.MM 生まれ)</span></label>
+<label class="btn" for="age10">10歳以上<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
               </dd>
             </dl>
           </div>
-          <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
+
 <div class="register_area">
   <dl>
            <dt>タイマー設定</dt>
              <dd>
                <div>
-                 <input id="radio02" class="switch" type="checkbox" name="radio04" value="">
+                 <input id="radio02" class="switch" type="checkbox" name="radio04" checked="checked" value="">
                  <label for="radio02"></label>
                 </div>
                <div class="selectBox age_change">
                 <select class="age" name="age">
-                  <option value="" disabled selected>選択</option>
+                  <option value="30分">30分</option>
                   <option value="1時間30分">1時間30分</option>
                   <option value="2時間">2時間</option>
                   <option value="2時間30分">2時間30分</option>
@@ -94,7 +95,7 @@
 <p class="age_txt">時間を気にせずタイマー設定なく楽しみたい場合は、タイマーをOFFにしてください</p>
               <div class="confirm_area">
             <a class="btn iblock" href="javascript:history.back();">戻る</a>
-            <a class="btn red iblock" href="#">変更</a>
+            <a class="btn red iblock" href="#">登録</a>
           </div>
 
         </form>
