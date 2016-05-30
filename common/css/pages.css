@@ -37,7 +37,7 @@
   font-size: 1rem;
 }
 .launcher.home .app {
-  padding-bottom: 0.5em;
+  padding-bottom: 1.25em;
   background-size: cover;
   position: relative;
 }
@@ -1417,6 +1417,10 @@ section.inner.stamp_detail {
 @media (min-width: 1050px) {
   .launcher.home .app ul.horizon-swiper.disabled {
     width: 1045px;
+  }
+
+  .launcher.home.low .app > ul:not(.horizon-swiper) {
+    width: 1045px !important;
   }
 }
 @media (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {

@@ -1057,10 +1057,11 @@ footer {
   &.ranking {
     ul {
       li {
+        margin-top: 19px;
         position: relative;
         &:before {
           position: absolute;
-          top: -10px;
+          top: -19px;
           left: 50%;
           width: 67px;
           height: 32px;
@@ -1313,6 +1314,11 @@ a {
         }
       }
     }
+  }
+  footer{
+    padding-top: 25%;
+    background-size: 100%;
+    background-position: center bottom;
   }
 }
 @media screen and (min-width: 960px) {

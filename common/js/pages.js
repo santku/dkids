@@ -98,25 +98,25 @@ pages scripts
           }
         });
 
-        if ( $('.horizon-swiper').hasClass('disabled') ){
-          $('.horizon-swiper.disabled').trigger('disabled');
+        if ( $('.carousel').hasClass('disabled') ){
+          $('.carousel.disabled').trigger('disabled');
         } else {
-          $('.horizon-swiper').trigger('enabled');
+          $('.carousel').trigger('enabled');
         }
 
       });
 
-      $('.horizon-swiper').on('disabled', function(){
+      $('.carousel').on('disabled', function(){
         var l = $(this).offset().left;
         var n = $(this).find('.horizon-item').size();
-        $('.horizon-swiper').not('.disabled').find('.horizon-inner').css('padding-left', l);
+        $('.carousel').not('.disabled').find('.horizon-inner').css('padding-left', l);
 
       });
 
-      $('.horizon-swiper').not('.disabled').on('enabled', function(){
+      $('.carousel').not('.disabled').on('enabled', function(){
         var l = $(this).offset().left;
         var n = $(this).find('.horizon-item').size();
-        $('.horizon-swiper').find('.horizon-inner').css('cssText','padding-left: 3.3%;');
+        $('.carousel').find('.horizon-inner').css('cssText','padding-left: 3.3%;');
 
       });
 
@@ -127,6 +127,7 @@ pages scripts
       $('nav.list').find('li').matchHeight();
       $('.horizon-item').matchHeight();
       $('.recommend li').matchHeight();
+      $('.carousel li').matchHeight();
 
     },
 
