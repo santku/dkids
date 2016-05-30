@@ -90,11 +90,12 @@ pages scripts
 
         $('.horizon-swiper').each(function(){
           var n = $(this).find('.horizon-item').size();
-          if ( n <= 10 && g.winW() >= 1045 ){
-            $(this).addClass('disabled');
+          if ( n <= 10 && g.winW() >= 1051 ){
+            $(this).addClass('disabled')
+              .parent().addClass('nomore');
           } else {
-            $(this).removeClass('disabled');
-            $('#wrap').removeClass('sliderDisabled');
+            $(this).removeClass('disabled')
+              .parent().removeClass('nomore');
           }
         });
 
