@@ -1404,38 +1404,21 @@ section.inner.stamp_detail {
   }
 }
 @media (min-width: 1024px) {
-  .launcher.home .app ul.horizon-swiper {
+  .launcher.home .app ul.horizon-swiper.disabled {
     width: 941px;
   }
-  .launcher.home .app ul.horizon-swiper .horizon-inner {
-    padding-left: 0;
+  .launcher.home .app ul.horizon-swiper.disabled .horizon-inner {
+    padding-left: 0 !important;
   }
 }
 @media (min-width: 1050px) {
-  .launcher.home .app ul.horizon-swiper {
+  .launcher.home .app ul.horizon-swiper.disabled {
     width: 1045px;
   }
 }
 @media (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {
   .launcher.home.high .app:after {
     display: none;
-  }
-}
-@media (min-width: 737px) and (orientation: landscape) {
-  .app ul {
-    max-width: 1045px;
-  }
-  .app ul.horizon-swiper {
-    padding-left: 0;
-  }
-  .app ul.horizon-swiper .horizon-inner {
-    padding-left: 0;
-    white-space: normal;
-    overflow: auto;
-    text-align: left;
-  }
-  .app ul .horizon-outer {
-    max-height: none !important;
   }
 }
 /* =========================================================
