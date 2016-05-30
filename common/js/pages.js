@@ -108,7 +108,28 @@ pages scripts
 
       $('.app').children('ul').not('.horizon-swiper').width( container + 2 );
 
-    }
+    },
+		
+		flickity: function(){
+
+		  var $gallery = $('.tutorial .gallery').flickity({
+				prevNextButtons: false,
+				pageDots: false
+				});
+		  $gallery.on( 'staticClick', function( event, pointer, cellElement, cellIndex ) {
+		    if ( typeof cellIndex == 'number' ) {
+		      $gallery.flickity( 'select', cellIndex );
+		    }
+		  });
+			
+		},
+		galleryMargin : function(){
+			var W = $(window).width();
+			var GW = $('.tutorial .gallery').width();
+			var MR = ((GW-300)/2)/1.4;
+			$('.tutorial .gallery-cell').css('marginRight',MR);
+		}
+		
 
   }
 
@@ -121,7 +142,14 @@ pages scripts
 
       Pages.matchHeight();
       Pages.alignCenter();
+			
+			/*L-2tutorial*/
+			Pages.galleryMargin();
+			Pages.flickity();
 
     });
 
   });
+	
+	
+	
