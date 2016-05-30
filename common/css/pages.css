@@ -453,14 +453,17 @@
 }
 
 .registration_area {
-  width: auto;
-  margin: 0 2.5% 15px;
+  width: 100%;
+  margin: 0 auto 15px;
+  padding: 0 2.5%;
+  border-bottom: solid 2px #ccc;
+  padding-bottom: 2em;
 }
 
 .registration_area p {
   clear: both;
-  margin: 10px 0;
   font-size: 0.8em;
+  width: 90%;
 }
 
 .registration_area dl {
@@ -471,7 +474,7 @@
   width: 30%;
   float: left;
   clear: both;
-  margin: 0 5px 1.5em 0;
+  margin: 0 5px 1em 0;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.5em;
 }
