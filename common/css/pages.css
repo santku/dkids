@@ -1520,6 +1520,9 @@ section.inner.stamp_detail {
   padding: 0.1em 7em 0.1em 1.5%;
   letter-spacing: -0.1em;
 }
+#contents.parents.home > section#movie, #contents.parents.home > section#pr, #contents.parents.home > section#ranking {
+  overflow: hidden;
+}
 #contents.parents.home section {
   margin-bottom: 2em;
 }
@@ -3463,6 +3466,13 @@ ul.point li {
     display: none;
   }
 }
+#contents.parents.home > section {
+  max-width: 960px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  box-sizing: border-box;
+}
+
 /* =========================================================
  CLEARFIX
 ========================================================= */

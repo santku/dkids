@@ -1348,7 +1348,8 @@ a.movie i {
   #contents.parents nav.list {
     background-color: #FFF;
   }
-  #contents h1, #contents section.inner, #contents.initial .inner, #contents.feature #mainVisual, #contents.parents.detail_app #mainVisual, #contents.parents.detail_app > .paragraph, #contents.parents.special.page > .center, #contents.parents.press #mainVisual, #contents.parents .visual, #contents.parents.parentsabout > .paragraph,
+  #contents nav.list,
+  #contents nav.settingList, #contents h1, #contents section.inner, #contents.initial .inner, #contents.feature #mainVisual, #contents.parents.detail_app #mainVisual, #contents.parents.detail_app > .paragraph, #contents.parents.special.page > .center, #contents.parents.press #mainVisual, #contents.parents .visual, #contents.parents.parentsabout > .paragraph,
   #contents.parents.parentsabout #trial, #contents.parents.faq > section {
     max-width: 960px;
     margin-right: auto;
