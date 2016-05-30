@@ -405,7 +405,7 @@ header{
     background-color: #FFF;
     dt, dd{
       display: table-cell;
-      padding: .5em 2.5%;
+      padding: .3em 2.5%;
       box-sizing: border-box;
     }
     dt{
@@ -414,13 +414,14 @@ header{
     }
     dd{
       position: relative;
+      font-size: 0.8rem;
       &:after{
         position: absolute;
         top: .25rem;
         right: 2.5%;
         content: "\f105";
         font-family: $icon;
-        font-size: 2rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -1097,7 +1098,7 @@ form.module{
 
   textarea{
     width: 95%;
-    height: 10em;
+    height: 14em;
   }
   ul{
     &.inline{

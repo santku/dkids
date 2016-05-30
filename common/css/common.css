@@ -404,7 +404,7 @@ header .menu.right img {
 }
 #contents .account dt, #contents .account dd {
   display: table-cell;
-  padding: .5em 2.5%;
+  padding: .3em 2.5%;
   box-sizing: border-box;
 }
 #contents .account dt {
@@ -413,6 +413,7 @@ header .menu.right img {
 }
 #contents .account dd {
   position: relative;
+  font-size: 0.8rem;
 }
 #contents .account dd:after {
   position: absolute;
@@ -420,7 +421,7 @@ header .menu.right img {
   right: 2.5%;
   content: "\f105";
   font-family: FontAwesome;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 #contents .information {
   margin-bottom: 0;
@@ -1047,7 +1048,7 @@ form.module input[type=text], form.module textarea, form.module [type=password] 
 }
 form.module textarea {
   width: 95%;
-  height: 10em;
+  height: 14em;
 }
 form.module ul.inline {
   margin-bottom: 1em;
