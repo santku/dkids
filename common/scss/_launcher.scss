@@ -105,7 +105,7 @@
             font-weight: bold;
             font-size: 1.3rem;
             color: #FFF;
-            z-index: 10;
+            z-index: 1;
             &:before{
               position: absolute;
               top: 0;
@@ -424,11 +424,19 @@
 }
 
 /*戻る確認ボタン*/
-
+.consent {
+	
+}
 .confirm_area {
-  display: table;
   margin: 15px auto;
   clear: both;
+  text-align:center;
+  ul{
+	  text-align:center;
+  } li {
+	  display: inline-block;
+	  vertical-align: middle;
+  }
   @extend %cf;
   a, input {
     background-color: #fff;
@@ -446,7 +454,7 @@
 //--------------------------------------------------------- */
 .child_register{
 .register_area_02{
-        padding: 0 0 0 0.5em;
+        padding: 0;
         dl{
         overflow: hidden;
       }
@@ -726,7 +734,6 @@
 // 終了ダイアログ
 //--------------------------------------------------------- */
 .remodal .txt {
-  text-align: center;
 }
 // スタンプ帳ダイアログ
 //--------------------------------------------------------- */
@@ -1299,17 +1306,10 @@ h3.special{
 //  L-0 : 利用許諾
 //--------------------------------------------------------- */
 .license{
-  .consent{
-    padding: 0 1em;
-  }
   .btn{
-    width: 40%;
     background-color: #fff;
   }
   #submit{
-    //border: none;
-    padding: .8em 0;
-    float: right;
   }
 #submit[disabled] {
   background-color: #fff;
@@ -1322,12 +1322,13 @@ h3.special{
 .privacy{
   .pageclose{
     width: 100%;
-    max-width: 960px;
+    /* max-width: 960px; */
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     z-index: 2;
+    /* padding: 10px 20px !important; */
+    text-align: center;
     .btn{
-      padding: 1em 0;
     }
   }
 }
