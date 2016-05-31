@@ -3441,6 +3441,16 @@ ul.point li {
   vertical-align: text-top;
 }
 
+#contents.parents.home > section {
+  max-width: 960px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+ RESPONSIVE
+========================================================= */
 @media (min-width: 1024px) {
   .parents.home .app ul.horizon-swiper {
     width: 990px;
@@ -3464,13 +3474,17 @@ ul.point li {
     display: none;
   }
 }
-#contents.parents.home > section {
-  max-width: 960px;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  box-sizing: border-box;
+/* =========================================================
+ iPhone6 Plus
+========================================================= */
+@media (min-width: 736px) {
+  .iPhone .headerPadding header {
+    position: static;
+  }
+  .iPhone .headerPadding #contents {
+    padding-top: 0;
+  }
 }
-
 /* =========================================================
  CLEARFIX
 ========================================================= */

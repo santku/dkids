@@ -275,6 +275,11 @@ common scripts
        $('html').addClass(' android');
       }
 
+      var agent = navigator.userAgent;
+      if(agent.search(/iPhone/) != -1){
+        $('html').addClass(' iPhone');
+      }
+
       // if( _ua.Mobile || _ua.Tablet ){
       //   //スマホ OR タブレットの場合
       // }
