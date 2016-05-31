@@ -57,6 +57,11 @@
       &#movie, &#pr, &#ranking{
         overflow: hidden;
       }
+      &#ranking{
+        .inner{
+        padding-top: 1em;
+      }
+    }
     }
     section {
       margin-bottom: 2em;
@@ -65,7 +70,8 @@
         margin: 0 auto;
       }
       .button {
-        margin: 1em 0;
+        margin: 1em 0 0;
+        padding-bottom: 1em;
         text-align: center;
       }
       .balloon {
@@ -95,6 +101,8 @@
       }
     }
     > section {
+      background: #fff;
+      margin-bottom: 0;
       &#about {
         .button {
           margin: 2em 0;
@@ -125,6 +133,7 @@
         .inner {
           width: 87%;
           padding: 0 10% 0 3.3%;
+
         }
         nav.list {
           ul {
@@ -253,6 +262,9 @@
           background: url("/common/images/parents/home/news_ehoon_bg.png");
           background-repeat: no-repeat;
           background-size: 100% 100%;
+          @media screen and (min-width: $tablet) {
+            width: 60%;
+          }
           &:before {
             position: absolute;
             top: 0;
@@ -297,6 +309,7 @@
         }
       }
       &#social {
+        padding-bottom: 1em;
         .sns {
           font-size: 0;
           text-align: center;
@@ -320,6 +333,7 @@
       }
       &#movie {
         position: relative;
+        padding-bottom: 1em;
         .slick-list {
           overflow: visible;
         }
@@ -345,6 +359,7 @@
         }
       }
       &#recommend {
+        padding-bottom: 1em;
         ul {
           margin-bottom: 2rem;
           text-align: center;
@@ -375,9 +390,6 @@
       }
       &#ranking {
         margin: 0;
-        .heading {
-          margin-bottom: 1em;
-        }
         h2 {
           margin-bottom: 1em;
           padding: 0 3.3%;
@@ -479,6 +491,7 @@
         }
         .app {
           margin-bottom: 0;
+          padding-bottom: 0;
           .balloon {
             margin-bottom: 0.5em;
             span {
@@ -499,17 +512,26 @@
         background-color: #FCEEF1;
         .inner {
           width: 100%;
+          background-color: #fff;
           .tabNav {
             height: 38px;
-            background-color: #fff;
+
             overflow: hidden;
             font-size: 0;
+            @media screen and (min-width: $tablet) {
+              width: 80%;
+              margin: 0 auto;
+            }
             li {
               display: inline-block;
               border-radius: 10px 10px 0 0;
               background-color: #ccc;
               box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
               font-size: 1.4rem;
+              @media screen and (min-width: $tablet) {
+              width: 33%;
+            }
+              text-align: center;
               &:nth-child(1) {
                 z-index: 3;
               }
@@ -534,12 +556,20 @@
             margin: 0 auto;
             padding-top: 30px;
             border-top: solid 4px #E15E76;
-            background: url("/common/images/parents/home/mamatenna_logo.png") no-repeat 94.3% 10px;
+            background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 94.3% 10px;
             background-size: 139px auto;
+            @media screen and (min-width: $tablet) {
+              background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 87% 10px;
+              background-size: 139px auto;
+              .inner{width: 80%;
+            }
+          }
             article {
-              margin-bottom: 1px;
-              padding: 5px;
+              margin:0 auto 1px;
+              //padding: 5px;
               background-color: #fff;
+              border-bottom: 1px solid #fceef1;
+              width: 100%;
               a {
                 display: table;
                 position: relative;
@@ -547,7 +577,7 @@
                 &:after {
                   position: absolute;
                   top: 40%;
-                  right: 5px;
+                  //right: 5px;
                   content: '\f105';
                   font-family: FontAwesome;
                   font-size: 1.8rem;
@@ -561,11 +591,19 @@
                 figure {
                   width: 33.3%;
                   padding-right: 3.3%;
+                  padding: 5px 0 5px 5px;
+                  @media screen and (min-width: $tablet) {
+                    width: 20%;
+                  }
                   img {
                     vertical-align: top;
                   }
                 }
                 .txt {
+                  padding:5px;
+                  @media screen and (min-width: $tablet) {
+                    padding-top: 1em;
+                  }
                   p {
                     &.date {
                       font-size: 1rem;
@@ -579,7 +617,7 @@
               }
             }
             .btn {
-              margin-top: 1em;
+              margin: 1em auto;
             }
           }
         }
@@ -629,9 +667,14 @@
   // login
   //--------------------------------------------------------
   &.login {
+    background-color: #fffad9;
     h3 {
       margin-left: 0.8em;
     }
+.often{
+  background: #fff;
+  padding-bottom: 1em;
+}
     .accordion {
       margin-bottom: 0 !important;
       dl.active {
@@ -664,6 +707,30 @@
         }
       }
     }
+    #news{
+      background: #fff;
+      margin-bottom: 0!important;
+      padding-bottom: 2em;
+    }
+@media screen and (min-width: $tablet) {
+.login_wrp{
+  margin: 0 auto;
+  .often{
+  .inner{
+    width: 80%;
+  }
+}
+.carousel{
+  width: 70%;
+}
+  .tabNav{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+}
+
+
   }
   // PRESS
   //--------------------------------------------------------
@@ -829,6 +896,9 @@
 /* logout
 --------------------------------------------------------- */
 .logout {
+  background-color: #fffad9!important;
+  .youtube{
+  }
   .balloon {
     margin-bottom: 1em;
   }
@@ -847,6 +917,13 @@
     img {
       vertical-align: top;
     }
+  }
+  #trial{
+    .inner{
+    @media screen and (min-width: $tablet) {
+      width: 60%!important;
+    }
+  }
   }
 }
 //キャンペーン
@@ -2075,7 +2152,7 @@ ul.point li {
 
 @media (min-width: 1024px) {
   .parents.home .app ul.horizon-swiper{
-    width: 990px;
+    width: 900px;
     .horizon-inner{
       padding-left: 0;
     }

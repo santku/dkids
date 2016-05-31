@@ -310,7 +310,7 @@ common scripts
               color: '#A9A9A9',
               overflow: 'hidden',
               position: 'absolute',
-              zIndex: '99'
+              zIndex: '1'
             }).click(function() {
               $(this).prev().focus();
             });
@@ -460,4 +460,3 @@ new function(){
 	addEvent(window,"resize",footerFixed);
 
 }
-

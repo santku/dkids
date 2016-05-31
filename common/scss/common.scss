@@ -462,8 +462,8 @@ header {
     margin-bottom: 0;
     padding: 15px 2.5%;
     color: #dc1e3c;
-    font-size: 0.6rem;
-    letter-spacing: -0.16em;
+    font-size: 1.5rem;
+    background: #fff;
   }
   .information a {
     color: #dc1e3c;
@@ -719,6 +719,7 @@ footer {
   nav.settingList {
     background: none;
     letter-spacing: -1px;
+    background: #fff;
     @extend %tbWidth;
     ul {
       @include flex;
