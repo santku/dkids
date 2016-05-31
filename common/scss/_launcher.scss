@@ -19,6 +19,11 @@
     }
     .logout {
       padding-top: 10px;
+      @media screen and (min-width: $tablet) {
+      ul{
+        max-width: 1050px;
+      }
+    }
     }
     .logout .loginArea {
       background: #fbeec2;
@@ -270,6 +275,27 @@
       }
     }
   }
+  &.low {
+    .app{
+      &:after {
+        display: block;
+        width: 100%;
+        height: 18px;
+        background-position: 97.5% center;
+        background-size: 56px 18px;
+        background-repeat: no-repeat;
+        content: '';
+        position: absolute;
+        top: 18px;
+        right: 0;
+      }
+      &.history {
+        &:after {
+          background-image: url("/common/images/launcher/home/history_more.png");
+        }
+      }
+    }
+  }
   // high
   //--------------------------------------------------------- */
   &.home.high {
@@ -318,6 +344,11 @@
       h2 {
         @include title(rgba(#dc1e3c, .2));
       }
+      @media screen and (min-width: $tablet) {
+      ul{
+        max-width: 1050px;
+      }
+    }
     }
   }
   // L-2　チュートリアル
@@ -546,7 +577,6 @@
   margin: 0 auto 15px;
   padding: 0 2.5%;
   @extend %cf;
-  border-bottom: solid 2px #ccc;
   padding-bottom: 2em;
 }
 .registration_area p {
@@ -562,14 +592,12 @@
   float: left;
   clear: both;
   margin: 0 5px 1em 0;
-  border-bottom: 1px solid #ccc;
   padding-bottom: 0.5em;
 }
 .registration_area dl dd {
   width: 70%;
   padding-bottom: 0.5em;
   margin: 0 5px 1.5em 30%;
-  border-bottom: 1px solid #ccc;
 }
 .launcher {
   //初回子ども情報変更
@@ -1548,7 +1576,7 @@ section.inner.sp_bonus {}
         &.recommend,
         &.try {
           ul {
-            max-width: none;
+            max-width: 1050px;
             li {
               display: inline-block;
               width: 45.5%;

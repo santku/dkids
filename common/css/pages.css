@@ -11,6 +11,11 @@
 .launcher.home .logout {
   padding-top: 10px;
 }
+@media screen and (min-width: 768px) {
+  .launcher.home .logout ul {
+    max-width: 1050px;
+  }
+}
 .launcher.home .logout .loginArea {
   background: #fbeec2;
   width: 93.4%;
@@ -229,6 +234,21 @@
     margin-left: 2% !important;
   }
 }
+.launcher.low .app:after {
+  display: block;
+  width: 100%;
+  height: 18px;
+  background-position: 97.5% center;
+  background-size: 56px 18px;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+.launcher.low .app.history:after {
+  background-image: url("/common/images/launcher/home/history_more.png");
+}
 .launcher.home.high .app:after {
   display: block;
   width: 100%;
@@ -261,6 +281,11 @@
 .launcher.search .app h2 {
   background: -webkit-linear-gradient(top, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
+}
+@media screen and (min-width: 768px) {
+  .launcher.search .app ul {
+    max-width: 1050px;
+  }
 }
 .launcher.tutorial .inner {
   background: rgba(200, 200, 200, 0.8);
@@ -456,7 +481,6 @@
   width: 100%;
   margin: 0 auto 15px;
   padding: 0 2.5%;
-  border-bottom: solid 2px #ccc;
   padding-bottom: 2em;
 }
 
@@ -475,7 +499,6 @@
   float: left;
   clear: both;
   margin: 0 5px 1em 0;
-  border-bottom: 1px solid #ccc;
   padding-bottom: 0.5em;
 }
 
@@ -483,7 +506,6 @@
   width: 70%;
   padding-bottom: 0.5em;
   margin: 0 5px 1.5em 30%;
-  border-bottom: 1px solid #ccc;
 }
 
 .launcher {
@@ -1421,7 +1443,7 @@ section.inner.stamp_detail {
 ========================================================= */
 @media screen and (min-width: 768px) {
   .launcher.home .app.recommend ul, .launcher.home .app.try ul {
-    max-width: none;
+    max-width: 1050px;
   }
   .launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
     display: inline-block;
@@ -2243,6 +2265,11 @@ section.inner.stamp_detail {
 #contents.parents.search h1 {
   margin-bottom: 1.4em;
 }
+@media screen and (min-width: 768px) {
+  #contents.parents.search .app ul {
+    max-width: 1050px;
+  }
+}
 #contents.parents.search .app ul li .tag {
   width: auto;
   text-align: center;
@@ -2322,6 +2349,14 @@ section.inner.stamp_detail {
 @media screen and (min-width: 768px) {
   .logout #trial .inner {
     width: 60% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logout .logoutpoint {
+    margin: 0 auto;
+    width: 95%;
+    border-top: solid 2px #f0f0f0;
+    padding: 1em 0;
   }
 }
 
