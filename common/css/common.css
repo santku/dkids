@@ -147,7 +147,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: button;
   border: none;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: #FFF;
 }
 input[type="button"]:-webkit-search-decoration, input[type="reset"]:-webkit-search-decoration, input[type="submit"]:-webkit-search-decoration {
   display: none;
@@ -449,7 +449,7 @@ header .menu.right img {
   margin-bottom: 0;
   padding: 15px 2.5%;
   color: #dc1e3c;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background: #fff;
 }
 #contents .information a {
@@ -506,7 +506,10 @@ footer p.stamp, footer p.viewAll {
   z-index: 100;
 }
 footer p.stamp {
-  bottom: 80px;
+  bottom: 90px;
+}
+footer p.stamp img {
+  margin-right: 3px;
 }
 footer p.viewAll {
   bottom: 5px;
@@ -832,14 +835,48 @@ footer .copyright {
   text-align: center;
   text-decoration: none !important;
   color: #333 !important;
+  background-color: #FFF;
 }
 .btn.red {
   background-color: #df344f;
   color: #FFF !important;
 }
+.btn.gray {
+  background-color: #ebebeb;
+}
 .btn.iblock {
   display: inline-block;
+  width: 80%;
+  box-sizing: border-box;
   padding: 0.5em 20px;
+}
+
+.confirm_area {
+  font-size: 0;
+  width: 80%;
+  margin: 15px auto;
+  clear: both;
+  text-align: center;
+}
+.confirm_area.wide {
+  width: 86.6%;
+}
+.confirm_area ul {
+  text-align: center;
+}
+.confirm_area li {
+  width: 47.5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.confirm_area .btn {
+  display: inline-block;
+  width: 47.5%;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+}
+.confirm_area .btn:first-child {
+  margin-right: 5%;
 }
 
 .activebtn {

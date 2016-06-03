@@ -333,6 +333,7 @@
 }
 .launcher.feature section.inner article.item .button {
   display: table;
+  padding: 0.5em 0.5em .7em;
 }
 .launcher.feature section.inner article.item .button li {
   display: table-cell;
@@ -392,29 +393,6 @@
 }
 
 /*戻る確認ボタン*/
-.confirm_area {
-  margin: 15px auto;
-  clear: both;
-  text-align: center;
-}
-.confirm_area ul {
-  text-align: center;
-}
-.confirm_area li {
-  display: inline-block;
-  vertical-align: middle;
-}
-.confirm_area a,
-.confirm_area input {
-  background-color: #fff;
-  font-size: 1.4rem;
-  display: table-cell;
-}
-.confirm_area a:first-child,
-.confirm_area input:first-child {
-  margin-right: 0.5em;
-}
-
 .child_register .register_area_02 dl {
   overflow: hidden;
 }
@@ -516,6 +494,9 @@
 .launcher .first_change_area li {
   width: 100%;
   margin: 0 auto 1em;
+}
+.launcher .first_change_area li:first-child .btn {
+  width: auto;
 }
 .launcher .first_change_area input {
   width: 33%;
@@ -1031,13 +1012,22 @@ section.inner.stamp_detail {
   width: 50%;
 }
 .confirm_config .config_btn {
+  width: 86.6%;
   clear: both;
-  display: table;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 5px auto;
 }
-.confirm_config .config_btn p {
-  display: table-cell;
-  padding: 5px 10px;
+.confirm_config .config_btn a {
+  width: 47.5%;
+  vertical-align: top;
+}
+.confirm_config .config_btn a:first-child {
+  margin-right: 5%;
 }
 
 .register_area {
@@ -1180,6 +1170,13 @@ section.inner.stamp_detail {
   font-weight: bold;
 }
 
+.license .scroll, .privacy .scroll {
+  height: 30em;
+  overflow: auto;
+  margin-bottom: 2em;
+  -webkit-overflow-scrolling: touch;
+}
+
 .license .btn {
   background-color: #fff;
 }
@@ -1189,11 +1186,6 @@ section.inner.stamp_detail {
 }
 
 .privacy .pageclose {
-  width: 100%;
-  position: fixed;
-  bottom: 10px;
-  z-index: 2;
-  /* padding: 10px 20px !important; */
   text-align: center;
 }
 .privacy .pageclose .btn {
@@ -1389,11 +1381,7 @@ section.inner.stamp_detail {
 }
 .initial .inner section#initialtab .tabBody .btn_area .confirm_area {
   margin-top: 2em;
-  width: 250px;
   margin: 2em auto;
-}
-.initial .inner section#initialtab .tabBody .btn_area .confirm_area .btn {
-  width: 30%;
 }
 
 #contents.tutorial {
@@ -2414,6 +2402,10 @@ section.inner.stamp_detail {
   border-left: solid 1px #CCC;
   border-right: solid 1px #CCC;
 }
+.faq .toInquiry {
+  width: 16em;
+  margin: 0 auto 2em;
+}
 
 .parentsabout .visual img {
   width: 100%;
@@ -3069,6 +3061,9 @@ ul.pageing {
 .center {
   text-align: center;
 }
+.center.mb {
+  margin-bottom: 2em;
+}
 
 .inquiry .inner {
   padding-top: 1.6em;
@@ -3111,12 +3106,7 @@ ul.pageing {
 }
 
 .commit_area {
-  width: 250px;
   margin: 25px auto;
-}
-
-.commit_area a {
-  float: left;
 }
 
 .commit_area input {
@@ -3318,24 +3308,16 @@ ul.point li {
 .mail_service .inner {
   padding-top: 1.4em;
 }
-.mail_service .commit_area {
-  width: 250px;
-}
-.mail_service .commit_area input:first-child {
-  float: left;
-}
-.mail_service .commit_area input:nth-child(2) {
-  float: right;
-}
-.mail_service .commit_area input:nth-child(3) {
-  clear: both;
-  width: 100%;
+.mail_service .confirm_area {
+  width: 86.6%;
+  margin-bottom: 2rem;
 }
 .mail_service .config_area {
-  margin: 10px 0;
+  width: 86.6%;
+  margin: 10px auto;
 }
 .mail_service .config_area a {
-  width: 200px;
+  display: block;
 }
 .mail_service .allselect {
   margin: 0 auto;
@@ -3619,7 +3601,7 @@ ul.point li {
 /* =========================================================
  CLEARFIX
 ========================================================= */
-.launcher.home .app.recommend ul li:after, .launcher.home .app.try ul li:after, .pass:after, .confirm_area:after, .registration_area:after, .launcher .notice_area:after, .launcher ul.notice_app li:after, ul.bonus_area:after, .remodel_2:after, .remodel_2 ul.bonus_area:after, .loginb_area:after, .confirm_config .kids_confirm:after, .remodel_3:after, .remodel_3 ul.bonus_area:after, .detail_app dl.app_in:after, .detail_app .app_in dt:after, .detail_app dl.push:after, .child_ch .register_ch dl:after, .child_ch .index_top:after, .inquiry_area dl:after, .mail_service .commit_area:after, .cheer .cheer_area:after {
+.launcher.home .app.recommend ul li:after, .launcher.home .app.try ul li:after, .pass:after, .registration_area:after, .launcher .notice_area:after, .launcher ul.notice_app li:after, ul.bonus_area:after, .remodel_2:after, .remodel_2 ul.bonus_area:after, .loginb_area:after, .confirm_config .kids_confirm:after, .remodel_3:after, .remodel_3 ul.bonus_area:after, .detail_app dl.app_in:after, .detail_app .app_in dt:after, .detail_app dl.push:after, .child_ch .register_ch dl:after, .child_ch .index_top:after, .inquiry_area dl:after, .cheer .cheer_area:after {
   content: '';
   clear: both;
   display: block;

@@ -1001,6 +1001,10 @@
     border-left: solid 1px #CCC;
     border-right: solid 1px #CCC;
   }
+  .toInquiry{
+    width: 16em;
+    margin: 0 auto 2em;
+  }
 }
 //parentsabout
 //--------------------------------------------------------
@@ -1664,6 +1668,9 @@ ul.pageing {
 --------------------------------------------------------- */
 .center {
   text-align: center;
+  &.mb{
+    margin-bottom: 2em;
+  }
 }
 .inquiry {
   .inner {
@@ -1705,11 +1712,11 @@ ul.pageing {
   clear: both;
 }
 .commit_area {
-  width: 250px;
+
   margin: 25px auto;
 }
 .commit_area a {
-  float: left;
+
 }
 .commit_area input {
   font-size: 1.4rem;
@@ -1890,25 +1897,16 @@ ul.point li {
   .inner {
     padding-top: 1.4em;
   }
-  .commit_area {
-    width: 250px;
-    @extend %cf;
-  }
-  .commit_area input:first-child {
-    float: left;
-  }
-  .commit_area input:nth-child(2) {
-    float: right;
-  }
-  .commit_area input:nth-child(3) {
-    clear: both;
-    width: 100%;
+  .confirm_area{
+    width: 86.6%;
+    margin-bottom: 2rem;
   }
   .config_area {
-    margin: 10px 0;
+    width: 86.6%;
+    margin: 10px auto;
   }
   .config_area a {
-    width: 200px;
+    display: block;
   }
   .allselect {
     margin: 0 auto;

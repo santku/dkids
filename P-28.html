@@ -1,90 +1,87 @@
 <!--#set var="page_title" value="launcher" -->
 <!--#include virtual="/common/include/common/header.html" -->
 
-    <!--contents-->
-    <div id="contents" class="parents mail_service">
+<!--contents-->
+<div id="contents" class="parents mail_service">
 
-      <!--#include virtual="/common/include/common/account.html" -->
+  <!--#include virtual="/common/include/common/account.html" -->
 
-      <h1>メールサービス設定</h1>
+  <h1>メールサービス設定</h1>
 
-      <section class="inner">
+  <section class="inner">
 
-        <!-- paragraph -->
-        <article class="paragraph">
-          <h2>メールサービス設定</h2>
-          <p>dキッズのメールサービスを設定すると「新着コンテンツ」や「キャンペーン」の情報など、楽しい情報が届きます！<br>
+    <!-- paragraph -->
+    <article class="paragraph">
+      <h2>メールサービス設定</h2>
+      <p>dキッズのメールサービスを設定すると「新着コンテンツ」や「キャンペーン」の情報など、楽しい情報が届きます！
+        <br> さらに、ｄマーケットのメールサービスを設定すると、お得な情報が満載なメールが定期的に届きます！ </p>
 
-さらに、ｄマーケットのメールサービスを設定すると、お得な情報が満載なメールが定期的に届きます！ </p>
+      <form class="module" action="module.html">
+        <p>
+          <input id="checkbox01" type="checkbox" name="name" value="">
+          <label for="checkbox01">dキッズ</label>
+        </p>
+        <p>
+          <input id="checkbox02" type="checkbox" name="name" value="">
+          <label for="checkbox02">dマーケット</label>
+        </p>
 
-        <form class="module" action="module.html">
-          <p><input id="checkbox01" type="checkbox" name="name" value=""><label for="checkbox01">dキッズ</label></p>
-          <p><input id="checkbox02" type="checkbox" name="name" value=""><label for="checkbox02">dマーケット</label></p>
-
-          <div class="commit_area">
-            <input class="btn iblock red" type="submit" name="" value="すべてON">
-             <input class="btn iblock" type="reset" value="すべてOFF">
-          </div>
-
-
-        </form>
-
-          <div class="config_area"><p class="center"><a class="btn red iblock" href="#">設定</a></p>   </div>
-
-
-
-        </article>
-        <!-- paragraph -->
-
-
-
-        <!-- paragraph -->
-        <article class="paragraph">
-
-          <p>※チェックが入っているお客様はメール配信に同意いただいている状態です。
-配信が不要なお客様はチェックをはずしてください。 </p>
-<p>※情報反映のタイミングにより、解除手続き後にメールが配信される場合がございます。予めご了承ください。</p>
-<h2>メールが届かない方へ</h2>
-
-
-        <div class="listItem">
-         <h3>ドコモの回線契約をお持ちのお客様</h3>
-          <ul>
-            <li>spモード/iモードをご契約のお客様は、スマートフォン/iモード端末のメッセージRフォルダに届きます。</li>
-            <li>iPhoneのお客様は、spモードメールの設定が必要です。メールアプリでspモードメールの受信設定がされていることを確認してください。<br><a href="#">iPhoneでspモードメールを設定する</a></li>
-            <li>ドコモ回線契約をお持ちで、ドコモメール非対応端末（NEXUS等）をご利用の場合は、メールサービスを設定いただいてもメールをお送りすることができません。あらかじめご了承ください。</li>
-          </ul>
+        <div class="confirm_area mb">
+          <input class="btn iblock red" type="submit" name="" value="すべてON">
+          <input class="btn iblock" type="reset" value="すべてOFF">
         </div>
 
+        <div class="config_area">
+          <p class="center"><a class="btn red iblock" href="#">設定</a></p>
+        </div>
+
+      </form>
+
+    </article>
+    <!-- paragraph -->
+
+    <!-- paragraph -->
+    <article class="paragraph">
+
+      <p>※チェックが入っているお客様はメール配信に同意いただいている状態です。 配信が不要なお客様はチェックをはずしてください。 </p>
+      <p>※情報反映のタイミングにより、解除手続き後にメールが配信される場合がございます。予めご了承ください。</p>
+      <h2>メールが届かない方へ</h2>
+
+      <div class="listItem">
+        <h3>ドコモの回線契約をお持ちのお客様</h3>
+        <ul>
+          <li>spモード/iモードをご契約のお客様は、スマートフォン/iモード端末のメッセージRフォルダに届きます。</li>
+          <li>iPhoneのお客様は、spモードメールの設定が必要です。メールアプリでspモードメールの受信設定がされていることを確認してください。
+            <br><a href="#">iPhoneでspモードメールを設定する</a></li>
+          <li>ドコモ回線契約をお持ちで、ドコモメール非対応端末（NEXUS等）をご利用の場合は、メールサービスを設定いただいてもメールをお送りすることができません。あらかじめご了承ください。</li>
+        </ul>
+      </div>
+
+      <div class="listItem">
+        <h3>ドコモの回線契約をお持ちでないお客様</h3>
+        <ul>
+          <li>dアカウントのメールアドレスに届きます。</li>
+        </ul>
+      </div>
 
 
-<div class="listItem">
-<h3>ドコモの回線契約をお持ちでないお客様</h3>
-<ul><li>dアカウントのメールアドレスに届きます。</li></ul>
+      <div class="listItem">
+        <h3>メールサービスが届かない方へ</h3>
+        <ul>
+          <li>メールサービスでご利用のメールの送受信ができることや、メール設定（受信/拒否設定等）を確認してください。</li>
+        </ul>
+      </div>
+
+
+    </article>
+    <!-- paragraph -->
+
+    <p class="center"><a class="btn iblock" href="#">トップページへ戻る</a></p>
+
+
+  </section>
+
 </div>
-
-
-<div class="listItem">
-<h3>メールサービスが届かない方へ</h3>
-<ul>
-<li>メールサービスでご利用のメールの送受信ができることや、メール設定（受信/拒否設定等）を確認してください。</li>
-</ul>
-</div>
-
-
-
-
-
-        </article>
-        <!-- paragraph -->
-
-       <p class="center"><a class="btn iblock" href="#">トップページへ戻る</a></p>
-
-
-
-      </section>
-
-    </div>
-    <!--/contents-->
+<!--/contents-->
 
 <!--#include virtual="/common/include/common/footer.html" -->

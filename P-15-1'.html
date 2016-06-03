@@ -2,60 +2,48 @@
 <!--#set var="category" value="parents" -->
 <!--#include virtual="/common/include/common/header.html" -->
 
-    <!--contents-->
-    <div id="contents" class="parents inquiry">
+<!--contents-->
+<div id="contents" class="parents inquiry">
 
-      <!--#include virtual="/common/include/common/account.html" -->
+  <!--#include virtual="/common/include/common/account.html" -->
 
-      <h1>お問い合わせフォーム</h1>
+  <h1>お問い合わせフォーム</h1>
 
-      <section class="inner">
+  <section class="inner">
 
-        <!-- paragraph -->
-        <article class="paragraph">
+    <!-- paragraph -->
+    <article class="paragraph">
+      <p class="center">下記の内容でお問い合わせを送信しますか？</p>
+    </article>
+    <!-- paragraph -->
 
-          <p class="center">下記の内容でお問い合わせを送信しますか？</p>
-                 </article>
-        <!-- paragraph -->
+    <form class="module" action="">
 
+      <div class="inquiry_area">
 
-       <form class="module" action="">
-
-
-        <div class="inquiry_area">
         <dl>
           <dt>カテゴリ</dt>
+          <dd class="conten">
+            <p>アプリ・サイト関連</p>
+          </dd>
+          <dt>お問い合わせ内容</dt>
+          <dd>
+            <p>ダミーテキスト あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波</p>
+          </dd>
+        </dl>
 
-         <dd class="conten"><p>アプリ・サイト関連</p></dd>
+      </div>
 
+      <div class="confirm_area">
+        <a class="btn iblock" href="javascript:history.back();">戻る</a>
+        <input class="btn iblock red" type="submit" nmae="" value="送信">
+      </div>
 
-         <dt>お問い合わせ内容</dt>
+    </form>
 
-         <dd> <p>ダミーテキスト
-あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波</p>
+  </section>
 
-         </dd>
-          </dl>
-
-
-
-             <div class="commit_area">
-            	<p><a class="btn iblock" href="#">戻る</a></p>
-             <p><input class="btn iblock red"  type="submit" nmae="" value="送信"/>  </p>
-          </div>
-
-
-
-          </div>
-
-
-        </form>
-
-
-
-      </section>
-
-    </div>
-    <!--/contents-->
+</div>
+<!--/contents-->
 
 <!--#include virtual="/common/include/common/footer.html" -->

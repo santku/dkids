@@ -411,6 +411,7 @@
           }
           .button {
             display: table;
+            padding: 0.5em 0.5em .7em;
             li {
               display: table-cell;
               vertical-align: middle;
@@ -477,27 +478,7 @@
 .consent {
 
 }
-.confirm_area {
-  margin: 15px auto;
-  clear: both;
-  text-align:center;
-  @extend %cf;
-  ul{
-	  text-align:center;
-  } li {
-	  display: inline-block;
-	  vertical-align: middle;
-  }
-  a,
-  input {
-    background-color: #fff;
-    font-size: 1.4rem;
-    display: table-cell;
-    &:first-child {
-      margin-right: 0.5em;
-    }
-  }
-}
+
 //パスワード変更
 //--------------------------------------------------------- */
 //子ども情報の登録L-3-4-2
@@ -602,21 +583,32 @@
 .launcher {
   //初回子ども情報変更
   //--------------------------------------------------------- */
-  .first_change_area li {
-    width: 100%;
-    margin: 0 auto 1em;
+  // &.first_change form.module{
+  //   padding: 0;
+  // }
+  .first_change_area {
+    li {
+      width: 100%;
+      margin: 0 auto 1em;
+      &:first-child .btn{
+        width: auto;
+      }
+    }
+    input {
+      width: 33%;
+      padding: 0.6em 0.5em !important;
+      vertical-align: middle;
+    }
   }
-  .first_change_area input {
-    width: 33%;
-    padding: 0.6em 0.5em !important;
-    vertical-align: middle;
+  .selectBox {
+    &.gender {
+      width: 28%;
+    }
+    &.age_change {
+      width: 100%;
+    }
   }
-  .selectBox.gender {
-    width: 28%;
-  }
-  .selectBox.age_change {
-    width: 100%;
-  }
+
   .first_change_area .btn {
     padding: 0.5em;
   }
@@ -1130,12 +1122,16 @@ section.inner.sp_bonus {}
     width: 50%;
   }
   .config_btn {
+    width: 86.6%;
     clear: both;
-    display: table;
+    @include flex;
     margin: 5px auto;
-    p {
-      display: table-cell;
-      padding: 5px 10px;
+    a {
+      width: 47.5%;
+      vertical-align: top;
+      &:first-child{
+        margin-right: 5%;
+      }
     }
   }
 }
@@ -1278,6 +1274,14 @@ section.inner.sp_bonus {}
 }
 //  L-0 : 利用許諾
 //--------------------------------------------------------- */
+.license, .privacy{
+  .scroll{
+    height: 30em;
+    overflow: auto;
+    margin-bottom: 2em;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 .license {
   .btn {
     background-color: #fff;
@@ -1294,12 +1298,12 @@ section.inner.sp_bonus {}
 //--------------------------------------------------------- */
 .privacy {
   .pageclose {
-    width: 100%;
-    // max-width: 960px;
-    position: fixed;
-    bottom: 10px;
-    z-index: 2;
-    /* padding: 10px 20px !important; */
+    // width: 100%;
+    // // max-width: 960px;
+    // position: fixed;
+    // bottom: 10px;
+    // z-index: 2;
+    // /* padding: 10px 20px !important; */
     text-align: center;
     .btn {
       padding: 0.5em 0;
@@ -1499,11 +1503,7 @@ section.inner.sp_bonus {}
           padding: 1em 0;
           .confirm_area {
             margin-top: 2em;
-            width: 250px;
             margin: 2em auto;
-            .btn {
-              width: 30%;
-            }
           }
         }
       }

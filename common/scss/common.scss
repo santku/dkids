@@ -145,7 +145,7 @@ input {
     appearance: button;
     border: none;
     box-sizing: border-box;
-    background-color: transparent;
+    background-color: #FFF;
     &:-webkit-search-decoration {
       display: none;
     }
@@ -462,7 +462,7 @@ header {
     margin-bottom: 0;
     padding: 15px 2.5%;
     color: #dc1e3c;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background: #fff;
   }
   .information a {
@@ -522,7 +522,10 @@ footer {
       z-index: 100;
     }
     &.stamp {
-      bottom: 80px;
+      bottom: 90px;
+      img{
+        margin-right: 3px;
+      }
     }
     &.viewAll {
       bottom: 5px;
@@ -854,15 +857,50 @@ footer {
   text-align: center;
   text-decoration: none !important;
   color: $fontColor !important;
+  background-color: #FFF;
   &.red {
     background-color: #df344f;
     color: #FFF !important;
   }
+  &.gray{
+    background-color: #ebebeb
+  }
   &.iblock {
     display: inline-block;
+    width: 80%;
+    box-sizing: border-box;
     padding: 0.5em 20px;
   }
 }
+
+.confirm_area {
+  font-size: 0;
+  width: 80%;
+  margin: 15px auto;
+  clear: both;
+  text-align:center;
+  &.wide{
+    width: 86.6%;
+  }
+  ul{
+	  text-align:center;
+  }
+  li {
+    width: 47.5%;
+	  display: inline-block;
+	  vertical-align: middle;
+  }
+  .btn {
+    display: inline-block;
+    width: 47.5%;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    &:first-child {
+      margin-right: 5%;
+    }
+  }
+}
+
 .activebtn {
   display: block;
   padding: 0.5em;
