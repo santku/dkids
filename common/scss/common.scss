@@ -1028,6 +1028,11 @@ footer {
       }
       .horizon-item {
         white-space: normal;
+        @media screen and (max-width: 1050px) {
+          &:last-child{
+            margin-right: 3.3% !important;
+          }
+        }
       }
     }
     > li,

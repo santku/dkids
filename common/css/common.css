@@ -1002,6 +1002,11 @@ footer .copyright {
 .app > ul.horizon-swiper .horizon-item {
   white-space: normal;
 }
+@media screen and (max-width: 1050px) {
+  .app > ul.horizon-swiper .horizon-item:last-child {
+    margin-right: 3.3% !important;
+  }
+}
 .app > ul > li,
 .app > ul li.horizon-item {
   display: inline-block;

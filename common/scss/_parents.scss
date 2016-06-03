@@ -680,6 +680,9 @@
       margin-bottom: 0 !important;
       dl.active {
         background-color: #fff!important;
+        dt{
+          display: none;
+        }
       }
       dl:first-child {
         border: none;
@@ -884,6 +887,9 @@
     dl {
       &.active {
         background-color: #fafafa;
+        >dt:before{
+          content: '\f106';
+        }
       }
       dt {
         position: relative;
@@ -1146,6 +1152,28 @@
   margin-bottom: 4px;
   color: #dc1e3c;
   width: auto;
+}
+#contents.parents.detail_app .accordion.button{
+  dl{
+    &.active{
+      dt{
+        display: none;
+      }
+    }
+    &:first-child{
+      border: none;
+    }
+    dt{
+      padding: 0;
+      text-align: center;
+      &:before{
+        display: none;
+      }
+    }
+    dd{
+      border-top: none;
+    }
+  }
 }
 .detail_app .red {
   font-size: 1.6rem;

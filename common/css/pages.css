@@ -2140,6 +2140,9 @@ section.inner.stamp_detail {
 #contents.parents.login .accordion dl.active {
   background-color: #fff !important;
 }
+#contents.parents.login .accordion dl.active dt {
+  display: none;
+}
 #contents.parents.login .accordion dl:first-child {
   border: none;
 }
@@ -2299,6 +2302,9 @@ section.inner.stamp_detail {
 }
 #contents.parents .accordion dl.active {
   background-color: #fafafa;
+}
+#contents.parents .accordion dl.active > dt:before {
+  content: '\f106';
 }
 #contents.parents .accordion dl dt {
   position: relative;
@@ -2541,6 +2547,23 @@ section.inner.stamp_detail {
   margin-bottom: 4px;
   color: #dc1e3c;
   width: auto;
+}
+
+#contents.parents.detail_app .accordion.button dl.active dt {
+  display: none;
+}
+#contents.parents.detail_app .accordion.button dl:first-child {
+  border: none;
+}
+#contents.parents.detail_app .accordion.button dl dt {
+  padding: 0;
+  text-align: center;
+}
+#contents.parents.detail_app .accordion.button dl dt:before {
+  display: none;
+}
+#contents.parents.detail_app .accordion.button dl dd {
+  border-top: none;
 }
 
 .detail_app .red {
