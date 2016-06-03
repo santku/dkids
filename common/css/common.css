@@ -447,7 +447,7 @@ header .menu.right img {
 }
 #contents .information {
   margin-bottom: 0;
-  padding: 15px 2.5%;
+  padding: .8em 2.5%;
   color: #dc1e3c;
   font-size: 1.3rem;
   background: #fff;
@@ -850,6 +850,12 @@ footer .copyright {
   box-sizing: border-box;
   padding: 0.5em 20px;
 }
+.btn.wide {
+  width: 86.6%;
+}
+.btn.wide-l {
+  width: 92.3%;
+}
 
 .confirm_area {
   font-size: 0;
@@ -857,6 +863,9 @@ footer .copyright {
   margin: 15px auto;
   clear: both;
   text-align: center;
+}
+.confirm_area.mb {
+  margin-bottom: 2rem;
 }
 .confirm_area.wide {
   width: 86.6%;
@@ -1154,6 +1163,9 @@ form.module ul.inline li {
 
 .center {
   text-align: center;
+}
+.center.mb {
+  margin-bottom: 2em;
 }
 
 .borderBtm {

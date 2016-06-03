@@ -240,6 +240,7 @@
         }
         .button {
           margin-bottom: 0;
+          text-align: center;
         }
       }
       &#news {
@@ -685,7 +686,9 @@
       }
       dl {
         dt {
-          padding: 0 2em;
+          width: 86.6%;
+          margin: 0 auto;
+          padding: 0;
         }
         dt:before {
           position: inherit;
@@ -925,10 +928,17 @@
   }
   #trial{
     .inner{
-    @media screen and (min-width: $tablet) {
-      width: 60%!important;
+      .button{
+        a{
+          display: inline-block;
+          width: 86.6%;
+          text-align: center;
+        }
+      }
+      @media screen and (min-width: $tablet) {
+        width: 60%!important;
+      }
     }
-  }
   }
   @media screen and (min-width: $tablet) {
     .logoutpoint{
@@ -944,6 +954,9 @@
 .campaign {
   .inner {
     padding-top: 0 !important;
+    .paragraph .center .btn{
+      width: 86.6%;
+    }
     .balloon {
       width: 88.4%;
       padding: 2.5%;
@@ -985,6 +998,10 @@
       }
       .button {
         margin-bottom: 0;
+        text-align: center;
+        a{
+          width: 86.6%;
+        }
       }
     }
   }
@@ -1002,8 +1019,11 @@
     border-right: solid 1px #CCC;
   }
   .toInquiry{
-    width: 16em;
-    margin: 0 auto 2em;
+    margin-bottom: 2em;
+    p:first-child{
+      width: 16em;
+      margin: 0 auto 1em;
+    }
   }
 }
 //parentsabout
@@ -1027,7 +1047,7 @@
       background-color: #fffde7;
       margin-bottom: 2em;
       .inner {
-        padding: 1.4em 0.5em 0;
+        padding: 1.4em 3.3% 0;
       }
       figure {
         margin-top: -30px;
@@ -1036,6 +1056,7 @@
       }
       .button {
         margin-bottom: 0;
+        text-align: center;
       }
     }
   }
@@ -1052,7 +1073,6 @@
     }
     .btn {
       margin: 1em auto;
-      width: 80%;
     }
     .caption {
       font-size: 0.9em;
@@ -1076,7 +1096,7 @@
   }
 }
 .download a.red {
-  width: 235px;
+  width: 93.2%;
   margin-bottom: 2.5em;
 }
 .download .DLbtn {
@@ -1114,6 +1134,9 @@
 .detail_app .app_in dd {
   padding: 0 5px;
   margin-left: 110px;
+  .btn{
+    width: auto;
+  }
 }
 .detail_app .red_sqare {
   border: 1px solid #dc1e3c;
@@ -1125,8 +1148,10 @@
   width: auto;
 }
 .detail_app .red {
-  width: 60%;
   font-size: 1.6rem;
+}
+.detail_app .paragraph .red {
+  width: 86.6%;
 }
 /*このアプリのお知らせ通知*/
 .detail_app dl.push {
@@ -1369,6 +1394,8 @@ ul.other figure img {
       }
       .button {
         margin-bottom: 0;
+        text-align: center;
+
       }
     }
   }
@@ -1898,15 +1925,13 @@ ul.point li {
     padding-top: 1.4em;
   }
   .confirm_area{
-    width: 86.6%;
+    width: 92.3%;
     margin-bottom: 2rem;
   }
   .config_area {
-    width: 86.6%;
     margin: 10px auto;
   }
   .config_area a {
-    display: block;
   }
   .allselect {
     margin: 0 auto;

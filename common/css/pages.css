@@ -967,7 +967,6 @@ section.inner.stamp_detail {
   margin-bottom: 2em;
 }
 .guide .red {
-  width: 60%;
   font-size: 1.4em;
 }
 
@@ -1703,6 +1702,7 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#trial .button {
   margin-bottom: 0;
+  text-align: center;
 }
 #contents.parents.home > section#news {
   position: relative;
@@ -2144,7 +2144,9 @@ section.inner.stamp_detail {
   border: none;
 }
 #contents.parents.login .accordion dl dt {
-  padding: 0 2em;
+  width: 86.6%;
+  margin: 0 auto;
+  padding: 0;
 }
 #contents.parents.login .accordion dl dt:before {
   position: inherit;
@@ -2334,6 +2336,11 @@ section.inner.stamp_detail {
 .logout .registfixedBtn img {
   vertical-align: top;
 }
+.logout #trial .inner .button a {
+  display: inline-block;
+  width: 86.6%;
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .logout #trial .inner {
     width: 60% !important;
@@ -2350,6 +2357,9 @@ section.inner.stamp_detail {
 
 .campaign .inner {
   padding-top: 0 !important;
+}
+.campaign .inner .paragraph .center .btn {
+  width: 86.6%;
 }
 .campaign .inner .balloon {
   width: 88.4%;
@@ -2393,6 +2403,10 @@ section.inner.stamp_detail {
 }
 .campaign .inner #trial .button {
   margin-bottom: 0;
+  text-align: center;
+}
+.campaign .inner #trial .button a {
+  width: 86.6%;
 }
 
 .faq article.paragraph {
@@ -2403,8 +2417,11 @@ section.inner.stamp_detail {
   border-right: solid 1px #CCC;
 }
 .faq .toInquiry {
+  margin-bottom: 2em;
+}
+.faq .toInquiry p:first-child {
   width: 16em;
-  margin: 0 auto 2em;
+  margin: 0 auto 1em;
 }
 
 .parentsabout .visual img {
@@ -2425,7 +2442,7 @@ section.inner.stamp_detail {
   margin-bottom: 2em;
 }
 .parentsabout > section#trial .inner {
-  padding: 1.4em 0.5em 0;
+  padding: 1.4em 3.3% 0;
 }
 .parentsabout > section#trial figure {
   margin-top: -30px;
@@ -2434,6 +2451,7 @@ section.inner.stamp_detail {
 }
 .parentsabout > section#trial .button {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .coupon .paragraph {
@@ -2446,7 +2464,6 @@ section.inner.stamp_detail {
 }
 .coupon .paragraph .btn {
   margin: 1em auto;
-  width: 80%;
 }
 .coupon .paragraph .caption {
   font-size: 0.9em;
@@ -2470,7 +2487,7 @@ section.inner.stamp_detail {
 }
 
 .download a.red {
-  width: 235px;
+  width: 93.2%;
   margin-bottom: 2.5em;
 }
 
@@ -2512,6 +2529,9 @@ section.inner.stamp_detail {
   padding: 0 5px;
   margin-left: 110px;
 }
+.detail_app .app_in dd .btn {
+  width: auto;
+}
 
 .detail_app .red_sqare {
   border: 1px solid #dc1e3c;
@@ -2524,8 +2544,11 @@ section.inner.stamp_detail {
 }
 
 .detail_app .red {
-  width: 60%;
   font-size: 1.6rem;
+}
+
+.detail_app .paragraph .red {
+  width: 86.6%;
 }
 
 /*このアプリのお知らせ通知*/
@@ -2771,6 +2794,7 @@ ul.other figure img {
 }
 .miryoku > section#trial .button {
   margin-bottom: 0;
+  text-align: center;
 }
 
 /* 特集 P-4
@@ -3309,15 +3333,11 @@ ul.point li {
   padding-top: 1.4em;
 }
 .mail_service .confirm_area {
-  width: 86.6%;
+  width: 92.3%;
   margin-bottom: 2rem;
 }
 .mail_service .config_area {
-  width: 86.6%;
   margin: 10px auto;
-}
-.mail_service .config_area a {
-  display: block;
 }
 .mail_service .allselect {
   margin: 0 auto;

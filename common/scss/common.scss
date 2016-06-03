@@ -460,7 +460,7 @@ header {
   }
   .information {
     margin-bottom: 0;
-    padding: 15px 2.5%;
+    padding: .8em 2.5%;
     color: #dc1e3c;
     font-size: 1.3rem;
     background: #fff;
@@ -871,6 +871,12 @@ footer {
     box-sizing: border-box;
     padding: 0.5em 20px;
   }
+  &.wide{
+    width: 86.6%;
+  }
+  &.wide-l{
+    width: 92.3%;
+  }
 }
 
 .confirm_area {
@@ -879,6 +885,9 @@ footer {
   margin: 15px auto;
   clear: both;
   text-align:center;
+  &.mb{
+    margin-bottom: 2rem;
+  }
   &.wide{
     width: 86.6%;
   }
@@ -1183,9 +1192,15 @@ form.module {
       }
     }
   }
+  .btn.iblock{
+    //width: 93.2%;
+  }
 }
 .center {
   text-align: center;
+  &.mb{
+    margin-bottom: 2em;
+  }
 }
 .borderBtm {
   border-bottom: solid 1px #E1DFD1;
