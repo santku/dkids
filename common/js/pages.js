@@ -21,6 +21,7 @@ pages scripts
            centerMode: true,
            slidesToShow: 2,
            slidesToScroll: 1,
+           autoplay: true,
            responsive: [
              {
                breakpoint: g.point,
