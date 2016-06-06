@@ -447,8 +447,9 @@
   .accordion {
     margin-bottom: 2em;
     dl {
+      background-color: #FFF6DC;
       &.active {
-        background-color: #faf2d5;
+        background-color: #FFF1C7;
       }
     }
   }
@@ -527,7 +528,7 @@
       }
       input[type="radio"]:checked + label {
         box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
-        background-color: #df344f;
+        background-color: $btn;
         text-decoration: none !important;
         color: #fff !important;
       }

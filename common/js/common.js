@@ -171,13 +171,34 @@ common scripts
 
         var txtLength  = $pwdInput.val().length;
 
-        if ( txtLength < 4 ) {
-          $('.pwdWrap').attr('data-length', txtLength);
+        if ( $(this).hasClass('delete') ) {
 
-          var val1 = $(this).text();
-          var val2 = $pwdInput.val();
-          var pwd = val2 + val1;
+          var txtLength = $('.pwdWrap').attr('data-length') - 1;
+          var pwd = $pwdInput.val().substr( 0, $pwdInput.val().length-1 );
+
           $pwdInput.val(pwd);
+
+          if ( txtLength >= -1 ) {
+
+            var txtLength = ( txtLength == -1 ) ? 'null' : txtLength;
+            $('.pwdWrap').attr('data-length', txtLength);
+
+          }
+
+        } else  {
+
+          if  ( txtLength <= 3 ) {
+
+            $('.pwdWrap').attr('data-length', txtLength);
+
+            var val1 = $(this).text();
+            var val2 = $pwdInput.val();
+            var pwd = val2 + val1;
+
+            $pwdInput.val(pwd);
+
+          }
+
         }
 
       });

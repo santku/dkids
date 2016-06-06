@@ -83,44 +83,58 @@ input {
     }
   }
   &[type=checkbox] {
-    + label:after,
-    + label:before {
-      background-image: url("/common/images/common/form_checkbox_off.png");
-    }
-    + label:after {
-      display: none;
-    }
-    &.cbAfter {
-      + label:before {
+    + label{
+      &:after,
+      &:before {
+        background-image: url("/common/images/common/form_checkbox_off.png");
+      }
+      &:after {
         display: none;
       }
-      + label:after {
-        display: inline-block;
-      }
-    }
-  }
-  &[type=checkbox]:checked {
-    + label:after,
-    + label:before {
-      background-image: url("/common/images/common/form_checkbox_on.png");
-    }
-    + label:after {
-      display: none;
     }
     &.cbAfter {
-      + label:before {
-        display: none;
+      + label{
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: inline-block;
+        }
       }
-      + label:after {
-        display: inline-block;
+    }
+    &:checked {
+      + label{
+        color: #f48a00;
+        &:after,
+        &:before {
+          background-image: url("/common/images/common/form_checkbox_on.png");
+        }
+        &:after {
+          display: none;
+        }
+      }
+      &.cbAfter {
+        + label{
+          &:before {
+            display: none;
+          }
+          &:after {
+            display: inline-block;
+          }
+        }
       }
     }
   }
-  &[type=radio] + label:before {
-    background-image: url("/common/images/common/form_radio_off.png");
-  }
-  &[type=radio]:checked + label:before {
-    background-image: url("/common/images/common/form_radio_on.png");
+  &[type=radio] {
+    & + label:before{
+      background-image: url("/common/images/common/form_radio_off.png");
+    }
+    &:checked + label{
+      color: #f48a00;
+      &:before {
+        background-image: url("/common/images/common/form_radio_on.png");
+      }
+    }
   }
   &.switch {
     + label {
@@ -578,14 +592,25 @@ footer {
       }
     }
     h2 {
-      padding-left: 0.5em;
+      position: relative;
+      padding: 0 0 0.5em 0.5em;
       margin-bottom: 0.8em;
+      border-bottom: solid 1px #AAA;
       line-height: 1.4;
-      background: url("/common/images/common/h2_bg.png") no-repeat left 0.3em;
-      background-size: 3px 15px;
+      background-color: transparent;
       font-size: 1.6rem;
-      font-weight: normal;
+      font-weight: bold;
       color: inherit;
+      &:before{
+        display: block;
+        position: absolute;
+        top: .2rem;
+        left: 0;
+        width: 3px;
+        height: 72.5%;
+        background-color: $link;
+        content: '';
+      }
     }
     h3 {
       margin-bottom: 0.5em;
@@ -857,13 +882,13 @@ footer {
   text-align: center;
   text-decoration: none !important;
   color: $fontColor !important;
-  background-color: #FFF;
+  background-color: #f0f0f0;
   &.red {
-    background-color: #df344f;
+    background-color: $btn;
     color: #FFF !important;
   }
   &.gray{
-    background-color: #ebebeb
+    //background-color: #f0f0f0
   }
   &.iblock {
     display: inline-block;
@@ -1307,15 +1332,16 @@ a {
     }
   }
   .numeric {
-    width: 253px;
+    width: 276px;
     margin: 0 auto;
+    text-align: left;
     font-size: 0;
     li {
       display: inline-block;
       width: 41px;
       height: 55px;
-      margin: 0 12px 12px 0;
-      &:nth-child(5n+5) {
+      margin: 0 5px 8px 0;
+      &:nth-child(6n+6) {
         margin-right: 0;
       }
       .android & {

@@ -22,11 +22,12 @@
 
   <!--wrap-->
   <div id="loader-bg">
-  <div id="loader">
-    <img src="/common/images/common/loading.gif" alt="ちょっとまっててね" />
-    <p>ちょっとまっててね</p>
+    <div id="loader">
+      <img src="/common/images/common/loading.gif" alt="ちょっとまっててね" />
+      <p>ちょっとまっててね</p>
+    </div>
   </div>
-</div>
+
   <div id="wrap">
 
     <!--#if expr='"$header_hidden" != "1"' -->
@@ -65,8 +66,7 @@
       </div>
     </header>
 
-          <!--#elif expr='"$category"= "launcher"' -->
-
+    <!--#elif expr='"$category"= "launcher"' -->
 
     <!-- header -->
     <header>
@@ -83,7 +83,7 @@
       </div>
     </header>
 
-          <!--#elif expr='"$category"= "parents-logout"' -->
+    <!--#elif expr='"$category"= "parents-logout"' -->
     <header>
       <p class="logo"><a href="#"><img src="/common/images/common/logo.png" alt="dキッズ" width="64" height="20"></a></p>
       <div class="inner">
@@ -101,6 +101,26 @@
 
         <ul class="menu right">
           <li><a href="#"><img src="/common/images/common/header_login.gif" alt="ログイン" width="33" height="36"></a></li>
+          <li>
+          <div class="point">
+            <a href="#">
+              <ul>
+                <li class="dPoint">
+                  <div class="point-inner border">
+                    <img src="/common/images/common/header_dpoint.gif" alt="d POINT" width="33" height="9">
+                    <p>999,999<span>P</span></p>
+                  </div>
+                </li>
+                <li class="docomoPoint">
+                  <div class="point-inner">
+                    <img src="/common/images/common/header_docomo_point.gif" alt="ドコモポイント" width="33" height="9">
+                    <p>999,999<span>P</span></p>
+                  </div>
+                </li>
+              </ul>
+            </a>
+          </div>
+          </li>
           <li><a href="#my-menu"><img src="/common/images/common/header_menu.gif" alt="メニュー" width="33" height="36"></a></li>
         </ul>
       </div>
