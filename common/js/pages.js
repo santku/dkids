@@ -156,14 +156,26 @@ pages scripts
 		flickity: function(){
 
 		  var $gallery = $('.tutorial .gallery').flickity({
-				prevNextButtons: false,
-				pageDots: false
+				prevNextButtons: false
 			});
+
 		  $gallery.on( 'staticClick', function( event, pointer, cellElement, cellIndex ) {
 		    if ( typeof cellIndex == 'number' ) {
 		      $gallery.flickity( 'select', cellIndex );
 		    }
 		  });
+
+
+      var btnOffset = $gallery.find('.center').offset().top + 5;
+
+      $gallery.find('.flickity-page-dots').css('top', btnOffset);
+
+      $gallery.find('.gallery-cell').matchHeight();
+
+      // $gallery.on( 'load', function() {
+      //   alert('OK')
+      //   $(this).find('.gallery-cell').matchHeight();
+      // });
 
 		},
 

@@ -159,6 +159,11 @@ input[type="button"]:-webkit-search-decoration, input[type="reset"]:-webkit-sear
 input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
   outline-offset: -2px;
 }
+input[type="submit"] {
+  font-size: 14px;
+  font-size: 1.4rem;
+  opacity: .7;
+}
 
 select {
   vertical-align: middle;
@@ -244,6 +249,14 @@ select::-ms-expand {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.toInquiry {
+  margin-bottom: 2em;
+}
+.toInquiry p:first-child {
+  width: 17em;
+  margin: 0 auto 1em;
 }
 
 .sp {
@@ -1319,10 +1332,6 @@ a.movie i {
 }
 .remodal .buttons li input:first-child {
   margin-right: 2px;
-}
-
-.test {
-  display: none;
 }
 
 /* =========================================================

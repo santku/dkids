@@ -86,23 +86,24 @@
       </div>
 
       <div class="register_area">
-        <dl>
+        <dl class="timer">
           <dt>タイマー設定</dt>
           <dd>
             <div>
-              <input id="radio02" class="switch" type="checkbox" name="radio04" checked="checked" value="">
-              <label for="radio02"></label>
+              <input id="radio01" class="switch" type="checkbox" name="radio04" value="">
+              <label for="radio01"></label>
             </div>
-            <div class="selectBox age_change">
-              <select class="age" name="age">
-                <option value="30分">30分</option>
-                <option value="1時間30分">1時間30分</option>
-                <option value="2時間">2時間</option>
-                <option value="2時間30分">2時間30分</option>
-              </select>
+            <div>
+              <div class="selectBox age_change">
+                <select class="age" name="age">
+                  <option value="" disabled selected>選択</option>
+                  <option value="1時間30分">1時間30分</option>
+                  <option value="2時間">2時間</option>
+                  <option value="2時間30分">2時間30分</option>
+                </select>
+              </div>
             </div>
           </dd>
-
         </dl>
 
       </div>

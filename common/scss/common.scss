@@ -167,6 +167,10 @@ input {
       outline-offset: -2px;
     }
   }
+  &[type="submit"]{
+    @include fontSize(1.4);
+    opacity: .7;
+  }
 }
 select {
   vertical-align: middle;
@@ -261,6 +265,13 @@ select {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+.toInquiry{
+  margin-bottom: 2em;
+  p:first-child{
+    width: 17em;
+    margin: 0 auto 1em;
   }
 }
 .sp {
@@ -1370,9 +1381,6 @@ a {
       }
     }
   }
-}
-.test {
-  display: none;
 }
 /* =========================================================
  TABLET

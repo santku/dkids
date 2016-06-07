@@ -85,7 +85,7 @@
 .launcher.home .app.pickup .tag {
   position: relative;
   width: 288px;
-  margin: 0 0 1em;
+  margin: 0 0 .5em;
   padding-left: 1em;
 }
 .launcher.home .app.pickup .tag:before {
@@ -327,26 +327,26 @@
 .launcher.feature section.inner article .play {
   margin-bottom: 1em;
 }
-.launcher.feature section.inner article.item ul {
-  width: 80%;
-  margin: 0 auto;
-}
 .launcher.feature section.inner article.item .button {
-  display: table;
-  padding: 0.5em 0.5em .7em;
+  padding: 0.5em 0.5em 0.3em;
+  box-sizing: border-box;
 }
-.launcher.feature section.inner article.item .button li {
+.launcher.feature section.inner article.item .button ul {
+  display: inline-table;
+  text-align: center;
+}
+.launcher.feature section.inner article.item .button ul li {
   display: table-cell;
   vertical-align: middle;
   text-align: left;
 }
-.launcher.feature section.inner article.item .button li:first-child {
-  width: 17%;
+.launcher.feature section.inner article.item .button ul li:first-child {
+  width: 30px;
 }
-.launcher.feature section.inner article.item .button li:last-child {
+.launcher.feature section.inner article.item .button ul li:last-child {
   padding-left: 1em;
 }
-.launcher.feature section.inner article.item .button img {
+.launcher.feature section.inner article.item .button ul img {
   width: 100%;
 }
 .launcher.feature section.inner article.item .button .btn {
@@ -596,29 +596,31 @@
   margin: 25px 0 0 1%;
 }
 @media screen and (max-width: 566px) {
-  .launcher .end_long {
-    display: none;
-  }
   .launcher .logout .btn {
     margin: 5px;
   }
 }
 
-@media screen and (min-width: 566px) and (max-width: 767px) {
-  .end_side {
+.launcherEnd .end_side img, .launcherEnd .end_long img {
+  vertical-align: top;
+}
+@media all and (orientation: portrait) {
+  .launcherEnd .end_side {
+    display: block;
+  }
+  .launcherEnd .end_long {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .end_long {
+@media all and (orientation: landscape) {
+  .launcherEnd .end_side {
     display: none;
   }
-}
-@media screen and (min-width: 1024px) {
-  .end_side {
-    display: none;
+  .launcherEnd .end_long {
+    display: block;
   }
 }
+
 /*@media only screen and (max-device-width:480px) and (orientation:portrait) {
   .side_play {
     display: none;
@@ -690,6 +692,9 @@ ul.bonus_area li {
   float: left;
   width: 20%;
 }
+ul.bonus_area li img.hidden {
+  visibility: hidden;
+}
 
 /*応募ボタンの大きさ調整*/
 .stamp .oubo {
@@ -706,6 +711,7 @@ ul.bonus_area li {
 
 .remodal_txt {
   padding: 0 0.5em;
+  text-align: left;
 }
 
 .remodel_2 {
@@ -808,6 +814,7 @@ ul.bonus_area li {
   position: relative;
 }
 .remodel_2.red_border h3.special {
+  margin-top: -5%;
   position: absolute;
   top: -0.2em;
   right: 0;
@@ -851,28 +858,27 @@ img.back {
 .month_emphasis {
   margin: 25% auto 1em;
   padding: 1em 0;
+  text-align: center;
 }
 .month_emphasis dl {
+  display: inline-table;
   position: relative;
-  width: 95%;
+  width: auto;
   margin: 0 auto;
-  display: table;
+  padding: 1em;
+  border: solid 1px #EEE;
+  border-radius: 5px;
 }
 .month_emphasis dl:after {
   display: block;
   position: absolute;
-  top: -22%;
+  top: -16%;
   left: 0;
   width: 100%;
-  padding-top: 7.5%;
+  padding-top: 15.7%;
   background: url("/common/images/launcher/home/month.png") no-repeat center top;
-  background-size: 30%;
+  background-size: 110px;
   content: '';
-}
-@media screen and (min-width: 768px) {
-  .month_emphasis dl:after {
-    background-size: 200px;
-  }
 }
 .month_emphasis dl dd,
 .month_emphasis dl dt {
@@ -880,12 +886,11 @@ img.back {
   vertical-align: middle;
 }
 .month_emphasis dl dt {
-  width: 18.5%;
   padding-right: 3.3%;
 }
 .month_emphasis dl dd {
-  width: 71.6%;
   font-weight: bold;
+  text-align: left;
 }
 
 #contents section.inner {
@@ -898,24 +903,75 @@ img.back {
   }
 }
 
+.remodel_2 .month {
+  position: static;
+}
+.remodel_2 .month .month_emphasis {
+  margin: 25% auto 1em;
+  padding: 1em 0;
+}
+@media screen and (min-width: 420px) {
+  .remodel_2 .month .month_emphasis {
+    position: relative;
+  }
+}
+.remodel_2 .month .month_emphasis:after {
+  position: absolute;
+  top: 7%;
+  right: -5%;
+  width: 25%;
+  max-width: 100px;
+  padding-top: 19%;
+  background: url(/common/images/launcher/home/special_comment.png) no-repeat;
+  background-size: contain;
+  content: '';
+}
+@media screen and (min-width: 420px) {
+  .remodel_2 .month .month_emphasis:after {
+    top: -15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .remodel_2 .month .month_emphasis:after {
+    right: 10%;
+  }
+}
+.remodel_2 .month .month_emphasis dl {
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.remodel_2 .month .month_emphasis dl:after {
+  display: block;
+  position: absolute;
+  top: -18%;
+  left: 0;
+  padding-top: 17.5%;
+  background: url("/common/images/launcher/home/month_02.png") no-repeat center top;
+  background-size: 50% auto;
+  content: '';
+}
+@media screen and (min-width: 500px) {
+  .remodel_2 .month .month_emphasis dl:after {
+    background-size: 180px !important;
+  }
+}
+
 .stamp_2 .remodel_2.red_border {
   margin-bottom: 15px;
 }
-
 .stamp_2 section.inner {
   position: relative;
+}
+.stamp_2 .remodel_2 ul.bonus_area {
+  margin: 0 auto;
+}
+.stamp_2 .login_bonus {
+  margin-top: 0;
 }
 
 section.inner.stamp_detail {
   margin-bottom: 0;
-}
-
-.stamp_2 .remodel_2 ul.bonus_area {
-  margin: 0 auto;
-}
-
-.stamp_2 .login_bonus {
-  margin-top: 0;
 }
 
 .stampbook {
@@ -959,11 +1015,14 @@ section.inner.stamp_detail {
   visibility: hidden;
 }
 .stampbook h3.special {
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .stampbook .month_emphasis {
   margin: 0 auto;
   padding-bottom: 1em;
+}
+.stampbook .center {
+  margin-top: 1em;
 }
 
 .guide .txt {
@@ -1038,6 +1097,20 @@ section.inner.stamp_detail {
 .register_area .selectBox.gender {
   width: 42%;
 }
+.register_area .timer dd {
+  display: table;
+  float: left;
+  max-width: 517px;
+  width: 60%;
+}
+.register_area .timer dd > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.register_area .timer dd > div:first-child {
+  width: 75px;
+  padding-top: .5em;
+}
 
 .register_area dl {
   overflow: hidden;
@@ -1085,6 +1158,12 @@ section.inner.stamp_detail {
 
 .help .inner {
   padding-top: 0 !important;
+}
+.help .accordion dl {
+  background-color: transparent;
+}
+.help .accordion dl.active {
+  background-color: #FBF5DE;
 }
 
 .remodel_3 {
@@ -1420,7 +1499,7 @@ section.inner.stamp_detail {
   -moz-border-radius-topright: 5px;
 }
 #contents.tutorial .gallery-cell .gallery-inner {
-  padding: 0 10px 25px 10px;
+  padding: 0 10px 50px 10px;
 }
 #contents.tutorial .gallery-cell .heading {
   margin-bottom: .5em;
@@ -2426,13 +2505,6 @@ section.inner.stamp_detail {
   border-left: solid 1px #CCC;
   border-right: solid 1px #CCC;
 }
-.faq .toInquiry {
-  margin-bottom: 2em;
-}
-.faq .toInquiry p:first-child {
-  width: 16em;
-  margin: 0 auto 1em;
-}
 
 .parentsabout .visual img {
   width: 100%;
@@ -3115,9 +3187,6 @@ ul.pageing {
 --------------------------------------------------------- */
 .center {
   text-align: center;
-}
-.center.mb {
-  margin-bottom: 1em;
 }
 
 .inquiry .inner {

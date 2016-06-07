@@ -1025,13 +1025,6 @@
     border-left: solid 1px #CCC;
     border-right: solid 1px #CCC;
   }
-  .toInquiry{
-    margin-bottom: 2em;
-    p:first-child{
-      width: 16em;
-      margin: 0 auto 1em;
-    }
-  }
 }
 //parentsabout
 //--------------------------------------------------------
@@ -1730,9 +1723,9 @@ ul.pageing {
 --------------------------------------------------------- */
 .center {
   text-align: center;
-  &.mb{
-    margin-bottom: 1em;
-  }
+  // &.mb{
+  //   margin-bottom: 1em;
+  // }
 }
 .inquiry {
   .inner {
