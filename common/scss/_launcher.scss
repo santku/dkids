@@ -26,7 +26,7 @@
     }
     }
     .logout .loginArea {
-      background: #fbeec2;
+      background: #fcf0c3;
       width: 93.4%;
       margin: 0 auto 20px;
       color: #f48a00;
@@ -81,6 +81,10 @@
         h2 {
           @include title(rgba(#eca100, .2));
         }
+      }
+      &.logout{
+        background-color: #fbfae9;
+        //background-image: none;
       }
       &.pickup {
         background-image: url("/common/images/launcher/home/pickup_bg.png");
@@ -1012,6 +1016,14 @@ img.back {
 .remodel_2{
   .month{
     position: static;
+    &.pt{
+      .month_emphasis:after {
+        top: 9%;
+        @media screen and (min-width: 420px) {
+          top: -10%;
+        }
+      }
+    }
     .month_emphasis {
       margin: 25% auto 1em;
       padding: 1em 0;
@@ -1678,7 +1690,8 @@ section.inner {
         }
         &.pickup {
           .tag {
-            width: 662px;
+            width: 100%;
+            text-align: center;
           }
         }
         ul {

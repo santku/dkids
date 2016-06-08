@@ -61,13 +61,13 @@ pages scripts
 
        }
 
-       $('.movieTmb').slick({
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         infinite: false,
-         arrows: false,
-         variableWidth: true
-       });
+      //  $('.movieTmb').slick({
+      //    slidesToShow: 1,
+      //    slidesToScroll: 1,
+      //    infinite: false,
+      //    arrows: false,
+      //    variableWidth: true
+      //  });
 
        $('.prBanner').slick({
          dots: true,
@@ -130,6 +130,7 @@ pages scripts
       $('.horizon-item').matchHeight();
       $('.recommend li').matchHeight();
       $('.carousel li').matchHeight();
+      $('#contents.search .app li p').matchHeight();
 
     },
 
@@ -155,27 +156,31 @@ pages scripts
 
 		flickity: function(){
 
-		  var $gallery = $('.tutorial .gallery').flickity({
-				prevNextButtons: false
-			});
+      if ( $('.tutorial').size() >= 1 ) {
 
-		  $gallery.on( 'staticClick', function( event, pointer, cellElement, cellIndex ) {
-		    if ( typeof cellIndex == 'number' ) {
-		      $gallery.flickity( 'select', cellIndex );
-		    }
-		  });
+  		  var $gallery = $('.tutorial .gallery').flickity({
+  				prevNextButtons: false
+  			});
+
+  		  $gallery.on( 'staticClick', function( event, pointer, cellElement, cellIndex ) {
+  		    if ( typeof cellIndex == 'number' ) {
+  		      $gallery.flickity( 'select', cellIndex );
+  		    }
+  		  });
 
 
-      var btnOffset = $gallery.find('.center').offset().top + 5;
+        var btnOffset = $gallery.find('.center').offset().top + 5;
 
-      $gallery.find('.flickity-page-dots').css('top', btnOffset);
+        $gallery.find('.flickity-page-dots').css('top', btnOffset);
 
-      $gallery.find('.gallery-cell').matchHeight();
+        $gallery.find('.gallery-cell').matchHeight();
 
-      // $gallery.on( 'load', function() {
-      //   alert('OK')
-      //   $(this).find('.gallery-cell').matchHeight();
-      // });
+        // $gallery.on( 'load', function() {
+        //   alert('OK')
+        //   $(this).find('.gallery-cell').matchHeight();
+        // });
+
+      }
 
 		},
 

@@ -192,22 +192,6 @@ select {
   border-radius: 5px;
   background: #FFF url("/common/images/common/select_arrow.png") top right no-repeat;
   background-size: contain;
-  // &:after{
-  //   display: inline-block;
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   width: 20%;
-  //   height: 100%;
-  //   line-height: 35px;
-  //   border-radius: 0 5px 5px 0;
-  //   background-color: #df344f;
-  //   color: #FFF;
-  //   content: '\f0d7';
-  //   text-align: center;
-  //   font-family: $icon;
-  //   box-shadow: 0 0 0 1px rgba(#000, .08), inset 0px -9px 2px -7px rgba(0, 0, 0, .5);
-  // }
   &.glay {
     &:after {
       border: none;
@@ -646,6 +630,14 @@ footer {
       padding-bottom: 1.5em;
       &:nth-last-of-type(1) {
         margin-bottom: 3em;
+        & + img{
+          vertical-align: top;
+        }
+      }
+      .appName{
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        color: #999;
       }
       .inner {
         display: table;
@@ -898,6 +890,10 @@ footer {
     background-color: $btn;
     color: #FFF !important;
   }
+  &.orange{
+    background-color: #f9a02d;
+    color: #FFF !important;
+  }
   &.gray{
     //background-color: #f0f0f0
   }
@@ -1144,54 +1140,53 @@ footer {
   ul li.oherApps img {
     width: 100%;
   }
-  &.ranking {
-    ul {
-      li {
-        margin-top: 19px;
-        position: relative;
-        &:before {
-          position: absolute;
-          top: -19px;
-          left: 50%;
-          width: 67px;
-          height: 32px;
-          margin-left: -33.5px;
-          background-size: contain;
-          content: '';
-          z-index: 1;
-        }
-        &:nth-child(1):before {
-          background-image: url("/common/images/launcher/home/ranking_1st.png");
-        }
-        &:nth-child(2):before {
-          background-image: url("/common/images/launcher/home/ranking_2nd.png");
-        }
-        &:nth-child(3):before {
-          background-image: url("/common/images/launcher/home/ranking_3rd.png");
-        }
-        &:nth-child(4):before {
-          background-image: url("/common/images/launcher/home/ranking_4th.png");
-        }
-        &:nth-child(5):before {
-          background-image: url("/common/images/launcher/home/ranking_5th.png");
-        }
-        &:nth-child(6):before {
-          background-image: url("/common/images/launcher/home/ranking_6th.png");
-        }
-        &:nth-child(7):before {
-          background-image: url("/common/images/launcher/home/ranking_7th.png");
-        }
-        &:nth-child(8):before {
-          background-image: url("/common/images/launcher/home/ranking_8th.png");
-        }
-        &:nth-child(9):before {
-          background-image: url("/common/images/launcher/home/ranking_9th.png");
-        }
-        &:nth-child(10):before {
-          background-image: url("/common/images/launcher/home/ranking_10th.png");
-        }
+  &.ranking ul, ul.ranking{
+    li {
+      margin-top: 19px;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        width: 67px;
+        height: 32px;
+        margin-left: -33.5px;
+        background-size: contain;
+        content: '';
+        z-index: 1;
+      }
+      &:nth-child(1):before {
+        background-image: url("/common/images/launcher/home/ranking_1st.png");
+      }
+      &:nth-child(2):before {
+        background-image: url("/common/images/launcher/home/ranking_2nd.png");
+      }
+      &:nth-child(3):before {
+        background-image: url("/common/images/launcher/home/ranking_3rd.png");
+      }
+      &:nth-child(4):before {
+        background-image: url("/common/images/launcher/home/ranking_4th.png");
+      }
+      &:nth-child(5):before {
+        background-image: url("/common/images/launcher/home/ranking_5th.png");
+      }
+      &:nth-child(6):before {
+        background-image: url("/common/images/launcher/home/ranking_6th.png");
+      }
+      &:nth-child(7):before {
+        background-image: url("/common/images/launcher/home/ranking_7th.png");
+      }
+      &:nth-child(8):before {
+        background-image: url("/common/images/launcher/home/ranking_8th.png");
+      }
+      &:nth-child(9):before {
+        background-image: url("/common/images/launcher/home/ranking_9th.png");
+      }
+      &:nth-child(10):before {
+        background-image: url("/common/images/launcher/home/ranking_10th.png");
       }
     }
+
   }
   &.bgNone {
     ul {
@@ -1417,7 +1412,8 @@ a {
     }
   }
   footer{
-    padding-top: 25%;
+    padding-top: 21%;
+    background-image: url(/common/images/common/footer_bg_tab.jpg);
     background-size: 100%;
     background-position: center bottom;
   }

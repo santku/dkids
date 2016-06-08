@@ -619,6 +619,14 @@ footer .copyright {
 #contents article.item:nth-last-of-type(1) {
   margin-bottom: 3em;
 }
+#contents article.item:nth-last-of-type(1) + img {
+  vertical-align: top;
+}
+#contents article.item .appName {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  color: #999;
+}
 #contents article.item .inner {
   display: table;
 }
@@ -869,6 +877,10 @@ footer .copyright {
   background-color: #e13e58;
   color: #FFF !important;
 }
+.btn.orange {
+  background-color: #f9a02d;
+  color: #FFF !important;
+}
 .btn.iblock {
   display: inline-block;
   width: 80%;
@@ -1110,11 +1122,11 @@ footer .copyright {
 .app ul li.oherApps img {
   width: 100%;
 }
-.app.ranking ul li {
+.app.ranking ul li, .app ul.ranking li {
   margin-top: 19px;
   position: relative;
 }
-.app.ranking ul li:before {
+.app.ranking ul li:before, .app ul.ranking li:before {
   position: absolute;
   top: -19px;
   left: 50%;
@@ -1125,34 +1137,34 @@ footer .copyright {
   content: '';
   z-index: 1;
 }
-.app.ranking ul li:nth-child(1):before {
+.app.ranking ul li:nth-child(1):before, .app ul.ranking li:nth-child(1):before {
   background-image: url("/common/images/launcher/home/ranking_1st.png");
 }
-.app.ranking ul li:nth-child(2):before {
+.app.ranking ul li:nth-child(2):before, .app ul.ranking li:nth-child(2):before {
   background-image: url("/common/images/launcher/home/ranking_2nd.png");
 }
-.app.ranking ul li:nth-child(3):before {
+.app.ranking ul li:nth-child(3):before, .app ul.ranking li:nth-child(3):before {
   background-image: url("/common/images/launcher/home/ranking_3rd.png");
 }
-.app.ranking ul li:nth-child(4):before {
+.app.ranking ul li:nth-child(4):before, .app ul.ranking li:nth-child(4):before {
   background-image: url("/common/images/launcher/home/ranking_4th.png");
 }
-.app.ranking ul li:nth-child(5):before {
+.app.ranking ul li:nth-child(5):before, .app ul.ranking li:nth-child(5):before {
   background-image: url("/common/images/launcher/home/ranking_5th.png");
 }
-.app.ranking ul li:nth-child(6):before {
+.app.ranking ul li:nth-child(6):before, .app ul.ranking li:nth-child(6):before {
   background-image: url("/common/images/launcher/home/ranking_6th.png");
 }
-.app.ranking ul li:nth-child(7):before {
+.app.ranking ul li:nth-child(7):before, .app ul.ranking li:nth-child(7):before {
   background-image: url("/common/images/launcher/home/ranking_7th.png");
 }
-.app.ranking ul li:nth-child(8):before {
+.app.ranking ul li:nth-child(8):before, .app ul.ranking li:nth-child(8):before {
   background-image: url("/common/images/launcher/home/ranking_8th.png");
 }
-.app.ranking ul li:nth-child(9):before {
+.app.ranking ul li:nth-child(9):before, .app ul.ranking li:nth-child(9):before {
   background-image: url("/common/images/launcher/home/ranking_9th.png");
 }
-.app.ranking ul li:nth-child(10):before {
+.app.ranking ul li:nth-child(10):before, .app ul.ranking li:nth-child(10):before {
   background-image: url("/common/images/launcher/home/ranking_10th.png");
 }
 .app.bgNone ul li {
@@ -1370,7 +1382,8 @@ a.movie i {
   }
 
   footer {
-    padding-top: 25%;
+    padding-top: 21%;
+    background-image: url(/common/images/common/footer_bg_tab.jpg);
     background-size: 100%;
     background-position: center bottom;
   }

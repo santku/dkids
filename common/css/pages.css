@@ -17,7 +17,7 @@
   }
 }
 .launcher.home .logout .loginArea {
-  background: #fbeec2;
+  background: #fcf0c3;
   width: 93.4%;
   margin: 0 auto 20px;
   color: #f48a00;
@@ -74,6 +74,9 @@
 .launcher.home .app.logout h2, .launcher.home .app.ranking h2, .launcher.home .app.try h2 {
   background: -webkit-linear-gradient(top, rgba(236, 161, 0, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(236, 161, 0, 0.2) 90%, transparent 100%);
+}
+.launcher.home .app.logout {
+  background-color: #fbfae9;
 }
 .launcher.home .app.pickup {
   background-image: url("/common/images/launcher/home/pickup_bg.png");
@@ -906,6 +909,14 @@ img.back {
 .remodel_2 .month {
   position: static;
 }
+.remodel_2 .month.pt .month_emphasis:after {
+  top: 9%;
+}
+@media screen and (min-width: 420px) {
+  .remodel_2 .month.pt .month_emphasis:after {
+    top: -10%;
+  }
+}
 .remodel_2 .month .month_emphasis {
   margin: 25% auto 1em;
   padding: 1em 0;
@@ -1522,7 +1533,8 @@ section.inner.stamp_detail {
     margin-right: 0 !important;
   }
   .launcher.home .app.pickup .tag {
-    width: 662px;
+    width: 100%;
+    text-align: center;
   }
   .launcher.home .app ul li {
     margin-right: 10px !important;
@@ -1657,6 +1669,39 @@ section.inner.stamp_detail {
   background: #fff;
   margin-bottom: 0;
 }
+#contents.parents.home > section#trialApp h2, #contents.parents.home > section#movie.introMovie h2 {
+  margin-bottom: 0;
+  padding-left: 2.5%;
+  background: none;
+  text-align: left;
+}
+#contents.parents.home > section#trialApp h2 img, #contents.parents.home > section#movie.introMovie h2 img {
+  width: auto;
+  max-height: 22px;
+}
+#contents.parents.home > section#trialApp {
+  border-bottom: solid 1px #f0f0f0;
+}
+#contents.parents.home > section#trialApp ul li.horizon-item.signIn {
+  width: 173.25px;
+}
+#contents.parents.home > section#trialApp ul li.horizon-item.signIn img {
+  width: 100%;
+  box-shadow: none;
+}
+#contents.parents.home > section#movie.introMovie {
+  padding: 1em 0 2em;
+}
+#contents.parents.home > section#movie.introMovie h2 {
+  margin-bottom: .5em;
+}
+#contents.parents.home > section#about .intro {
+  text-align: center;
+}
+#contents.parents.home > section#about .intro img {
+  display: inline;
+  width: 80%;
+}
 #contents.parents.home > section#about .button {
   margin: 2em 0;
 }
@@ -1666,6 +1711,15 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#about .app .button {
   margin-top: 0;
+}
+#contents.parents.home > section#about .center {
+  margin: auto;
+  padding: 2em;
+}
+@media screen and (min-width: 768px) {
+  #contents.parents.home > section#about .center a.btn {
+    width: 85.2%;
+  }
 }
 #contents.parents.home > section#intellectual h2 {
   position: relative;
@@ -1883,11 +1937,29 @@ section.inner.stamp_detail {
   overflow: visible;
 }
 #contents.parents.home > section#movie .movieTmb {
-  width: 93.4%;
+  width: 100%;
   margin: 0 auto;
 }
-#contents.parents.home > section#movie .movieTmb .slick-slide {
-  margin-right: 10px;
+#contents.parents.home > section#movie .movieTmb .horizon-inner {
+  padding-left: 3.3%;
+}
+#contents.parents.home > section#movie .movieTmb .horizon-item {
+  width: 156px;
+  margin: 0 5px;
+  text-align: left;
+  vertical-align: top;
+}
+#contents.parents.home > section#movie .movieTmb .horizon-item img {
+  display: block;
+  margin-bottom: .25em;
+}
+#contents.parents.home > section#movie .movieTmb .horizon-item.listBtn {
+  width: 110px;
+  padding-top: 20px;
+}
+#contents.parents.home > section#movie .movieTmb .horizon-item.listBtn a.btn {
+  width: 100%;
+  padding: 1em 0;
 }
 #contents.parents.home > section#pr {
   margin-bottom: 0;
@@ -2100,10 +2172,13 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#mamatenna .inner .tabBody {
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 30px 3.3% 2%;
   border-top: solid 4px #E15E76;
   background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 94.3% 10px;
   background-size: 139px auto;
+}
+#contents.parents.home > section#mamatenna .inner .tabBody .center {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   #contents.parents.home > section#mamatenna .inner .tabBody {
@@ -2210,6 +2285,16 @@ section.inner.stamp_detail {
 #contents.parents.login {
   background-color: #fffad9;
 }
+#contents.parents.login.current .heading {
+  margin-bottom: 1em;
+}
+#contents.parents.login.current #ranking .app .carousel .horizon-inner {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#contents.parents.login.current #ranking .button {
+  margin-top: 0;
+}
 #contents.parents.login h3 {
   margin-left: 0.8em;
 }
@@ -2228,6 +2313,9 @@ section.inner.stamp_detail {
 }
 #contents.parents.login .accordion dl:first-child {
   border: none;
+}
+#contents.parents.login .accordion dl {
+  background-color: transparent;
 }
 #contents.parents.login .accordion dl dt {
   width: 86.6%;
@@ -2274,12 +2362,23 @@ section.inner.stamp_detail {
 #contents.parents.press .visual + article {
   margin-top: 1.4em;
 }
+#contents.parents.press h2 {
+  border-bottom: none;
+  background-repeat: no-repeat;
+  background-position: 0 0.18em;
+  background-size: 4px;
+  padding-bottom: 0;
+  font-weight: normal;
+}
+#contents.parents.press h2:before {
+  display: none;
+}
 #contents.parents.press figure {
   width: 90%;
   margin: 2em auto;
 }
 #contents.parents.press .date {
-  margin-bottom: 0;
+  margin-bottom: 1em;
   font-size: 1rem;
 }
 #contents.parents.press .listItem li {
@@ -2318,7 +2417,6 @@ section.inner.stamp_detail {
 }
 #contents.parents.yellow .date {
   color: #EEB329;
-  text-align: right;
 }
 #contents.parents.yellow h3 {
   margin-top: 1em;
@@ -2374,6 +2472,12 @@ section.inner.stamp_detail {
   right: 10px;
   z-index: 100;
 }
+#contents.parents .fixedBtn.btnApp {
+  width: 188px;
+}
+#contents.parents .fixedBtn.btnApp img {
+  width: 100%;
+}
 #contents.parents .fixedBtn img {
   vertical-align: top;
 }
@@ -2383,8 +2487,11 @@ section.inner.stamp_detail {
 #contents.parents .accordion {
   margin-bottom: 2em;
 }
+#contents.parents .accordion dl {
+  background-color: #f0f0f0;
+}
 #contents.parents .accordion dl.active {
-  background-color: #fafafa;
+  background-color: #fffcf2;
 }
 #contents.parents .accordion dl.active > dt:before {
   content: '\f106';
@@ -2403,6 +2510,21 @@ section.inner.stamp_detail {
   font-size: 2rem;
 }
 
+.registfixedBtn {
+  margin-bottom: 0;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 100;
+  width: 80%;
+}
+.registfixedBtn.first {
+  width: 268px;
+}
+.registfixedBtn img {
+  vertical-align: top;
+}
+
 /* logout
 --------------------------------------------------------- */
 .logout {
@@ -2413,17 +2535,6 @@ section.inner.stamp_detail {
 }
 .logout .logoutpoint li {
   border-top: solid 2px #f0f0f0;
-}
-.logout .registfixedBtn {
-  margin-bottom: 0;
-  position: fixed;
-  bottom: 5px;
-  right: 10px;
-  z-index: 100;
-  width: 80%;
-}
-.logout .registfixedBtn img {
-  vertical-align: top;
 }
 .logout #trial .inner .button a {
   display: inline-block;
@@ -2581,39 +2692,57 @@ section.inner.stamp_detail {
 --------------------------------------------------------- */
 /* P-3-1 : アプリ紹介詳細 1
 --------------------------------------------------------- */
-.detail_app #mainVisual {
+#contents.detail_app #mainVisual {
   margin-bottom: 1em;
 }
-
-.detail_app dl.app_in {
+#contents.detail_app article.paragraph:nth-of-type(1) {
+  margin-bottom: 0;
+}
+#contents.detail_app .app_in {
   width: 100%;
   margin: 10px auto 0;
+  font-size: 1rem;
 }
-
-.detail_app .app_in dt {
-  float: left;
-  clear: both;
-  margin: 5px 5px 1px 0;
+#contents.detail_app .app_in dt {
   color: #fff;
-  width: 110px;
-  /*text-align: right;*/
 }
-.detail_app .app_in dt p {
+#contents.detail_app .app_in dt p {
   background-color: #F48A00;
   border-radius: 15px;
   padding: 5px 10px;
   display: inline;
 }
-
-.detail_app .app_in dd {
-  padding: 0 5px;
-  margin-left: 110px;
+#contents.detail_app .app_in:nth-of-type(1) dt, #contents.detail_app .app_in:nth-of-type(1) dd {
+  display: inline-block;
+  float: none;
 }
-.detail_app .app_in dd .btn {
+#contents.detail_app .app_in:nth-of-type(1) dt {
+  margin-right: 1em;
+}
+#contents.detail_app .app_in:nth-of-type(1) dd {
+  padding: .25em 1em;
+  border: solid 1px;
+  border-radius: 5px;
+  color: #777;
+}
+#contents.detail_app .app_in:nth-of-type(1) dd:nth-of-type(1) {
+  margin-right: 1em;
+}
+#contents.detail_app .app_in:nth-of-type(2) dt {
+  float: left;
+  clear: both;
+  margin: 5px 5px 1px 0;
+  width: 9em;
+  /*text-align: right;*/
+}
+#contents.detail_app .app_in:nth-of-type(2) dd {
+  padding: 0 5px;
+  margin-left: 9em;
+}
+#contents.detail_app .app_in:nth-of-type(2) dd .btn {
   width: auto;
 }
-
-.detail_app .red_sqare {
+#contents.detail_app .red_sqare {
   border: 1px solid #dc1e3c;
   padding: 3px 12px;
   border-radius: 5px;
@@ -2623,6 +2752,9 @@ section.inner.stamp_detail {
   width: auto;
 }
 
+#contents.parents.detail_app .accordion.button dl {
+  background-color: transparent;
+}
 #contents.parents.detail_app .accordion.button dl.active dt {
   display: none;
 }
@@ -2642,10 +2774,6 @@ section.inner.stamp_detail {
 
 .detail_app .red {
   font-size: 1.6rem;
-}
-
-.detail_app .paragraph .red {
-  width: 86.6%;
 }
 
 /*このアプリのお知らせ通知*/
@@ -2896,11 +3024,14 @@ ul.other figure img {
 
 /* 特集 P-4
 --------------------------------------------------------- */
-.special .w100 {
+#contents.special .w100 {
   width: 100%;
 }
-.special .inner {
+#contents.special .inner {
   padding-top: 0.4em !important;
+}
+#contents.special section.inner h3 {
+  margin-bottom: 0;
 }
 
 /* おしらせ詳細
@@ -3721,7 +3852,7 @@ ul.point li {
 /* =========================================================
  CLEARFIX
 ========================================================= */
-.launcher.home .app.recommend ul li:after, .launcher.home .app.try ul li:after, .pass:after, .registration_area:after, .launcher .notice_area:after, .launcher ul.notice_app li:after, ul.bonus_area:after, .remodel_2:after, .remodel_2 ul.bonus_area:after, .loginb_area:after, .confirm_config .kids_confirm:after, .remodel_3:after, .remodel_3 ul.bonus_area:after, .detail_app dl.app_in:after, .detail_app .app_in dt:after, .detail_app dl.push:after, .child_ch .register_ch dl:after, .child_ch .index_top:after, .inquiry_area dl:after, .cheer .cheer_area:after {
+.launcher.home .app.recommend ul li:after, .launcher.home .app.try ul li:after, .pass:after, .registration_area:after, .launcher .notice_area:after, .launcher ul.notice_app li:after, ul.bonus_area:after, .remodel_2:after, .remodel_2 ul.bonus_area:after, .loginb_area:after, .confirm_config .kids_confirm:after, .remodel_3:after, .remodel_3 ul.bonus_area:after, .detail_app dl.push:after, .child_ch .register_ch dl:after, .child_ch .index_top:after, .inquiry_area dl:after, .cheer .cheer_area:after {
   content: '';
   clear: both;
   display: block;
