@@ -180,6 +180,30 @@ pages scripts
         //   $(this).find('.gallery-cell').matchHeight();
         // });
 
+        var flkty = $gallery.data('flickity');
+
+        function updateStatus() {
+
+          var cellNumber = flkty.selectedIndex;
+
+          $('.gifplayer').each(function(i){
+
+            var src = $(this).attr('src').match(/gif|png/);
+
+            if ( i == cellNumber ) {
+              $(this).attr('src', $(this).attr('src').replace('png', 'gif'));
+            } else {
+              $(this).attr('src', $(this).attr('src').replace('gif', 'png'));
+            }
+
+          });
+
+        }
+
+        updateStatus();
+
+        $gallery.on( 'cellSelect', updateStatus );
+
       }
 
 		},
