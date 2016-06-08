@@ -169,7 +169,9 @@ input {
   }
   &[type="submit"]{
     @include fontSize(1.4);
-    opacity: .7;
+    &[disabled]{
+      opacity: .7;
+    }
   }
 }
 select {
