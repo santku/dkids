@@ -1,0 +1,63 @@
+<!--#set var="page_title" value="launcher" -->
+<!--#set var="category" value="launcher" -->
+<!--#include virtual="/common/include/common/header.html" -->
+
+    <!--contents-->
+    <div id="contents" class="launcher">
+
+      <!--#include virtual="/common/include/common/account.html" -->
+
+      <h1>終了ダイアログ</h1>
+
+      <section class="inner">
+
+      <a data-remodal-target="modal" href="#modal">DIALOG</a>
+      <div id="dialog" class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+        <p class="close" data-remodal-action="close"><img src="/common/images/common/dialog_close.png" alt="" width="48" height="46"></p>
+        <section>
+          <div class="inner">
+            <form action="">
+              <h2>おうちの ひとに わたしてね</h2>
+              <div class="txt timer">
+                <p>dキッズアプリを終了しますか？<br>パスワードを入力してください</p>
+              </div>
+              <div class="input pwdWrap" data-length="null">
+                <input class="password" type="password" name="password" maxlength="4">
+              </div>
+              <ul class="numeric">
+                <li><span class="btn">1</span></li>
+                <li><span class="btn">2</span></li>
+                <li><span class="btn">3</span></li>
+                <li><span class="btn">4</span></li>
+                <li><span class="btn">5</span></li>
+                <li><span class="btn delete"><img src="/common/images/common/password_area_delete.png" alt="delete"></span></li>
+                <li><span class="btn">6</span></li>
+                <li><span class="btn">7</span></li>
+                <li><span class="btn">8</span></li>
+                <li><span class="btn">9</span></li>
+                <li><span class="btn">0</span></li>
+              </ul>
+              <ul class="buttons">
+                <li>
+                  <input class="btn" type="button" value="アプリを終了する">
+                </li>
+                <li>
+                  <input class="btn red" type="submit" value="アプリを続ける">
+                </li>
+              </ul>
+              <div class="txt timer">
+                <p>＜パスワードをお忘れの方へ＞<br>
+                  一度、本体を再起動してください。<br>
+                  再起動後、下記の手順に従い、新しいパスワードを設定してください。<br>
+                dマーケット＞dキッズ＞メニュー＞パスワード変更</p>
+              </div>
+            </form>
+          </div>
+
+        </section>
+      </div>
+      </section>
+    </div>
+    <!--/contents-->
+
+<!--#include virtual="/common/include/common/footer.html" -->
