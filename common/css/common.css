@@ -662,7 +662,7 @@ footer .copyright {
 }
 #contents .emphasis {
   margin-bottom: 2em;
-  padding: 1em 0 3.3%;
+  padding: 1em 3.3% 3.3%;
 }
 #contents .emphasis dl {
   display: table;
