@@ -520,8 +520,7 @@
 }
 .launcher .notice_area {
   width: auto;
-  margin: 0 2.5%;
-  border-bottom: 1px solid #535353;
+  margin: 0 2.5% 2em;
 }
 .launcher .notice_area dl dt {
   float: left;
@@ -1581,6 +1580,7 @@ section.inner.stamp_detail {
 }
 #contents.parents + footer .copyright {
   position: static;
+  padding-bottom: 56px;
 }
 #contents.parents + footer .copyright:before {
   content: '(c) NTT DOCOMO';
@@ -2520,6 +2520,11 @@ section.inner.stamp_detail {
 }
 .registfixedBtn.first {
   width: 268px;
+}
+@media screen and (min-width: 768px) {
+  .registfixedBtn.first {
+    width: 335px;
+  }
 }
 .registfixedBtn img {
   vertical-align: top;

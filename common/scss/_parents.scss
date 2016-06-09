@@ -9,6 +9,7 @@
   background-image: none;
   .copyright {
     position: static;
+    padding-bottom: 56px;
     &:before {
       content: '(c) NTT DOCOMO';
       color: #fff;
@@ -1016,6 +1017,9 @@
   width: 80%;
   &.first{
     width: 268px;
+    @media screen and (min-width: 768px) {
+      width: 335px;
+    }
   }
   img {
     vertical-align: top;

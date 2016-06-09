@@ -622,9 +622,9 @@
   //*お知らせ通知のオンオフ切り替え*/
   .notice_area {
     width: auto;
-    margin: 0 2.5%;
+    margin: 0 2.5% 2em;
     @extend %cf;
-    border-bottom: 1px solid #535353;
+    //border-bottom: 1px solid #535353;
   }
   .notice_area dl dt {
     float: left;

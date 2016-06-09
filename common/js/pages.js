@@ -175,11 +175,6 @@ pages scripts
 
         $gallery.find('.gallery-cell').matchHeight();
 
-        // $gallery.on( 'load', function() {
-        //   alert('OK')
-        //   $(this).find('.gallery-cell').matchHeight();
-        // });
-
         var flkty = $gallery.data('flickity');
 
         function updateStatus() {
