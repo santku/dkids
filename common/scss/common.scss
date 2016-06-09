@@ -1290,6 +1290,7 @@ a {
     margin: 0 auto;
     p {
       margin-bottom: 0;
+      font-size: 1.3rem;
       .btn{
         margin-top: 1em;
       }
@@ -1340,15 +1341,15 @@ a {
     }
   }
   .numeric {
-    width: 276px;
+    width: 255px;
     margin: 0 auto;
     text-align: left;
     font-size: 0;
     li {
       display: inline-block;
-      width: 41px;
+      width: 40px;
       height: 55px;
-      margin: 0 5px 8px 0;
+      margin: 0 3px 8px 0;
       &:nth-child(6n+6) {
         margin-right: 0;
       }
@@ -1372,6 +1373,7 @@ a {
       display: inline-block;
       input {
         width: 120px;
+        font-size: 1.4rem;
         &:first-child {
           margin-right: 2px;
         }

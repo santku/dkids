@@ -1975,6 +1975,10 @@ section.inner.stamp_detail {
 #contents.parents.home > section#pr .prBanner .slick-slide {
   margin-right: 10px;
 }
+#contents.parents.home > section#pr .prBanner .slick-slide img {
+  width: auto;
+  height: 133px;
+}
 #contents.parents.home > section#recommend {
   padding-bottom: 1em;
 }
@@ -2357,11 +2361,28 @@ section.inner.stamp_detail {
     margin: 0 auto;
   }
 }
+#contents.parents.press .visual {
+  text-align: center;
+}
+#contents.parents.press .visual.mb {
+  margin-bottom: 1em;
+}
+#contents.parents.press .visual p {
+  font-size: 1rem;
+}
 #contents.parents.press .visual img {
   vertical-align: top;
 }
 #contents.parents.press .visual + article {
   margin-top: 1.4em;
+}
+#contents.parents.press h1 {
+  padding-bottom: .25em;
+}
+#contents.parents.press h1 span {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
 }
 #contents.parents.press h2 {
   border-bottom: none;
@@ -2374,6 +2395,99 @@ section.inner.stamp_detail {
 #contents.parents.press h2:before {
   display: none;
 }
+#contents.parents.press h3.border {
+  margin-bottom: 1em;
+  padding: 1em 0;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  background: none;
+  text-align: center;
+  color: #309898;
+}
+#contents.parents.press .papamama-headline4 {
+  color: #309898;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 0 0 0;
+  margin: 0 0 8px 0;
+}
+#contents.parents.press .paragraph table {
+  width: 100%;
+  margin: 0 0 15px 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+#contents.parents.press .paragraph table th, #contents.parents.press .paragraph table td {
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 12px 5px;
+  border: 1px solid #cccccc;
+}
+#contents.parents.press .paragraph table th {
+  color: #309898;
+  text-align: center;
+  background: #d8f2f2;
+}
+#contents.parents.press .paragraph table td {
+  text-align: right;
+}
+#contents.parents.press .paragraph table td.rank_ {
+  color: #309898;
+  text-align: center;
+}
+#contents.parents.press .paragraph.entry h3 {
+  margin-bottom: 1em;
+  padding: .5em 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+#contents.parents.press .paragraph.entry h4 {
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+#contents.parents.press .paragraph.entry.blue h3 {
+  background-color: #bbdefb;
+}
+#contents.parents.press .paragraph.entry.yellow h3 {
+  background-color: #ffe082;
+}
+#contents.parents.press .paragraph.entry.orange h3 {
+  background-color: #ff6f00;
+  color: #FFF;
+}
+#contents.parents.press .paragraph .note {
+  text-align: left;
+}
+#contents.parents.press .paragraph .note.blue {
+  color: #309898;
+}
+#contents.parents.press .paragraph .nmb {
+  margin-bottom: 0;
+}
+#contents.parents.press .paragraph dl.block dt {
+  margin-bottom: .5em;
+  padding: .5em 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+#contents.parents.press .paragraph dl.block dd {
+  margin-bottom: .5em;
+}
+#contents.parents.press .paragraph dl.block dd span {
+  display: block;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+#contents.parents.press .paragraph dl.block.blue dt {
+  background-color: #bbdefb;
+}
+#contents.parents.press .paragraph dl.block.yellow dt {
+  background-color: #ffe082;
+}
 #contents.parents.press figure {
   width: 90%;
   margin: 2em auto;
@@ -2384,6 +2498,10 @@ section.inner.stamp_detail {
 }
 #contents.parents.press .listItem li {
   margin-bottom: 0.6em;
+}
+#contents.parents.press .note {
+  text-align: right;
+  font-size: 1rem;
 }
 #contents.parents.pink h1 {
   background: url("/common/images/parents/press/mamatenna_logo.png") no-repeat 95% center #e35c75;
@@ -3814,6 +3932,94 @@ ul.point li {
 /* =========================================================
  RESPONSIVE
 ========================================================= */
+@media screen and (min-width: 670px) {
+  #contents.parents .dMenu {
+    display: block;
+    padding: 1rem 0;
+    background-color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDEDEDE', endColorstr='#ffffffff');
+    background-image: -webkit-gradient(linear, 0%, 15% 30%, color-stop(0%, #dedede), color-stop(15%, #fdfdfd), color-stop(30%, #ffffff));
+    background-image: -webkit-linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+    background-image: -moz-linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+    background-image: -o-linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+    background-image: linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+    background-color: transparent;
+  }
+  #contents.parents .dMenu li {
+    display: inline-block;
+    width: 12.3% !important;
+    height: auto !important;
+    margin: 1%;
+    padding: 12% 0 0 0;
+    border: none !important;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    text-align: center;
+  }
+  #contents.parents .dMenu li:after {
+    display: none;
+  }
+  #contents.parents .dMenu li:nth-child(1) {
+    background-image: url(/common/images/parents/common/icd_app_dmarket_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(2) {
+    background-image: url(/common/images/parents/common/d_shopping_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(3) {
+    background-image: url(/common/images/parents/common/d_game_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(4) {
+    background-image: url(/common/images/parents/common/d_book_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(5) {
+    background-image: url(/common/images/parents/common/d_travel_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(6) {
+    background-image: url(/common/images/parents/common/d_music_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(7) {
+    background-image: url(/common/images/parents/common/d_fashion_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(8) {
+    background-image: url(/common/images/parents/common/d_delivery_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(9) {
+    background-image: url(/common/images/parents/common/d_creators_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(10) {
+    background-image: url(/common/images/parents/common/d_app_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(11) {
+    background-image: url(/common/images/parents/common/icd_app_dtv_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(12) {
+    background-image: url(/common/images/parents/common/d_hits_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(13) {
+    background-image: url(/common/images/parents/common/d_magazine_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(14) {
+    background-image: url(/common/images/parents/common/d_anime_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(15) {
+    background-image: url(/common/images/parents/common/d_kids_app_72.png);
+  }
+  #contents.parents .dMenu li:nth-child(16) {
+    background-image: url(/common/images/parents/common/icd_app_dgourmet_72.png);
+  }
+  #contents.parents .dMenu li img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #contents.parents .dMenu li {
+    width: 8% !important;
+    margin: 1%;
+    padding: 8.2% 0 0 0;
+  }
+}
 @media (min-width: 1024px) {
   .parents.home .app ul.horizon-swiper {
     width: 900px;
