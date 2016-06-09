@@ -210,7 +210,14 @@ pages scripts
 			var MR = ((GW-300)/2)/1.4;
 			$('.tutorial .gallery-cell').css('marginRight',MR);
 
-		}
+		},
+
+    stamp : function(){
+      if ( $('.stamp_2').find('.oubo').size() == 0 ) {
+        $('.stamp_2').find('.month').addClass('pt');
+      }
+
+    }
 
   }
 
@@ -219,6 +226,7 @@ pages scripts
     Pages.slider();
     Pages.voice();
     Pages.sliderDisabled();
+    Pages.stamp();
 
     $(window).on('load resize', function(){
 
@@ -231,6 +239,3 @@ pages scripts
     });
 
   });
-
-
-

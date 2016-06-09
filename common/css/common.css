@@ -1260,6 +1260,7 @@ a.movie i {
 }
 .remodal .txt p {
   margin-bottom: 0;
+  font-size: 1.3rem;
 }
 .remodal .txt p .btn {
   margin-top: 1em;
@@ -1309,16 +1310,16 @@ a.movie i {
   display: none;
 }
 .remodal .numeric {
-  width: 276px;
+  width: 255px;
   margin: 0 auto;
   text-align: left;
   font-size: 0;
 }
 .remodal .numeric li {
   display: inline-block;
-  width: 41px;
+  width: 40px;
   height: 55px;
-  margin: 0 5px 8px 0;
+  margin: 0 3px 8px 0;
 }
 .remodal .numeric li:nth-child(6n+6) {
   margin-right: 0;
@@ -1343,6 +1344,7 @@ a.movie i {
 }
 .remodal .buttons li input {
   width: 120px;
+  font-size: 1.4rem;
 }
 .remodal .buttons li input:first-child {
   margin-right: 2px;

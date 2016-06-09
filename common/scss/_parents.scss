@@ -421,6 +421,10 @@
           margin: 0 auto;
           .slick-slide {
             margin-right: 10px;
+            img{
+              width: auto;
+              height: 133px;
+            }
           }
         }
       }
@@ -826,11 +830,26 @@
   //--------------------------------------------------------
   &.press {
     .visual {
+      text-align: center;
+      &.mb{
+        margin-bottom: 1em;
+      }
+      p{
+        font-size: 1rem;
+      }
       img {
         vertical-align: top;
       }
       + article {
         margin-top: 1.4em;
+      }
+    }
+    h1{
+      padding-bottom: .25em;
+      span{
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
       }
     }
     h2 {
@@ -842,6 +861,105 @@
       font-weight: normal;
       &:before{
         display: none;
+      }
+    }
+    h3.border{
+      margin-bottom: 1em;
+      padding: 1em 0;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+      background: none;
+      text-align: center;
+      color: #309898;
+    }
+    .papamama-headline4{
+      color: #309898;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 0 0 0;
+      margin: 0 0 8px 0;
+    }
+    .paragraph{
+      table {
+        width: 100%;
+        margin: 0 0 15px 0;
+        border-spacing: 0;
+        border-collapse: collapse;
+        th, td {
+          font-size: 14px;
+          font-weight: bold;
+          vertical-align: middle;
+          padding: 12px 5px;
+          border: 1px solid #cccccc;
+        }
+        th {
+          color: #309898;
+          text-align: center;
+          background: #d8f2f2;
+        }
+        td {
+          text-align: right;
+          &.rank_ {
+            color: #309898;
+            text-align: center;
+          }
+        }
+      }
+      &.entry{
+        h3{
+          margin-bottom: 1em;
+          padding: .5em 0;
+          font-size: 1.6rem;
+          font-weight: bold;
+          text-align: center;
+        }
+        h4{
+          margin-bottom: 1em;
+          text-align: center;
+          font-weight: bold;
+        }
+        &.blue h3{
+          background-color: #bbdefb;
+        }
+        &.yellow h3{
+          background-color: #ffe082;
+        }
+        &.orange h3{
+          background-color: #ff6f00;
+          color: #FFF;
+        }
+      }
+      .note{
+        text-align: left;
+        &.blue{
+          color: #309898;
+        }
+      }
+      .nmb{
+        margin-bottom: 0;
+      }
+      dl.block{
+        dt{
+          margin-bottom: .5em;
+          padding: .5em 0;
+          font-size: 1.6rem;
+          font-weight: bold;
+          text-align: center;
+        }
+        dd{
+          margin-bottom: .5em;
+          span{
+            display: block;
+            margin-bottom: 0;
+            font-weight: bold;
+          }
+        }
+        &.blue dt{
+          background-color: #bbdefb;
+        }
+        &.yellow dt{
+          background-color: #ffe082;
+        }
       }
     }
     figure {
@@ -856,6 +974,10 @@
       li {
         margin-bottom: 0.6em;
       }
+    }
+    .note{
+      text-align: right;
+      font-size: 1rem;
     }
   }
   &.pink {
@@ -2362,6 +2484,96 @@ ul.point li {
 /* =========================================================
  RESPONSIVE
 ========================================================= */
+
+@media screen and (min-width: 670px) {
+  #contents.parents .dMenu{
+    display: block;
+    padding: 1rem 0;
+    background-color: white;
+  	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDEDEDE', endColorstr='#ffffffff');
+  	background-image: -webkit-gradient(linear, 0%, 15% 30%, color-stop(0%, #dedede), color-stop(15%, #fdfdfd), color-stop(30%, #ffffff));
+  	background-image: -webkit-linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+  	background-image: -moz-linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+  	background-image: -o-linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+  	background-image: linear-gradient(top, #dedede 0%, #fdfdfd 51%, #ffffff 100%);
+    background-color: transparent;
+    li{
+      display: inline-block;
+      width: 12.3% !important;
+      height: auto !important;
+      margin: 1%;
+      padding:12% 0 0 0;
+      border: none !important;
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+      vertical-align: top;
+      text-align: center;
+      &:after{
+        display: none;
+      }
+      &:nth-child(1){
+        background-image: url(/common/images/parents/common/icd_app_dmarket_72.png);
+      }
+      &:nth-child(2){
+        background-image: url(/common/images/parents/common/d_shopping_app_72.png);
+      }
+      &:nth-child(3){
+        background-image: url(/common/images/parents/common/d_game_app_72.png);
+      }
+      &:nth-child(4){
+        background-image: url(/common/images/parents/common/d_book_app_72.png);
+      }
+      &:nth-child(5){
+        background-image: url(/common/images/parents/common/d_travel_app_72.png);
+      }
+      &:nth-child(6){
+        background-image: url(/common/images/parents/common/d_music_app_72.png);
+      }
+      &:nth-child(7){
+        background-image: url(/common/images/parents/common/d_fashion_app_72.png);
+      }
+      &:nth-child(8){
+        background-image: url(/common/images/parents/common/d_delivery_app_72.png);
+      }
+      &:nth-child(9){
+        background-image: url(/common/images/parents/common/d_creators_app_72.png);
+      }
+      &:nth-child(10){
+        background-image: url(/common/images/parents/common/d_app_app_72.png);
+      }
+      &:nth-child(11){
+        background-image: url(/common/images/parents/common/icd_app_dtv_72.png);
+      }
+      &:nth-child(12){
+        background-image: url(/common/images/parents/common/d_hits_app_72.png);
+      }
+      &:nth-child(13){
+        background-image: url(/common/images/parents/common/d_magazine_app_72.png);
+      }
+      &:nth-child(14){
+        background-image: url(/common/images/parents/common/d_anime_app_72.png);
+      }
+      &:nth-child(15){
+        background-image: url(/common/images/parents/common/d_kids_app_72.png);
+      }
+      &:nth-child(16){
+        background-image: url(/common/images/parents/common/icd_app_dgourmet_72.png);
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #contents.parents .dMenu li{
+    width: 8% !important;
+    margin: 1%;
+    padding:8.2% 0 0 0;
+  }
+}
 
 @media (min-width: 1024px) {
   .parents.home .app ul.horizon-swiper{

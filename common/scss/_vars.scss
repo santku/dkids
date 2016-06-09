@@ -46,9 +46,9 @@ $border-color : #CCC;
   font-size: $sizeValue + rem;
 }
 @mixin textHidden{
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
+  text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 //RGBa color
 @mixin rgbaBackground($color, $opacity) {

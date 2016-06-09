@@ -112,9 +112,9 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
-  overflow: hidden;
-  text-indent: 100%;
+  text-indent: 200%;
   white-space: nowrap;
+  overflow: hidden;
   z-index: 10;
   outline: none;
 }
@@ -140,9 +140,9 @@
   border: none;
   background-color: #999;
   border-radius: 50%;
-  overflow: hidden;
-  text-indent: 100%;
+  text-indent: 200%;
   white-space: nowrap;
+  overflow: hidden;
 }
 .slick-dots li.slick-active button {
   background-color: #cc0033;
