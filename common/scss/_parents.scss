@@ -423,7 +423,7 @@
             margin-right: 10px;
             img{
               width: auto;
-              height: 133px;
+              height: 95px;
             }
           }
         }
@@ -450,6 +450,7 @@
           text-align: right;
           a {
             color: $red;
+		    font-size: 1.3rem;
             &:after {
               margin-left: 0.5em;
               content: '\f105';
@@ -511,6 +512,7 @@
               .heading {
                 margin-bottom: 0.5em;
                 font-size: 1.8rem;
+				line-height: 1.2;
               }
               .txt {
                 margin-bottom: 0;

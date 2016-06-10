@@ -1981,7 +1981,7 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#pr .prBanner .slick-slide img {
   width: auto;
-  height: 133px;
+  height: 95px;
 }
 #contents.parents.home > section#recommend {
   padding-bottom: 1em;
@@ -2007,6 +2007,7 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#recommend .print a {
   color: #cc0033;
+  font-size: 1.3rem;
 }
 #contents.parents.home > section#recommend .print a:after {
   margin-left: 0.5em;
@@ -2066,6 +2067,7 @@ section.inner.stamp_detail {
 #contents.parents.home > section#ranking .rankingList li > div .heading {
   margin-bottom: 0.5em;
   font-size: 1.8rem;
+  line-height: 1.2;
 }
 #contents.parents.home > section#ranking .rankingList li > div .txt {
   margin-bottom: 0;
