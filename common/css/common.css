@@ -1102,6 +1102,23 @@ footer .copyright {
   content: '';
   z-index: 1;
 }
+.app > ul > li.download,
+.app > ul li.horizon-item.download {
+  position: relative;
+}
+.app > ul > li.download:after,
+.app > ul li.horizon-item.download:after {
+  display: block;
+  position: absolute;
+  right: -5px;
+  bottom: 20px;
+  width: 36px;
+  height: 36px;
+  background: url("/common/images/app/icon_download.png") no-repeat;
+  background-size: contain;
+  content: '';
+  z-index: 1;
+}
 .app > ul > li.new2,
 .app > ul li.horizon-item.new2 {
   position: relative;

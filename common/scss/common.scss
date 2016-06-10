@@ -1122,6 +1122,21 @@ footer {
           z-index: 1;
         }
       }
+      &.download{
+        position: relative;
+        &:after{
+          display: block;
+          position: absolute;
+          right: -5px;
+          bottom: 20px;
+          width: 36px;
+          height: 36px;
+          background: url("/common/images/app/icon_download.png") no-repeat;
+          background-size: contain;
+          content: '';
+          z-index: 1;
+        }
+      }
       &.new2 {
         position: relative;
         &:before {
