@@ -109,8 +109,8 @@ pages scripts
       });
 
       $('.carousel').on('disabled', function(){
-        var l = $(this).offset().left;
         var n = $(this).find('.horizon-item').size();
+        var l = ( n >= 10 && g.winW() >= 1051 ) ? $(this).offset().left : '3.3%';
         $('.carousel').not('.disabled').find('.horizon-inner').css('padding-left', l);
 
       });
@@ -127,10 +127,10 @@ pages scripts
     matchHeight : function(){
 
       $('nav.list').find('li').matchHeight();
-      $('.horizon-item').matchHeight();
+      //$('.horizon-item').matchHeight();
       $('.recommend li').matchHeight();
       $('.carousel li').matchHeight();
-      $('#contents.search .app li p').matchHeight();
+      //$('#contents.search .app li p').matchHeight();
 
     },
 

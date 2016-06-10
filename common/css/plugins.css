@@ -532,7 +532,7 @@ html.remodal-is-locked {
 
 .horizon-swiper .horizon-inner {
   padding: 0 0 20px;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;

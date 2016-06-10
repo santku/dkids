@@ -577,6 +577,14 @@ footer {
           margin-right: 3px;
         }
       }
+      ul li a p{
+        width: 7em;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+      }
     }
   }
   section.inner {
@@ -626,6 +634,10 @@ footer {
     margin: $atmg;
     &.paragraph {
       margin-bottom: 1em;
+      &.w100{
+        width: 100%;
+        margin: 0;
+      }
     }
     &.item {
       margin-bottom: 1em;
@@ -1042,6 +1054,14 @@ footer {
     justify-content: flex-start;
     @include flex;
     font-size: 0;
+    li > a > p{
+      width: 7em;
+      margin: 0 auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
     // &.slick-slider{
     //   justify-content: flex-start;
     //   .slick-track{
@@ -1057,8 +1077,12 @@ footer {
     // }
     &.horizon-swiper {
       width: 100%;
+      .horizon-outer{
+        width: 100%;
+      }
       .horizon-inner {
         padding-left: 3.3%;
+        text-align: left;
       }
       .horizon-item {
         white-space: normal;
@@ -1201,6 +1225,14 @@ footer {
           width: 82px;
           border-radius: 15px;
           box-shadow: 0 0 5px 3px rgba(0, 0, 0, .05);
+        }
+        a p{
+          width: 7em;
+          margin: 0 auto;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: center;
         }
       }
     }

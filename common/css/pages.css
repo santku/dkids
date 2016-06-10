@@ -147,8 +147,12 @@
   left: 45px;
 }
 .launcher.home .app.try ul li p {
+  width: auto;
   margin-bottom: 0;
   padding-left: 0.5em;
+  white-space: normal;
+  text-overflow: inherit;
+  text-align: left;
 }
 .launcher.home .app.try ul li img {
   width: 100%;
@@ -287,7 +291,7 @@
 }
 @media screen and (min-width: 768px) {
   .launcher.search .app ul {
-    max-width: 1050px;
+    max-width: 990px;
   }
 }
 .launcher.tutorial .inner {
@@ -2293,10 +2297,6 @@ section.inner.stamp_detail {
 #contents.parents.login.current .heading {
   margin-bottom: 1em;
 }
-#contents.parents.login.current #ranking .app .carousel .horizon-inner {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
 #contents.parents.login.current #ranking .button {
   margin-top: 0;
 }
@@ -2559,8 +2559,8 @@ section.inner.stamp_detail {
   margin-bottom: 1.4em;
 }
 @media screen and (min-width: 768px) {
-  #contents.parents.search .app ul {
-    max-width: 1050px;
+  #contents.parents.search .app ul.disabled {
+    max-width: 990px;
   }
 }
 #contents.parents.search .app ul li .tag {
@@ -3961,52 +3961,52 @@ ul.point li {
   #contents.parents .dMenu li:after {
     display: none;
   }
-  #contents.parents .dMenu li:nth-child(1) {
+  #contents.parents .dMenu li.dmarket {
     background-image: url(/common/images/parents/common/icd_app_dmarket_72.png);
   }
-  #contents.parents .dMenu li:nth-child(2) {
+  #contents.parents .dMenu li.shopping {
     background-image: url(/common/images/parents/common/d_shopping_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(3) {
+  #contents.parents .dMenu li.game {
     background-image: url(/common/images/parents/common/d_game_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(4) {
+  #contents.parents .dMenu li.book {
     background-image: url(/common/images/parents/common/d_book_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(5) {
+  #contents.parents .dMenu li.travel {
     background-image: url(/common/images/parents/common/d_travel_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(6) {
+  #contents.parents .dMenu li.music {
     background-image: url(/common/images/parents/common/d_music_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(7) {
+  #contents.parents .dMenu li.fashion {
     background-image: url(/common/images/parents/common/d_fashion_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(8) {
+  #contents.parents .dMenu li.delivery {
     background-image: url(/common/images/parents/common/d_delivery_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(9) {
+  #contents.parents .dMenu li.creators {
     background-image: url(/common/images/parents/common/d_creators_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(10) {
+  #contents.parents .dMenu li.app {
     background-image: url(/common/images/parents/common/d_app_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(11) {
+  #contents.parents .dMenu li.dtv {
     background-image: url(/common/images/parents/common/icd_app_dtv_72.png);
   }
-  #contents.parents .dMenu li:nth-child(12) {
+  #contents.parents .dMenu li.hit {
     background-image: url(/common/images/parents/common/d_hits_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(13) {
+  #contents.parents .dMenu li.magazine {
     background-image: url(/common/images/parents/common/d_magazine_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(14) {
+  #contents.parents .dMenu li.anime {
     background-image: url(/common/images/parents/common/d_anime_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(15) {
+  #contents.parents .dMenu li.kids {
     background-image: url(/common/images/parents/common/d_kids_app_72.png);
   }
-  #contents.parents .dMenu li:nth-child(16) {
+  #contents.parents .dMenu li.dgourmet {
     background-image: url(/common/images/parents/common/icd_app_dgourmet_72.png);
   }
   #contents.parents .dMenu li a {
@@ -4025,20 +4025,26 @@ ul.point li {
   }
 }
 @media (min-width: 1024px) {
-  .parents.home .app ul.horizon-swiper {
+  .parents.home .app ul.horizon-swiper.disabled {
     width: 900px;
   }
-  .parents.home .app ul.horizon-swiper .horizon-inner {
+  .parents.home .app ul.horizon-swiper.disabled.w100 {
+    width: 100%;
+  }
+  .parents.home .app ul.horizon-swiper.disabled.w100 .horizon-inner {
+    padding-left: 3.3%;
+  }
+  .parents.home .app ul.horizon-swiper.disabled .horizon-inner {
     padding-left: 0;
   }
 }
 @media (min-width: 1050px) {
-  .parents.home .app ul.horizon-swiper {
+  .parents.home .app ul.horizon-swiper.disabled {
     max-width: 1089px;
   }
 }
 @media (min-width: 737px) and (orientation: landscape) {
-  .parents.detail_app .app ul.horizon-swiper {
+  .parents.detail_app .app ul.horizon-swiper.disabled {
     max-width: 891px;
   }
 }

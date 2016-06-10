@@ -161,8 +161,12 @@
         ul {
           li {
             p {
+              width: auto;
               margin-bottom: 0;
               padding-left: 0.5em;
+              white-space: normal;
+              text-overflow: inherit;
+              text-align: left;
             }
             img {
               width: 100%;
@@ -350,7 +354,7 @@
       }
       @media screen and (min-width: $tablet) {
       ul{
-        max-width: 1050px;
+        max-width: 990px;
       }
     }
     }

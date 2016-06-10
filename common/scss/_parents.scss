@@ -748,8 +748,8 @@
       }
       #ranking{
         .app .carousel .horizon-inner{
-          margin-bottom: 0;
-          padding-bottom: 0;
+          // margin-bottom: 0;
+          // padding-bottom: 0;
         }
         .button{
           margin-top: 0;
@@ -1048,8 +1048,8 @@
     }
     .app {
       @media screen and (min-width: $tablet) {
-      ul{
-        max-width: 1050px;
+      ul.disabled{
+        max-width: 990px;
       }
     }
       ul {
@@ -2512,52 +2512,52 @@ ul.point li {
       &:after{
         display: none;
       }
-      &:nth-child(1){
+      &.dmarket{
         background-image: url(/common/images/parents/common/icd_app_dmarket_72.png);
       }
-      &:nth-child(2){
+      &.shopping{
         background-image: url(/common/images/parents/common/d_shopping_app_72.png);
       }
-      &:nth-child(3){
+      &.game{
         background-image: url(/common/images/parents/common/d_game_app_72.png);
       }
-      &:nth-child(4){
+      &.book{
         background-image: url(/common/images/parents/common/d_book_app_72.png);
       }
-      &:nth-child(5){
+      &.travel{
         background-image: url(/common/images/parents/common/d_travel_app_72.png);
       }
-      &:nth-child(6){
+      &.music{
         background-image: url(/common/images/parents/common/d_music_app_72.png);
       }
-      &:nth-child(7){
+      &.fashion{
         background-image: url(/common/images/parents/common/d_fashion_app_72.png);
       }
-      &:nth-child(8){
+      &.delivery{
         background-image: url(/common/images/parents/common/d_delivery_app_72.png);
       }
-      &:nth-child(9){
+      &.creators{
         background-image: url(/common/images/parents/common/d_creators_app_72.png);
       }
-      &:nth-child(10){
+      &.app{
         background-image: url(/common/images/parents/common/d_app_app_72.png);
       }
-      &:nth-child(11){
+      &.dtv{
         background-image: url(/common/images/parents/common/icd_app_dtv_72.png);
       }
-      &:nth-child(12){
+      &.hit{
         background-image: url(/common/images/parents/common/d_hits_app_72.png);
       }
-      &:nth-child(13){
+      &.magazine{
         background-image: url(/common/images/parents/common/d_magazine_app_72.png);
       }
-      &:nth-child(14){
+      &.anime{
         background-image: url(/common/images/parents/common/d_anime_app_72.png);
       }
-      &:nth-child(15){
+      &.kids{
         background-image: url(/common/images/parents/common/d_kids_app_72.png);
       }
-      &:nth-child(16){
+      &.dgourmet{
         background-image: url(/common/images/parents/common/icd_app_dgourmet_72.png);
       }
       a{
@@ -2580,8 +2580,14 @@ ul.point li {
 }
 
 @media (min-width: 1024px) {
-  .parents.home .app ul.horizon-swiper{
+  .parents.home .app ul.horizon-swiper.disabled{
     width: 900px;
+    &.w100{
+      width: 100%;
+      .horizon-inner{
+        padding-left: 3.3%;
+      }
+    }
     .horizon-inner{
       padding-left: 0;
     }
@@ -2589,14 +2595,14 @@ ul.point li {
 }
 
 @media (min-width: 1050px) {
-  .parents.home .app ul.horizon-swiper{
+  .parents.home .app ul.horizon-swiper.disabled{
     max-width: 1089px;
   }
 }
 
 @media (min-width: 737px) and (orientation: landscape){
   .parents.detail_app{
-    .app ul.horizon-swiper{
+    .app ul.horizon-swiper.disabled{
       max-width: 891px;
     }
   }

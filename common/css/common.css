@@ -564,6 +564,14 @@ footer .copyright {
 #contents.search .app .filtering .selectBox {
   margin-right: 3px;
 }
+#contents.search .app ul li a p {
+  width: 7em;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
 #contents section.inner {
   padding: 1.4em 0 3em;
 }
@@ -613,6 +621,10 @@ footer .copyright {
 }
 #contents article.paragraph {
   margin-bottom: 1em;
+}
+#contents article.paragraph.w100 {
+  width: 100%;
+  margin: 0;
 }
 #contents article.item {
   margin-bottom: 1em;
@@ -1032,11 +1044,23 @@ footer .copyright {
   flex-wrap: wrap;
   font-size: 0;
 }
+.app > ul li > a > p {
+  width: 7em;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
 .app > ul.horizon-swiper {
+  width: 100%;
+}
+.app > ul.horizon-swiper .horizon-outer {
   width: 100%;
 }
 .app > ul.horizon-swiper .horizon-inner {
   padding-left: 3.3%;
+  text-align: left;
 }
 .app > ul.horizon-swiper .horizon-item {
   white-space: normal;
@@ -1179,6 +1203,14 @@ footer .copyright {
   width: 82px;
   border-radius: 15px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
+}
+.app.bgNone ul li a p {
+  width: 7em;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 
 form.module {
