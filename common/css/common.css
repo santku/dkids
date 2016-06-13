@@ -759,8 +759,8 @@ footer .copyright {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-items: center;
-  -webkit-justify-content: center;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
   border-top: solid 1px;
   font-size: 0;
 }
