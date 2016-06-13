@@ -1665,6 +1665,12 @@ section.inner.stamp_detail {
   border-radius: 20px;
   background-color: #fabe28;
 }
+@media screen and (min-width: 560px) {
+  #contents.parents.home section .balloon span {
+    width: auto;
+    width: 60%;
+  }
+}
 #contents.parents.home section .balloon:after {
   display: block;
   position: absolute;

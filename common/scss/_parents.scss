@@ -87,6 +87,10 @@
           padding: 0.5em 1em;
           border-radius: 20px;
           background-color: #fabe28;
+          @media screen and (min-width: 560px) {
+            width: auto;
+            width: 60%;
+          }
         }
         &:after {
           display: block;

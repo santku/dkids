@@ -1295,7 +1295,7 @@ a.movie i {
 }
 .remodal section {
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 20px 8px;
   overflow: auto;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
@@ -1317,7 +1317,7 @@ a.movie i {
 }
 .remodal .txt p {
   margin-bottom: 0;
-  font-size: 1.3rem;
+  font-size: 1.449rem;
 }
 .remodal .txt p .btn {
   margin-top: 1em;
@@ -1374,9 +1374,8 @@ a.movie i {
 }
 .remodal .numeric li {
   display: inline-block;
-  width: 40px;
   height: 55px;
-  margin: 0 3px 8px 0;
+  margin: 0 7px 8px 0;
 }
 .remodal .numeric li:nth-child(6n+6) {
   margin-right: 0;
@@ -1390,8 +1389,16 @@ a.movie i {
   height: 100%;
   border-style: none;
   background-color: #FFF;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: bold;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.remodal .numeric li span.delete {
+  padding: 10px;
+}
+.remodal .numeric li span.delete img {
+  width: 15px;
 }
 .remodal .buttons {
   margin: 10px 0 30px;
