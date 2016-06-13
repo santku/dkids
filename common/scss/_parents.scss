@@ -594,11 +594,12 @@
           background-color: #fff;
           .tabNav {
             height: 38px;
+            padding-left: 1%;
             overflow: hidden;
             font-size: 0;
             @media screen and (min-width: $tablet) {
               width: 80%;
-              margin: 0 auto;
+              margin: 0;
             }
             li {
               display: inline-block;
@@ -622,7 +623,6 @@
               &.active {
                 background-color: #E15E76;
                 z-index: 3;
-				        margin-left: 1%;
               }
               a {
                 display: block;
@@ -1347,6 +1347,9 @@
   #mainVisual {
     margin-bottom: 1em;
   }
+  .confirm_area{
+    margin-bottom: 20px;
+  }
   article.paragraph:nth-of-type(1){
     margin-bottom: 0;
   }
@@ -1354,6 +1357,19 @@
     width: 100%;
     margin: 10px auto 0;
     font-size: 1rem;
+    @media screen and (max-width: 814px) {
+      margin-left: 1%;
+    }
+    @media screen and (min-width: 839px) {
+      display: inline-block;
+      width: auto;
+      &:nth-of-type(1){
+        margin-left: 3%;
+      }
+      &:nth-of-type(2){
+        margin-left: 1em;
+      }
+    }
     dt{
       color: #fff;
       p {
@@ -2023,9 +2039,12 @@ ul.pageing {
 }
 .inquiry_area dd {
   float: right;
-  padding: 1px 10px 1px 0;
+  padding: 1px 0 1px 0;
   margin: 10px 0 1px;
   width: 59%;
+  textarea{
+    width: 100%;
+  }
 }
 .inquiry_area dd.conten input {
   width: 100%;
@@ -2342,6 +2361,11 @@ ul.point li {
     padding-top: 1.4em;
     .bold{
       font-weight: bold;
+    }
+    @media screen and (min-width: 39em) {
+      article.paragraph:nth-of-type(3){
+        text-align: center;
+      }
     }
   }
 

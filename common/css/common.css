@@ -451,11 +451,12 @@ header .menu.right img {
   box-sizing: border-box;
 }
 #contents .account dt {
-  width: 70px;
+  width: 75px;
   border-right: solid 1px #CCC;
-  padding: 2px 2px 2px 7px;
+  padding: 3px 10px;
 }
 #contents .account dt img {
+  max-width: 60px;
   width: auto;
 }
 #contents .account dd {
@@ -466,7 +467,7 @@ header .menu.right img {
 }
 #contents .account dd:after {
   position: absolute;
-  top: 4px;
+  top: 6px;
   right: 2.5%;
   content: "\f105";
   font-family: FontAwesome;
@@ -529,7 +530,7 @@ footer p {
 }
 footer p.stamp, footer p.viewAll {
   position: fixed;
-  right: 10px;
+  right: 0;
   z-index: 100;
 }
 footer p.stamp {
@@ -1328,7 +1329,7 @@ a.movie i {
 .remodal .input {
   position: relative;
   height: 3.6em;
-  margin: 3em 1em;
+  margin: 1.5em 1em;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

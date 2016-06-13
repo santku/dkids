@@ -508,6 +508,7 @@
       float: right;
       overflow: hidden;
       padding: 0.5em 0 0 0.5em;
+      @include flex;
       input {
         display: none;
         &[type=radio] {
@@ -523,7 +524,6 @@
       label {
         display: block;
         width: 41%;
-        float: left;
         padding: 0.5em;
         margin: 0 0.5em 0.5em 0;
         border-radius: 5px;
@@ -965,10 +965,9 @@ img.back {
   bottom: 5px;
   right: 10px;
   z-index: 100;
-  width: 25%;
+  width: 85px;
   height: auto;
   @media screen and (min-width: 567px) {
-    width: 15%;
   }
 }
 .month_emphasis {
@@ -1662,6 +1661,7 @@ section.inner {
 		-moz-border-radius-topleft: 5px;
 	   -moz-border-radius-topright:5px;
 	}
+  .gallery-cell .center{}
 	.gallery-cell .gallery-inner{
 		padding:0 10px 50px 10px;
 	}

@@ -417,6 +417,12 @@
   float: right;
   overflow: hidden;
   padding: 0.5em 0 0 0.5em;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .child_register .register_area_02 dd input {
   display: none;
@@ -430,7 +436,6 @@
 .child_register .register_area_02 dd label {
   display: block;
   width: 41%;
-  float: left;
   padding: 0.5em;
   margin: 0 0.5em 0.5em 0;
   border-radius: 5px;
@@ -852,13 +857,8 @@ img.back {
   bottom: 5px;
   right: 10px;
   z-index: 100;
-  width: 25%;
+  width: 85px;
   height: auto;
-}
-@media screen and (min-width: 567px) {
-  img.back {
-    width: 15%;
-  }
 }
 
 .month_emphasis {
@@ -2155,13 +2155,14 @@ section.inner.stamp_detail {
 }
 #contents.parents.home > section#mamatenna .inner .tabNav {
   height: 38px;
+  padding-left: 1%;
   overflow: hidden;
   font-size: 0;
 }
 @media screen and (min-width: 768px) {
   #contents.parents.home > section#mamatenna .inner .tabNav {
     width: 80%;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 #contents.parents.home > section#mamatenna .inner .tabNav li {
@@ -2189,7 +2190,6 @@ section.inner.stamp_detail {
 #contents.parents.home > section#mamatenna .inner .tabNav li.active {
   background-color: #E15E76;
   z-index: 3;
-  margin-left: 1%;
 }
 #contents.parents.home > section#mamatenna .inner .tabNav li a {
   display: block;
@@ -2836,6 +2836,9 @@ section.inner.stamp_detail {
 #contents.detail_app #mainVisual {
   margin-bottom: 1em;
 }
+#contents.detail_app .confirm_area {
+  margin-bottom: 20px;
+}
 #contents.detail_app article.paragraph:nth-of-type(1) {
   margin-bottom: 0;
 }
@@ -2843,6 +2846,23 @@ section.inner.stamp_detail {
   width: 100%;
   margin: 10px auto 0;
   font-size: 1rem;
+}
+@media screen and (max-width: 814px) {
+  #contents.detail_app .app_in {
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 839px) {
+  #contents.detail_app .app_in {
+    display: inline-block;
+    width: auto;
+  }
+  #contents.detail_app .app_in:nth-of-type(1) {
+    margin-left: 3%;
+  }
+  #contents.detail_app .app_in:nth-of-type(2) {
+    margin-left: 1em;
+  }
 }
 #contents.detail_app .app_in dt {
   color: #fff;
@@ -3487,9 +3507,12 @@ ul.pageing {
 
 .inquiry_area dd {
   float: right;
-  padding: 1px 10px 1px 0;
+  padding: 1px 0 1px 0;
   margin: 10px 0 1px;
   width: 59%;
+}
+.inquiry_area dd textarea {
+  width: 100%;
 }
 
 .inquiry_area dd.conten input {
@@ -3819,6 +3842,11 @@ ul.point li {
 }
 .DL .inner .bold {
   font-weight: bold;
+}
+@media screen and (min-width: 39em) {
+  .DL .inner article.paragraph:nth-of-type(3) {
+    text-align: center;
+  }
 }
 
 /* おもしろくくだいさくせんP-34
