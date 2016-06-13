@@ -19,6 +19,14 @@ body {
   color: #333;
 }
 
+html.h100 {
+  background-color: #faf9e8;
+  height: 100%;
+}
+html.h100 body {
+  height: 100%;
+}
+
 @media print {
   body {
     font-size: 1.4rem;

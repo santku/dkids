@@ -1382,11 +1382,15 @@ section.inner {
 //  L-0 : 利用許諾
 //--------------------------------------------------------- */
 .license, .privacy{
-  .scroll{
-    height: 30em;
-    overflow: auto;
-    margin-bottom: 2em;
-    -webkit-overflow-scrolling: touch;
+  padding-bottom: 10%;
+  .confirm_area, .pageclose{
+    position: fixed;
+    bottom: 0;
+    width: 100% - 6.6;
+    max-width: 888.94px;
+    margin-bottom: 0;
+    padding: 3.3%;
+    background-color: #faf9e8;
   }
 }
 .license {

@@ -1266,11 +1266,17 @@ section.inner.stamp_detail {
   font-weight: bold;
 }
 
-.license .scroll, .privacy .scroll {
-  height: 30em;
-  overflow: auto;
-  margin-bottom: 2em;
-  -webkit-overflow-scrolling: touch;
+.license, .privacy {
+  padding-bottom: 10%;
+}
+.license .confirm_area, .license .pageclose, .privacy .confirm_area, .privacy .pageclose {
+  position: fixed;
+  bottom: 0;
+  width: 93.4%;
+  max-width: 888.94px;
+  margin-bottom: 0;
+  padding: 3.3%;
+  background-color: #faf9e8;
 }
 
 .license .btn {
@@ -1654,6 +1660,7 @@ section.inner.stamp_detail {
 }
 #contents.parents.home section .balloon span {
   display: inline-block;
+  width: 85%;
   padding: 0.5em 1em;
   border-radius: 20px;
   background-color: #fabe28;
@@ -1953,6 +1960,7 @@ section.inner.stamp_detail {
   margin: 0 5px;
   text-align: left;
   vertical-align: top;
+  font-size: 1rem;
 }
 #contents.parents.home > section#movie .movieTmb .horizon-item img {
   display: block;
@@ -1961,6 +1969,7 @@ section.inner.stamp_detail {
 #contents.parents.home > section#movie .movieTmb .horizon-item.listBtn {
   width: 110px;
   padding-top: 20px;
+  font-size: 1.4rem;
 }
 #contents.parents.home > section#movie .movieTmb .horizon-item.listBtn a.btn {
   width: 100%;

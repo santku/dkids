@@ -216,6 +216,13 @@ pages scripts
       if ( $('.stamp_2').find('.oubo').size() == 0 ) {
         $('.stamp_2').find('.month').addClass('pt');
       }
+    },
+
+    h100 : function(){
+
+      if ( $('#contents').hasClass('license') || $('#contents').hasClass('privacy') ){
+        $('html').addClass('h100');
+      }
 
     }
 
@@ -227,6 +234,7 @@ pages scripts
     Pages.voice();
     Pages.sliderDisabled();
     Pages.stamp();
+    Pages.h100();
 
     $(window).on('load resize', function(){
 
