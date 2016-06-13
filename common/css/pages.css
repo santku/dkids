@@ -403,15 +403,15 @@
 }
 
 /*戻る確認ボタン*/
-.child_register .register_area_02 dl {
+.child_register .register_area_02 dl, .initial .register_area_02 dl {
   overflow: hidden;
 }
-.child_register .register_area_02 dt {
+.child_register .register_area_02 dt, .initial .register_area_02 dt {
   float: left;
   width: 20%;
   padding: 0.5em 0;
 }
-.child_register .register_area_02 dd {
+.child_register .register_area_02 dd, .initial .register_area_02 dd {
   margin-top: -2.5em;
   width: 85%;
   float: right;
@@ -424,16 +424,16 @@
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.child_register .register_area_02 dd input {
+.child_register .register_area_02 dd input, .initial .register_area_02 dd input {
   display: none;
 }
-.child_register .register_area_02 dd input[type=radio] {
+.child_register .register_area_02 dd input[type=radio], .initial .register_area_02 dd input[type=radio] {
   display: none;
 }
-.child_register .register_area_02 dd input[type=radio] + label:after, .child_register .register_area_02 dd input[type=radio] + label:before {
+.child_register .register_area_02 dd input[type=radio] + label:after, .child_register .register_area_02 dd input[type=radio] + label:before, .initial .register_area_02 dd input[type=radio] + label:after, .initial .register_area_02 dd input[type=radio] + label:before {
   display: none;
 }
-.child_register .register_area_02 dd label {
+.child_register .register_area_02 dd label, .initial .register_area_02 dd label {
   display: block;
   width: 41%;
   padding: 0.5em;
@@ -446,27 +446,27 @@
   color: #333 !important;
   line-height: 1em;
 }
-.child_register .register_area_02 dd input[type="radio"]:checked + label {
+.child_register .register_area_02 dd input[type="radio"]:checked + label, .initial .register_area_02 dd input[type="radio"]:checked + label {
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
   background-color: #e13e58;
   text-decoration: none !important;
   color: #fff !important;
 }
-.child_register .register_area_02 dd input[type=radio] + label:before {
+.child_register .register_area_02 dd input[type=radio] + label:before, .initial .register_area_02 dd input[type=radio] + label:before {
   background-image: none;
   display: none;
 }
-.child_register .register_area_02 dd input[type=radio]:checked + label:before {
+.child_register .register_area_02 dd input[type=radio]:checked + label:before, .initial .register_area_02 dd input[type=radio]:checked + label:before {
   background-image: none;
   display: none;
 }
-.child_register .register_area_02 dd .ml {
+.child_register .register_area_02 dd .ml, .initial .register_area_02 dd .ml {
   margin-left: 47% !important;
 }
-.child_register .register_area_02 dd span {
+.child_register .register_area_02 dd span, .initial .register_area_02 dd span {
   font-size: 0.7em;
 }
-.child_register .register_area_02 dd .hidden {
+.child_register .register_area_02 dd .hidden, .initial .register_area_02 dd .hidden {
   visibility: hidden;
 }
 
@@ -529,7 +529,8 @@
 }
 .launcher .notice_area {
   width: auto;
-  margin: 0 2.5% 2em;
+  max-width: 300px;
+  margin: 0 auto 2em;
 }
 .launcher .notice_area dl dt {
   float: left;
@@ -592,6 +593,7 @@
 }
 .launcher ul.notice_app {
   margin: 25px auto;
+  width: 300px;
 }
 .launcher ul.notice_app li {
   clear: both;
@@ -1424,57 +1426,8 @@ section.inner.stamp_detail {
   width: 20%;
   padding: 0.5em 0;
 }
-.initial .inner section#initialtab .tabBody .register_area_02 dd {
-  margin-top: -2.5em;
-  width: 85%;
-  float: right;
-  overflow: hidden;
-  padding: 0.5em 0 0 0.5em;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd input {
-  display: none;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] {
-  display: none;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:after, .initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:before {
-  display: none;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd label {
-  display: block;
-  width: 41%;
-  float: left;
-  padding: 0.5em;
-  margin: 0 0.5em 0.5em 0;
-  border-radius: 5px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 -9px 2px -7px rgba(0, 0, 0, 0.5);
-  background-color: #f9f9f9;
-  text-align: center;
-  text-decoration: none !important;
-  color: #333 !important;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd input[type="radio"]:checked + label {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 10px 2px -7px rgba(0, 0, 0, 0.5);
-  background-color: #df344f;
-  text-decoration: none !important;
-  color: #fff !important;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio] + label:before {
-  background-image: none;
-  display: none;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd input[type=radio]:checked + label:before {
-  background-image: none;
-  display: none;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd .ml {
-  margin-left: 47% !important;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd span {
-  font-size: 0.7em;
-}
-.initial .inner section#initialtab .tabBody .register_area_02 dd .hidden {
-  visibility: hidden;
+.initial .inner section#initialtab .tabBody .register_area_02 dd label[for^="gender01"] {
+  line-height: inherit;
 }
 .initial .inner section#initialtab .tabBody .btn_area {
   margin: 1em 0.5em 0;

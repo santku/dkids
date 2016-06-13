@@ -297,7 +297,7 @@ select::-ms-expand {
 header {
   display: table;
   width: 100%;
-  height: 52px;
+  height: 48px;
   padding: 0 5px;
   box-sizing: border-box;
   border-bottom: solid 1px #CCC;
@@ -305,7 +305,7 @@ header {
   top: 0;
   left: 0;
   background: #fff;
-  z-index: 2;
+  z-index: 100;
 }
 header .inner,
 header .logo {
@@ -314,7 +314,7 @@ header .logo {
 }
 header .logo {
   width: 23%;
-  height: 52px;
+  height: 48px;
 }
 header .logo img {
   height: 18px;
@@ -322,7 +322,7 @@ header .logo img {
 }
 header .inner {
   width: 72%;
-  height: 52px;
+  height: 48px;
   font-size: 1rem;
   text-align: right;
 }
@@ -427,6 +427,20 @@ header .menu.right li img {
 header .menu.right li:last-child {
   margin: 0 0 0 1px;
 }
+header .menu.right li:last-child a {
+  display: block;
+}
+.mm-opened header .menu.right li:last-child a:after {
+  display: block;
+  width: 37px;
+  height: 37px;
+  background: url(/common/images/common/header_menu_close.gif);
+  background-size: contain;
+  content: '';
+}
+.mm-opened header .menu.right li:last-child a img {
+  display: none;
+}
 header .menu.right img {
   vertical-align: top;
 }
@@ -436,7 +450,7 @@ header .menu.right img {
   overflow: hidden;
 }
 .headerPadding #contents {
-  padding-top: 53px;
+  padding-top: 49px;
 }
 #contents .account {
   display: table;

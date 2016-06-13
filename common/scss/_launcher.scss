@@ -492,7 +492,7 @@
 //--------------------------------------------------------- */
 //子ども情報の登録L-3-4-2
 //--------------------------------------------------------- */
-.child_register {
+.child_register, .initial {
   .register_area_02 {
     dl {
       overflow: hidden;
@@ -626,7 +626,8 @@
   //*お知らせ通知のオンオフ切り替え*/
   .notice_area {
     width: auto;
-    margin: 0 2.5% 2em;
+    max-width: 300px;
+    margin: 0 auto 2em;
     @extend %cf;
     //border-bottom: 1px solid #535353;
   }
@@ -703,6 +704,7 @@
   }
   ul.notice_app {
     margin: 25px auto;
+    width: 300px;
   }
   ul.notice_app li {
     clear: both;
@@ -1551,59 +1553,9 @@ section.inner {
             width: 20%;
             padding: 0.5em 0;
           }
-          dd {
-            margin-top: -2.5em;
-            width: 85%;
-            float: right;
-            overflow: hidden;
-            padding: 0.5em 0 0 0.5em;
-            input {
-              display: none;
-              &[type=radio] {
-                display: none;
-                + label {
-                  &:after,
-                  &:before {
-                    display: none;
-                  }
-                }
-              }
-            }
-            label {
-              display: block;
-              width: 41%;
-              float: left;
-              padding: 0.5em;
-              margin: 0 0.5em 0.5em 0;
-              border-radius: 5px;
-              box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08), inset 0 -9px 2px -7px rgba(0, 0, 0, 0.5);
-              background-color: #f9f9f9;
-              text-align: center;
-              text-decoration: none !important;
-              color: #333 !important;
-            }
-            input[type="radio"]:checked + label {
-              box-shadow: 0 0 0 2px rgba(#000, .08), inset 0 10px 2px -7px rgba(0, 0, 0, .5);
-              background-color: #df344f;
-              text-decoration: none !important;
-              color: #fff !important;
-            }
-            input[type=radio] + label:before {
-              background-image: none;
-              display: none;
-            }
-            input[type=radio]:checked + label:before {
-              background-image: none;
-              display: none;
-            }
-            .ml {
-              margin-left: 47% !important;
-            }
-            span {
-              font-size: 0.7em;
-            }
-            .hidden {
-              visibility: hidden;
+          dd{
+            label[for^="gender01"]{
+              line-height: inherit;
             }
           }
         }

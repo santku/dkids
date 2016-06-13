@@ -93,7 +93,7 @@ common scripts
 
     smoothScroll : function(){
 
-      $('a[href^="#"]').not('a[href^="#tab"], a[href^="#modal"], a[href^="#menu"]').click(function() {
+      $('a[href^="#"]').not('a[href^="#tab"], a[href^="#modal"], a[href^="#menu"], a[href^="#my-menu"]').click(function() {
         $('html,body').animate({ scrollTop:
           $($(this).attr('href')).offset().top }, 'slow','swing');
           return false;
@@ -343,12 +343,31 @@ common scripts
     },
 
     mmenu : function(){
+
       $("#my-menu").mmenu({
-				offCanvas: {
-            position: "right",
-            zposition: "front"
+        "extensions": [
+           "pagedim-black"
+        ],
+        offCanvas: {
+          position: "right",
+          zposition: "front"
+        },
+        classNames: {
+          fixedElements: {
+            fixed: "header"
           }
+        }
 			});
+
+      var $mmenu = $("#my-menu").data( "mmenu" );
+
+      $('a[href="#my-menu"]').click(function(){
+       if ( $('html').hasClass('mm-opened') ) {
+         $mmenu.close();
+       }
+
+      });
+
 		},
 
     loding : function(){

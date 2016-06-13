@@ -2,96 +2,92 @@
 <!--#set var="category" value="launcher-start" -->
 <!--#include virtual="/common/include/common/header.html" -->
 
-    <!--contents-->
-    <div id="contents" class="launcher child_register">
+<!--contents-->
+<div id="contents" class="launcher child_register">
 
-      <!--#include virtual="/common/include/common/account.html" -->
+  <!--#include virtual="/common/include/common/account.html" -->
 
-      <h1>新規登録</h1>
+  <h1>新規登録</h1>
 
-      <section class="inner">
+  <section class="inner">
 
-        <form action="" method="" class="module">
+    <form action="" method="" class="module">
 
-          <div class="register_area">
-          <dl>
-            <dt> ニックネーム</dt>
-            <dd>  <input type="text" class="place" title="たろうくん">
-              <div class="selectBox gender">
-                <select class="age gender" name="">
-                  <option value="" selected>くん</option>
-                  <option value="ちゃん">ちゃん</option>
-                </select>
-              </div></dd>
-            </dl>
-          </div>
-          <div class="register_area_02">
-            <dl>
-           <dt>対象年齢</dt>
+      <div class="register_area">
+        <dl>
+          <dt> ニックネーム</dt>
+          <dd>
+            <input type="text" class="place" title="たろう">
+            <div class="selectBox gender">
+              <select class="age gender" name="">
+                <option value="" selected>くん</option>
+                <option value="ちゃん">ちゃん</option>
+              </select>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      <div class="register_area_02">
+        <dl>
+          <dt>対象年齢</dt>
 
-           <dd>
+          <dd>
 
-<label class="btn hidden" class="age_txt"></span></label>
+            <input id="age00" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age00" class="age_txt">0歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-             <input id="age00" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age00" class="age_txt">0歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age01" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age01">1歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age01" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age01">1歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age02" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age02">2歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age02" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age02">2歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age03" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age03">3歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age03" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age03">3歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age04" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age04">4歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age04" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age04">4歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age05" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age05">5歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age05" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age05">5歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age06" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age06">6歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age06" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age06">6歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age07" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age07">7歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age07" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age07">7歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age08" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age08">8歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
 
-<input id="age08" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age08">8歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+            <input id="age09" class="ageRadio" type="radio" name="age" value="">
+            <label class="btn" for="age09">9歳以上<br><span>(YYYY.MM.DD以降生まれ)</span></label>
 
-<input id="age09" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age09">9歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+          </dd>
+        </dl>
+      </div>
+      <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
+      <div class="register_area">
+        <dl>
+          <dt>お知らせ通知</dt>
+          <dd>
+            <div>
+              <input id="radio02" class="switch" type="checkbox" name="radio04" value="" checked="checked">
+              <label for="radio02"></label>
+            </div>
+          </dd>
 
-<input id="age10" class="ageRadio" type="radio" name="age" value="">
-<label class="btn" for="age10">10歳以上<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
+        </dl>
 
-              </dd>
-            </dl>
-          </div>
-          <p class="age_txt">対象年齢の設定によって、おすすめされるアプリなどがお子さまに合わせた内容が表示されます！</p>
-<div class="register_area">
-  <dl>
-           <dt>お知らせ通知</dt>
-             <dd>
-               <div>
-                 <input id="radio02" class="switch" type="checkbox" name="radio04" value="" checked="checked">
-                 <label for="radio02"></label>
-                </div>
-     </dd>
+      </div>
 
-          </dl>
+      <p class="center"><a class="btn red iblock" href="#">OK</a></p>
+
+    </form>
+
+  </section>
 
 </div>
-
-
-            <p class="center"><a class="btn red iblock" href="#">OK</a></p>
-
-        </form>
-
-      </section>
-
-    </div>
-    <!--/contents-->
+<!--/contents-->
 
 <!--#include virtual="/common/include/common/footer.html" -->
