@@ -590,7 +590,6 @@
           background-color: #fff;
           .tabNav {
             height: 38px;
-
             overflow: hidden;
             font-size: 0;
             @media screen and (min-width: $tablet) {
@@ -619,7 +618,7 @@
               &.active {
                 background-color: #E15E76;
                 z-index: 3;
-				        margin-right: 1%;
+				        margin-left: 1%;
               }
               a {
                 display: block;
