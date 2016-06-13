@@ -508,6 +508,7 @@
       float: right;
       overflow: hidden;
       padding: 0.5em 0 0 0.5em;
+      @include flex;
       input {
         display: none;
         &[type=radio] {
@@ -523,7 +524,6 @@
       label {
         display: block;
         width: 41%;
-        float: left;
         padding: 0.5em;
         margin: 0 0.5em 0.5em 0;
         border-radius: 5px;
@@ -965,10 +965,9 @@ img.back {
   bottom: 5px;
   right: 10px;
   z-index: 100;
-  width: 25%;
+  width: 85px;
   height: auto;
   @media screen and (min-width: 567px) {
-    width: 15%;
   }
 }
 .month_emphasis {
@@ -1382,11 +1381,15 @@ section.inner {
 //  L-0 : 利用許諾
 //--------------------------------------------------------- */
 .license, .privacy{
-  .scroll{
-    height: 30em;
-    overflow: auto;
-    margin-bottom: 2em;
-    -webkit-overflow-scrolling: touch;
+  padding-bottom: 10%;
+  .confirm_area, .pageclose{
+    position: fixed;
+    bottom: 0;
+    width: 100% - 6.6;
+    max-width: 888.94px;
+    margin-bottom: 0;
+    padding: 3.3%;
+    background-color: #faf9e8;
   }
 }
 .license {
@@ -1658,6 +1661,7 @@ section.inner {
 		-moz-border-radius-topleft: 5px;
 	   -moz-border-radius-topright:5px;
 	}
+  .gallery-cell .center{}
 	.gallery-cell .gallery-inner{
 		padding:0 10px 50px 10px;
 	}

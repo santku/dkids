@@ -169,11 +169,7 @@ pages scripts
   		  });
 
 
-        var btnOffset = $gallery.find('.center').offset().top + 5;
 
-        $gallery.find('.flickity-page-dots').css('top', btnOffset);
-
-        $gallery.find('.gallery-cell').matchHeight();
 
         var flkty = $gallery.data('flickity');
 
@@ -193,9 +189,23 @@ pages scripts
 
           });
 
+
         }
 
-        updateStatus();
+        var btnOffset = $gallery.find('.center').offset().top + 50;
+        $gallery.find('.flickity-page-dots').css('top', btnOffset);
+
+        $gallery.find('.gallery-cell').matchHeight();
+        $gallery.find('.heading').matchHeight();
+        $gallery.find('.text').matchHeight();
+
+        $(window).on('load resize', function(){
+          updateStatus();
+
+          var btnOffset = $gallery.find('.center').offset().top + 5;
+          $gallery.find('.flickity-page-dots').css('top', btnOffset);
+
+        });
 
         $gallery.on( 'cellSelect', updateStatus );
 
@@ -216,6 +226,13 @@ pages scripts
       if ( $('.stamp_2').find('.oubo').size() == 0 ) {
         $('.stamp_2').find('.month').addClass('pt');
       }
+    },
+
+    h100 : function(){
+
+      if ( $('#contents').hasClass('license') || $('#contents').hasClass('privacy') ){
+        $('html').addClass('h100');
+      }
 
     }
 
@@ -227,6 +244,7 @@ pages scripts
     Pages.voice();
     Pages.sliderDisabled();
     Pages.stamp();
+    Pages.h100();
 
     $(window).on('load resize', function(){
 

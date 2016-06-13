@@ -19,6 +19,14 @@ body {
   color: #333;
 }
 
+html.h100 {
+  background-color: #faf9e8;
+  height: 100%;
+}
+html.h100 body {
+  height: 100%;
+}
+
 @media print {
   body {
     font-size: 1.4rem;
@@ -443,11 +451,12 @@ header .menu.right img {
   box-sizing: border-box;
 }
 #contents .account dt {
-  width: 70px;
+  width: 75px;
   border-right: solid 1px #CCC;
-  padding: 2px 2px 2px 7px;
+  padding: 3px 10px;
 }
 #contents .account dt img {
+  max-width: 60px;
   width: auto;
 }
 #contents .account dd {
@@ -458,7 +467,7 @@ header .menu.right img {
 }
 #contents .account dd:after {
   position: absolute;
-  top: 4px;
+  top: 6px;
   right: 2.5%;
   content: "\f105";
   font-family: FontAwesome;
@@ -521,7 +530,7 @@ footer p {
 }
 footer p.stamp, footer p.viewAll {
   position: fixed;
-  right: 10px;
+  right: 0;
   z-index: 100;
 }
 footer p.stamp {
@@ -750,8 +759,8 @@ footer .copyright {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-items: center;
-  -webkit-justify-content: center;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
   border-top: solid 1px;
   font-size: 0;
 }
@@ -1287,7 +1296,7 @@ a.movie i {
 }
 .remodal section {
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 20px 8px;
   overflow: auto;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
@@ -1309,7 +1318,7 @@ a.movie i {
 }
 .remodal .txt p {
   margin-bottom: 0;
-  font-size: 1.3rem;
+  font-size: 1.449rem;
 }
 .remodal .txt p .btn {
   margin-top: 1em;
@@ -1320,7 +1329,7 @@ a.movie i {
 .remodal .input {
   position: relative;
   height: 3.6em;
-  margin: 3em 1em;
+  margin: 1.5em 1em;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1366,9 +1375,8 @@ a.movie i {
 }
 .remodal .numeric li {
   display: inline-block;
-  width: 40px;
   height: 55px;
-  margin: 0 3px 8px 0;
+  margin: 0 7px 8px 0;
 }
 .remodal .numeric li:nth-child(6n+6) {
   margin-right: 0;
@@ -1382,8 +1390,16 @@ a.movie i {
   height: 100%;
   border-style: none;
   background-color: #FFF;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: bold;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.remodal .numeric li span.delete {
+  padding: 10px;
+}
+.remodal .numeric li span.delete img {
+  width: 15px;
 }
 .remodal .buttons {
   margin: 10px 0 30px;
