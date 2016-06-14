@@ -56,6 +56,9 @@ h2 {
   font-weight: bold;
   color: #FFF;
   padding: 0.1em 2.5%;
+  &.mb{
+    margin-bottom: 1em;
+  }
 }
 h1 {
   @media screen and (max-width: 419px) {
@@ -281,7 +284,7 @@ select {
     li {
       a {
         padding: 1em 3em 1em 1em;
-        border-bottom: #ccc solid 1px;
+        border-bottom: $border-default;
       }
     }
     li:after {
@@ -301,7 +304,7 @@ header {
   height: 48px;
   padding: 0 5px;
   box-sizing: border-box;
-  border-bottom: solid 1px $border-color;
+  border-bottom: $border-default;
   position: fixed;
   top: 0;
   left: 0;
@@ -355,7 +358,7 @@ header {
               padding-top: 3px;
               padding-bottom: 5px;
               &.border {
-                border-bottom: solid 1px $border-color;
+                border-bottom: $border-default;
                 padding-top: 5px;
                 padding-bottom: 3px;
                 //margin-bottom:1px;
@@ -462,7 +465,7 @@ header {
     display: table;
     width: 100%;
     height: 26px;
-    border-bottom: solid 1px $border-color;
+    border-bottom: $border-default;
     background-color: #FFF;
     dd,
     dt {
@@ -471,7 +474,7 @@ header {
     }
     dt {
       width: 75px;
-      border-right: solid 1px $border-color;
+      border-right: $border-default;
       padding: 3px 10px;
       img {
         max-width: 60px;
@@ -547,6 +550,12 @@ footer {
         }
       }
     }
+    @media screen and (min-width: 768px) {
+      font-size: 1.4rem;
+      p:nth-child(1) span{
+        font-size: 2.2rem;
+      }
+    }
   }
   p {
     margin-bottom: 0;
@@ -561,9 +570,20 @@ footer {
       img{
         margin-right: 3px;
       }
+      @media screen and (min-width: 768px) {
+        bottom: 130px;
+        img{
+          width: 110px;
+        }
+      }
     }
     &.viewAll {
       bottom: 5px;
+      @media screen and (min-width: 768px) {
+        img{
+          width: 125px;
+        }
+      }
     }
   }
   .copyright {
@@ -620,11 +640,11 @@ footer {
         margin-top: 2.5em;
       }
     }
-    h2 {
+    h2:not(.headingOrange) {
       position: relative;
       padding: 0 0 0.5em 0.5em;
       margin-bottom: 0.8em;
-      border-bottom: solid 1px #AAA;
+      border-bottom: $border-default;
       line-height: 1.4;
       background-color: transparent;
       font-size: 1.6rem;
@@ -770,7 +790,7 @@ footer {
       position: absolute;
       top: 0.6em;
       right: 1.5%;
-      width: 80px;
+      width: 85px;
       background-image: url("/common/images/common/select_arrow_bk.png");
       background-position: 91% center;
       background-size: 7px;
@@ -886,7 +906,7 @@ footer {
     ul,
     ul li,
     ul li.half:nth-child(odd) {
-      border-color: #e7e6e5;
+      border-color: $border-color;
     }
   }
   nav.settingList {
@@ -896,7 +916,7 @@ footer {
     ul,
     ul li,
     ul li {
-      border-color: $borderColor;
+      border-color: $border-color;
     }
     ul {
       li {
@@ -904,11 +924,11 @@ footer {
         font-size: 1.2rem;
         &.half {
           &:nth-of-type(odd) {
-            border-right: solid 1px $borderColor;
+            border-right: $border-default;
           }
           &:nth-of-type(even) {
             border-left: solid 1px #fff;
-            border-right: solid 1px $borderColor;
+            border-right: $border-default;
           }
         }
       }
@@ -939,7 +959,7 @@ footer {
     display: inline-block;
     width: 80%;
     box-sizing: border-box;
-    padding: 0.5em 20px;
+    padding: 0.7em 20px 0.8em;
   }
   &.wide{
     width: 86.6%;
@@ -996,7 +1016,7 @@ footer {
   dt {
     margin-bottom: 0.5em;
     padding-top: 0.5em;
-    border-top: solid 1px $border-color;
+    border-top: $border-default;
     &:nth-of-type(1) {
       border-top: none;
     }
@@ -1024,9 +1044,9 @@ footer {
 .accordion {
   margin-bottom: 2em;
   dl {
-    border-bottom: solid 1px $border-color;
+    border-bottom: $border-default;
     &:first-child {
-      border-top: solid 1px $border-color;
+      border-top: $border-default;
     }
     &.active {
       background-color: #faf2d5;
@@ -1053,7 +1073,7 @@ footer {
       display: none;
       margin: $atmg;
       padding: 1em 0;
-      border-top: solid 1px $border-color;
+      border-top: $border-default;
     }
   }
 }
@@ -1156,6 +1176,21 @@ footer {
           width: 36px;
           height: 36px;
           background: url("/common/images/app/icon_download.png") no-repeat;
+          background-size: contain;
+          content: '';
+          z-index: 1;
+        }
+      }
+      &.demo{
+        position: relative;
+        &:after{
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 53px;
+          height: 51px;
+          background: url("/common/images/app/icon_demoplay.png") no-repeat;
           background-size: contain;
           content: '';
           z-index: 1;
@@ -1283,7 +1318,7 @@ form.module {
   input[type=text],
   textarea {
     padding: 1.5%;
-    border: solid 1px #AAA;
+    border: $border-default;
     border-radius: 2px;
     background-color: #FAFAFA;
     box-shadow: inset 0 2px 3px 2px rgba(0, 0, 0, .05);
@@ -1312,7 +1347,7 @@ form.module {
   }
 }
 .borderBtm {
-  border-bottom: solid 1px #E1DFD1;
+  border-bottom: $border-default;
 }
 a {
   &.movie {
@@ -1565,8 +1600,7 @@ a {
         @extend %tbWidth;
       }
       &.parentsabout {
-         > .paragraph,
-        #trial {
+         > .paragraph, #trial {
           @extend %tbWidth;
           margin-bottom: 0;
           padding-bottom: 2em;

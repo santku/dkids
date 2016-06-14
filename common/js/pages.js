@@ -168,9 +168,6 @@ pages scripts
   		    }
   		  });
 
-
-
-
         var flkty = $gallery.data('flickity');
 
         function updateStatus() {
@@ -189,10 +186,9 @@ pages scripts
 
           });
 
-
         }
 
-        var btnOffset = $gallery.find('.center').offset().top + 50;
+        var btnOffset = $gallery.find('.image').offset().top + 245;
         $gallery.find('.flickity-page-dots').css('top', btnOffset);
 
         $gallery.find('.gallery-cell').matchHeight();
@@ -202,7 +198,7 @@ pages scripts
         $(window).on('load resize', function(){
           updateStatus();
 
-          var btnOffset = $gallery.find('.center').offset().top + 5;
+          var btnOffset = $gallery.find('.image').offset().top + 245;
           $gallery.find('.flickity-page-dots').css('top', btnOffset);
 
         });

@@ -64,6 +64,10 @@ h2 {
   color: #FFF;
   padding: 0.1em 2.5%;
 }
+h1.mb,
+h2.mb {
+  margin-bottom: 1em;
+}
 
 @media screen and (max-width: 419px) {
   h1 + .selectBox {
@@ -282,7 +286,7 @@ select::-ms-expand {
 ========================================================= */
 #my-menu .mm-list li a {
   padding: 1em 3em 1em 1em;
-  border-bottom: #ccc solid 1px;
+  border-bottom: solid 1px #CCC;
 }
 #my-menu .mm-list li:after {
   position: absolute;
@@ -539,6 +543,14 @@ footer .timeLeft p:nth-child(2) span:nth-child(1) {
 footer .timeLeft p:nth-child(2) span:nth-child(2) {
   font-size: 2rem;
 }
+@media screen and (min-width: 768px) {
+  footer .timeLeft {
+    font-size: 1.4rem;
+  }
+  footer .timeLeft p:nth-child(1) span {
+    font-size: 2.2rem;
+  }
+}
 footer p {
   margin-bottom: 0;
 }
@@ -553,8 +565,21 @@ footer p.stamp {
 footer p.stamp img {
   margin-right: 3px;
 }
+@media screen and (min-width: 768px) {
+  footer p.stamp {
+    bottom: 130px;
+  }
+  footer p.stamp img {
+    width: 110px;
+  }
+}
 footer p.viewAll {
   bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  footer p.viewAll img {
+    width: 125px;
+  }
 }
 footer .copyright {
   position: absolute;
@@ -606,18 +631,18 @@ footer .copyright {
 #contents section.inner h1:not(:first-child) {
   margin-top: 2.5em;
 }
-#contents section.inner h2 {
+#contents section.inner h2:not(.headingOrange) {
   position: relative;
   padding: 0 0 0.5em 0.5em;
   margin-bottom: 0.8em;
-  border-bottom: solid 1px #AAA;
+  border-bottom: solid 1px #CCC;
   line-height: 1.4;
   background-color: transparent;
   font-size: 1.6rem;
   font-weight: bold;
   color: inherit;
 }
-#contents section.inner h2:before {
+#contents section.inner h2:not(.headingOrange):before {
   display: block;
   position: absolute;
   top: .2rem;
@@ -746,7 +771,7 @@ footer .copyright {
   position: absolute;
   top: 0.6em;
   right: 1.5%;
-  width: 80px;
+  width: 85px;
   background-image: url("/common/images/common/select_arrow_bk.png");
   background-position: 91% center;
   background-size: 7px;
@@ -877,7 +902,7 @@ footer .copyright {
 #contents nav.list ul,
 #contents nav.list ul li,
 #contents nav.list ul li.half:nth-child(odd) {
-  border-color: #e7e6e5;
+  border-color: #CCC;
 }
 #contents nav.settingList {
   background: url("/common/images/common/setting_bg.jpg") no-repeat;
@@ -886,18 +911,18 @@ footer .copyright {
 #contents nav.settingList ul,
 #contents nav.settingList ul li,
 #contents nav.settingList ul li {
-  border-color: #c4c5c5;
+  border-color: #CCC;
 }
 #contents nav.settingList ul li {
   border-top: solid 1px #fff;
   font-size: 1.2rem;
 }
 #contents nav.settingList ul li.half:nth-of-type(odd) {
-  border-right: solid 1px #c4c5c5;
+  border-right: solid 1px #CCC;
 }
 #contents nav.settingList ul li.half:nth-of-type(even) {
   border-left: solid 1px #fff;
-  border-right: solid 1px #c4c5c5;
+  border-right: solid 1px #CCC;
 }
 
 .btn {
@@ -922,7 +947,7 @@ footer .copyright {
   display: inline-block;
   width: 80%;
   box-sizing: border-box;
-  padding: 0.5em 20px;
+  padding: 0.7em 20px 0.8em;
 }
 .btn.wide {
   width: 86.6%;
@@ -1142,6 +1167,23 @@ footer .copyright {
   content: '';
   z-index: 1;
 }
+.app > ul > li.demo,
+.app > ul li.horizon-item.demo {
+  position: relative;
+}
+.app > ul > li.demo:after,
+.app > ul li.horizon-item.demo:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 51px;
+  background: url("/common/images/app/icon_demoplay.png") no-repeat;
+  background-size: contain;
+  content: '';
+  z-index: 1;
+}
 .app > ul > li.new2,
 .app > ul li.horizon-item.new2 {
   position: relative;
@@ -1260,7 +1302,7 @@ form.module [type=password],
 form.module input[type=text],
 form.module textarea {
   padding: 1.5%;
-  border: solid 1px #AAA;
+  border: solid 1px #CCC;
   border-radius: 2px;
   background-color: #FAFAFA;
   box-shadow: inset 0 2px 3px 2px rgba(0, 0, 0, 0.05);
@@ -1285,7 +1327,7 @@ form.module ul.inline li {
 }
 
 .borderBtm {
-  border-bottom: solid 1px #E1DFD1;
+  border-bottom: solid 1px #CCC;
 }
 
 a.movie i {
@@ -1509,13 +1551,11 @@ a.movie i {
   #contents.parents.press #mainVisual {
     background-color: #FFF;
   }
-  #contents.parents.parentsabout > .paragraph,
-  #contents.parents.parentsabout #trial {
+  #contents.parents.parentsabout > .paragraph, #contents.parents.parentsabout #trial {
     margin-bottom: 0;
     padding-bottom: 2em;
   }
-  #contents.parents.parentsabout > .paragraph + section.inner,
-  #contents.parents.parentsabout #trial + section.inner {
+  #contents.parents.parentsabout > .paragraph + section.inner, #contents.parents.parentsabout #trial + section.inner {
     background-color: #fffde7;
   }
   #contents.parents.faq > section {
@@ -1529,8 +1569,7 @@ a.movie i {
     background-color: #FFF;
   }
   #contents nav.list,
-  #contents nav.settingList, #contents h1, #contents section.inner, #contents.initial .inner, #contents.feature #mainVisual, #contents.parents.detail_app #mainVisual, #contents.parents.detail_app > .paragraph, #contents.parents.special.page > .center, #contents.parents.press #mainVisual, #contents.parents .visual, #contents.parents.parentsabout > .paragraph,
-  #contents.parents.parentsabout #trial, #contents.parents.faq > section {
+  #contents nav.settingList, #contents h1, #contents section.inner, #contents.initial .inner, #contents.feature #mainVisual, #contents.parents.detail_app #mainVisual, #contents.parents.detail_app > .paragraph, #contents.parents.special.page > .center, #contents.parents.press #mainVisual, #contents.parents .visual, #contents.parents.parentsabout > .paragraph, #contents.parents.parentsabout #trial, #contents.parents.faq > section {
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
