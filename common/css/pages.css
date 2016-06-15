@@ -1286,6 +1286,9 @@ section.inner.stamp_detail {
   padding: 3.3%;
   background-color: #faf9e8;
 }
+.license .confirm_area .paragraph, .privacy .confirm_area .paragraph {
+  font-size: 1.4rem;
+}
 
 .license .btn {
   background-color: #fff;
