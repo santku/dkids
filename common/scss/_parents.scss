@@ -406,7 +406,7 @@
           }
           .horizon-item {
             width: 156px;
-            margin: 0 5px;
+            margin: 0 10px 0 0;
             text-align: left;
             vertical-align: top;
             font-size: 1rem;
@@ -432,9 +432,13 @@
           overflow: visible;
         }
         .prBanner {
-          width: 93.4%;
+          width: 100%;
           margin: 0 auto;
-          .slick-slide {
+          padding-bottom: 1em;
+          .horizon-inner{
+            padding-left: 3.3%;
+          }
+          .horizon-item {
             margin-right: 10px;
             img{
               width: auto;

@@ -61,24 +61,6 @@ pages scripts
 
        }
 
-      //  $('.movieTmb').slick({
-      //    slidesToShow: 1,
-      //    slidesToScroll: 1,
-      //    infinite: false,
-      //    arrows: false,
-      //    variableWidth: true
-      //  });
-
-       $('.prBanner').slick({
-         dots: true,
-         centerMode: true,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         infinite: false,
-         arrows: false,
-         variableWidth: true
-       });
-
        $('.horizon-swiper').horizonSwiper({
          arrows: false
        });
