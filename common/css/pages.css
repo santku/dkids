@@ -78,6 +78,9 @@
 .launcher.home .app.logout {
   background-color: #fbfae9;
 }
+.launcher.home .app.logout .appList li p {
+  margin-bottom: 0;
+}
 .launcher.home .app.pickup {
   background-image: url("/common/images/launcher/home/pickup_bg.png");
 }
@@ -288,6 +291,9 @@
 .launcher.search .app h2 {
   background: -webkit-linear-gradient(top, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
+}
+.launcher.search .app .appList li p {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .launcher.search .app ul {
@@ -4219,3 +4225,5 @@ ul.point li {
   clear: both;
   display: block;
 }
+
+/*# sourceMappingURL=pages.css.map */

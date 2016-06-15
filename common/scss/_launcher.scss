@@ -20,10 +20,10 @@
     .logout {
       padding-top: 10px;
       @media screen and (min-width: $tablet) {
-      ul{
-        max-width: 1050px;
+        ul{
+          max-width: 1050px;
+        }
       }
-    }
     }
     .logout .loginArea {
       background: #fcf0c3;
@@ -84,6 +84,9 @@
       }
       &.logout{
         background-color: #fbfae9;
+        .appList li p{
+          margin-bottom: 0;
+        }
         //background-image: none;
       }
       &.pickup {
@@ -352,11 +355,14 @@
       h2 {
         @include title(rgba(#dc1e3c, .2));
       }
-      @media screen and (min-width: $tablet) {
-      ul{
-        max-width: 990px;
+      .appList li p{
+        margin-bottom: 0;
       }
-    }
+      @media screen and (min-width: $tablet) {
+        ul{
+          max-width: 990px;
+        }
+      }
     }
   }
   // L-2　チュートリアル
