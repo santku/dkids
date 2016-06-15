@@ -2241,30 +2241,37 @@ ul.old_select {
 .dl_select {
   .inner {
     padding-top: 1.4em;
-  }
-  .dl_area li {
-    background: url("/common/images/parents/app_dl/web_btn_0018.png") no-repeat right center;
-    padding: 15px 16px;
-    border-bottom: 1px solid #a3a3a3;
-  }
-  .dl_area li figure img {
-    width: 82px;
-    height: auto;
-    float: left;
-  }
-  .dl_area figure {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .dl_area figure figcaption {
-    font-weight: bold;
-    padding: 15px 0 0 10px;
-    width: 201px;
-    display: inline-block;
-  }
-  .dl_area figure figcaption span {
-    font-weight: normal;
-    font-size: 12px;
+    .dl_area {
+      margin-top: -0.8em;
+    }
+    .dl_area li{
+      background: url("/common/images/parents/app_dl/web_btn_0018.png") no-repeat right center;
+      border-bottom: 1px solid #CCC;
+      padding: 3% 10% 3% 0;
+      dl.dlList{
+        display: table;
+        width: 100%;
+        dt{
+          width: 25%;
+          display: table-cell;
+          vertical-align: middle;
+          img{
+            vertical-align: bottom;
+          }
+        }
+        dd{
+          width: 70%;
+          padding: 0 0 0 5%;
+          display: table-cell;
+          vertical-align: middle;
+          font-weight: bold;
+          span{
+            font-weight: normal;
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
 }
 /* キャンセル抑止画面　p-23

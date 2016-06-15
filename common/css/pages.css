@@ -3677,27 +3677,34 @@ ul.old_select {
 .dl_select .inner {
   padding-top: 1.4em;
 }
-.dl_select .dl_area li {
+.dl_select .inner .dl_area {
+  margin-top: -0.8em;
+}
+.dl_select .inner .dl_area li {
   background: url("/common/images/parents/app_dl/web_btn_0018.png") no-repeat right center;
-  padding: 15px 16px;
-  border-bottom: 1px solid #a3a3a3;
+  border-bottom: 1px solid #CCC;
+  padding: 3% 10% 3% 0;
 }
-.dl_select .dl_area li figure img {
-  width: 82px;
-  height: auto;
-  float: left;
+.dl_select .inner .dl_area li dl.dlList {
+  display: table;
+  width: 100%;
 }
-.dl_select .dl_area figure {
+.dl_select .inner .dl_area li dl.dlList dt {
+  width: 25%;
   display: table-cell;
   vertical-align: middle;
 }
-.dl_select .dl_area figure figcaption {
-  font-weight: bold;
-  padding: 15px 0 0 10px;
-  width: 201px;
-  display: inline-block;
+.dl_select .inner .dl_area li dl.dlList dt img {
+  vertical-align: bottom;
 }
-.dl_select .dl_area figure figcaption span {
+.dl_select .inner .dl_area li dl.dlList dd {
+  width: 70%;
+  padding: 0 0 0 5%;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.dl_select .inner .dl_area li dl.dlList dd span {
   font-weight: normal;
   font-size: 12px;
 }
