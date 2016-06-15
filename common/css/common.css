@@ -1593,14 +1593,15 @@ a.movie i {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 90%;
-  height: 90%;
-  margin-top: -45%;
-  margin-left: -45%;
+  width: 320px;
+  /*height: 300px;*/
+  margin-top: -160px;
+  margin-left: -160px;
   text-align: center;
   color: #0b2745;
   z-index: 4;
 }
 #loader p {
   font-size: 2rem;
+  margin-bottom: 0;
 }
