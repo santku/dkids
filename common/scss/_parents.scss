@@ -2568,6 +2568,12 @@ ul.point li {
 .register {
   section.inner {
     padding-top: 1.6em;
+    article.item {
+      margin-bottom: 1em !important;
+      .attention{
+        margin-bottom: 3em !important;
+      }
+    }
   }
   .txt_l {
     padding-right: 3.3%;

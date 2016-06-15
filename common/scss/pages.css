@@ -3989,12 +3989,6 @@ ul.point li {
 .register section.inner {
   padding-top: 1.6em;
 }
-.register section.inner article.item {
-  margin-bottom: 1em !important;
-}
-.register section.inner article.item .attention {
-  margin-bottom: 3em !important;
-}
 .register .txt_l {
   padding-right: 3.3%;
 }
