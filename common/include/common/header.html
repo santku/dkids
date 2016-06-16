@@ -7,6 +7,124 @@
   <meta name="keywords" content="dキッズ,知育,ドコモ,アプリ,ゲーム,スマホ,タブレット,リカちゃん,トミカ,しまじろう">
   <title><!--#if expr="$page_title" --><!--#echo encoding="none" var="page_title"--> | <!--#endif -->dキッズ</title>
   <link href="/common/css/style.css" rel="stylesheet">
+  <!-- GA common -->
+  <script type="text/javascript">
+
+   var suid_param = xxxxxxx;
+   suid_param = xxxxxxx;
+   var carrier = xxxxxxx;
+   carrier = xxxxxxx;
+   var subscriber_line = xxxxxxx;
+   subscriber_line = xxxxxxx;
+
+  </script>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var pluginUrl =
+  '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-44209883-4']);
+  var check = '(OFFICIAL)';
+  _gaq.push(['_setDomainName', 'dmkt-sp.jp']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_setCustomVar',1,'SUID_v',suid_param,1]);
+  _gaq.push(['_trackEvent', 'キャリア', 'Session', carrier, 1,  true]);
+  _gaq.push(['_trackEvent', '回線契約種別', 'Session', subscriber_line, 1,  true]);
+  _gaq.push(['_setCustomVar',5,'MEMBER','No／Yes',2]);
+  _gaq.push(['_trackEvent', 'SUID', 'Session', suid_param , 1,  true]);
+  _gaq.push(['_trackEvent', 'OS', 'Session', 'PC／iOS／Android', 1,  true]);
+  _gaq.push(['_trackPageview', '/xxxxx_nonmember.php／/xxxxx_member.php（GA測定用バーチャルURL）']);
+
+
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+  <!--Universal Analytics  Start-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44209883-7', 'auto', {'allowLinker': true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['www.nttdocomo.co.jp','www.mydocomo.com','application.ald.smt.docomo.ne.jp']);
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('set', 'dimension1', suid_param);
+  ga('set', 'dimension2', 'No');
+  ga('set', 'dimension3', carrier);
+  ga('set', 'dimension4', subscriber_line);
+  ga('set', 'dimension5', user_agent);
+  ga('set', 'dimension10', '子ども性別（boy／girl）');
+  ga('set', 'dimension11', '子ども年齢（0-9）');
+  ga('send', 'event', 'SUID', 'Session', suid_param, 1);
+  ga('send', 'event', 'MEMBER', 'Session', 'No', 1);
+  ga('send', 'event', 'キャリア', 'Session', carrier, 1);
+  ga('send', 'event', '回線契約種別', 'Session', subscriber_line, 1);
+  ga(‘set’, ‘&uid’, {{USER_ID}});
+  ga('send', 'pageview', '/xxxxx_nonmember.php／/xxxxx_member.php（GA測定用バーチャルURL）');
+
+  ga(function(tracker) { var clientId = tracker.get('clientId');ga(function(tracker) {
+   var clientId = tracker.get('clientId');
+
+   var dcmga_url=document.getElementById('esite_link_b').href;
+   var param_start = dcmga_url.indexOf("?");
+   if(param_start!=-1){
+       var param_str = dcmga_url.substring(param_start+1);
+       var params = param_str.split("&");
+       for(var i=0; i<params.length; i++){
+           var element = params[i].split("=");
+           //if(element[0]=="serviceurl"){
+           if(element[0]=="link_url"){
+               var return_url=element[1];
+               var return_param_start=return_url.indexOf("%3F");
+               var replace_return_url=return_url;
+               if(return_param_start==-1){
+                   replace_return_url+='%3Fdcmga_cid%3D'+clientId;
+               }else{
+                   replace_return_url+='%26dcmga_cid%3D'+clientId;
+               }
+               dcmga_url=dcmga_url.replace(return_url,replace_return_url);
+               document.getElementById('esite_link_b').href=dcmga_url;
+           }
+       }
+   }
+
+   var dcmga_url_c=document.getElementById('esite_link_c').href;
+   var param_start_c = dcmga_url_c.indexOf("?");
+   if(param_start_c!=-1){
+       var param_str_c = dcmga_url_c.substring(param_start_c+1);
+       var params_c = param_str_c.split("&");
+       for(var i=0; i<params_c.length; i++){
+           var element_c = params_c[i].split("=");
+           if(element_c[0]=="serviceurl"){
+           //if(element[0]=="link_url"){
+               var return_url_c=element_c[1];
+               var return_param_start_c=return_url_c.indexOf("%3F");
+               var replace_return_url_c=return_url_c;
+               if(return_param_start_c==-1){
+                   replace_return_url_c+='%3Fdcmga_cid%3D'+clientId;
+               }else{
+                   replace_return_url_c+='%26dcmga_cid%3D'+clientId;
+               }
+               dcmga_url_c=dcmga_url_c.replace(return_url_c,replace_return_url_c);
+               document.getElementById('esite_link_c').href=dcmga_url_c;
+           }
+       }
+   }
+  });
+
+  </script>
+  <!--Universal Analytics End-->
+  <!-- GA -->
 </head>
 <body>
 
