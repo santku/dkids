@@ -3538,9 +3538,15 @@ ul.pageing {
 .inquiry_area dt {
   float: left;
   clear: both;
-  padding: 1px 10px;
+  padding: 1px 0;
   margin: 10px 0 1px;
   width: 30%;
+}
+.inquiry_area dt.detail {
+  clear: both;
+  float: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .inquiry_area dd {
@@ -3549,8 +3555,15 @@ ul.pageing {
   margin: 10px 0 1px;
   width: 59%;
 }
+.inquiry_area dd.detail {
+  float: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+}
 .inquiry_area dd textarea {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .inquiry_area dd.conten input {
