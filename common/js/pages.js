@@ -212,6 +212,13 @@ pages scripts
         $('html').addClass('h100');
       }
 
+    },
+
+    user : function(){
+
+      $('.app_num').load('/common/include/common/app_num.html');
+      $('.user_num').load('/common/include/common/user_num.html');
+
     }
 
   }
@@ -223,6 +230,7 @@ pages scripts
     Pages.sliderDisabled();
     Pages.stamp();
     Pages.h100();
+    Pages.user();
 
     $(window).on('load resize', function(){
 
