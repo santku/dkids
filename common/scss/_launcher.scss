@@ -1235,20 +1235,34 @@ section.inner {
     width: 42%;
   }
   .timer{
+    dt{
+      float: none;
+      width: auto;
+    }
     dd{
-      display: table;
-      float: left;
-      max-width: 517px;
-      width: 60%;
+      //display: table;
+      float: right;
+      width: 85%;
+      //max-width: 517px;
+      //width: 60%;
+      &.selectArea{
+
+
+      }
       > div{
-        display: table-cell;
+        //display: table-cell;
         vertical-align: middle;
         &:first-child{
-          width: 75px;
+          //width: 75px;
           padding-top: .5em;
         }
         &:last-child{
-
+          >div{
+            width: 41.5%;
+            &:first-child{
+              margin: 0 0.5em 0.5em 0;
+            }
+          }
         }
       }
     }
