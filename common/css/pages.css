@@ -88,13 +88,13 @@
   background: -webkit-linear-gradient(top, rgba(250, 96, 8, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(250, 96, 8, 0.2) 90%, transparent 100%);
 }
-.launcher.home .app.pickup .tag {
+.launcher.home .app.pickup .tags {
   position: relative;
-  width: 288px;
-  margin: 0 0 .5em;
+  max-width: 1045px;
+  margin: 0 auto .5em;
   padding-left: 1em;
 }
-.launcher.home .app.pickup .tag:before {
+.launcher.home .app.pickup .tags:before {
   position: absolute;
   top: 8px;
   width: 50px;
@@ -104,7 +104,7 @@
   background-size: cover;
   content: '';
 }
-.launcher.home .app.pickup .tag p {
+.launcher.home .app.pickup .tags p {
   display: inline-block;
   position: relative;
   margin: 4px 0 0 10px;
@@ -115,7 +115,7 @@
   color: #FFF;
   z-index: 1;
 }
-.launcher.home .app.pickup .tag p:before {
+.launcher.home .app.pickup .tags p:before {
   position: absolute;
   top: 0;
   left: 5px;
@@ -125,7 +125,7 @@
   background-size: contain;
   content: '';
 }
-.launcher.home .app.pickup .tag p:after {
+.launcher.home .app.pickup .tags p:after {
   display: block;
   position: absolute;
   width: 80%;
@@ -203,7 +203,7 @@
 .launcher.home .app.ranking {
   background-color: #FAE5C1;
 }
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 400px) {
   .launcher.home .app.recommend ul, .launcher.home .app.try ul {
     max-width: none;
     -webkit-justify-content: center;
@@ -444,7 +444,7 @@
   display: none;
 }
 .child_register .register_area_02 dd label, .initial .register_area_02 dd label, .first_change .register_area_02 dd label {
-  display: block;
+  display: inline-block;
   width: 41%;
   padding: 0.5em;
   margin: 0 0.5em 0.5em 0;
@@ -1476,6 +1476,7 @@ section.inner.stamp_detail {
 #contents.tutorial .gallery-cell .title {
   background: #f48a00;
   color: #fff;
+  margin-bottom: .5em;
   padding: 5px;
   text-align: center;
   font-size: 1.6rem;
@@ -1487,13 +1488,14 @@ section.inner.stamp_detail {
 }
 #contents.tutorial .gallery-cell .gallery-inner {
   padding: 0 10px 50px 10px;
+  font-size: 1.2rem;
 }
 #contents.tutorial .gallery-cell .gallery-inner .image {
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
 }
 #contents.tutorial .gallery-cell .heading {
   margin-bottom: .5em;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 

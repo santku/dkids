@@ -170,7 +170,7 @@ pages scripts
 
         }
 
-        var btnOffset = $gallery.find('.image').offset().top + 245;
+        var btnOffset = $gallery.find('.image').offset().top + 263;
         $gallery.find('.flickity-page-dots').css('top', btnOffset);
 
         $gallery.find('.gallery-cell').matchHeight();
@@ -180,7 +180,7 @@ pages scripts
         $(window).on('load resize', function(){
           updateStatus();
 
-          var btnOffset = $gallery.find('.image').offset().top + 245;
+          var btnOffset = $gallery.find('.image').offset().top + 263;
           $gallery.find('.flickity-page-dots').css('top', btnOffset);
 
         });
