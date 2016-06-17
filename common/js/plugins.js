@@ -2,7 +2,10 @@
   01.slick
   02.jquery-match-height
   03.Remodal
-  04
+  04.horizon-swiper
+	05.flickity
+	06.footerFixed
+	07.jquery.mmenu
 */
 
 /*
