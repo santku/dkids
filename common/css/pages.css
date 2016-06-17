@@ -88,13 +88,13 @@
   background: -webkit-linear-gradient(top, rgba(250, 96, 8, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(250, 96, 8, 0.2) 90%, transparent 100%);
 }
-.launcher.home .app.pickup .tag {
+.launcher.home .app.pickup .tags {
   position: relative;
-  width: 288px;
-  margin: 0 0 .5em;
+  max-width: 1045px;
+  margin: 0 auto .5em;
   padding-left: 1em;
 }
-.launcher.home .app.pickup .tag:before {
+.launcher.home .app.pickup .tags:before {
   position: absolute;
   top: 8px;
   width: 50px;
@@ -104,7 +104,7 @@
   background-size: cover;
   content: '';
 }
-.launcher.home .app.pickup .tag p {
+.launcher.home .app.pickup .tags p {
   display: inline-block;
   position: relative;
   margin: 4px 0 0 10px;
@@ -115,7 +115,7 @@
   color: #FFF;
   z-index: 1;
 }
-.launcher.home .app.pickup .tag p:before {
+.launcher.home .app.pickup .tags p:before {
   position: absolute;
   top: 0;
   left: 5px;
@@ -125,7 +125,7 @@
   background-size: contain;
   content: '';
 }
-.launcher.home .app.pickup .tag p:after {
+.launcher.home .app.pickup .tags p:after {
   display: block;
   position: absolute;
   width: 80%;
@@ -203,11 +203,15 @@
 .launcher.home .app.ranking {
   background-color: #FAE5C1;
 }
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 400px) {
   .launcher.home .app.recommend ul, .launcher.home .app.try ul {
     max-width: none;
     -webkit-justify-content: center;
     justify-content: center;
+  }
+  .android4-1 .launcher.home .app.recommend ul, .android4-1 .launcher.home .app.try ul {
+    display: block;
+    text-align: center;
   }
   .launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
     display: inline-block;
@@ -418,7 +422,6 @@
   padding: 0.5em 0;
 }
 .child_register .register_area_02 dd, .initial .register_area_02 dd, .first_change .register_area_02 dd {
-  margin-top: -2.5em;
   width: 85%;
   float: right;
   overflow: hidden;
@@ -440,8 +443,8 @@
   display: none;
 }
 .child_register .register_area_02 dd label, .initial .register_area_02 dd label, .first_change .register_area_02 dd label {
-  display: block;
-  width: 41%;
+  display: inline-block;
+  width: 40%;
   padding: 0.5em;
   margin: 0 0.5em 0.5em 0;
   border-radius: 5px;
@@ -1120,19 +1123,25 @@ section.inner.stamp_detail {
 .register_area .selectBox.gender {
   width: 42%;
 }
+.register_area .timer dt {
+  float: none;
+  width: auto;
+}
 .register_area .timer dd {
-  display: table;
-  float: left;
-  max-width: 517px;
-  width: 60%;
+  float: right;
+  width: 85%;
 }
 .register_area .timer dd > div {
-  display: table-cell;
   vertical-align: middle;
 }
 .register_area .timer dd > div:first-child {
-  width: 75px;
   padding-top: .5em;
+}
+.register_area .timer dd > div:last-child > div {
+  width: 41.5%;
+}
+.register_area .timer dd > div:last-child > div:first-child {
+  margin: 0 0.5em 0.5em 0;
 }
 
 .register_area dl {
@@ -1183,7 +1192,7 @@ section.inner.stamp_detail {
   padding-top: 0 !important;
 }
 .help .accordion dl {
-  background-color: transparent;
+  background-color: #FBFAE9;
 }
 .help .accordion dl.active {
   background-color: #FBF5DE;
@@ -1472,6 +1481,7 @@ section.inner.stamp_detail {
 #contents.tutorial .gallery-cell .title {
   background: #f48a00;
   color: #fff;
+  margin-bottom: .5em;
   padding: 5px;
   text-align: center;
   font-size: 1.6rem;
@@ -1483,13 +1493,14 @@ section.inner.stamp_detail {
 }
 #contents.tutorial .gallery-cell .gallery-inner {
   padding: 0 10px 50px 10px;
+  font-size: 1.2rem;
 }
 #contents.tutorial .gallery-cell .gallery-inner .image {
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
 }
 #contents.tutorial .gallery-cell .heading {
   margin-bottom: .5em;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -1681,6 +1692,9 @@ section.inner.stamp_detail {
 #contents.parents.home > section#about .intro {
   text-align: center;
 }
+#contents.parents.home > section#about .intro .tb {
+  display: none;
+}
 #contents.parents.home > section#about .intro img {
   display: inline;
   width: 80%;
@@ -1688,6 +1702,12 @@ section.inner.stamp_detail {
 @media screen and (min-width: 768px) {
   #contents.parents.home > section#about .intro img {
     width: 100%;
+  }
+  #contents.parents.home > section#about .intro img.tb {
+    display: block;
+  }
+  #contents.parents.home > section#about .intro img.sp {
+    display: none;
   }
 }
 #contents.parents.home > section#about .button {
@@ -2194,17 +2214,20 @@ section.inner.stamp_detail {
 #contents.parents.home > section#mamatenna .inner .tabBody#tab02 {
   border-color: #f0b400;
   background-color: #fdf7e6;
+  background-image: url("/common/images/parents/home/shimajiro_logo.png");
+  background-size: 115px auto;
 }
 #contents.parents.home > section#mamatenna .inner .tabBody#tab03 {
   border-color: #72B030;
   background-color: #f0f7e9;
+  background-image: none;
 }
 #contents.parents.home > section#mamatenna .inner .tabBody .center {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   #contents.parents.home > section#mamatenna .inner .tabBody {
-    background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 87% 10px;
+    background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 84.5% 10px;
     background-size: 139px auto;
   }
   #contents.parents.home > section#mamatenna .inner .tabBody .inner {
@@ -2653,9 +2676,9 @@ section.inner.stamp_detail {
 .registfixedBtn.first {
   width: 268px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .registfixedBtn.first {
-    width: 335px;
+    width: 500px;
   }
 }
 .registfixedBtn img {
@@ -2756,6 +2779,7 @@ section.inner.stamp_detail {
 
 .parentsabout .visual img {
   width: 100%;
+  vertical-align: top;
 }
 .parentsabout .aboutmovie {
   background-color: #fffde7;
@@ -2889,6 +2913,7 @@ section.inner.stamp_detail {
   #contents.detail_app .app_in {
     display: inline-block;
     width: auto;
+    vertical-align: top;
   }
   #contents.detail_app .app_in:nth-of-type(1) {
     margin-left: 3%;
@@ -2944,6 +2969,7 @@ section.inner.stamp_detail {
   margin-bottom: 4px;
   color: #dc1e3c;
   width: auto;
+  vertical-align: middle;
 }
 
 #contents.parents.detail_app .accordion.button dl {
@@ -4105,6 +4131,11 @@ ul.point li {
 /* =========================================================
  RESPONSIVE
 ========================================================= */
+@media screen and (max-width: 669px) {
+  #contents.parents .dMenu li img {
+    display: none;
+  }
+}
 @media screen and (min-width: 670px) {
   #contents.parents .dMenu {
     display: block;
@@ -4134,57 +4165,8 @@ ul.point li {
   #contents.parents .dMenu li:after {
     display: none;
   }
-  #contents.parents .dMenu li.dmarket {
-    background-image: url(/common/images/parents/common/icd_app_dmarket_72.png);
-  }
-  #contents.parents .dMenu li.shopping {
-    background-image: url(/common/images/parents/common/d_shopping_app_72.png);
-  }
-  #contents.parents .dMenu li.game {
-    background-image: url(/common/images/parents/common/d_game_app_72.png);
-  }
-  #contents.parents .dMenu li.book {
-    background-image: url(/common/images/parents/common/d_book_app_72.png);
-  }
-  #contents.parents .dMenu li.travel {
-    background-image: url(/common/images/parents/common/d_travel_app_72.png);
-  }
-  #contents.parents .dMenu li.music {
-    background-image: url(/common/images/parents/common/d_music_app_72.png);
-  }
-  #contents.parents .dMenu li.fashion {
-    background-image: url(/common/images/parents/common/d_fashion_app_72.png);
-  }
-  #contents.parents .dMenu li.delivery {
-    background-image: url(/common/images/parents/common/d_delivery_app_72.png);
-  }
-  #contents.parents .dMenu li.creators {
-    background-image: url(/common/images/parents/common/d_creators_app_72.png);
-  }
-  #contents.parents .dMenu li.app {
-    background-image: url(/common/images/parents/common/d_app_app_72.png);
-  }
-  #contents.parents .dMenu li.dtv {
-    background-image: url(/common/images/parents/common/icd_app_dtv_72.png);
-  }
-  #contents.parents .dMenu li.hit {
-    background-image: url(/common/images/parents/common/d_hits_app_72.png);
-  }
-  #contents.parents .dMenu li.magazine {
-    background-image: url(/common/images/parents/common/d_magazine_app_72.png);
-  }
-  #contents.parents .dMenu li.anime {
-    background-image: url(/common/images/parents/common/d_anime_app_72.png);
-  }
-  #contents.parents .dMenu li.kids {
-    background-image: url(/common/images/parents/common/d_kids_app_72.png);
-  }
-  #contents.parents .dMenu li.dgourmet {
-    background-image: url(/common/images/parents/common/icd_app_dgourmet_72.png);
-  }
   #contents.parents .dMenu li a {
     display: block;
-    padding-top: 102%;
   }
   #contents.parents .dMenu li img {
     width: 100%;

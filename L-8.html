@@ -7,7 +7,7 @@
 
       <!--#include virtual="/common/include/common/account.html" -->
 
-      <h1>子ども情報の登録 1</h1>
+      <h1>初回子ども情報変更</h1>
 
       <section class="inner">
       <article class="paragraph">
@@ -26,44 +26,20 @@
               <input type="submit" disabled class="btn red iblock" value="削除する">
             </li>
             <li>
-              <div class="register_area_02">
-                <dl>
-                  <dt>対象年齢</dt>
-
-                  <dd style="margin-top: 0;">
-
-                    <input id="age00" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age00" class="age_txt">0歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age01" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age01">1歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age02" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age02">2歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age03" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age03">3歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age04" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age04">4歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age05" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age05">5歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age06" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age06">6歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age07" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age07">7歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age08" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age08">8歳<br><span>(YYYY.MM.DD～YYYY.MM.DD生まれ)</span></label>
-
-                    <input id="age09" class="ageRadio" type="radio" name="age" value="">
-                    <label class="btn" for="age09">9歳以上<br><span>(YYYY.MM.DD以降生まれ)</span></label>
-
-                  </dd>
-                </dl>
+              <div class="selectBox age_change">
+                <select class="age" name="age">
+                  <option value="" disabled selected>ねんれい</option>
+                  <option value="0歳">0歳（2016.4.2～2017.4.1生まれ)</option>
+                  <option value="1歳">1歳（2015.4.2～2016.4.1生まれ)</option>
+                  <option value="2歳">2歳（2014.4.2～2015.4.1生まれ)</option>
+                  <option value="3歳">3歳（2013.4.2～2014.4.1生まれ)</option>
+                  <option value="4歳">4歳（2012.4.2～2013.4.1生まれ)</option>
+                  <option value="5歳">5歳（2011.4.2～2012.4.1生まれ)</option>
+                  <option value="6歳">6歳（2010.4.2～2011.4.1生まれ)</option>
+                  <option value="7歳">7歳（2009.4.2～2010.4.1生まれ)</option>
+                  <option value="8歳">8歳（2008.4.2～2009.4.1生まれ)</option>
+                  <option value="9歳以上">9歳以上（～2008.4.1生まれ)</option>
+                </select>
               </div>
             </li>
             <li>

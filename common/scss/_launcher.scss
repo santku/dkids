@@ -94,10 +94,10 @@
         h2 {
           @include title(rgba(#fa6008, .2));
         }
-        .tag {
+        .tags{
           position: relative;
-          width: 288px;
-          margin: 0 0 .5em;
+          max-width: 1045px;
+          margin: 0 auto .5em;
           padding-left: 1em;
           &:before {
             position: absolute;
@@ -228,7 +228,7 @@
       }
     }
   }
-  @media screen and (min-width: 426px) {
+  @media screen and (min-width: 400px) {
     &.home {
       .app {
         &.recommend,
@@ -237,6 +237,12 @@
             max-width: none;
             -webkit-justify-content: center;
             justify-content: center;
+
+            .android4-1 &{
+              display: block;
+              text-align: center;
+            }
+
             li {
               display: inline-block;
               width: 48.3%;
@@ -509,7 +515,6 @@
       padding: 0.5em 0;
     }
     dd {
-      margin-top: -2.5em;
       width: 85%;
       float: right;
       overflow: hidden;
@@ -528,8 +533,8 @@
         }
       }
       label {
-        display: block;
-        width: 41%;
+        display: inline-block;
+        width: 40%;
         padding: 0.5em;
         margin: 0 0.5em 0.5em 0;
         border-radius: 5px;
@@ -1230,20 +1235,34 @@ section.inner {
     width: 42%;
   }
   .timer{
+    dt{
+      float: none;
+      width: auto;
+    }
     dd{
-      display: table;
-      float: left;
-      max-width: 517px;
-      width: 60%;
+      //display: table;
+      float: right;
+      width: 85%;
+      //max-width: 517px;
+      //width: 60%;
+      &.selectArea{
+
+
+      }
       > div{
-        display: table-cell;
+        //display: table-cell;
         vertical-align: middle;
         &:first-child{
-          width: 75px;
+          //width: 75px;
           padding-top: .5em;
         }
         &:last-child{
-
+          >div{
+            width: 41.5%;
+            &:first-child{
+              margin: 0 0.5em 0.5em 0;
+            }
+          }
         }
       }
     }
@@ -1300,7 +1319,7 @@ section.inner {
   }
   .accordion{
     dl{
-      background-color: transparent;
+      background-color: #FBFAE9;
       &.active{
         background-color: #FBF5DE;
       }
@@ -1612,6 +1631,7 @@ section.inner {
     .title {
       background: #f48a00;
       color: #fff;
+      margin-bottom: .5em;
       padding: 5px;
       text-align: center;
       font-size: 1.6rem;
@@ -1623,13 +1643,14 @@ section.inner {
     }
     .gallery-inner {
       padding: 0 10px 50px 10px;
+      font-size: 1.2rem;
       .image{
-        margin-bottom: 3em;
+        margin-bottom: 2.5em;
       }
     }
     .heading {
       margin-bottom: .5em;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
     }
   }

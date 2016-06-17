@@ -682,6 +682,9 @@ footer {
         width: 100%;
         margin: 0;
       }
+      &.pb{
+        padding-bottom: 2em;
+      }
     }
     &.item {
       margin-bottom: 1em;
@@ -995,7 +998,7 @@ footer {
     box-sizing: border-box;
     font-size: 1.4rem;
     &:first-child {
-      margin-right: 5%;
+      margin-right: 4.9%;
     }
   }
 }
@@ -1043,6 +1046,10 @@ footer {
 }
 .accordion {
   margin-bottom: 2em;
+  .a_inner {
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+  }
   dl {
     border-bottom: $border-default;
     &:first-child {
@@ -1050,7 +1057,7 @@ footer {
     }
     &.active {
       background-color: #faf2d5;
-      dt {
+      > dt {
         &:before {
           content: '\f106';
         }
@@ -1656,7 +1663,7 @@ a {
   color: #0b2745;
   z-index: 4;
   p{
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 0;
   }
 }
