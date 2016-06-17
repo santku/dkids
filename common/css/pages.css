@@ -422,7 +422,6 @@
   padding: 0.5em 0;
 }
 .child_register .register_area_02 dd, .initial .register_area_02 dd, .first_change .register_area_02 dd {
-  margin-top: -2.5em;
   width: 85%;
   float: right;
   overflow: hidden;
