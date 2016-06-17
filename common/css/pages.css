@@ -209,6 +209,10 @@
     -webkit-justify-content: center;
     justify-content: center;
   }
+  .android4-1 .launcher.home .app.recommend ul, .android4-1 .launcher.home .app.try ul {
+    display: block !important;
+    text-align: center;
+  }
   .launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
     display: inline-block;
     width: 48.3%;

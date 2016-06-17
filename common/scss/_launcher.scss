@@ -237,6 +237,12 @@
             max-width: none;
             -webkit-justify-content: center;
             justify-content: center;
+
+            .android4-1 &{
+              display: block !important;
+              text-align: center;
+            }
+
             li {
               display: inline-block;
               width: 48.3%;

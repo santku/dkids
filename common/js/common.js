@@ -248,12 +248,16 @@ common scripts
       }
 
       if(androidSversion() <= 4.4){
-       $('html').addClass(' android');
+       $('html').addClass('android');
+      }
+
+      if(androidSversion() <= 4.1){
+       $('html').addClass('android4-1');
       }
 
       var agent = navigator.userAgent;
       if(agent.search(/iPhone/) != -1){
-        $('html').addClass(' iPhone');
+        $('html').addClass('iPhone');
       }
 
       // if( _ua.Mobile || _ua.Tablet ){
