@@ -210,7 +210,7 @@
     justify-content: center;
   }
   .android4-1 .launcher.home .app.recommend ul, .android4-1 .launcher.home .app.try ul {
-    display: block !important;
+    display: block;
     text-align: center;
   }
   .launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
@@ -1187,7 +1187,7 @@ section.inner.stamp_detail {
   padding-top: 0 !important;
 }
 .help .accordion dl {
-  background-color: transparent;
+  background-color: #FBFAE9;
 }
 .help .accordion dl.active {
   background-color: #FBF5DE;
@@ -4109,6 +4109,11 @@ ul.point li {
 /* =========================================================
  RESPONSIVE
 ========================================================= */
+@media screen and (max-width: 669px) {
+  #contents.parents .dMenu li img {
+    display: none;
+  }
+}
 @media screen and (min-width: 670px) {
   #contents.parents .dMenu {
     display: block;
@@ -4138,57 +4143,8 @@ ul.point li {
   #contents.parents .dMenu li:after {
     display: none;
   }
-  #contents.parents .dMenu li.dmarket {
-    background-image: url(/common/images/parents/common/icd_app_dmarket_72.png);
-  }
-  #contents.parents .dMenu li.shopping {
-    background-image: url(/common/images/parents/common/d_shopping_app_72.png);
-  }
-  #contents.parents .dMenu li.game {
-    background-image: url(/common/images/parents/common/d_game_app_72.png);
-  }
-  #contents.parents .dMenu li.book {
-    background-image: url(/common/images/parents/common/d_book_app_72.png);
-  }
-  #contents.parents .dMenu li.travel {
-    background-image: url(/common/images/parents/common/d_travel_app_72.png);
-  }
-  #contents.parents .dMenu li.music {
-    background-image: url(/common/images/parents/common/d_music_app_72.png);
-  }
-  #contents.parents .dMenu li.fashion {
-    background-image: url(/common/images/parents/common/d_fashion_app_72.png);
-  }
-  #contents.parents .dMenu li.delivery {
-    background-image: url(/common/images/parents/common/d_delivery_app_72.png);
-  }
-  #contents.parents .dMenu li.creators {
-    background-image: url(/common/images/parents/common/d_creators_app_72.png);
-  }
-  #contents.parents .dMenu li.app {
-    background-image: url(/common/images/parents/common/d_app_app_72.png);
-  }
-  #contents.parents .dMenu li.dtv {
-    background-image: url(/common/images/parents/common/icd_app_dtv_72.png);
-  }
-  #contents.parents .dMenu li.hit {
-    background-image: url(/common/images/parents/common/d_hits_app_72.png);
-  }
-  #contents.parents .dMenu li.magazine {
-    background-image: url(/common/images/parents/common/d_magazine_app_72.png);
-  }
-  #contents.parents .dMenu li.anime {
-    background-image: url(/common/images/parents/common/d_anime_app_72.png);
-  }
-  #contents.parents .dMenu li.kids {
-    background-image: url(/common/images/parents/common/d_kids_app_72.png);
-  }
-  #contents.parents .dMenu li.dgourmet {
-    background-image: url(/common/images/parents/common/icd_app_dgourmet_72.png);
-  }
   #contents.parents .dMenu li a {
     display: block;
-    padding-top: 102%;
   }
   #contents.parents .dMenu li img {
     width: 100%;

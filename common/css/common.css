@@ -1031,6 +1031,10 @@ footer .copyright {
 .accordion {
   margin-bottom: 2em;
 }
+.accordion .a_inner {
+  border-left: solid 1px #CCC;
+  border-right: solid 1px #CCC;
+}
 .accordion dl {
   border-bottom: solid 1px #CCC;
 }
@@ -1040,7 +1044,7 @@ footer .copyright {
 .accordion dl.active {
   background-color: #faf2d5;
 }
-.accordion dl.active dt:before {
+.accordion dl.active > dt:before {
   content: '\f106';
 }
 .accordion dl dt {

@@ -2685,7 +2685,11 @@ ul.point li {
 /* =========================================================
  RESPONSIVE
 ========================================================= */
-
+@media screen and (max-width: 669px) {
+  #contents.parents .dMenu li img {
+    display: none;
+  }
+}
 @media screen and (min-width: 670px) {
   #contents.parents .dMenu{
     display: block;
@@ -2713,57 +2717,8 @@ ul.point li {
       &:after{
         display: none;
       }
-      &.dmarket{
-        background-image: url(/common/images/parents/common/icd_app_dmarket_72.png);
-      }
-      &.shopping{
-        background-image: url(/common/images/parents/common/d_shopping_app_72.png);
-      }
-      &.game{
-        background-image: url(/common/images/parents/common/d_game_app_72.png);
-      }
-      &.book{
-        background-image: url(/common/images/parents/common/d_book_app_72.png);
-      }
-      &.travel{
-        background-image: url(/common/images/parents/common/d_travel_app_72.png);
-      }
-      &.music{
-        background-image: url(/common/images/parents/common/d_music_app_72.png);
-      }
-      &.fashion{
-        background-image: url(/common/images/parents/common/d_fashion_app_72.png);
-      }
-      &.delivery{
-        background-image: url(/common/images/parents/common/d_delivery_app_72.png);
-      }
-      &.creators{
-        background-image: url(/common/images/parents/common/d_creators_app_72.png);
-      }
-      &.app{
-        background-image: url(/common/images/parents/common/d_app_app_72.png);
-      }
-      &.dtv{
-        background-image: url(/common/images/parents/common/icd_app_dtv_72.png);
-      }
-      &.hit{
-        background-image: url(/common/images/parents/common/d_hits_app_72.png);
-      }
-      &.magazine{
-        background-image: url(/common/images/parents/common/d_magazine_app_72.png);
-      }
-      &.anime{
-        background-image: url(/common/images/parents/common/d_anime_app_72.png);
-      }
-      &.kids{
-        background-image: url(/common/images/parents/common/d_kids_app_72.png);
-      }
-      &.dgourmet{
-        background-image: url(/common/images/parents/common/icd_app_dgourmet_72.png);
-      }
       a{
         display: block;
-        padding-top: 102%;
       }
       img{
         width: 100%;

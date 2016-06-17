@@ -1043,6 +1043,10 @@ footer {
 }
 .accordion {
   margin-bottom: 2em;
+  .a_inner {
+    border-left: solid 1px #CCC;
+    border-right: solid 1px #CCC;
+  }
   dl {
     border-bottom: $border-default;
     &:first-child {
@@ -1050,7 +1054,7 @@ footer {
     }
     &.active {
       background-color: #faf2d5;
-      dt {
+      > dt {
         &:before {
           content: '\f106';
         }
