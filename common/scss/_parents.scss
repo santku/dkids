@@ -142,10 +142,19 @@
       &#about {
         .intro{
           text-align: center;
+          .tb{
+            display: none;
+          }
           img{
             display: inline;
             width: 80%;
             @media screen and (min-width: 768px) {
+              &.tb{
+                display: block;
+              }
+              &.sp{
+                display: none;
+              }
               width: 100%;
             }
           }
@@ -664,20 +673,24 @@
             &#tab02{
               border-color: #f0b400;
               background-color: #fdf7e6;
+              background-image: url("/common/images/parents/home/shimajiro_logo.png");
+              background-size: 115px auto;
             }
             &#tab03{
               border-color: #72B030;
               background-color: #f0f7e9;
+              background-image: none;
             }
             .center{
               margin-bottom: 0;
             }
             @media screen and (min-width: $tablet) {
-              background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 87% 10px;
+              background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 84.5% 10px;
               background-size: 139px auto;
-              .inner{width: 80%;
+              .inner{
+                width: 80%;
+              }
             }
-          }
             article {
               margin:0 auto 1px;
               //padding: 5px;
@@ -1185,8 +1198,8 @@
   width: 80%;
   &.first{
     width: 268px;
-    @media screen and (min-width: 768px) {
-      width: 335px;
+    @media screen and (min-width: 640px) {
+      width: 500px;
     }
   }
   img {
@@ -1306,6 +1319,7 @@
 .parentsabout {
   .visual img {
     width: 100%;
+    vertical-align: top;
   }
   .aboutmovie {
     background-color: #fffde7;
@@ -1500,6 +1514,7 @@
     margin-bottom: 4px;
     color: #dc1e3c;
     width: auto;
+    vertical-align: middle;
   }
 }
 #contents.parents.detail_app .accordion.button{

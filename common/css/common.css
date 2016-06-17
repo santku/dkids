@@ -674,6 +674,9 @@ footer .copyright {
   width: 100%;
   margin: 0;
 }
+#contents article.paragraph.pb {
+  padding-bottom: 2em;
+}
 #contents article.item {
   margin-bottom: 1em;
   padding-bottom: 1.5em;
@@ -1606,7 +1609,7 @@ a.movie i {
   z-index: 4;
 }
 #loader p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 0;
 }
 

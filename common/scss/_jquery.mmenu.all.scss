@@ -325,10 +325,10 @@ html.mm-opened.mm-fullscreen .mm-page{box-shadow:none!important}
 .mm-menu .mm-panels>.mm-panel.mm-justified-listview>.mm-listview>li:not(.mm-divider)>a:not(.mm-next):before,.mm-menu .mm-panels>.mm-panel.mm-justified-listview>.mm-listview>li:not(.mm-divider)>span:before,.mm-menu.mm-justified-listview .mm-panels>.mm-panel>.mm-listview>li:not(.mm-divider)>a:not(.mm-next):before,.mm-menu.mm-justified-listview .mm-panels>.mm-panel>.mm-listview>li:not(.mm-divider)>span:before{content:'';vertical-align:middle;display:inline-block;height:100%;width:0}
 .mm-listview.mm-multiline>li .mm-listview>li.mm-multiline>a,.mm-listview.mm-multiline>li .mm-listview>li.mm-multiline>span,.mm-menu.mm-multiline .mm-listview>li>a,.mm-menu.mm-multiline .mm-listview>li>span{text-overflow:clip;white-space:normal}
 html.mm-pagedim #mm-blocker,html.mm-pagedim-black #mm-blocker,html.mm-pagedim-white #mm-blocker{opacity:0}
-html.mm-pagedim-black.mm-opening #mm-blocker,html.mm-pagedim-white.mm-opening #mm-blocker,html.mm-pagedim.mm-opening #mm-blocker{opacity:.3;-webkit-transition:opacity .4s ease .4s;transition:opacity .4s ease .4s}
+html.mm-pagedim-black.mm-opening #mm-blocker,html.mm-pagedim-white.mm-opening #mm-blocker,html.mm-pagedim.mm-opening #mm-blocker{opacity:1;-webkit-transition:opacity .4s ease .4s;transition:opacity .4s ease .4s}
 html.mm-pagedim #mm-blocker{background:inherit}
 html.mm-pagedim-white #mm-blocker{background:#fff}
-html.mm-pagedim-black #mm-blocker{background:#000}
+html.mm-pagedim-black #mm-blocker{background: rgba(0, 0, 0, 0.8);}
 .mm-menu.mm-pageshadow:after{content:"";display:block;width:20px;height:120%;position:absolute;left:100%;top:-10%;z-index:99;box-shadow:0 0 10px rgba(0,0,0,.3)}
 .mm-menu.mm-pageshadow.mm-right:after{left:auto;right:100%}
 .mm-menu.mm-pageshadow.mm-front:after,.mm-menu.mm-pageshadow.mm-next:after{content:none;display:none}

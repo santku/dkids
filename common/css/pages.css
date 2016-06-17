@@ -1686,6 +1686,9 @@ section.inner.stamp_detail {
 #contents.parents.home > section#about .intro {
   text-align: center;
 }
+#contents.parents.home > section#about .intro .tb {
+  display: none;
+}
 #contents.parents.home > section#about .intro img {
   display: inline;
   width: 80%;
@@ -1693,6 +1696,12 @@ section.inner.stamp_detail {
 @media screen and (min-width: 768px) {
   #contents.parents.home > section#about .intro img {
     width: 100%;
+  }
+  #contents.parents.home > section#about .intro img.tb {
+    display: block;
+  }
+  #contents.parents.home > section#about .intro img.sp {
+    display: none;
   }
 }
 #contents.parents.home > section#about .button {
@@ -2199,17 +2208,20 @@ section.inner.stamp_detail {
 #contents.parents.home > section#mamatenna .inner .tabBody#tab02 {
   border-color: #f0b400;
   background-color: #fdf7e6;
+  background-image: url("/common/images/parents/home/shimajiro_logo.png");
+  background-size: 115px auto;
 }
 #contents.parents.home > section#mamatenna .inner .tabBody#tab03 {
   border-color: #72B030;
   background-color: #f0f7e9;
+  background-image: none;
 }
 #contents.parents.home > section#mamatenna .inner .tabBody .center {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   #contents.parents.home > section#mamatenna .inner .tabBody {
-    background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 87% 10px;
+    background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 84.5% 10px;
     background-size: 139px auto;
   }
   #contents.parents.home > section#mamatenna .inner .tabBody .inner {
@@ -2658,9 +2670,9 @@ section.inner.stamp_detail {
 .registfixedBtn.first {
   width: 268px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .registfixedBtn.first {
-    width: 335px;
+    width: 500px;
   }
 }
 .registfixedBtn img {
@@ -2761,6 +2773,7 @@ section.inner.stamp_detail {
 
 .parentsabout .visual img {
   width: 100%;
+  vertical-align: top;
 }
 .parentsabout .aboutmovie {
   background-color: #fffde7;
@@ -2949,6 +2962,7 @@ section.inner.stamp_detail {
   margin-bottom: 4px;
   color: #dc1e3c;
   width: auto;
+  vertical-align: middle;
 }
 
 #contents.parents.detail_app .accordion.button dl {
