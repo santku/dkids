@@ -884,7 +884,7 @@ footer {
         }
         &.half {
           width: 50%;
-          font-size: 1rem;
+          font-size: 1.1rem;
           // min-height: 5.5em;
           // padding-right: 1em;
           // padding-left: 0.5em;
@@ -1413,6 +1413,14 @@ a {
     }
     &.timer{
       width: 253px;
+    }
+  }
+  a{
+    color: $link;
+    text-decoration: underline;
+    &.movie{
+      color: inherit;
+      text-decoration: none;
     }
   }
   .input {

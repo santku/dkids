@@ -885,7 +885,7 @@ footer .copyright {
 #contents nav.list ul li.half,
 #contents nav.settingList ul li.half {
   width: 50%;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .android #contents nav.list ul li.half, .android
 #contents nav.settingList ul li.half {
@@ -1392,6 +1392,14 @@ a.movie i {
 }
 .remodal .txt.timer {
   width: 253px;
+}
+.remodal a {
+  color: #dc1e3c;
+  text-decoration: underline;
+}
+.remodal a.movie {
+  color: inherit;
+  text-decoration: none;
 }
 .remodal .input {
   position: relative;

@@ -357,6 +357,7 @@
   //--------------------------------------------------------
   &.search {
     .app {
+      padding-bottom: 1.25em;
       background-color: #f0f0f0;
       h2 {
         @include title(rgba(#dc1e3c, .2));
@@ -1168,7 +1169,7 @@ section.inner {
   }
   .red {
     //width: 60%;
-    font-size: 1.4em;
+    //font-size: 1.4em;
   }
 }
 // L-3-4 : 情報の登録
