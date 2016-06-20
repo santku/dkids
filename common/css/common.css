@@ -881,7 +881,7 @@ footer .copyright {
 #contents nav.list ul li.half,
 #contents nav.settingList ul li.half {
   width: 50%;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .android #contents nav.list ul li.half, .android
 #contents nav.settingList ul li.half {
