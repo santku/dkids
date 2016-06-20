@@ -1100,6 +1100,9 @@
       margin-bottom: 1.4em;
     }
     .app {
+      .filtering .selectBox .genre{
+        padding: 9px 28% 9px 9px;
+      }
       @media screen and (min-width: $tablet) {
       ul.disabled{
         max-width: 990px;

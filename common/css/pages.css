@@ -2593,6 +2593,9 @@ section.inner.stamp_detail {
 #contents.parents.search h1 {
   margin-bottom: 1.4em;
 }
+#contents.parents.search .app .filtering .selectBox .genre {
+  padding: 9px 28% 9px 9px;
+}
 @media screen and (min-width: 768px) {
   #contents.parents.search .app ul.disabled {
     max-width: 990px;
