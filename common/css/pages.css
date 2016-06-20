@@ -4172,6 +4172,7 @@ ul.point li {
   }
   #contents.parents .dMenu li a {
     display: block;
+    padding: 0;
   }
   #contents.parents .dMenu li img {
     width: 100%;
