@@ -284,6 +284,10 @@ select::-ms-expand {
 /* =========================================================
  LAYOUT
 ========================================================= */
+#wrap {
+  display: none;
+}
+
 #my-menu .mm-list li a {
   padding: 1em 3em 1em 1em;
   border-bottom: solid 1px #CCC;

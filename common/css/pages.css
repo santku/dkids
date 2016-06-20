@@ -296,6 +296,9 @@
   background: -webkit-linear-gradient(top, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
   background: linear-gradient(to bottom, rgba(220, 30, 60, 0.2) 90%, transparent 100%);
 }
+.launcher.search .app .filtering .selectBox .genre {
+  padding: 9px 28% 9px 9px;
+}
 .launcher.search .app .appList li p {
   margin-bottom: 0;
 }
@@ -1397,7 +1400,7 @@ section.inner.stamp_detail {
   background-color: #ccc;
   font-size: 1.2rem;
   width: 18%;
-  padding: 0.6em 0.3em;
+  /*padding: 0.6em 0.3em;*/
 }
 .initial .inner section#initialtab .tabNav li:nth-child(1) {
   z-index: 3;
@@ -1429,6 +1432,7 @@ section.inner.stamp_detail {
   overflow: hidden;
   color: #333 !important;
   text-decoration: none;
+  padding: 0.6em 0.3em;
 }
 .initial .inner section#initialtab .tabBody {
   margin: 0 auto;

@@ -404,9 +404,28 @@ common scripts
         $('#loader').delay(600).fadeOut(300);
       }
 
+    },
+
+    selectBoxcut : function(){
+      var $setElm = $('.launcher.search .app .filtering .selectBox .genre option');
+      var cutFigure = '5'; // カットする文字数
+      var afterTxt = ' …'; // 文字カット後に表示するテキスト
+
+      $setElm.each(function(){
+          var textLength = $(this).text().length;
+          var textTrim = $(this).text().substr(0,(cutFigure))
+
+          if(cutFigure < textLength) {
+              $(this).html(textTrim + afterTxt).css({visibility:'visible'});
+          } else if(cutFigure >= textLength) {
+              $(this).css({visibility:'visible'});
+          }
+      });
     }
 
   }
+
+
 
   $(function() {
 
@@ -421,6 +440,7 @@ common scripts
     Common.form();
     Common.mmenu();
     Common.loding();
+    //Common.selectBoxcut();
 
     // $(window).on('load resize', function(){
     //
