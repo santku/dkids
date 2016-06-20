@@ -348,6 +348,10 @@ common scripts
 
     mmenu : function(){
 
+      // $(document).on('click', '.iPhone', function(){
+      //   alert('OK');
+      // })
+
       $("#my-menu").mmenu({
         "extensions": [
            "pagedim-black"
@@ -369,6 +373,12 @@ common scripts
        if ( $('html').hasClass('mm-opened') ) {
          $mmenu.close();
        }
+
+
+
+       $mmenu.bind( "openPanel", function( $panel ) {
+          console.log( "This panel is now opened:" + $panel.attr( "id" ) );
+       });
 
       });
 

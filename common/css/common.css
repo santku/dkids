@@ -832,7 +832,6 @@ footer .copyright {
   align-items: center;
   position: relative;
   width: 100%;
-  padding: 1em 3em 1em 1em;
   border-bottom: solid 1px;
   box-sizing: border-box;
   font-size: 1.4rem;
@@ -863,6 +862,7 @@ footer .copyright {
 #contents nav.list ul li a,
 #contents nav.settingList ul li a {
   display: block;
+  padding: 1em 3em 1em 1em;
   text-decoration: none;
   color: inherit;
 }

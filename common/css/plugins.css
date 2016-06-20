@@ -496,6 +496,11 @@ html.remodal-is-locked {
   width: 700px;
 }
 
+@media screen and (max-height: 568px) {
+  .remodal-wrapper {
+    padding-top: 70px;
+  }
+}
 /* =========================================================
   Horizon Swiper
 ========================================================= */

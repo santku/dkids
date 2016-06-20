@@ -1397,9 +1397,6 @@ section.inner.stamp_detail {
   background-color: #ccc;
   font-size: 1.2rem;
   width: 18%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   padding: 0.6em 0.3em;
 }
 .initial .inner section#initialtab .tabNav li:nth-child(1) {
@@ -1419,9 +1416,17 @@ section.inner.stamp_detail {
   z-index: 3;
   white-space: inherit;
   text-overflow: inherit;
-  width: auto;
+}
+@media screen and (max-width: 580px) {
+  .initial .inner section#initialtab .tabNav li.active {
+    width: auto;
+  }
 }
 .initial .inner section#initialtab .tabNav li a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: #333 !important;
   text-decoration: none;
 }
@@ -1508,24 +1513,24 @@ section.inner.stamp_detail {
  TABLET
 ========================================================= */
 @media screen and (min-width: 768px) {
-  .launcher.home .app.recommend ul, .launcher.home .app.try ul {
+  .launcher.home .app.recommend ul, .launcher.home .app.try ul, .launcher.search .app.recommend ul, .launcher.search .app.try ul {
     max-width: 1050px;
   }
-  .launcher.home .app.recommend ul li, .launcher.home .app.try ul li {
+  .launcher.home .app.recommend ul li, .launcher.home .app.try ul li, .launcher.search .app.recommend ul li, .launcher.search .app.try ul li {
     display: inline-block;
     width: 45.5%;
   }
-  .launcher.home .app.recommend ul li:nth-child(2n+2), .launcher.home .app.try ul li:nth-child(2n+2) {
+  .launcher.home .app.recommend ul li:nth-child(2n+2), .launcher.home .app.try ul li:nth-child(2n+2), .launcher.search .app.recommend ul li:nth-child(2n+2), .launcher.search .app.try ul li:nth-child(2n+2) {
     margin-right: 0 !important;
   }
-  .launcher.home .app.pickup .tag {
+  .launcher.home .app.pickup .tag, .launcher.search .app.pickup .tag {
     width: 100%;
     text-align: center;
   }
-  .launcher.home .app ul li {
+  .launcher.home .app ul li, .launcher.search .app ul li {
     margin-right: 10px !important;
   }
-  .launcher.home .app ul li:nth-child(6n+6) {
+  .launcher.home .app ul li:nth-child(6n+6), .launcher.search .app ul li:nth-child(6n+6) {
     margin-right: 10px !important;
   }
 
@@ -4167,6 +4172,7 @@ ul.point li {
   }
   #contents.parents .dMenu li a {
     display: block;
+    padding: 0;
   }
   #contents.parents .dMenu li img {
     width: 100%;
@@ -4220,10 +4226,8 @@ ul.point li {
 ========================================================= */
 @media (min-width: 736px) {
   .iPhone .headerPadding header {
-    position: static;
-  }
-  .iPhone .headerPadding #contents {
-    padding-top: 0;
+    position: absolute;
+    top: 0;
   }
 }
 /* =========================================================
