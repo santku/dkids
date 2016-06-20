@@ -111,7 +111,7 @@ pages scripts
       $('nav.list').find('li').matchHeight();
       //$('.horizon-item').matchHeight();
       $('.recommend li').matchHeight();
-      $('.carousel li').matchHeight();
+      //$('.carousel li').matchHeight();
       //$('#contents.search .app li p').matchHeight();
 
     },
