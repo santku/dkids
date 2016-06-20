@@ -1397,9 +1397,6 @@ section.inner.stamp_detail {
   background-color: #ccc;
   font-size: 1.2rem;
   width: 18%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   padding: 0.6em 0.3em;
 }
 .initial .inner section#initialtab .tabNav li:nth-child(1) {
@@ -1419,9 +1416,17 @@ section.inner.stamp_detail {
   z-index: 3;
   white-space: inherit;
   text-overflow: inherit;
-  width: auto;
+}
+@media screen and (max-width: 580px) {
+  .initial .inner section#initialtab .tabNav li.active {
+    width: auto;
+  }
 }
 .initial .inner section#initialtab .tabNav li a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: #333 !important;
   text-decoration: none;
 }
