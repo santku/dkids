@@ -290,6 +290,7 @@
   background-size: 79px 18px;
 }
 .launcher.search .app {
+  padding-bottom: 1.25em;
   background-color: #f0f0f0;
 }
 .launcher.search .app h2 {
@@ -1053,9 +1054,6 @@ section.inner.stamp_detail {
 
 .guide .txt {
   margin-bottom: 2em;
-}
-.guide .red {
-  font-size: 1.4em;
 }
 
 .confirm_config .kids_confirm {

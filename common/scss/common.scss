@@ -1412,6 +1412,14 @@ a {
       width: 253px;
     }
   }
+  a{
+    color: $link;
+    text-decoration: underline;
+    &.movie{
+      color: inherit;
+      text-decoration: none;
+    }
+  }
   .input {
     position: relative;
     height: 3.6em;
