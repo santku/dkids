@@ -2803,10 +2803,11 @@ ul.point li {
 @media (min-width: 736px){
   .iPhone .headerPadding{
     header{
-      position: static;;
+      position: absolute;
+      top: 0;
     }
     #contents{
-      padding-top: 0;
+      //padding-top: 0;
     }
   }
 }

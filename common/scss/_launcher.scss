@@ -1665,7 +1665,8 @@ section.inner {
 ========================================================= */
 @media screen and (min-width: $tablet) {
   .launcher {
-    &.home {
+    &.home,
+    &.search {
       .app {
         &.recommend,
         &.try {
