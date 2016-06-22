@@ -2424,8 +2424,8 @@ html.mm-pagedim #mm-blocker, html.mm-pagedim-black #mm-blocker, html.mm-pagedim-
 
 html.mm-pagedim-black.mm-opening #mm-blocker, html.mm-pagedim-white.mm-opening #mm-blocker, html.mm-pagedim.mm-opening #mm-blocker {
   opacity: 1;
-  -webkit-transition: opacity .4s ease .4s;
-  transition: opacity .4s ease .4s;
+  -webkit-transition: opacity 0 ease 0;
+  transition: opacity 0 ease 0;
 }
 
 html.mm-pagedim #mm-blocker {

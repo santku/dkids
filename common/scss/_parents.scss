@@ -609,7 +609,7 @@
       }
       &#mamatenna {
         margin-bottom: 0;
-        padding-bottom: 1em;
+        padding-bottom: 0;
         background-color: #FCEEF1;
         .inner {
           width: 100%;
@@ -663,7 +663,7 @@
           }
           .tabBody {
             margin: 0 auto;
-            padding: 30px 3.3% 2%;
+            padding: 30px 3.3% 3.3%;
             border-top: solid 4px #E15E76;
             background: #fceef1 url("/common/images/parents/home/mamatenna_logo.png") no-repeat 94.3% 10px;
             background-size: 139px auto;
@@ -1444,12 +1444,22 @@
       }
     }
   }
+  article.paragraph{
+    margin-bottom: 2.5em;
+    .center{
+      padding: 0 8px;
+      img{
+        width: 100%;
+        max-width: 640px;
+      }
+    }
+  }
   article.paragraph:nth-of-type(1){
     margin-bottom: 0;
   }
   .app_in {
     width: 100%;
-    margin: 10px auto 0;
+    margin: 0 auto;
     font-size: 1rem;
     @media screen and (max-width: 814px) {
       margin-left: 1%;
@@ -1464,6 +1474,10 @@
       &:nth-of-type(2){
         margin-left: 1em;
       }
+    }
+    dt,
+    dd{
+      margin-bottom: 1em;
     }
     dt{
       color: #fff;

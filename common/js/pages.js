@@ -113,6 +113,7 @@ pages scripts
       $('.recommend li').matchHeight();
       //$('.carousel li').matchHeight();
       //$('#contents.search .app li p').matchHeight();
+      $('.register_area_02 dd').find('label span').matchHeight();
 
     },
 
