@@ -220,6 +220,15 @@ pages scripts
       $('.app_num').load('/common/include/common/app_num.html');
       $('.user_num').load('/common/include/common/user_num.html');
 
+    },
+
+    confirmFixed : function(){
+
+      $(window).on('load resize orientationchange',function(){
+        var h = $('.license, .privacy').find('.confirm_area, .pageclose').outerHeight();
+        $('.license, .privacy').find('.scroll').css('padding-bottom', h);
+      });
+
     }
 
   }
@@ -232,6 +241,7 @@ pages scripts
     Pages.stamp();
     Pages.h100();
     Pages.user();
+    Pages.confirmFixed();
 
     $(window).on('load resize', function(){
 
