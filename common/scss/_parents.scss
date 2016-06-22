@@ -472,13 +472,33 @@
             .icon {
               margin-bottom: 0;
             }
+            a{
+              p{
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+              }
+              >img{
+                border: 1px solid #a6a6a6;
+              }
+            }
+          }
+        }
+        .more{
+          text-align: right;
+          font-size: 1.2rem;
+          &:before{
+            content: '> ';
+            color: $red;
           }
         }
         .print {
           text-align: right;
           a {
             color: $red;
-		    font-size: 1.3rem;
+		        font-size: 1.3rem;
             &:after {
               margin-left: 0.5em;
               content: '\f105';
@@ -1445,7 +1465,7 @@
     }
   }
   article.paragraph{
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
     .center{
       padding: 0 8px;
       img{

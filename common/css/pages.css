@@ -2023,6 +2023,24 @@ section.inner.stamp_detail {
 #contents.parents.home > section#recommend ul li .icon {
   margin-bottom: 0;
 }
+#contents.parents.home > section#recommend ul li a p {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+#contents.parents.home > section#recommend ul li a > img {
+  border: 1px solid #a6a6a6;
+}
+#contents.parents.home > section#recommend .more {
+  text-align: right;
+  font-size: 1.2rem;
+}
+#contents.parents.home > section#recommend .more:before {
+  content: '> ';
+  color: #cc0033;
+}
 #contents.parents.home > section#recommend .print {
   text-align: right;
 }
@@ -2907,7 +2925,7 @@ section.inner.stamp_detail {
   }
 }
 #contents.detail_app article.paragraph {
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 #contents.detail_app article.paragraph .center {
   padding: 0 8px;
