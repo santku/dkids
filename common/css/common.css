@@ -335,87 +335,152 @@ header .inner {
   text-align: right;
 }
 header .inner .point {
-  display: inline-block;
+  /*display: inline-block;
   position: relative;
   width: 130px;
   margin: 0 4px;
-  height: 37px;
-  text-align: left;
+  height: 37px;*/
+  /*text-align: left;
   vertical-align: middle;
-  font-size: 0;
+  font-size: 0;*/
+  /*p {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 1rem;
+    &:first-child {
+      padding-right: 0.5em;
+    }
+    span {
+      font-size: 1rem;
+      color: #999;
+    }
+  }*/
 }
 header .inner .point a {
   display: block;
+  /*ul {
+    display: block;
+    vertical-align: middle;
+    width: 123px;
+    height: 37px;
+    li {
+      display: block;
+      vertical-align: middle;
+      font-size: 0.8rem;
+      line-height: 1;
+      padding: 1px 0 0 20px;
+      //margin:0px 8px 0px 0;
+      .point-inner {
+        padding-top: 3px;
+        padding-bottom: 5px;
+        &.border {
+          border-bottom: $border-default;
+          padding-top: 5px;
+          padding-bottom: 3px;
+          //margin-bottom:1px;
+        }
+      }
+      &.dPoint {
+        background: url("/common/images/common/header_dpoint_icon.gif") no-repeat left 5px;
+        background-size: 15px auto;
+      }
+      &.docomoPoint {
+        background: url("/common/images/common/header_docomo_point_icon.gif") no-repeat left 1px;
+        background-size: 15px auto;
+        padding-bottom: 4px;
+      }
+      p {
+        float: right;
+        text-align: right;
+        padding-right: 5px;
+        vertical-align: bottom;
+      }
+      img {
+        vertical-align: bottom;
+        width: 42px;
+        height: auto;
+      }
+    }
+  }
+  &:after {
+    display: inline-block;
+    border-radius: 0 2px 2px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    padding: 10px 0 11px;
+    background-color: $red;
+    text-align: center;
+    content: "\f105";
+    font-family: $icon;
+    font-size: 1rem;
+    color: #FFF;
+  }*/
 }
-header .inner .point a ul {
-  display: block;
-  vertical-align: middle;
-  width: 123px;
+header .inner .point a #dpoint {
+  margin: 8px 5px 8px 0px;
+  float: right;
+  width: 130px;
+  background: url(/common/images/common/icon.gif) right center no-repeat;
+  background-size: contain;
   height: 37px;
 }
-header .inner .point a ul li {
-  display: block;
-  vertical-align: middle;
-  font-size: 0.8rem;
-  line-height: 1;
-  padding: 1px 0 0 20px;
+header .inner .point a #dpoint li {
+  padding: 1px 0;
+  height: 16px;
+  margin-right: 10px;
 }
-header .inner .point a ul li .point-inner {
-  padding-top: 3px;
-  padding-bottom: 5px;
+header .inner .point a #dpoint dt {
+  float: left;
 }
-header .inner .point a ul li .point-inner.border {
-  border-bottom: solid 1px #CCC;
-  padding-top: 5px;
-  padding-bottom: 3px;
-}
-header .inner .point a ul li.dPoint {
-  background: url("/common/images/common/header_dpoint_icon.gif") no-repeat left 5px;
-  background-size: 15px auto;
-}
-header .inner .point a ul li.docomoPoint {
-  background: url("/common/images/common/header_docomo_point_icon.gif") no-repeat left 1px;
-  background-size: 15px auto;
-  padding-bottom: 4px;
-}
-header .inner .point a ul li p {
+header .inner .point a #dpoint dd {
   float: right;
-  text-align: right;
-  padding-right: 5px;
-  vertical-align: bottom;
+  padding-top: 2pt;
+  line-height: 1.0;
 }
-header .inner .point a ul li img {
-  vertical-align: bottom;
-  width: 42px;
-  height: auto;
+header .inner .point a .dpoint img {
+  height: 15px;
+  width: 56px;
+  max-width: initial;
+  max-width: auto;
 }
-header .inner .point a:after {
-  display: inline-block;
-  border-radius: 0 2px 2px 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 7px;
-  padding: 10px 0 11px;
-  background-color: #cc0033;
-  text-align: center;
-  content: "\f105";
-  font-family: FontAwesome;
-  font-size: 1rem;
-  color: #FFF;
+header .inner .point a .docomopoint img {
+  height: 15px;
+  width: 61px;
+  max-width: initial;
+  max-width: auto;
 }
-header .inner .point p {
-  display: inline-block;
-  margin: 0;
-  vertical-align: middle;
-  font-size: 1rem;
+header .inner .point a span.point {
+  font-size: 12px;
 }
-header .inner .point p:first-child {
-  padding-right: 0.5em;
-}
-header .inner .point p span {
-  font-size: 1rem;
+header .inner .point a span.p {
+  font-size: 10px;
   color: #999;
+  padding-left: 0.05em;
+}
+header .inner .point a #dpoint li.btn01,
+header .inner .point a #dpoint li.btn02 {
+  width: 100px;
+  float: right;
+}
+header .inner .point a .bd {
+  border-bottom: 1px solid #ccc;
+}
+header .inner .point a #dpoint li.btn01 dt,
+header .inner .point a #dpoint li.btn02 dt {
+  text-indent: -20px;
+}
+header .inner .point a #dpoint li.btn02 {
+  margin: 11px 10px 11px 0;
+}
+header .inner .point a #dpoint .btn03 p {
+  line-height: 1.0;
+  text-align: center;
+  padding: 11px 0;
+  font-size: 12px;
+  background: none;
 }
 header .menu {
   vertical-align: middle;

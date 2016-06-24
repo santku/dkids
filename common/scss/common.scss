@@ -332,20 +332,21 @@ header {
     font-size: 1rem;
     text-align: right;
     .point {
-      display: inline-block;
+      /*display: inline-block;
       position: relative;
       width: 130px;
       margin: 0 4px;
-      height: 37px;
+      height: 37px;*/
       //padding: 0 5px;
       //border: solid 1px $border-color;
       //border-radius: 4px;
-      text-align: left;
+      /*text-align: left;
       vertical-align: middle;
-      font-size: 0;
+      font-size: 0;*/
+
       a {
         display: block;
-        ul {
+        /*ul {
           display: block;
           vertical-align: middle;
           width: 123px;
@@ -403,9 +404,81 @@ header {
           font-family: $icon;
           font-size: 1rem;
           color: #FFF;
-        }
+        }*/
+        #dpoint {
+	margin:8px 5px 8px 0px;
+	float:right;
+	width:130px;
+	background:url(/common/images/common/icon.gif) right center no-repeat;
+	background-size:contain;
+    height:37px;
+}
+
+
+#dpoint li {
+	padding:1px 0;
+	height:16px;
+	margin-right:10px;
+
+}
+#dpoint dt {
+	float:left;
+}
+#dpoint dd {
+	float:right;
+	padding-top:2pt;
+    line-height: 1.0;
+}
+
+.dpoint img{
+	height:15px;
+	width:56px;
+  max-width: initial;
+  max-width: auto;
+}
+.docomopoint img {
+	height:15px;
+	width:61px;
+  max-width: initial;
+  max-width: auto;
+}
+span.point{
+	font-size:12px;
+}
+span.p{
+	font-size:10px;
+	color:#999;
+	padding-left:0.05em;
+}
+#dpoint li.btn01,
+#dpoint li.btn02 {
+
+	width: 100px;
+    float: right;
+}
+.bd {
+	border-bottom:1px solid #ccc;
+
+}
+#dpoint li.btn01 dt,
+#dpoint li.btn02 dt {
+    text-indent: -20px;
+}
+
+#dpoint li.btn02 {
+	margin:11px 10px 11px 0;
+
+}
+
+#dpoint .btn03 p {
+    line-height: 1.0;
+    text-align: center;
+	padding:11px 0;
+	font-size:12px;
+	background:none;
+}
       }
-      p {
+      /*p {
         display: inline-block;
         margin: 0;
         vertical-align: middle;
@@ -417,7 +490,7 @@ header {
           font-size: 1rem;
           color: #999;
         }
-      }
+      }*/
     }
   }
   .menu {
