@@ -61,6 +61,10 @@ pages scripts
 
        }
 
+       if ( $slider.hasClass('appVisual') ){
+         $slider.slick('slickPause');
+       }
+
        $('.horizon-swiper').horizonSwiper({
          arrows: false
        });
