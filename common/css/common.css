@@ -1144,6 +1144,9 @@ footer .copyright {
   padding-bottom: 0.5em;
   background-size: cover;
 }
+.app.dispNone:after {
+  background-image: none !important;
+}
 .app.new {
   background-image: url("/common/images/launcher/home/new_bg.png");
 }

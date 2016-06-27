@@ -64,11 +64,14 @@ pages scripts
        if ( $slider.hasClass('appVisual') ){
          $slider.slick('slickPause');
        }
-
-       $('.horizon-swiper').horizonSwiper({
-         arrows: false
-       });
-
+       $('.horizon-swiper').each(function(index, el) {
+        $(this).horizonSwiper({
+          arrows: false,
+          onDragStart: function(){
+           $(el).parents('.app').addClass('dispNone')
+          }
+        });
+      });
     },
 
     sliderDisabled : function(){

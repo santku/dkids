@@ -1164,6 +1164,11 @@ footer {
 .app {
   padding-bottom: 0.5em;
   background-size: cover;
+  &.dispNone {
+    &:after {
+      background-image: none !important;
+    }
+  }
   &.new {
     background-image: url("/common/images/launcher/home/new_bg.png");
     h2 {
