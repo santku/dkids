@@ -350,25 +350,29 @@
   padding: 0.5em 0.5em 0.3em;
   box-sizing: border-box;
 }
-.launcher.feature section.inner article.item .button ul {
+.launcher.feature section.inner article.item .button a {
+  color: #333 !important;
+  display: block;
+}
+.launcher.feature section.inner article.item .button a ul {
   display: inline-table;
   text-align: center;
 }
-.launcher.feature section.inner article.item .button ul li {
+.launcher.feature section.inner article.item .button a ul li {
   display: table-cell;
   vertical-align: middle;
   text-align: left;
 }
-.launcher.feature section.inner article.item .button ul li:first-child {
+.launcher.feature section.inner article.item .button a ul li:first-child {
   width: 30px;
 }
-.launcher.feature section.inner article.item .button ul li:last-child {
+.launcher.feature section.inner article.item .button a ul li:last-child {
   padding-left: 1em;
 }
-.launcher.feature section.inner article.item .button ul img {
+.launcher.feature section.inner article.item .button a ul img {
   width: 100%;
 }
-.launcher.feature section.inner article.item .button .btn {
+.launcher.feature section.inner article.item .button a .btn {
   background-color: #f0f0f0;
 }
 

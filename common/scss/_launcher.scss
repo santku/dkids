@@ -429,7 +429,11 @@
         &.item {
           .button {
             padding: 0.5em 0.5em 0.3em;
-            box-sizing: border-box;
+            box-sizing: border-box; 
+			  a {
+				  color: #333 !important;
+				  display: block;
+
             ul {
               display: inline-table;
               text-align: center;
@@ -456,6 +460,7 @@
       }
     }
   }
+}
 }
 /* MODULE
 --------------------------------------------------------- */

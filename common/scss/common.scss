@@ -149,7 +149,7 @@ input {
   &.switch {
     + label {
       display: inline-block;
-      width: 67px;
+      width: 60px;
       height: 32px;
       background: url("/common/images/common/form_switch_off.png") no-repeat;
       background-size: contain;
@@ -224,7 +224,7 @@ select {
 }
 .selectBox select {
   width: 100%;
-  padding: 9px 28% 9px 9px;
+  padding: 9px 25% 9px 6px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -233,6 +233,7 @@ select {
   box-shadow: 0 0 0 1px rgba(#000, .08), inset 0 -9px 2px -7px rgba(0, 0, 0, .5);
   color: #AAA;
   background-color: transparent;
+  font-size: 1.1rem;
   &.selected {
     color: inherit;
   }
