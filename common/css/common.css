@@ -1145,7 +1145,12 @@ footer .copyright {
   background-size: cover;
 }
 .app.dispNone:after {
-  background-image: none !important;
+  /*background-image: none !important;*/
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .app.new {
   background-image: url("/common/images/launcher/home/new_bg.png");
